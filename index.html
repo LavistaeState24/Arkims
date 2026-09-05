@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenTech Arabia – Saudi Greenhouse Agriculture</title>
+
+    <!-- Tailwind + Google Fonts + Font Awesome -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./input.css" />
+</head>
+
+<body>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass border-b border-white/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2.5 text-xl md:text-2xl font-bold tracking-tight">
+                    <span
+                        class="w-9 h-9 md:w-11 md:h-11 rounded-xl bg-gradient-to-br from-emerald-600 to-green-400 flex items-center justify-center text-white text-lg shadow-lg shadow-emerald-500/30">
+                        <i class="fas fa-leaf"></i>
+                    </span>
+                    <span class="gradient-text">GreenTech</span>
+                    <span class="text-gray-700 font-medium">Arabia</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700">
+                    <a href="#home" class="nav-link text-emerald-700">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#sustainability" class="nav-link">Sustainability</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- CTA + Mobile toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="#contact"
+                        class="hidden md:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-emerald-600/25 hover:shadow-emerald-600/40">
+                        <i class="fas fa-phone-alt"></i> Get Quote
+                    </a>
+                    <button id="menuToggle"
+                        class="lg:hidden w-10 h-10 rounded-xl bg-white/60 hover:bg-white/90 flex items-center justify-center text-gray-700 text-xl transition-all border border-white/30">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"
+                class="hidden lg:hidden glass border-t border-white/20 px-4 py-4 flex flex-col gap-1.5 text-sm font-medium text-gray-700">
+                <a href="#home"
+                    class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-3"><i
+                        class="fas fa-home text-emerald-600 w-5"></i> Home</a>
+                <a href="#about"
+                    class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-3"><i
+                        class="fas fa-info-circle text-emerald-600 w-5"></i> About</a>
+                <a href="#products"
+                    class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-3"><i
+                        class="fas fa-seedling text-emerald-600 w-5"></i> Products</a>
+                <a href="#services"
+                    class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-3"><i
+                        class="fas fa-cogs text-emerald-600 w-5"></i> Services</a>
+                <a href="#projects"
+                    class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-3"><i
+                        class="fas fa-building text-emerald-600 w-5"></i> Projects</a>
+                <a href="#sustainability"
+                    class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-3"><i
+                        class="fas fa-globe-asia text-emerald-600 w-5"></i> Sustainability</a>
+                <a href="#contact"
+                    class="px-3 py-2.5 rounded-xl hover:bg-emerald-50 transition-all flex items-center gap-3"><i
+                        class="fas fa-envelope text-emerald-600 w-5"></i> Contact</a>
+                <hr class="my-2 border-white/30" />
+                <a href="#contact"
+                    class="px-3 py-2.5 rounded-xl bg-emerald-600 text-white font-semibold text-center transition-all hover:bg-emerald-700 flex items-center justify-center gap-2">
+                    <i class="fas fa-phone-alt"></i> Get a Quote
+                </a>
+            </div>
+    </nav>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-20">
+
+        <!-- Background Video -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+
+            <video src="https://www.pexels.com/download/video/8784699/"
+                class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
+            </video>
+
+            <!-- Black Overlay -->
+            <div class="absolute inset-0 bg-black/45"></div>
+
+        </div>
+
+        <!-- Animated leaf decorations -->
+        <div class="leaf-bg top-10 left-10 rotate-12" style="font-size:6rem; opacity:0.06;">
+            🌿
+        </div>
+
+        <div class="leaf-bg bottom-20 right-10 -rotate-6" style="font-size:5rem; opacity:0.05;">
+            🌱
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 w-full">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Left -->
+                <div class="space-y-6 md:space-y-8">
+
+                    <!-- Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white/90 text-xs md:text-sm font-semibold px-4 py-2 rounded-full border border-white/20">
+
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+
+                        Vision 2030 · Food Security
+
+                    </div>
+
+
+                    <!-- Heading -->
+                    <h1
+                        class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-white">
+
+                        Growing
+                        <br />
+
+                        <span class="gradient-text">
+                            Saudi Arabia's
+                        </span>
+
+                        <br />
+
+                        <span class="text-white/90">
+                            Green Future
+                        </span>
+
+                    </h1>
+
+
+                    <!-- Description -->
+                    <p class="text-base md:text-lg text-white/80 max-w-lg leading-relaxed">
+
+                        High-tech greenhouses, hydroponic systems & turnkey agricultural solutions —
+                        empowering the Kingdom with sustainable, year-round food production.
+
+                    </p>
+
+
+                    <!-- Buttons -->
+                    <div class="flex flex-wrap items-center gap-4">
+
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-7 py-3.5 rounded-2xl transition-all shadow-2xl shadow-emerald-500/40 hover:shadow-emerald-500/60 text-base pulse-glow">
+
+                            <i class="fas fa-rocket"></i>
+
+                            Start Your Project
+
+                        </a>
+
+
+                        <a href="#products"
+                            class="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-medium px-6 py-3.5 rounded-2xl transition-all border border-white/20 text-base">
+
+                            <i class="fas fa-play-circle"></i>
+
+                            Explore Solutions
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-white/10">
+
+                        <div>
+                            <div class="stat-number text-white">35+</div>
+                            <div class="text-xs text-white/70">
+                                Years Experience
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="stat-number text-white">120+</div>
+                            <div class="text-xs text-white/70">
+                                Hectares Managed
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="stat-number text-white">135+</div>
+                            <div class="text-xs text-white/70">
+                                Tons / Day
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="stat-number text-white">70%</div>
+                            <div class="text-xs text-white/70">
+                                Water Saved
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right: Floating Image Card -->
+                <div class="hidden lg:flex justify-center">
+
+                    <div class="relative w-full max-w-md">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Scroll Indicator -->
+        <div
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-white/40 animate-bounce">
+
+            <span class="text-xs font-medium uppercase tracking-widest">
+                Scroll
+            </span>
+
+            <i class="fas fa-chevron-down text-sm"></i>
+
+        </div>
+
+    </section>
+
+    <!-- ============================================================
+ABOUT
+============================================================ -->
+    <section id="about" class="py-20 md:py-28 bg-white relative overflow-hidden">
+        <div class="leaf-bg top-20 right-10 rotate-12" style="font-size:8rem; opacity:10;">🌿</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+                <!-- Left: image -->
+                <div class="relative reveal">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-emerald-900/10">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80"
+                         class="w-full h-auto object-cover img-zoom" />
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
+                            <p class="text-white font-semibold text-lg">Al Rawda Factory · Qassim</p>
+                            <p class="text-white/70 text-sm">Est. 1988 · 35+ Years of Excellence</p>
+                        </div>
+                    </div>
+                    <!-- floating badge -->
+                    <div
+                        class="absolute -bottom-5 -left-5 bg-emerald-600 text-white px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                        <i class="fas fa-award text-2xl"></i>
+                        <div>
+                            <p class="font-bold text-sm">ISO 9001</p>
+                            <p class="text-xs text-emerald-200">Certified</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: content -->
+                <div class="space-y-6 reveal">
+                    <div
+                        class="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm bg-emerald-50 px-4 py-1.5 rounded-full">
+                        <i class="fas fa-leaf"></i> About Us
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+                        Pioneering <span class="gradient-text">Greenhouse</span> Agriculture in Saudi Arabia
+                    </h2>
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                        GreenTech Arabia is the Kingdom's first specialized greenhouse manufacturer, combining
+                        <strong>35+ years of local expertise</strong> with cutting-edge Dutch technology.
+                        From plastic tunnels to fully automated glass hydroponic farms, we deliver
+                        <strong>turnkey solutions</strong> that align with Vision 2030.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 text-sm">High-Tech</p>
+                                <p class="text-xs text-gray-500">Automation & Climate Control</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 text-sm">Water Saving</p>
+                                <p class="text-xs text-gray-500">70–90% less than open-field</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 text-sm">Turnkey</p>
+                                <p class="text-xs text-gray-500">Design · Build · Install</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-900 text-sm">Vision 2030</p>
+                                <p class="text-xs text-gray-500">Food Security & Sustainability</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2 text-emerald-600 font-semibold hover:text-emerald-800 transition-all">
+                        Learn more about our journey <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+PRODUCTS
+============================================================ -->
+    <section id="products" class="py-20 md:py-28 bg-gray-50 relative overflow-hidden">
+        <div class="leaf-bg bottom-10 left-10 -rotate-12" style="font-size:7rem; opacity:0.04;">🌱</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <div
+                    class="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm bg-emerald-100/60 px-4 py-1.5 rounded-full mb-4">
+                    <i class="fas fa-seedling"></i> Our Solutions
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    Greenhouse <span class="gradient-text">Products</span> & Systems
+                </h2>
+                <p class="text-gray-500 mt-3 text-base md:text-lg">
+                    From affordable plastic tunnels to fully automated glass hydroponic farms —
+                    we have a solution for every scale and budget.
+                </p>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+                <!-- Card 1 -->
+                <div
+                    class="product-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80"
+                            alt="Plastic Greenhouse" class="w-full h-full object-cover img-zoom" />
+                        <div
+                            class="absolute top-3 right-3 bg-emerald-500/90 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Popular
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900">Plastic & Shade-Net</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Arched & upright plastic greenhouses, shade-net structures, and fiberglass
+                            options — cost-effective and durable for all climates.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-emerald-600 font-semibold">
+                            <i class="fas fa-check-circle"></i> Al Rawda Factory
+                            <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                            <span class="text-gray-400">35+ years</span>
+                        </div>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-1.5 text-emerald-600 font-medium text-sm hover:text-emerald-800 transition-all">
+                            Learn More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="product-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb3a91?w=600&q=80"
+                            alt="Polycarbonate Greenhouse" class="w-full h-full object-cover img-zoom" />
+                        <div
+                            class="absolute top-3 right-3 bg-blue-500/90 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">
+                            High-Tech
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900">Polycarbonate & A.C.</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Air-conditioned polycarbonate greenhouses with full climate control —
+                            ideal for extreme desert conditions and premium crops.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-blue-600 font-semibold">
+                            <i class="fas fa-snowflake"></i> Climate Controlled
+                            <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                            <span class="text-gray-400">24/7 Operation</span>
+                        </div>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-1.5 text-emerald-600 font-medium text-sm hover:text-emerald-800 transition-all">
+                            Learn More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="product-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=600&q=80"
+                            alt="Hydroponic Greenhouse" class="w-full h-full object-cover img-zoom" />
+                        <div
+                            class="absolute top-3 right-3 bg-purple-500/90 backdrop-blur text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Premium
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-gray-900">Glass Hydroponic</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Multi-span glass greenhouses with NFT, Dutch-bucket, and aeroponic
+                            systems — built for large-scale commercial production.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-purple-600 font-semibold">
+                            <i class="fas fa-tint"></i> 70% Water Saving
+                            <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                            <span class="text-gray-400">135+ tons/day</span>
+                        </div>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-1.5 text-emerald-600 font-medium text-sm hover:text-emerald-800 transition-all">
+                            Learn More <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-12 reveal">
+                <a href="#contact"
+                    class="inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3.5 rounded-2xl transition-all shadow-lg shadow-emerald-600/30 hover:shadow-emerald-600/50">
+                    <i class="fas fa-arrow-right"></i> View All Products & Specs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+SERVICES
+============================================================ -->
+    <section id="services" class="py-20 md:py-28 bg-white relative overflow-hidden">
+        <div class="leaf-bg top-20 right-20 rotate-45" style="font-size:6rem; opacity:0.03;">🌾</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <div
+                    class="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm bg-emerald-50 px-4 py-1.5 rounded-full mb-4">
+                    <i class="fas fa-cogs"></i> What We Do
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    Comprehensive <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-gray-500 mt-3 text-base md:text-lg">
+                    End-to-end solutions — from feasibility and design to installation,
+                    training, and ongoing support.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+
+                <!-- Service 1 -->
+                <div
+                    class="glass rounded-3xl p-7 md:p-9 border border-white/40 shadow-xl shadow-gray-200/30 reveal text-center md:text-left">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-green-400 flex items-center justify-center text-white text-2xl shadow-lg shadow-emerald-500/30 mb-5 mx-auto md:mx-0">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Turnkey Projects</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Full-cycle greenhouse development — site assessment, custom design,
+                        procurement, construction, and handover.
+                    </p>
+                    <ul class="mt-4 space-y-1.5 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                            Feasibility Studies</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                            Design & Engineering</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                            Installation & Commissioning</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="glass rounded-3xl p-7 md:p-9 border border-white/40 shadow-xl shadow-gray-200/30 reveal text-center md:text-left">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-2xl shadow-lg shadow-blue-500/30 mb-5 mx-auto md:mx-0">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Technology Partners</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Exclusive partnerships with world-class Dutch technology providers —
+                        Prins Group, Stolze, Hoogendoorn, and more.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Prins Group</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Stolze</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Hoogendoorn</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">KUBO</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="glass rounded-3xl p-7 md:p-9 border border-white/40 shadow-xl shadow-gray-200/30 reveal text-center md:text-left">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-400 flex items-center justify-center text-white text-2xl shadow-lg shadow-purple-500/30 mb-5 mx-auto md:mx-0">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Consultancy & Training</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Expert advisory services, crop management training, and operational
+                        support to ensure your greenhouse runs at peak performance.
+                    </p>
+                    <ul class="mt-4 space-y-1.5 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                            Crop Planning</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                            Staff Training</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                            Ongoing Advisory</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+PROJECTS / FARMS
+============================================================ -->
+    <section id="projects" class="py-20 md:py-28 bg-gray-50 relative overflow-hidden">
+        <div class="leaf-bg bottom-20 left-10 -rotate-6" style="font-size:7rem; opacity:0.04;">🌻</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <div
+                    class="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm bg-emerald-100/60 px-4 py-1.5 rounded-full mb-4">
+                    <i class="fas fa-building"></i> Our Work
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    Farms & <span class="gradient-text">Projects</span>
+                </h2>
+                <p class="text-gray-500 mt-3 text-base md:text-lg">
+                    Across the Kingdom — from small-scale polyhouses to massive
+                    high-tech hydroponic farms.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Project 1 -->
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb3a91?w=600&q=80"
+                            alt="DAVA Farm" class="w-full h-full object-cover img-zoom" />
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-gray-900">DAVA Agricultural Co.</h4>
+                        <p class="text-sm text-gray-500">Al-Kharj · 110+ ha · 135+ tons/day</p>
+                        <p class="text-xs text-gray-400 mt-1">Tomatoes, cucumbers, peppers, lettuce</p>
+                        <span
+                            class="inline-block mt-2 bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full">Exports
+                            to Europe</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80"
+                            alt="Alrasheed Greenhouses" class="w-full h-full object-cover img-zoom" />
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-gray-900">Alrasheed Greenhouses</h4>
+                        <p class="text-sm text-gray-500">Riyadh · 120+ ha · 12 farms</p>
+                        <p class="text-xs text-gray-400 mt-1">High-tech glass · Dutch partnership</p>
+                        <span
+                            class="inline-block mt-2 bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">Turnkey
+                            Developer</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=600&q=80"
+                            alt="Al Rawda Factory" class="w-full h-full object-cover img-zoom" />
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-gray-900">Al Rawda Factory</h4>
+                        <p class="text-sm text-gray-500">Qassim · 35+ years</p>
+                        <p class="text-xs text-gray-400 mt-1">Plastic, fiberglass & shade-net</p>
+                        <span
+                            class="inline-block mt-2 bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Local
+                            Manufacturer</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Industries we serve -->
+            <div
+                class="mt-14 bg-white/70 backdrop-blur rounded-3xl p-8 md:p-10 border border-white/40 shadow-xl reveal">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 text-center mb-6">
+                    <i class="fas fa-industry text-emerald-500 mr-2"></i> Industries We Serve
+                </h3>
+                <div class="flex flex-wrap justify-center gap-3 md:gap-4">
+                    <span
+                        class="bg-emerald-50 text-emerald-700 px-5 py-2.5 rounded-full text-sm font-medium border border-emerald-200/50">Commercial
+                        Farming</span>
+                    <span
+                        class="bg-emerald-50 text-emerald-700 px-5 py-2.5 rounded-full text-sm font-medium border border-emerald-200/50">Agri-Tech
+                        Startups</span>
+                    <span
+                        class="bg-emerald-50 text-emerald-700 px-5 py-2.5 rounded-full text-sm font-medium border border-emerald-200/50">Government
+                        Projects</span>
+                    <span
+                        class="bg-emerald-50 text-emerald-700 px-5 py-2.5 rounded-full text-sm font-medium border border-emerald-200/50">Research
+                        & Education</span>
+                    <span
+                        class="bg-emerald-50 text-emerald-700 px-5 py-2.5 rounded-full text-sm font-medium border border-emerald-200/50">Food
+                        Processing</span>
+                    <span
+                        class="bg-emerald-50 text-emerald-700 px-5 py-2.5 rounded-full text-sm font-medium border border-emerald-200/50">Logistics
+                        & Distribution</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+SUSTAINABILITY
+============================================================ -->
+    <section id="sustainability" class="py-20 md:py-28 bg-white relative overflow-hidden">
+        <div class="leaf-bg top-10 left-10 rotate-12" style="font-size:8rem; opacity:0.03;">🌍</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+                <!-- Left -->
+                <div class="space-y-6 reveal">
+                    <div
+                        class="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm bg-emerald-50 px-4 py-1.5 rounded-full">
+                        <i class="fas fa-globe-asia"></i> Vision 2030
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+                        Sustainability & <span class="gradient-text">Government Support</span>
+                    </h2>
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                        Aligned with Saudi Vision 2030, we champion water conservation, food security,
+                        and sustainable agriculture. Access government financing programs
+                        and incentives through the <strong>Agricultural Development Fund</strong>
+                        and <strong>Ministry of Environment, Water & Agriculture</strong>.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-emerald-50/60 rounded-2xl p-4 border border-emerald-100/50">
+                            <div class="text-2xl font-extrabold text-emerald-600">70–90%</div>
+                            <p class="text-xs text-gray-600">Water savings vs. open-field</p>
+                        </div>
+                        <div class="bg-emerald-50/60 rounded-2xl p-4 border border-emerald-100/50">
+                            <div class="text-2xl font-extrabold text-emerald-600">Year-Round</div>
+                            <p class="text-xs text-gray-600">Production regardless of climate</p>
+                        </div>
+                        <div class="bg-emerald-50/60 rounded-2xl p-4 border border-emerald-100/50">
+                            <div class="text-2xl font-extrabold text-emerald-600">100%</div>
+                            <p class="text-xs text-gray-600">Controlled environment</p>
+                        </div>
+                        <div class="bg-emerald-50/60 rounded-2xl p-4 border border-emerald-100/50">
+                            <div class="text-2xl font-extrabold text-emerald-600">🇸🇦</div>
+                            <p class="text-xs text-gray-600">Vision 2030 aligned</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span
+                            class="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                            <i class="fas fa-check-circle text-emerald-500"></i> Agricultural Development Fund
+                        </span>
+                        <span
+                            class="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                            <i class="fas fa-check-circle text-emerald-500"></i> MEWA Support
+                        </span>
+                        <span
+                            class="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                            <i class="fas fa-check-circle text-emerald-500"></i> Financing Programs
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right: image + video placeholder -->
+                <div class="relative reveal">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl shadow-emerald-900/10 border border-white/20">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80"
+                            alt="AI-generated sustainability" class="w-full h-auto object-cover img-zoom" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                            <div>
+                                <p class="text-white font-semibold text-lg">Sustainable Farming</p>
+                                <p class="text-white/70 text-sm">Powered by AI & renewable energy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AI video badge -->
+                    <div
+                        class="absolute -bottom-4 -right-4 glass-dark rounded-2xl px-5 py-3 border border-white/10 flex items-center gap-3 shadow-xl">
+                        <div
+                            class="w-10 h-10 rounded-full bg-emerald-500/30 backdrop-blur flex items-center justify-center text-white">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">AI-Generated Video</p>
+                            <p class="text-white/50 text-xs">Smart Farming Overview</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+BLOG / RESOURCES
+============================================================ -->
+    <section id="blog" class="py-20 md:py-28 bg-gray-50 relative overflow-hidden">
+        <div class="leaf-bg bottom-20 right-10 -rotate-12" style="font-size:6rem; opacity:0.04;">📄</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <div
+                    class="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm bg-emerald-100/60 px-4 py-1.5 rounded-full mb-4">
+                    <i class="fas fa-blog"></i> Resources
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    Blog & <span class="gradient-text">Insights</span>
+                </h2>
+                <p class="text-gray-500 mt-3 text-base md:text-lg">
+                    Expert articles on greenhouse technology, hydroponics, and Saudi agriculture.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80"
+                            alt="Hydroponics guide" class="w-full h-full object-cover img-zoom" />
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="text-xs text-emerald-600 font-semibold bg-emerald-50 px-3 py-1 rounded-full">Hydroponics</span>
+                        <h4 class="font-bold text-gray-900 mt-2 text-lg">Getting Started with Hydroponics in KSA</h4>
+                        <p class="text-sm text-gray-500 mt-1">A beginner's guide to soilless farming in the desert
+                            climate.</p>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-emerald-600 text-sm font-medium mt-3 hover:text-emerald-800">Read
+                            More <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=600&q=80"
+                            alt="Water saving" class="w-full h-full object-cover img-zoom" />
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="text-xs text-blue-600 font-semibold bg-blue-50 px-3 py-1 rounded-full">Sustainability</span>
+                        <h4 class="font-bold text-gray-900 mt-2 text-lg">70% Water Savings with Smart Greenhouses</h4>
+                        <p class="text-sm text-gray-500 mt-1">How advanced irrigation and climate control reduce water
+                            usage.</p>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-emerald-600 text-sm font-medium mt-3 hover:text-emerald-800">Read
+                            More <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-gray-200/60 border border-gray-100/80 reveal">
+                    <div class="h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb3a91?w=600&q=80"
+                            alt="Vision 2030" class="w-full h-full object-cover img-zoom" />
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-purple-600 font-semibold bg-purple-50 px-3 py-1 rounded-full">Vision
+                            2030</span>
+                        <h4 class="font-bold text-gray-900 mt-2 text-lg">Greenhouse Agriculture & Vision 2030</h4>
+                        <p class="text-sm text-gray-500 mt-1">How controlled-environment farming supports national food
+                            security.</p>
+                        <a href="#"
+                            class="inline-flex items-center gap-1.5 text-emerald-600 text-sm font-medium mt-3 hover:text-emerald-800">Read
+                            More <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-10 reveal">
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-emerald-600 font-semibold hover:text-emerald-800 transition-all">
+                    View all articles <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+CONTACT
+============================================================ -->
+    <section id="contact" class="py-20 md:py-28 bg-white relative overflow-hidden">
+        <div class="leaf-bg top-20 left-10 -rotate-6" style="font-size:7rem; opacity:0.03;">📬</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <div
+                    class="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm bg-emerald-50 px-4 py-1.5 rounded-full mb-4">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    Let's Build <span class="gradient-text">Together</span>
+                </h2>
+                <p class="text-gray-500 mt-3 text-base md:text-lg">
+                    Have a project in mind? Reach out to our team for a free consultation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                <!-- Contact Form -->
+                <div class="glass rounded-3xl p-8 md:p-10 border border-white/40 shadow-xl shadow-gray-200/30 reveal">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+                    <form class="space-y-5"
+                        onsubmit="event.preventDefault(); alert('Thank you for reaching out! We\'ll get back to you within 24 hours.');">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1.5">Full Name</label>
+                            <input type="text" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-white/60 backdrop-blur focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 outline-none transition-all text-gray-900" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1.5">Email Address</label>
+                            <input type="email" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-white/60 backdrop-blur focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 outline-none transition-all text-gray-900" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1.5">Phone Number</label>
+                            <input type="tel" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-white/60 backdrop-blur focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 outline-none transition-all text-gray-900" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1.5">Your Message</label>
+                            <textarea rows="4" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-white/60 backdrop-blur focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 outline-none transition-all text-gray-900 resize-none"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-700 hover:to-emerald-600 text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 flex items-center justify-center gap-2.5 text-base">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8 reveal">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Phone</p>
+                                    <p class="font-semibold text-gray-900">+966 56 608 4364</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">WhatsApp</p>
+                                    <p class="font-semibold text-gray-900">+966 56 608 4364</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Email</p>
+                                    <p class="font-semibold text-gray-900">alrawdhafactory@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-11 h-11 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Head Office</p>
+                                    <p class="font-semibold text-gray-900">Qassim (Al-Badaye), Saudi Arabia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div>
+                        <p class="text-sm font-semibold text-gray-700 mb-3">Follow Us</p>
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="w-11 h-11 rounded-xl bg-gray-100 hover:bg-emerald-100 flex items-center justify-center text-gray-600 hover:text-emerald-600 transition-all text-lg"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#"
+                                class="w-11 h-11 rounded-xl bg-gray-100 hover:bg-emerald-100 flex items-center justify-center text-gray-600 hover:text-emerald-600 transition-all text-lg"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="#"
+                                class="w-11 h-11 rounded-xl bg-gray-100 hover:bg-emerald-100 flex items-center justify-center text-gray-600 hover:text-emerald-600 transition-all text-lg"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="#"
+                                class="w-11 h-11 rounded-xl bg-gray-100 hover:bg-emerald-100 flex items-center justify-center text-gray-600 hover:text-emerald-600 transition-all text-lg"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="#"
+                                class="w-11 h-11 rounded-xl bg-gray-100 hover:bg-emerald-100 flex items-center justify-center text-gray-600 hover:text-emerald-600 transition-all text-lg"><i
+                                    class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Working hours -->
+                    <div class="bg-gray-50/70 rounded-2xl p-5 border border-gray-100">
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-clock text-emerald-500"></i>
+                            <span class="font-medium">Working Hours:</span>
+                            <span class="text-sm text-gray-500">Sun–Thu 8:00 AM – 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+FOOTER
+============================================================ -->
+    <footer class="bg-gray-900 text-white/80 pt-16 pb-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12 border-b border-white/5">
+
+                <div class="col-span-2 md:col-span-1">
+                    <a href="#" class="flex items-center gap-2.5 text-xl font-bold">
+                        <span
+                            class="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-600 to-green-400 flex items-center justify-center text-white shadow-lg shadow-emerald-500/30">
+                            <i class="fas fa-leaf"></i>
+                        </span>
+                        <span class="gradient-text">GreenTech</span>
+                        <span class="text-white/60 font-medium">Arabia</span>
+                    </a>
+                    <p class="text-sm text-white/50 mt-4 max-w-xs leading-relaxed">
+                        Pioneering greenhouse agriculture in Saudi Arabia with high-tech solutions,
+                        Dutch partnerships, and a commitment to Vision 2030.
+                    </p>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all"><i
+                                class="fab fa-instagram text-sm"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all"><i
+                                class="fab fa-facebook text-sm"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all"><i
+                                class="fab fa-linkedin-in text-sm"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all"><i
+                                class="fab fa-youtube text-sm"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-emerald-400 transition-all">Home</a></li>
+                        <li><a href="#about" class="hover:text-emerald-400 transition-all">About Us</a></li>
+                        <li><a href="#products" class="hover:text-emerald-400 transition-all">Products</a></li>
+                        <li><a href="#services" class="hover:text-emerald-400 transition-all">Services</a></li>
+                        <li><a href="#projects" class="hover:text-emerald-400 transition-all">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Solutions</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Plastic Greenhouses</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Polycarbonate & A.C.</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Glass Hydroponic</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Climate Control</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Turnkey Projects</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Support</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#contact" class="hover:text-emerald-400 transition-all">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Sitemap</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-all">Careers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 text-sm text-white/40">
+                <p>&copy; 2026 GreenTech Arabia. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <span>🇸🇦 Made in Saudi Arabia</span>
+                    <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                    <span>Built with <i class="fas fa-heart text-emerald-400 text-xs"></i> & AI</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+JAVASCRIPT
+============================================================ -->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
