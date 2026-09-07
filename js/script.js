@@ -1,166 +1,242 @@
+'use strict';
 
-(function () {
-    'use strict';
+/* =========================================================
+   Partial loader — injects a reusable HTML fragment
+   ========================================================= */
+async function loadPartial(targetSelector, url) {
+    const target = document.querySelector(targetSelector);
+    if (!target) return false;
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`${url} -> ${res.status}`);
+        target.innerHTML = await res.text();
+        return true;
+    } catch (err) {
+        console.error('Partial load failed:', err);
+        return false;
+    }
+}
 
-    // ----- Mobile menu toggle -----
+/* =========================================================
+   Navbar behavior (runs AFTER navbar.html is injected)
+   ========================================================= */
+function initNavbar() {
+    const nav = document.getElementById('mainNav');
     const menuToggle = document.getElementById('menuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
     let menuOpen = false;
 
-    menuToggle.addEventListener('click', function (e) {
-        e.stopPropagation();
-        menuOpen = !menuOpen;
-        mobileMenu.classList.toggle('hidden', !menuOpen);
-        menuToggle.innerHTML = menuOpen ?
-            '<i class="fas fa-times"></i>' :
-            '<i class="fas fa-bars"></i>';
-    });
-
-    // Close mobile menu on link click
-    document.querySelectorAll('#mobileMenu a').forEach(link => {
-        link.addEventListener('click', () => {
-            menuOpen = false;
-            mobileMenu.classList.add('hidden');
-            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-        });
-    });
-
-    // Close on outside click
-    document.addEventListener('click', function (e) {
-        if (menuOpen && !mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-            menuOpen = false;
-            mobileMenu.classList.add('hidden');
-            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    const setMenu = (open) => {
+        menuOpen = open;
+        if (mobileMenu) {
+            mobileMenu.classList.toggle('hidden', !open);
+            // Collapse the accordions so the menu always reopens at the top level
+            if (!open) {
+                mobileMenu.querySelectorAll('details[open]').forEach((d) => {
+                    d.open = false;
+                });
+            }
         }
-    });
+        if (menuToggle) {
+            menuToggle.innerHTML = open
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
+            menuToggle.setAttribute('aria-expanded', String(open));
+            menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        }
+    };
 
-    // ----- Scroll-triggered reveal animations (Intersection Observer) -----
-    const revealElements = document.querySelectorAll('.reveal');
+    const closeMenu = () => setMenu(false);
 
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            setMenu(!menuOpen);
+        });
+
+        mobileMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (menuOpen && !mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                closeMenu();
             }
         });
-    }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -40px 0px'
-    });
+    }
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    // Shadow on scroll
+    if (nav) {
+        const onScroll = () => {
+            if (window.scrollY > 30) {
+                nav.classList.add('shadow-lg', 'shadow-gray-900/5');
+                nav.style.borderBottomColor = 'rgba(255,255,255,0.4)';
+            } else {
+                nav.classList.remove('shadow-lg', 'shadow-gray-900/5');
+                nav.style.borderBottomColor = 'rgba(255,255,255,0.2)';
+            }
+        };
+        window.addEventListener('scroll', onScroll);
+        onScroll();
+    }
 
-    // ----- Navbar shadow on scroll -----
-    const navbar = document.getElementById('navbar');
-    let lastScrollY = 0;
-
-    window.addEventListener('scroll', function () {
-        const scrollY = window.scrollY;
-        if (scrollY > 30) {
-            navbar.classList.add('shadow-lg', 'shadow-gray-900/5');
-            navbar.style.borderBottomColor = 'rgba(255,255,255,0.4)';
-        } else {
-            navbar.classList.remove('shadow-lg', 'shadow-gray-900/5');
-            navbar.style.borderBottomColor = 'rgba(255,255,255,0.2)';
-        }
-        lastScrollY = scrollY;
-    });
-
-    // ----- Smooth anchor scrolling (for nav links) -----
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Smooth anchor scrolling for same-page links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
             const targetEl = document.querySelector(targetId);
             if (targetEl) {
                 e.preventDefault();
-                const navHeight = navbar.offsetHeight;
-                const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset -
-                    navHeight - 12;
-                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                const navHeight = nav ? nav.offsetHeight : 0;
+                const top = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
+                window.scrollTo({ top, behavior: 'smooth' });
             }
         });
     });
+}
 
-    // ----- Floating WhatsApp / click-to-call (optional) -----
-    // We already have contact info in the footer & contact section.
-    // Add a floating button if desired:
-    const floatingBtn = document.createElement('div');
-    floatingBtn.className =
-        'fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end md:bottom-8 md:right-8';
-    floatingBtn.innerHTML = `
-          <a href="https://wa.me/9979901901" target="_blank"
-             class="flex items-center gap-2.5 bg-green-500 hover:bg-emerald-600 text-white font-semibold p-2.5 px-4 rounded-full shadow-2xl shadow-emerald-500/40 transition-all text-sm border border-white/20 backdrop-blur">
-            <i class="fab fa-whatsapp text-2xl"></i>
-        
-          </a>
-          <a href="tel:+9979901901"
-             class="flex items-center gap-2.5 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-3 rounded-2xl shadow-2xl shadow-blue-500/40 transition-all text-sm border border-white/20 backdrop-blur">
-            <i class="fas fa-phone-alt text-lg"></i>
-          </a>
-        `;
-    document.body.appendChild(floatingBtn);
+/* =========================================================
+   Scroll-reveal animations
+   ========================================================= */
+function initReveal() {
+    const revealElements = document.querySelectorAll('.reveal');
+    if (!revealElements.length) return;
 
-    // ----- Animate stats on scroll (optional) -----
-    // Simple counter animation for stat numbers
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach((el) => observer.observe(el));
+
+    setTimeout(() => {
+        const winHeight = window.innerHeight || document.documentElement.clientHeight;
+        revealElements.forEach((el) => {
+            if (el.getBoundingClientRect().top < winHeight - 80) el.classList.add('visible');
+        });
+    }, 200);
+}
+
+/* =========================================================
+   Stat counter animation
+   ========================================================= */
+function initStats() {
     const statNumbers = document.querySelectorAll('.stat-number');
-    const statObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const el = entry.target;
-                const text = el.textContent.trim();
-                // Only animate if it's a number with + or %
-                if (/\d/.test(text)) {
-                    const num = parseInt(text.replace(/[^0-9]/g, ''));
-                    const suffix = text.replace(/[0-9]/g, '');
-                    if (!isNaN(num) && num > 0) {
-                        let current = 0;
-                        const increment = Math.ceil(num / 40);
-                        const timer = setInterval(() => {
-                            current += increment;
-                            if (current >= num) {
-                                current = num;
-                                clearInterval(timer);
-                            }
-                            el.textContent = current + suffix;
-                        }, 30);
-                    }
+    if (!statNumbers.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const text = el.textContent.trim();
+            if (/\d/.test(text)) {
+                const num = parseInt(text.replace(/[^0-9]/g, ''), 10);
+                const suffix = text.replace(/[0-9]/g, '');
+                if (!isNaN(num) && num > 0) {
+                    let current = 0;
+                    const increment = Math.ceil(num / 40);
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= num) {
+                            current = num;
+                            clearInterval(timer);
+                        }
+                        el.textContent = current + suffix;
+                    }, 30);
                 }
-                statObserver.unobserve(el);
             }
+            observer.unobserve(el);
         });
     }, { threshold: 0.5 });
 
-    statNumbers.forEach(el => statObserver.observe(el));
+    statNumbers.forEach((el) => observer.observe(el));
+}
 
-    // ----- Set initial visibility for reveal elements that are already visible -----
-    // (in case they load in view)
-    setTimeout(() => {
-        revealElements.forEach(el => {
-            const rect = el.getBoundingClientRect();
-            const winHeight = window.innerHeight || document.documentElement.clientHeight;
-            if (rect.top < winHeight - 80) {
-                el.classList.add('visible');
-            }
-        });
-    }, 200);
+/* =========================================================
+   Floating WhatsApp / call buttons
+   ========================================================= */
+function initFloatingButtons() {
+    const wrap = document.createElement('div');
+    wrap.className = 'fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end md:bottom-8 md:right-8';
+    wrap.innerHTML = `
+        <a href="https://wa.me/9979901901" target="_blank" rel="noopener"
+           class="flex items-center gap-2.5 bg-green-500 hover:bg-emerald-600 text-white font-semibold p-2.5 px-4 rounded-full shadow-2xl shadow-emerald-500/40 transition-all text-sm border border-white/20 backdrop-blur">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    `;
+    document.body.appendChild(wrap);
+}
 
-})();
+/* =========================================================
+   Boot
+   ========================================================= */
+document.addEventListener('DOMContentLoaded', async () => {
+    const navLoaded = await loadPartial('#navbar', 'components/navbar.html');
+    if (navLoaded) initNavbar();
+
+    await loadPartial('#footer-container', 'components/footer.html');
+
+    initReveal();
+    initStats();
+    initFloatingButtons();
+});
 
 
+// privacy js
 
-// footer js
-fetch('/components/footer.html')
-    .then(response => {
-        if (!response.ok) throw new Error('Footer not found');
-        return response.text();
-    })
-    .then(html => {
-        document.getElementById('footer-container').innerHTML = html;
-    })
-    .catch(error => {
-        console.error('Footer load failed:', error);
-        // Optional: show a fallback message
-        document.getElementById('footer-container').innerHTML =
-            '<p class="text-gray-500 text-sm text-center py-8">© 2026 AIIMS Arabia</p>';
+/* =========================================================
+           Contents nav - built from the sections themselves, so the
+           list can never drift out of sync with the document.
+           ========================================================= */
+(function () {
+    'use strict';
+
+    const sections = Array.from(document.querySelectorAll('main section[id]'));
+    const lists = document.querySelectorAll('[data-toc], [data-toc-mobile]');
+    if (!sections.length || !lists.length) return;
+
+    const entries = sections.map((section, i) => {
+        const heading = section.querySelector('h2');
+        const number = String(i + 1).padStart(2, '0');
+        // Heading text minus its leading clause number
+        const title = heading
+            ? heading.textContent.replace(/^\s*\d+\s*/, '').trim()
+            : section.id;
+        return { id: section.id, number, title };
     });
+
+    lists.forEach((list) => {
+        const isSidebar = list.hasAttribute('data-toc');
+        list.innerHTML = entries.map((e) => `
+                    <li>
+                        <a href="#${e.id}"
+                           data-toc-for="${e.id}"
+                           class="toc-link block py-1.5 ${isSidebar ? 'pl-3' : 'pl-0'} hover:text-emerald-700">
+                            <span class="tabular-nums text-gray-400 mr-2">${e.number}</span>${e.title}
+                        </a>
+                    </li>`).join('');
+    });
+
+    const links = Array.from(document.querySelectorAll('[data-toc-for]'));
+    const setActive = (id) => {
+        links.forEach((link) => {
+            link.setAttribute('aria-current', link.dataset.tocFor === id ? 'true' : 'false');
+        });
+    };
+
+    // Highlight whichever section the reader is currently in
+    let active = null;
+    const observer = new IntersectionObserver((records) => {
+        const visible = records
+            .filter((r) => r.isIntersecting)
+            .sort((a, b) => a.target.offsetTop - b.target.offsetTop)[0];
+        if (visible && visible.target.id !== active) {
+            active = visible.target.id;
+            setActive(active);
+        }
+    }, { rootMargin: '-120px 0px -70% 0px', threshold: 0 });
+
+    sections.forEach((section) => observer.observe(section));
+})();
