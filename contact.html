@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIIMS - Growing Tomorrow Today</title>
+
+    <!-- Tailwind + Google Fonts + Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/output.css" />
+</head>
+
+<body>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <div id="navbar"></div>
+    <!-- ============================================================ HERO
+    ============================================================ -->
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden pt-16 md:pt-20 group">
+
+        <!-- Background image with zoom -->
+        <div class="absolute inset-0 z-0 overflow-hidden transition-transform duration-[3000ms] group-hover:scale-105">
+            <img src="./assets/A4.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover" />
+            <!-- Gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+            <!-- Subtle pattern -->
+            <div
+                class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] bg-repeat">
+            </div>
+        </div>
+
+        <!-- Decorative blurred circle -->
+        <div class="absolute top-20 right-20 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Left Text -->
+                <div class="space-y-6 transition-all duration-700 group-hover:translate-y-[-4px]">
+                    <!-- Breadcrumb -->
+                    <nav class="text-sm text-white/70 hover:text-white/90 transition-colors">
+                        <a href="index.html" class="hover:text-white">Home</a>
+                        <span class="mx-2 text-white/40">/</span>
+                        <span class="text-white font-medium">Contact Us</span>
+                    </nav>
+
+                    <!-- Badge with ping -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white text-xs font-semibold px-4 py-2 rounded-full border border-white/20">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        </span>
+                        Vision 2030 · Food Security
+                    </div>
+
+                    <!-- Heading -->
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
+                        Get in <span
+                            class="bg-gradient-to-r from-emerald-300 to-green-400 bg-clip-text text-transparent">Touch</span>
+                    </h1>
+
+                    <p
+                        class="text-lg text-white/80 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1">
+                        Have a project in mind? Reach out to our team for a free consultation.
+                    </p>
+
+                    <!-- Button -->
+                    <a href="#contact"
+                        class="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-4 rounded-full shadow-2xl shadow-emerald-500/40 hover:shadow-emerald-500/70 transition-all duration-300 hover:scale-105">
+                        <i class="fas fa-paper-plane"></i> Send a Message
+                    </a>
+                </div>
+
+                <!-- Right Floating Image (optional) -->
+                <div class="hidden lg:flex justify-center">
+                    <img src="./assets/A4.jpg" alt="Greenhouse"
+                        class="w-full max-w-md rounded-2xl shadow-2xl rotate-3 group-hover:rotate-0 transition-all duration-700" />
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-white/40 animate-bounce">
+            <span class="text-xs font-medium uppercase tracking-widest">Scroll</span>
+            <i class="fas fa-chevron-down text-sm"></i>
+        </div>
+
+    </section>
+
+    <section id="contact-info" class="py-20 md:py-28 bg-paper relative overflow-hidden">
+        <!-- Decorative leaf -->
+        <div class="absolute top-20 left-10 text-7xl opacity-5 pointer-events-none select-none animate-pulse"
+            style="transform: rotate(-15deg);">📬</div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-14 animate-[fade-up_0.8s_ease-out]">
+                <div
+                    class="inline-flex items-center gap-2 text-pine-700 font-semibold text-sm bg-pine-100 px-4 py-1.5 rounded-full mb-4">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-ink">
+                    Let's Build <span class="text-pine-700">Together</span>
+                </h2>
+                <p class="text-ink-soft mt-3 text-base md:text-lg">
+                    Have a project in mind? Reach out to our team for a free consultation.
+                </p>
+            </div>
+
+            <!-- Three Contact Cards (Email, Phone, Location) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <!-- Email Card -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg shadow-gray-200/50 p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-pine-500/20 hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.2s]">
+                    <div
+                        class="w-16 h-16 rounded-full bg-pine-100 mx-auto flex items-center justify-center text-pine-700 text-2xl mb-4 transition-transform duration-300 hover:scale-110 hover:rotate-12">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-ink-soft uppercase tracking-wider mb-2">Email</h3>
+                    <p class="text-ink font-medium transition-colors duration-300 hover:text-pine-700"><a
+                            href="mailto:info@aiimsgrowingtomorrowtoday.sa"
+                            class="text-ink hover:text-pine-700">info@aiimsgrowingtomorrowtoday.sa</a></p>
+                </div>
+
+                <!-- Phone Card -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg shadow-gray-200/50 p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-pine-500/20 hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.4s]">
+                    <div
+                        class="w-16 h-16 rounded-full bg-pine-100 mx-auto flex items-center justify-center text-pine-700 text-2xl mb-4 transition-transform duration-300 hover:scale-110 hover:rotate-12">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-ink-soft uppercase tracking-wider mb-2">Phone</h3>
+                    <p class="text-ink font-medium transition-colors duration-300 hover:text-pine-700"><a
+                            href="tel:+966500000000" class="text-ink hover:text-pine-700">+966 50 000 0000</a></p>
+                </div>
+
+                <!-- Location Card -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg shadow-gray-200/50 p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-pine-500/20 hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.6s]">
+                    <div
+                        class="w-16 h-16 rounded-full bg-pine-100 mx-auto flex items-center justify-center text-pine-700 text-2xl mb-4 transition-transform duration-300 hover:scale-110 hover:rotate-12">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-sm font-semibold text-ink-soft uppercase tracking-wider mb-2">Location</h3>
+                    <p class="text-ink font-medium transition-colors duration-300 hover:text-pine-700">Al-Badayea,
+                        Qassim Region, KSA</p>
+                </div>
+            </div>
+
+            <!-- Form + Map -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 animate-[fade-up_0.8s_ease-out] [animation-delay:0.8s]">
+                <!-- Form -->
+                <div
+                    class="bg-white rounded-3xl p-8 md:p-10 shadow-xl shadow-gray-200/30 border border-gray-100/80 transition-all duration-500 hover:shadow-2xl hover:shadow-pine-500/10">
+                    <h3 class="text-2xl font-bold text-ink mb-6">Send a Message</h3>
+                    <form class="space-y-5"
+                        onsubmit="event.preventDefault(); alert('Thank you for reaching out! We\'ll get back to you within 24 hours.');">
+                        <div>
+                            <label class="block text-sm font-medium text-ink-soft mb-1.5">Full Name</label>
+                            <input type="text" required placeholder="Your Name"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-paper/60 focus:ring-2 focus:ring-pine-500 focus:border-pine-500 outline-none transition-all duration-300 text-ink hover:border-pine-300 text-sm" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-ink-soft mb-1.5">Email Address</label>
+                            <input type="email" required placeholder="Your Email"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-paper/60 focus:ring-2 focus:ring-pine-500 focus:border-pine-500 outline-none transition-all duration-300 text-ink hover:border-pine-300 text-sm" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-ink-soft mb-1.5">Phone Number</label>
+                            <input type="tel" required placeholder="Your Phone Number"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-paper/60 focus:ring-2 focus:ring-pine-500 focus:border-pine-500 outline-none transition-all duration-300 text-ink hover:border-pine-300 text-sm" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-ink-soft mb-1.5">Your Message</label>
+                            <textarea rows="3" required
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-paper/60 focus:ring-2 focus:ring-pine-500 focus:border-pine-500 outline-none transition-all duration-300 text-ink resize-none hover:border-pine-300"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-56 bg-pine-700 hover:bg-pine-800 text-white font-semibold py-3.5 rounded-xl transition-all duration-300 shadow-lg shadow-pine-500/30 hover:shadow-pine-500/50 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2.5 text-base">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Map iframe -->
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-xl shadow-gray-200/30 border border-gray-100/80 h-[400px] lg:h-auto min-h-[350px] transition-all duration-500 hover:shadow-2xl hover:shadow-pine-500/10">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.456!2d43.984939!3d26.334452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDIwJzA0LjAiTiA0M8KwNTknMDUuOCJF!5e0!3m2!1sen!2ssa!4v1699999999999"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
