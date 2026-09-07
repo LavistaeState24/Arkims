@@ -267,3 +267,77 @@
      pointer-events: none;
      user-select: none;
  }
+
+
+ /* navbar css */
+
+ .nav-link {
+     @apply text-gray-700 hover:text-emerald-700 transition-colors duration-200 whitespace-nowrap;
+ }
+
+ .dropdown-link {
+     @apply block px-3 py-2.5 rounded-lg text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 transition-all duration-200;
+ }
+
+ /* Accordion rows in the tablet/mobile menu: drop the native
+    disclosure triangle so the chevron icon is the only marker.
+    Tailwind's list-none covers Chrome/Firefox; Safari needs this. */
+ .mobile-nav-parent::-webkit-details-marker {
+     display: none;
+ }
+
+ /* privacy policy styles */
+ /* Active state for the on-page contents nav */
+ .toc-link {
+     border-left: 2px solid transparent;
+     transition: color .2s, border-color .2s;
+ }
+
+ .toc-link[aria-current="true"] {
+     color: #047857;
+     border-left-color: #059669;
+     font-weight: 600;
+ }
+
+ /* Legal body copy: comfortable measure */
+ .legal-copy {
+     max-width: 65ch;
+ }
+
+ /* Visible keyboard focus */
+ a:focus-visible,
+ summary:focus-visible {
+     outline: 2px solid #059669;
+     outline-offset: 3px;
+     border-radius: 4px;
+ }
+
+ @media (prefers-reduced-motion: reduce) {
+     * {
+         animation: none !important;
+         transition: none !important;
+         scroll-behavior: auto !important;
+     }
+ }
+
+ /* A privacy policy is a document people print and file. */
+ @media print {
+
+     #navbar,
+     #footer-container,
+     .no-print {
+         display: none !important;
+     }
+
+     .legal-copy {
+         max-width: none;
+     }
+
+     body {
+         background: #fff;
+     }
+
+     section {
+         break-inside: avoid;
+     }
+ }
