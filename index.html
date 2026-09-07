@@ -4,19 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenTech Arabia – Saudi Greenhouse Agriculture</title>
+    <title>AIIMS - Growing Tomorrow Today</title>
 
     <!-- Tailwind + Google Fonts + Font Awesome -->
-    <script src="https://cdn.tailwindcss.com">
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./css/output.css" />
 </head>
 
 <body>
@@ -34,8 +30,7 @@
                         class="w-9 h-9 md:w-11 md:h-11 rounded-xl bg-gradient-to-br from-emerald-600 to-green-400 flex items-center justify-center text-white text-lg shadow-lg shadow-emerald-500/30">
                         <i class="fas fa-leaf"></i>
                     </span>
-                    <span class="gradient-text">GreenTech</span>
-                    <span class="text-gray-700 font-medium">Arabia</span>
+                    <span class="text-green-400 px-2 py-1 rounded-lg">Aiims</span>
                 </a>
 
                 <!-- Desktop Nav -->
@@ -95,30 +90,18 @@
             </div>
     </nav>
 
-    <!-- ============================================================
-    HERO
+    <!-- ============================================================ HERO
     ============================================================ -->
     <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-20">
 
         <!-- Background Video -->
         <div class="absolute inset-0 z-0 overflow-hidden">
 
-            <video src="https://www.pexels.com/download/video/8784699/"
-                class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto">
-            </video>
+            <img src="./assets/hero2.jpg" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover" />
 
             <!-- Black Overlay -->
-            <div class="absolute inset-0 bg-black/45"></div>
+            <div class="absolute inset-0 bg-black/40"></div>
 
-        </div>
-
-        <!-- Animated leaf decorations -->
-        <div class="leaf-bg top-10 left-10 rotate-12" style="font-size:6rem; opacity:0.06;">
-            🌿
-        </div>
-
-        <div class="leaf-bg bottom-20 right-10 -rotate-6" style="font-size:5rem; opacity:0.05;">
-            🌱
         </div>
 
 
@@ -273,10 +256,10 @@ ABOUT
                 <div class="relative reveal">
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-emerald-900/10">
                         <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80"
-                         class="w-full h-auto object-cover img-zoom" />
+                            class="w-full h-auto object-cover img-zoom" />
                         <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
                             <p class="text-white font-semibold text-lg">Al Rawda Factory · Qassim</p>
-                            <p class="text-white/70 text-sm">Est. 1988 · 35+ Years of Excellence</p>
+                            <p class="text-white text-sm">Est. 1988 · 35+ Years of Excellence</p>
                         </div>
                     </div>
                     <!-- floating badge -->
@@ -300,7 +283,7 @@ ABOUT
                         Pioneering <span class="gradient-text">Greenhouse</span> Agriculture in Saudi Arabia
                     </h2>
                     <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                        GreenTech Arabia is the Kingdom's first specialized greenhouse manufacturer, combining
+                        AIIMS Arabia is the Kingdom's first specialized greenhouse manufacturer, combining
                         <strong>35+ years of local expertise</strong> with cutting-edge Dutch technology.
                         From plastic tunnels to fully automated glass hydroponic farms, we deliver
                         <strong>turnkey solutions</strong> that align with Vision 2030.
@@ -992,93 +975,9 @@ CONTACT
         </div>
     </section>
 
-    <!-- ============================================================
-FOOTER
-============================================================ -->
-    <footer class="bg-gray-900 text-white/80 pt-16 pb-8 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12 border-b border-white/5">
+    <div id="footer-container"></div>
 
-                <div class="col-span-2 md:col-span-1">
-                    <a href="#" class="flex items-center gap-2.5 text-xl font-bold">
-                        <span
-                            class="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-600 to-green-400 flex items-center justify-center text-white shadow-lg shadow-emerald-500/30">
-                            <i class="fas fa-leaf"></i>
-                        </span>
-                        <span class="gradient-text">GreenTech</span>
-                        <span class="text-white/60 font-medium">Arabia</span>
-                    </a>
-                    <p class="text-sm text-white/50 mt-4 max-w-xs leading-relaxed">
-                        Pioneering greenhouse agriculture in Saudi Arabia with high-tech solutions,
-                        Dutch partnerships, and a commitment to Vision 2030.
-                    </p>
-                    <div class="flex gap-3 mt-4">
-                        <a href="#"
-                            class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all"><i
-                                class="fab fa-instagram text-sm"></i></a>
-                        <a href="#"
-                            class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all"><i
-                                class="fab fa-facebook text-sm"></i></a>
-                        <a href="#"
-                            class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all"><i
-                                class="fab fa-linkedin-in text-sm"></i></a>
-                        <a href="#"
-                            class="w-9 h-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all"><i
-                                class="fab fa-youtube text-sm"></i></a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
-                    <ul class="space-y-2.5 text-sm">
-                        <li><a href="#home" class="hover:text-emerald-400 transition-all">Home</a></li>
-                        <li><a href="#about" class="hover:text-emerald-400 transition-all">About Us</a></li>
-                        <li><a href="#products" class="hover:text-emerald-400 transition-all">Products</a></li>
-                        <li><a href="#services" class="hover:text-emerald-400 transition-all">Services</a></li>
-                        <li><a href="#projects" class="hover:text-emerald-400 transition-all">Projects</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Solutions</h4>
-                    <ul class="space-y-2.5 text-sm">
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Plastic Greenhouses</a></li>
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Polycarbonate & A.C.</a></li>
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Glass Hydroponic</a></li>
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Climate Control</a></li>
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Turnkey Projects</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Support</h4>
-                    <ul class="space-y-2.5 text-sm">
-                        <li><a href="#contact" class="hover:text-emerald-400 transition-all">Contact Us</a></li>
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Terms & Conditions</a></li>
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Sitemap</a></li>
-                        <li><a href="#" class="hover:text-emerald-400 transition-all">Careers</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 text-sm text-white/40">
-                <p>&copy; 2026 GreenTech Arabia. All rights reserved.</p>
-                <div class="flex items-center gap-4">
-                    <span>🇸🇦 Made in Saudi Arabia</span>
-                    <span class="w-1 h-1 rounded-full bg-white/20"></span>
-                    <span>Built with <i class="fas fa-heart text-emerald-400 text-xs"></i> & AI</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ============================================================
-JAVASCRIPT
-============================================================ -->
-
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 
