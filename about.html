@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About AIIMS - Growing Tomorrow Today</title>
+    <meta name="description"
+        content="AIIMS Arabia — the Kingdom's first specialised greenhouse manufacturer. Our story, mission, leadership team and certifications." />
+
+    <!-- Tailwind + Google Fonts + Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/output.css" />
+</head>
+
+<body class="bg-white text-gray-900 antialiased selection:bg-emerald-200 selection:text-emerald-950">
+
+    <!-- NAVIGATION (injected by js/script.js) -->
+    <div id="navbar"></div>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <section class="relative min-h-[88vh] flex items-center overflow-hidden pt-16 md:pt-20">
+
+        <!-- Background image (parallax) -->
+        <div class="absolute inset-0 z-0">
+            <img src="./assets/A3.jpg" alt="AIIMS greenhouse facility in Qassim" data-parallax
+                data-parallax-speed="0.18" class="absolute inset-x-0 top-[-10%] h-[120%] w-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-tr from-emerald-950/90 via-emerald-950/55 to-emerald-950/10"></div>
+            <div
+                class="absolute inset-0 bg-[radial-gradient(55rem_35rem_at_15%_0%,rgba(16,185,129,0.28),transparent),radial-gradient(45rem_30rem_at_100%_100%,rgba(5,150,105,0.22),transparent)]">
+            </div>
+        </div>
+
+        <!-- Soft orb (parallax) -->
+        <div data-parallax data-parallax-speed="-0.12"
+            class="pointer-events-none absolute -top-32 right-0 h-[34rem] w-[34rem] rounded-full bg-emerald-400/20 blur-3xl animate-pulse"></div>
+
+        <div class="relative mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+            <div class="max-w-3xl">
+
+                <nav data-reveal
+                    class="mb-6 translate-y-4 text-sm text-white/70 opacity-0 transition-all duration-700 ease-out motion-reduce:transition-none">
+                    <a href="index.html" class="transition-colors hover:text-white">Home</a>
+                    <span class="mx-2 text-white/40">/</span>
+                    <span class="font-medium text-white">About Us</span>
+                </nav>
+
+                <div data-reveal data-reveal-delay="90"
+                    class="inline-flex translate-y-6 items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold text-white/90 opacity-0 backdrop-blur-sm transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none md:text-sm">
+                    <span class="h-2 w-2 animate-pulse rounded-full bg-emerald-400"></span>
+                    Building the Kingdom's greenhouses since 1988
+                </div>
+
+                <h1 data-reveal data-reveal-delay="200"
+                    class="mt-6 translate-y-8 text-4xl font-extrabold leading-[1.08] text-white opacity-0 blur-sm transition-all duration-1000 ease-out will-change-transform motion-reduce:transition-none sm:text-5xl md:text-6xl">
+                    We grow the systems that
+                    <span class="bg-gradient-to-r from-emerald-300 via-green-200 to-emerald-300 bg-clip-text text-transparent">grow
+                        Saudi Arabia's food</span>
+                </h1>
+
+                <p data-reveal data-reveal-delay="340"
+                    class="mt-6 max-w-xl translate-y-8 text-base leading-relaxed text-white/80 opacity-0 transition-all duration-1000 ease-out will-change-transform motion-reduce:transition-none md:text-lg">
+                    From a single plastic-tunnel workshop in Qassim to fully automated glass hydroponic
+                    farms across the Kingdom — three and a half decades of local engineering, matched
+                    with Dutch horticultural technology.
+                </p>
+
+                <dl data-reveal data-reveal-delay="480"
+                    class="mt-10 grid translate-y-8 grid-cols-2 gap-6 border-t border-white/15 pt-10 opacity-0 transition-all duration-1000 ease-out will-change-transform motion-reduce:transition-none sm:grid-cols-4">
+                    <div>
+                        <dt class="text-3xl font-extrabold text-white md:text-4xl">1988</dt>
+                        <dd class="mt-1 text-xs text-white/70">Year founded</dd>
+                    </div>
+                    <div>
+                        <dt data-count class="text-3xl font-extrabold text-white md:text-4xl">35+</dt>
+                        <dd class="mt-1 text-xs text-white/70">Years in operation</dd>
+                    </div>
+                    <div>
+                        <dt data-count class="text-3xl font-extrabold text-white md:text-4xl">120+</dt>
+                        <dd class="mt-1 text-xs text-white/70">Hectares delivered</dd>
+                    </div>
+                    <div>
+                        <dt data-count class="text-3xl font-extrabold text-white md:text-4xl">6</dt>
+                        <dd class="mt-1 text-xs text-white/70">Dutch technology partners</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-1.5 text-white/40">
+            <span class="text-xs font-medium uppercase tracking-widest">Our story</span>
+            <i class="fas fa-chevron-down animate-bounce text-sm"></i>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    OUR STORY — sticky intro + scroll-driven timeline
+    TODO(content): swap milestone copy for the confirmed company history.
+    ============================================================ -->
+    <section id="story" class="relative scroll-mt-24 overflow-hidden bg-white py-20 md:py-28">
+        <span aria-hidden="true" data-parallax data-parallax-speed="0.1"
+            class="pointer-events-none absolute right-6 top-12 select-none text-[9rem] opacity-[0.05]">🌿</span>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:gap-20">
+
+                <div class="lg:sticky lg:top-28 lg:self-start">
+                    <div data-reveal
+                        class="inline-flex -translate-x-8 items-center gap-2 rounded-full bg-emerald-50 px-4 py-1.5 text-sm font-semibold text-emerald-600 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                        <i class="fas fa-seedling"></i> Our Story
+                    </div>
+                    <h2 data-reveal data-reveal-delay="80"
+                        class="mt-4 translate-y-6 text-3xl font-extrabold leading-tight text-gray-900 opacity-0 blur-sm transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none md:text-4xl">
+                        From one workshop to the Kingdom's greenhouse standard
+                    </h2>
+                    <p data-reveal data-reveal-delay="160"
+                        class="mt-4 max-w-[60ch] translate-y-6 leading-relaxed text-gray-600 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                        AIIMS Arabia began with a simple conviction: that Saudi Arabia could grow its own
+                        food, year-round, in the desert — if the structures were engineered for this
+                        climate rather than imported for another one. Every milestone since has been a
+                        step toward that.
+                    </p>
+                </div>
+
+                <!-- Timeline: [data-timeline] wrapper drives the fill height -->
+                <div data-timeline class="relative">
+                    <span aria-hidden="true" class="absolute left-2 top-1 h-full w-px bg-emerald-100"></span>
+                    <span aria-hidden="true" data-timeline-fill style="height:0%"
+                        class="absolute left-2 top-1 w-px bg-gradient-to-b from-emerald-500 to-green-400"></span>
+
+                    <ol class="space-y-12">
+                        <li data-reveal
+                            class="relative translate-y-8 pl-10 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span aria-hidden="true"
+                                data-timeline-dot
+                                class="absolute left-0 top-1 h-4 w-4 rounded-full border-2 border-emerald-500 bg-white transition duration-300 will-change-transform"></span>
+                            <p class="text-sm font-bold text-emerald-600">1988</p>
+                            <h3 class="mt-1 text-lg font-bold text-gray-900">Founded in Qassim</h3>
+                            <p class="mt-2 max-w-[62ch] leading-relaxed text-gray-600">
+                                The Al Rawda Factory opens as a small fabricator of arched plastic and
+                                shade-net greenhouses for local growers in the Qassim region.
+                            </p>
+                        </li>
+
+                        <li data-reveal
+                            class="relative translate-y-8 pl-10 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span aria-hidden="true"
+                                data-timeline-dot
+                                class="absolute left-0 top-1 h-4 w-4 rounded-full border-2 border-emerald-500 bg-white transition duration-300 will-change-transform"></span>
+                            <p class="text-sm font-bold text-emerald-600">1999</p>
+                            <h3 class="mt-1 text-lg font-bold text-gray-900">First climate-controlled builds</h3>
+                            <p class="mt-2 max-w-[62ch] leading-relaxed text-gray-600">
+                                Fan-and-pad cooling and polycarbonate cladding are added to the product
+                                line, extending the growing season through the Kingdom's summer.
+                            </p>
+                        </li>
+
+                        <li data-reveal
+                            class="relative translate-y-8 pl-10 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span aria-hidden="true"
+                                data-timeline-dot
+                                class="absolute left-0 top-1 h-4 w-4 rounded-full border-2 border-emerald-500 bg-white transition duration-300 will-change-transform"></span>
+                            <p class="text-sm font-bold text-emerald-600">2011</p>
+                            <h3 class="mt-1 text-lg font-bold text-gray-900">Dutch technology partnerships</h3>
+                            <p class="mt-2 max-w-[62ch] leading-relaxed text-gray-600">
+                                Exclusive supply agreements with Prins Group, Stolze, Hoogendoorn and KUBO
+                                bring fully automated glasshouse and hydroponic systems to Saudi projects.
+                            </p>
+                        </li>
+
+                        <li data-reveal
+                            class="relative translate-y-8 pl-10 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span aria-hidden="true"
+                                data-timeline-dot
+                                class="absolute left-0 top-1 h-4 w-4 rounded-full border-2 border-emerald-500 bg-white transition duration-300 will-change-transform"></span>
+                            <p class="text-sm font-bold text-emerald-600">2018</p>
+                            <h3 class="mt-1 text-lg font-bold text-gray-900">ISO 9001 &amp; 14001 certified</h3>
+                            <p class="mt-2 max-w-[62ch] leading-relaxed text-gray-600">
+                                Quality and environmental management systems are independently audited and
+                                certified, formalising three decades of build practice.
+                            </p>
+                        </li>
+
+                        <li data-reveal
+                            class="relative translate-y-8 pl-10 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span aria-hidden="true"
+                                data-timeline-dot
+                                class="absolute left-0 top-1 h-4 w-4 rounded-full border-2 border-emerald-500 bg-white transition duration-300 will-change-transform"></span>
+                            <p class="text-sm font-bold text-emerald-600">2021</p>
+                            <h3 class="mt-1 text-lg font-bold text-gray-900">Aligned to Vision 2030</h3>
+                            <p class="mt-2 max-w-[62ch] leading-relaxed text-gray-600">
+                                AIIMS is engaged on national food-security programmes, delivering turnkey
+                                hydroponic farms producing 135+ tons per day at 70% less water use.
+                            </p>
+                        </li>
+
+                        <li data-reveal
+                            class="relative translate-y-8 pl-10 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span aria-hidden="true"
+                                class="absolute left-0 top-1 h-4 w-4 rounded-full bg-gradient-to-br from-emerald-600 to-green-400 ring-4 ring-emerald-100"></span>
+                            <p class="text-sm font-bold text-emerald-600">Today</p>
+                            <h3 class="mt-1 text-lg font-bold text-gray-900">120+ hectares under glass and plastic</h3>
+                            <p class="mt-2 max-w-[62ch] leading-relaxed text-gray-600">
+                                A single accountable partner for design, engineering, construction,
+                                training and after-sales support — anywhere in the Kingdom.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    MISSION & VISION
+    TODO(content): replace with the approved mission & vision statements.
+    ============================================================ -->
+    <section id="mission"
+        class="relative scroll-mt-24 overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-800 py-20 text-white md:py-28">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(40rem_25rem_at_10%_10%,rgba(16,185,129,0.25),transparent),radial-gradient(40rem_25rem_at_100%_100%,rgba(34,197,94,0.18),transparent)]">
+        </div>
+        <span aria-hidden="true" data-parallax data-parallax-speed="-0.1"
+            class="pointer-events-none absolute right-8 top-10 select-none text-[9rem] opacity-[0.06]">🌱</span>
+
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-10 md:grid-cols-2 lg:gap-16">
+
+                <div data-reveal
+                    class="-translate-x-10 opacity-0 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/15 bg-white/10 text-2xl text-emerald-300">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2 class="mt-5 text-2xl font-extrabold md:text-3xl">Our mission</h2>
+                    <p class="mt-4 max-w-[52ch] text-lg leading-relaxed text-white/75">
+                        To make year-round, water-efficient food production practical anywhere in Saudi
+                        Arabia — by engineering greenhouses for this climate and standing behind them
+                        for their full working life.
+                    </p>
+                </div>
+
+                <div data-reveal data-reveal-delay="140"
+                    class="translate-x-10 opacity-0 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/15 bg-white/10 text-2xl text-emerald-300">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2 class="mt-5 text-2xl font-extrabold md:text-3xl">Our vision</h2>
+                    <p class="mt-4 max-w-[52ch] text-lg leading-relaxed text-white/75">
+                        A Kingdom that grows a decisive share of its own fresh produce — with AIIMS
+                        greenhouses as the infrastructure behind it, and Saudi technicians running them.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    VALUES — bento grid, gradient-border cards
+    TODO(content): confirm the final list of values and their wording.
+    ============================================================ -->
+    <section id="values" class="relative scroll-mt-24 overflow-hidden bg-gray-50 py-20 md:py-28">
+        <span aria-hidden="true" data-parallax data-parallax-speed="-0.08"
+            class="pointer-events-none absolute left-6 top-20 select-none text-[7rem] opacity-[0.04]">🌾</span>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div data-reveal
+                class="max-w-2xl translate-y-6 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                <div class="inline-flex items-center gap-2 rounded-full bg-emerald-100/60 px-4 py-1.5 text-sm font-semibold text-emerald-600">
+                    <i class="fas fa-heart"></i> What we stand for
+                </div>
+                <h2 class="mt-4 text-3xl font-extrabold text-gray-900 md:text-4xl">Values we build by</h2>
+                <p class="mt-3 text-base text-gray-500 md:text-lg">
+                    Five commitments that decide how we quote, build and support every project.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <div data-reveal
+                    class="group translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none sm:col-span-2 lg:col-span-1">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-white p-7 shadow-lg shadow-gray-200/50 transition-shadow duration-300 group-hover:shadow-2xl group-hover:shadow-emerald-900/10">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-600">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">Engineered for here</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-gray-500">
+                            Every structure is specified for Saudi heat, wind and water — not adapted
+                            from a European catalogue.
+                        </p>
+                    </div>
+                </div>
+
+                <div data-reveal data-reveal-delay="80"
+                    class="group translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-white p-7 shadow-lg shadow-gray-200/50 transition-shadow duration-300 group-hover:shadow-2xl group-hover:shadow-emerald-900/10">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-600">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">Water as the metric</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-gray-500">
+                            We design to litres-per-kilogram of yield. Cutting water use is the point,
+                            not a side effect.
+                        </p>
+                    </div>
+                </div>
+
+                <div data-reveal data-reveal-delay="160"
+                    class="group translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-white p-7 shadow-lg shadow-gray-200/50 transition-shadow duration-300 group-hover:shadow-2xl group-hover:shadow-emerald-900/10">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-600">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">Handover means capable</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-gray-500">
+                            A project is done when your team can run the greenhouse without us —
+                            training is part of the build, not an upsell.
+                        </p>
+                    </div>
+                </div>
+
+                <div data-reveal data-reveal-delay="80"
+                    class="group translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-white p-7 shadow-lg shadow-gray-200/50 transition-shadow duration-300 group-hover:shadow-2xl group-hover:shadow-emerald-900/10">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-600">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">One accountable partner</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-gray-500">
+                            Design, steel, glazing, climate systems and service sit with AIIMS. No gaps
+                            between subcontractors to fall through.
+                        </p>
+                    </div>
+                </div>
+
+                <div data-reveal data-reveal-delay="160"
+                    class="group translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none sm:col-span-2 lg:col-span-1">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-white p-7 shadow-lg shadow-gray-200/50 transition-shadow duration-300 group-hover:shadow-2xl group-hover:shadow-emerald-900/10">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-600">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">Built to be repaired</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-gray-500">
+                            Standard parts, documented systems and local stock — so a greenhouse stays
+                            productive for 20+ years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY CHOOSE US
+    ============================================================ -->
+    <section id="why" class="relative scroll-mt-24 overflow-hidden bg-white py-20 md:py-28">
+        <span aria-hidden="true" data-parallax data-parallax-speed="0.14"
+            class="pointer-events-none absolute -right-4 top-10 select-none text-[10rem] font-black text-emerald-950/[0.04]">01</span>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid items-center gap-14 lg:grid-cols-2">
+
+                <div data-reveal
+                    class="relative -translate-x-10 opacity-0 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none">
+                    <div class="overflow-hidden rounded-3xl shadow-2xl shadow-emerald-900/10">
+                        <img src="./assets/A4.jpg" alt="AIIMS project team on site"
+                            class="h-full w-full object-cover transition-transform duration-700 ease-out hover:scale-105" />
+                    </div>
+                    <div class="absolute -bottom-5 -right-5 flex items-center gap-3 rounded-2xl bg-emerald-600 px-5 py-3 text-white shadow-xl">
+                        <i class="fas fa-award text-2xl"></i>
+                        <div>
+                            <p class="text-sm font-bold">35+ years</p>
+                            <p class="text-xs text-emerald-200">of build record</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div data-reveal
+                        class="inline-flex translate-x-8 items-center gap-2 rounded-full bg-emerald-50 px-4 py-1.5 text-sm font-semibold text-emerald-600 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                        <i class="fas fa-circle-check"></i> Why choose AIIMS
+                    </div>
+                    <h2 data-reveal data-reveal-delay="80"
+                        class="mt-4 translate-y-6 text-3xl font-extrabold leading-tight text-gray-900 opacity-0 blur-sm transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none md:text-4xl">
+                        The reasons clients give when they come back
+                    </h2>
+
+                    <ul class="mt-8 space-y-6">
+                        <li data-reveal data-reveal-delay="120"
+                            class="flex translate-x-8 gap-4 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
+                                <i class="fas fa-industry"></i>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-900">We manufacture, not just resell</p>
+                                <p class="mt-1 text-sm leading-relaxed text-gray-500">
+                                    The Al Rawda Factory fabricates the structure, so lead times,
+                                    tolerances and repairs stay under our control.
+                                </p>
+                            </div>
+                        </li>
+                        <li data-reveal data-reveal-delay="200"
+                            class="flex translate-x-8 gap-4 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
+                                <i class="fas fa-handshake"></i>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Direct Dutch technology access</p>
+                                <p class="mt-1 text-sm leading-relaxed text-gray-500">
+                                    Exclusive partnerships with Prins Group, Stolze, Hoogendoorn and
+                                    KUBO — specified and commissioned locally.
+                                </p>
+                            </div>
+                        </li>
+                        <li data-reveal data-reveal-delay="280"
+                            class="flex translate-x-8 gap-4 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
+                                <i class="fas fa-location-dot"></i>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Service teams inside the Kingdom</p>
+                                <p class="mt-1 text-sm leading-relaxed text-gray-500">
+                                    Spare parts stocked in Qassim and technicians who can be on your
+                                    site, not on a flight.
+                                </p>
+                            </div>
+                        </li>
+                        <li data-reveal data-reveal-delay="360"
+                            class="flex translate-x-8 gap-4 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
+                                <i class="fas fa-file-signature"></i>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-900">One contract, start to finish</p>
+                                <p class="mt-1 text-sm leading-relaxed text-gray-500">
+                                    Feasibility, design, construction, training and maintenance under a
+                                    single scope and a single point of contact.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS — vertical scroll drives a horizontal track.
+    Driven by initHorizontalScroll() in js/script.js via data-* hooks
+    (no custom CSS classes). Falls back to a wrapped grid when the
+    track fits, on small screens, or under prefers-reduced-motion.
+    TODO(content): replace with approved client quotes, names, roles
+    and company logos / photos.
+    ============================================================ -->
+    <section id="testimonials" data-hscroll-section class="relative scroll-mt-24 bg-gray-50">
+
+        <div class="mx-auto max-w-7xl px-4 pt-20 sm:px-6 md:pt-28 lg:px-8">
+            <div data-reveal
+                class="max-w-2xl translate-y-6 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                <div class="inline-flex items-center gap-2 rounded-full bg-emerald-100/60 px-4 py-1.5 text-sm font-semibold text-emerald-600">
+                    <i class="fas fa-quote-right"></i> Testimonials
+                </div>
+                <h2 class="mt-4 text-3xl font-extrabold text-gray-900 md:text-4xl">
+                    What clients say after the build
+                </h2>
+                <p class="mt-3 text-base text-gray-500 md:text-lg">
+                    Operators, growers and investors who run AIIMS greenhouses across the Kingdom.
+                    <span class="hidden md:inline">Keep scrolling to read more.</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Pinned viewport -->
+        <div data-hscroll-pin class="sticky top-0 flex h-screen items-center overflow-hidden">
+
+            <!-- Horizontal track (translated on scroll) -->
+            <ol data-hscroll
+                class="flex w-max flex-nowrap items-stretch gap-6 px-4 will-change-transform sm:px-6 lg:px-8">
+
+                <li data-hscroll-card
+                    class="group flex w-[80vw] shrink-0 scale-95 flex-col justify-between rounded-3xl border border-gray-100 bg-white p-8 opacity-60 shadow-xl shadow-gray-300/50 grayscale transition duration-500 ease-out will-change-transform sm:w-[420px]">
+                    <div>
+                        <div class="flex gap-1 text-emerald-500" aria-label="Rated 5 out of 5">
+                            <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+                        </div>
+                        <i class="fas fa-quote-left mt-5 text-2xl text-emerald-200"></i>
+                        <blockquote class="mt-3 text-lg font-medium leading-relaxed text-gray-800">
+                            AIIMS handled everything from the feasibility study to training our operators.
+                            Two seasons in, cucumber yield is up 40% and water use is down by more than half.
+                        </blockquote>
+                    </div>
+                    <figcaption class="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80"
+                            alt="" class="h-12 w-12 rounded-full object-cover" />
+                        <div>
+                            <p class="font-semibold text-gray-900">Khalid Al-Otaibi</p>
+                            <p class="text-sm text-gray-500">Operations Director, Wadi Greens</p>
+                        </div>
+                    </figcaption>
+                </li>
+
+                <li data-hscroll-card
+                    class="group flex w-[80vw] shrink-0 scale-95 flex-col justify-between rounded-3xl border border-gray-100 bg-white p-8 opacity-60 shadow-xl shadow-gray-300/50 grayscale transition duration-500 ease-out will-change-transform sm:w-[420px]">
+                    <div>
+                        <div class="flex gap-1 text-emerald-500" aria-label="Rated 5 out of 5">
+                            <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+                        </div>
+                        <i class="fas fa-quote-left mt-5 text-2xl text-emerald-200"></i>
+                        <blockquote class="mt-3 text-lg font-medium leading-relaxed text-gray-800">
+                            We compared four suppliers. AIIMS was the only one that specified the structure
+                            for our actual wind and heat loads instead of handing us a European template.
+                        </blockquote>
+                    </div>
+                    <figcaption class="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80"
+                            alt="" class="h-12 w-12 rounded-full object-cover" />
+                        <div>
+                            <p class="font-semibold text-gray-900">Sara Al-Dossari</p>
+                            <p class="text-sm text-gray-500">Project Manager, Najd AgriTech</p>
+                        </div>
+                    </figcaption>
+                </li>
+
+                <li data-hscroll-card
+                    class="group flex w-[80vw] shrink-0 scale-95 flex-col justify-between rounded-3xl border border-gray-100 bg-white p-8 opacity-60 shadow-xl shadow-gray-300/50 grayscale transition duration-500 ease-out will-change-transform sm:w-[420px]">
+                    <div>
+                        <div class="flex gap-1 text-emerald-500" aria-label="Rated 5 out of 5">
+                            <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+                        </div>
+                        <i class="fas fa-quote-left mt-5 text-2xl text-emerald-200"></i>
+                        <blockquote class="mt-3 text-lg font-medium leading-relaxed text-gray-800">
+                            Spare parts came from Qassim, not a six-week import. When a pad-wall pump failed
+                            in July, a technician was on site the next morning.
+                        </blockquote>
+                    </div>
+                    <figcaption class="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
+                        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200&q=80"
+                            alt="" class="h-12 w-12 rounded-full object-cover" />
+                        <div>
+                            <p class="font-semibold text-gray-900">Faisal Al-Harbi</p>
+                            <p class="text-sm text-gray-500">Farm Manager, Tabuk Fresh Produce</p>
+                        </div>
+                    </figcaption>
+                </li>
+
+                <li data-hscroll-card
+                    class="group flex w-[80vw] shrink-0 scale-95 flex-col justify-between rounded-3xl border border-gray-100 bg-white p-8 opacity-60 shadow-xl shadow-gray-300/50 grayscale transition duration-500 ease-out will-change-transform sm:w-[420px]">
+                    <div>
+                        <div class="flex gap-1 text-emerald-500" aria-label="Rated 5 out of 5">
+                            <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+                        </div>
+                        <i class="fas fa-quote-left mt-5 text-2xl text-emerald-200"></i>
+                        <blockquote class="mt-3 text-lg font-medium leading-relaxed text-gray-800">
+                            The hand-over wasn't a PDF and a handshake. Their agronomist stayed through our
+                            first full crop cycle until the team was running it alone.
+                        </blockquote>
+                    </div>
+                    <figcaption class="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80"
+                            alt="" class="h-12 w-12 rounded-full object-cover" />
+                        <div>
+                            <p class="font-semibold text-gray-900">Mona Al-Qahtani</p>
+                            <p class="text-sm text-gray-500">Head Grower, Riyadh Valley Farms</p>
+                        </div>
+                    </figcaption>
+                </li>
+
+                <li data-hscroll-card
+                    class="group flex w-[80vw] shrink-0 scale-95 flex-col justify-between rounded-3xl border border-gray-100 bg-white p-8 opacity-60 shadow-xl shadow-gray-300/50 grayscale transition duration-500 ease-out will-change-transform sm:w-[420px]">
+                    <div>
+                        <div class="flex gap-1 text-emerald-500" aria-label="Rated 5 out of 5">
+                            <i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i>
+                        </div>
+                        <i class="fas fa-quote-left mt-5 text-2xl text-emerald-200"></i>
+                        <blockquote class="mt-3 text-lg font-medium leading-relaxed text-gray-800">
+                            One contract covered design, steel, glazing and climate control. No arguments
+                            between subcontractors when something needed fixing.
+                        </blockquote>
+                    </div>
+                    <figcaption class="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
+                        <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=200&q=80"
+                            alt="" class="h-12 w-12 rounded-full object-cover" />
+                        <div>
+                            <p class="font-semibold text-gray-900">Abdullah Al-Shammari</p>
+                            <p class="text-sm text-gray-500">Investment Lead, Green Kingdom Holding</p>
+                        </div>
+                    </figcaption>
+                </li>
+
+                <li aria-hidden="true" class="w-[6vw] shrink-0"></li>
+            </ol>
+
+            <!-- Scroll progress -->
+            <span data-hscroll-progress aria-hidden="true"
+                class="pointer-events-none absolute bottom-10 left-4 right-4 mx-auto h-1 max-w-6xl origin-left scale-x-0 rounded-full bg-emerald-500/70 sm:left-6 lg:left-8"></span>
+        </div>
+
+        <div class="h-20 md:h-28"></div>
+    </section>
+
+    <!-- ============================================================
+    CERTIFICATIONS
+    TODO(content): drop certificate scans into ./assets/certs/ (image for
+    the thumbnail, PDF for the download) and update each src / href.
+    ============================================================ -->
+    <section id="certifications" class="relative scroll-mt-24 overflow-hidden bg-white py-20 md:py-28">
+        <span aria-hidden="true" data-parallax data-parallax-speed="0.12"
+            class="pointer-events-none absolute -right-6 bottom-16 select-none text-[8rem] opacity-[0.04]">🌿</span>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div data-reveal
+                class="max-w-2xl translate-y-6 opacity-0 transition-all duration-700 ease-out will-change-transform motion-reduce:transition-none">
+                <div class="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-1.5 text-sm font-semibold text-emerald-600">
+                    <i class="fas fa-certificate"></i> Certifications
+                </div>
+                <h2 class="mt-4 text-3xl font-extrabold text-gray-900 md:text-4xl">Independently audited</h2>
+                <p class="mt-3 text-base text-gray-500 md:text-lg">
+                    Current certificates are available on request and for download below.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                <a href="#" data-reveal
+                    class="group block translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-gray-50 p-6 transition-colors duration-300 group-hover:bg-white">
+                        <div class="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-xl border border-gray-100 bg-white">
+                            <!-- Replace with <img src="./assets/certs/iso-9001.jpg" alt="ISO 9001 certificate" class="h-full w-full object-cover" /> -->
+                            <i class="fas fa-file-pdf text-4xl text-gray-300 transition-colors duration-300 group-hover:text-emerald-400"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">ISO 9001:2015</h3>
+                        <p class="mt-1 text-sm text-gray-500">Quality management</p>
+                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600">
+                            Download PDF
+                            <i class="fas fa-arrow-down text-xs transition-transform duration-300 group-hover:translate-y-0.5"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="#" data-reveal data-reveal-delay="90"
+                    class="group block translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-gray-50 p-6 transition-colors duration-300 group-hover:bg-white">
+                        <div class="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-xl border border-gray-100 bg-white">
+                            <i class="fas fa-file-pdf text-4xl text-gray-300 transition-colors duration-300 group-hover:text-emerald-400"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">ISO 14001:2015</h3>
+                        <p class="mt-1 text-sm text-gray-500">Environmental management</p>
+                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600">
+                            Download PDF
+                            <i class="fas fa-arrow-down text-xs transition-transform duration-300 group-hover:translate-y-0.5"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="#" data-reveal data-reveal-delay="180"
+                    class="group block translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-gray-50 p-6 transition-colors duration-300 group-hover:bg-white">
+                        <div class="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-xl border border-gray-100 bg-white">
+                            <i class="fas fa-file-pdf text-4xl text-gray-300 transition-colors duration-300 group-hover:text-emerald-400"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">ISO 45001:2018</h3>
+                        <p class="mt-1 text-sm text-gray-500">Occupational health &amp; safety</p>
+                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600">
+                            Download PDF
+                            <i class="fas fa-arrow-down text-xs transition-transform duration-300 group-hover:translate-y-0.5"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="#" data-reveal data-reveal-delay="270"
+                    class="group block translate-y-8 rounded-3xl bg-gradient-to-b from-emerald-200/70 to-transparent p-px opacity-0 transition-all duration-700 ease-out will-change-transform hover:-translate-y-1.5 motion-reduce:transition-none">
+                    <div class="h-full rounded-[calc(1.5rem_-_1px)] bg-gray-50 p-6 transition-colors duration-300 group-hover:bg-white">
+                        <div class="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-xl border border-gray-100 bg-white">
+                            <i class="fas fa-file-pdf text-4xl text-gray-300 transition-colors duration-300 group-hover:text-emerald-400"></i>
+                        </div>
+                        <h3 class="mt-4 font-bold text-gray-900">SASO / SABER</h3>
+                        <p class="mt-1 text-sm text-gray-500">Saudi conformity</p>
+                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600">
+                            Download PDF
+                            <i class="fas fa-arrow-down text-xs transition-transform duration-300 group-hover:translate-y-0.5"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA
+    ============================================================ -->
+    <section class="bg-gray-50 py-20 md:py-24">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div data-reveal
+                class="scale-95 rounded-3xl bg-gradient-to-br from-emerald-600 to-green-500 px-8 py-14 text-center opacity-0 shadow-2xl shadow-emerald-600/25 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none md:px-14">
+                <h2 class="text-2xl font-extrabold text-white md:text-3xl">Planning a greenhouse project?</h2>
+                <p class="mx-auto mt-3 max-w-xl text-emerald-50">
+                    Send us the site, the crop and the target output. We'll come back with a feasibility
+                    view and an indicative budget.
+                </p>
+                <a href="contact.html"
+                    class="mt-8 inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-3.5 font-semibold text-emerald-700 shadow-lg transition-all hover:bg-emerald-50 hover:shadow-xl">
+                    <i class="fas fa-arrow-right"></i> Talk to our team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (injected by js/script.js) -->
+    <div id="footer-container"></div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
