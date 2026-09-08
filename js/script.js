@@ -120,10 +120,209 @@ function initReveal() {
 }
 
 /* =========================================================
+   Scroll reveal — toggles Tailwind utility classes only.
+   Markup: <el data-reveal data-reveal-delay="120"
+               class="opacity-0 translate-y-8 blur-sm transition-all
+                      duration-700 ease-out will-change-transform">
+   ========================================================= */
+function initScrollReveal() {
+    const items = document.querySelectorAll('[data-reveal]');
+    if (!items.length) return;
+
+    const FROM = [
+        'opacity-0',
+        'translate-y-6', 'translate-y-8', 'translate-y-10', 'translate-y-12',
+        '-translate-y-6', '-translate-y-8',
+        'translate-x-8', 'translate-x-10', 'translate-x-12',
+        '-translate-x-8', '-translate-x-10', '-translate-x-12',
+        'scale-90', 'scale-95', 'blur-sm', 'blur',
+    ];
+    const TO = ['opacity-100', 'translate-x-0', 'translate-y-0', 'scale-100', 'blur-0'];
+
+    const show = (el) => {
+        el.classList.remove(...FROM);
+        el.classList.add(...TO);
+    };
+
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) {
+        items.forEach(show);
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const delay = Number(el.dataset.revealDelay) || 0;
+            window.setTimeout(() => show(el), delay);
+            observer.unobserve(el);
+        });
+    }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+
+    items.forEach((el) => observer.observe(el));
+}
+
+/* =========================================================
+   Timeline progress — scroll-driven fill for [data-timeline],
+   plus a "light-up" pass over each [data-timeline-dot] as the
+   fill reaches it. Utility-class toggles only.
+   ========================================================= */
+function initTimelineProgress() {
+    const track = document.querySelector('[data-timeline]');
+    const fill = document.querySelector('[data-timeline-fill]');
+    if (!track || !fill) return;
+
+    const dots = Array.from(track.querySelectorAll('[data-timeline-dot]'));
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const update = () => {
+        const rect = track.getBoundingClientRect();
+        const anchor = window.innerHeight * (reduce ? 0.9 : 0.5);
+        const progressed = Math.min(Math.max(anchor - rect.top, 0), rect.height);
+        fill.style.height = `${(progressed / rect.height) * 100}%`;
+
+        dots.forEach((dot) => {
+            const reached = dot.getBoundingClientRect().top < anchor + 2;
+            dot.classList.toggle('bg-emerald-500', reached);
+            dot.classList.toggle('border-emerald-500', reached);
+            dot.classList.toggle('scale-110', reached);
+            dot.classList.toggle('bg-white', !reached);
+        });
+    };
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    window.addEventListener('load', update);
+    update();
+}
+
+/* =========================================================
+   Parallax — translates [data-parallax] on scroll for depth.
+   data-parallax-speed: fraction of scroll distance (default .15);
+   negative moves the element the other way. Disabled for
+   prefers-reduced-motion. Sets inline transform only.
+   ========================================================= */
+function initParallax() {
+    const items = Array.from(document.querySelectorAll('[data-parallax]'));
+    if (!items.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    let ticking = false;
+
+    const apply = () => {
+        const mid = window.scrollY + window.innerHeight / 2;
+        items.forEach((el) => {
+            const speed = parseFloat(el.dataset.parallaxSpeed) || 0.15;
+            const box = el.getBoundingClientRect();
+            const elMid = box.top + window.scrollY + box.height / 2;
+            const shift = (mid - elMid) * speed;
+            el.style.transform = `translate3d(0, ${shift.toFixed(2)}px, 0)`;
+        });
+        ticking = false;
+    };
+
+    const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(apply);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', apply);
+    apply();
+}
+
+/* =========================================================
+   Horizontal scroll gallery — vertical scroll drives a
+   horizontal track. Hooks are data-* attributes only, and
+   every visual change is a Tailwind utility class toggle.
+     [data-hscroll-section]  outer <section> (gets a computed height)
+     [data-hscroll-pin]      sticky viewport wrapper
+     [data-hscroll]          the flex track that is translated
+     [data-hscroll-progress] progress bar (scaleX 0 -> 1)
+     [data-hscroll-card]     each card (focus styling by proximity)
+   ========================================================= */
+function initHorizontalScroll() {
+    const section = document.querySelector('[data-hscroll-section]');
+    if (!section) return;
+    const pin = section.querySelector('[data-hscroll-pin]');
+    const track = section.querySelector('[data-hscroll]');
+    if (!pin || !track) return;
+
+    const bar = section.querySelector('[data-hscroll-progress]');
+    const cards = Array.from(track.querySelectorAll('[data-hscroll-card]'));
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let distance = 0;
+    let startY = 0;
+
+    const clamp = (n, lo, hi) => Math.min(Math.max(n, lo), hi);
+
+    const usePinned = () => {
+        pin.classList.add('sticky', 'top-0', 'h-screen', 'items-center', 'overflow-hidden');
+        pin.classList.remove('py-12');
+        track.classList.add('w-max', 'flex-nowrap');
+        track.classList.remove('flex-wrap', 'justify-center');
+        if (bar) bar.classList.remove('hidden');
+    };
+
+    const useFallbackGrid = () => {
+        section.style.height = '';
+        track.style.transform = '';
+        pin.classList.remove('sticky', 'top-0', 'h-screen', 'items-center', 'overflow-hidden');
+        pin.classList.add('py-12');
+        track.classList.remove('w-max', 'flex-nowrap');
+        track.classList.add('flex-wrap', 'justify-center');
+        cards.forEach((c) => {
+            c.classList.remove('grayscale', 'opacity-60', 'scale-95');
+            c.classList.add('grayscale-0', 'opacity-100');
+        });
+        if (bar) bar.classList.add('hidden');
+    };
+
+    const paint = () => {
+        if (!distance) return;
+        const p = clamp((window.scrollY - startY) / distance, 0, 1);
+        track.style.transform = `translate3d(${(-p * distance).toFixed(2)}px, 0, 0)`;
+        if (bar) bar.style.transform = `scaleX(${p.toFixed(4)})`;
+
+        const mid = window.innerWidth / 2;
+        cards.forEach((card) => {
+            const r = card.getBoundingClientRect();
+            const active = Math.abs(r.left + r.width / 2 - mid) < r.width / 2 + 48;
+            card.classList.toggle('grayscale', !active);
+            card.classList.toggle('grayscale-0', active);
+            card.classList.toggle('opacity-60', !active);
+            card.classList.toggle('opacity-100', active);
+            card.classList.toggle('scale-95', !active);
+        });
+    };
+
+    const layout = () => {
+        usePinned();
+        distance = track.scrollWidth - pin.clientWidth;
+        if (reduce || distance <= 0) {
+            useFallbackGrid();
+            distance = 0;
+            return;
+        }
+        section.style.height = `${pin.offsetTop + window.innerHeight + distance}px`;
+        startY = section.getBoundingClientRect().top + window.scrollY + pin.offsetTop;
+        paint();
+    };
+
+    window.addEventListener('scroll', paint, { passive: true });
+    window.addEventListener('resize', layout);
+    window.addEventListener('load', layout);
+    layout();
+}
+
+/* =========================================================
    Stat counter animation
    ========================================================= */
 function initStats() {
-    const statNumbers = document.querySelectorAll('.stat-number');
+    const statNumbers = document.querySelectorAll('.stat-number, [data-count]');
     if (!statNumbers.length) return;
 
     const observer = new IntersectionObserver((entries) => {
@@ -179,6 +378,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadPartial('#footer-container', 'components/footer.html');
 
     initReveal();
+    initScrollReveal();
+    initTimelineProgress();
+    initParallax();
+    initHorizontalScroll();
     initStats();
     initFloatingButtons();
 });
