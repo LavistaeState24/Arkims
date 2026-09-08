@@ -126,7 +126,7 @@ function initReveal() {
                       duration-700 ease-out will-change-transform">
    ========================================================= */
 function initScrollReveal() {
-    const items = document.querySelectorAll('[data-reveal]');
+    const items = document.querySelectorAll('[data-reveal], [data-animate]');
     if (!items.length) return;
 
     const FROM = [
@@ -138,6 +138,18 @@ function initScrollReveal() {
         'scale-90', 'scale-95', 'blur-sm', 'blur',
     ];
     const TO = ['opacity-100', 'translate-x-0', 'translate-y-0', 'scale-100', 'blur-0'];
+
+    // Give bare [data-animate] / [data-reveal] elements a sensible default
+    // entrance so markup doesn't have to spell out every utility.
+    const fromRe = /^(opacity-0|-?translate-[xy]-|scale-9|blur)/;
+    items.forEach((el) => {
+        if (![...el.classList].some((c) => fromRe.test(c))) {
+            el.classList.add('opacity-0', 'translate-y-8');
+        }
+        if (![...el.classList].some((c) => c.startsWith('transition'))) {
+            el.classList.add('transition-all', 'duration-700', 'ease-out', 'will-change-transform');
+        }
+    });
 
     const show = (el) => {
         el.classList.remove(...FROM);
@@ -231,6 +243,46 @@ function initParallax() {
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', apply);
     apply();
+}
+
+/* =========================================================
+   Marquee — JS-driven continuous scroll, right to left.
+   Markup: a flex track with two identical halves and
+   [data-marquee] (optional data-marquee-speed in px/sec).
+   Pauses on hover / keyboard focus; static under reduced motion.
+   ========================================================= */
+function initMarquee() {
+    const tracks = document.querySelectorAll('[data-marquee]');
+    if (!tracks.length) return;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    tracks.forEach((track) => {
+        let paused = false;
+        const pause = () => { paused = true; };
+        const play = () => { paused = false; };
+        track.addEventListener('mouseenter', pause);
+        track.addEventListener('mouseleave', play);
+        track.addEventListener('focusin', pause);
+        track.addEventListener('focusout', play);
+        if (reduce) return;
+
+        const speed = parseFloat(track.dataset.marqueeSpeed) || 45;
+        let offset = 0;
+        let last = performance.now();
+
+        const tick = (now) => {
+            const dt = Math.min((now - last) / 1000, 0.05);
+            last = now;
+            if (!paused) {
+                offset -= speed * dt;               // negative => content travels right to left
+                const half = track.scrollWidth / 2;
+                if (half > 0 && -offset >= half) offset += half;
+                track.style.transform = `translate3d(${offset.toFixed(2)}px, 0, 0)`;
+            }
+            requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+    });
 }
 
 /* =========================================================
@@ -381,6 +433,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initScrollReveal();
     initTimelineProgress();
     initParallax();
+    initMarquee();
     initHorizontalScroll();
     initStats();
     initFloatingButtons();
