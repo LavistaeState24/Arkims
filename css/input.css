@@ -113,7 +113,7 @@
 
  /* ----- Gradient text ----- */
  .gradient-text {
-     background: linear-gradient(135deg, #0b7a3d, #22c55e, #0b7a3d);
+     background: #01473f;
      background-size: 200% 200%;
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
@@ -347,9 +347,40 @@
  /* contact us age animation */
 
  @keyframes fade-up {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-.animate-fade-up {
-  animation: fade-up 0.8s ease-out forwards;
-}
+     0% {
+         opacity: 0;
+         transform: translateY(30px);
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .animate-fade-up {
+     animation: fade-up 0.8s ease-out forwards;
+ }
+
+ /* sustainability css */
+
+ /* Inline keyframes only — the seamless alliance ticker. */
+ @keyframes ticker {
+     from {
+         transform: translate3d(0, 0, 0);
+     }
+
+     to {
+         transform: translate3d(-50%, 0, 0);
+     }
+ }
+
+ @media (prefers-reduced-motion: reduce) {
+     [data-ticker] {
+         animation: none !important;
+     }
+
+     * {
+         scroll-behavior: auto !important;
+     }
+ }
