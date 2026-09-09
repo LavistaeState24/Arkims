@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIIMS - Growing Tomorrow Today</title>
+
+    <!-- Tailwind + Google Fonts + Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/output.css" />
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <section class="relative min-h-[80vh] flex items-center overflow-hidden pt-16 md:pt-20 group">
+
+        <!-- Background image with zoom -->
+        <div class="absolute inset-0 z-0 overflow-hidden transition-transform duration-[3000ms] group-hover:scale-105">
+            <img src="./assets/A3.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover" />
+            <!-- Gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+            <!-- Subtle pattern -->
+            <div
+                class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] bg-repeat">
+            </div>
+        </div>
+
+        <!-- Decorative blurred circle -->
+        <div class="absolute top-20 right-20 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Left Text -->
+                <div class="space-y-6 transition-all duration-700 group-hover:translate-y-[-4px]">
+
+                    <!-- Badge with ping -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white text-xs font-semibold px-4 py-2 rounded-full border border-white/20">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        </span>
+                        Vision 2030 · Food Security
+                    </div>
+
+                    <!-- Heading -->
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
+                        Site Map
+                    </h1>
+                    <p class="text-lg sm:text-xl text-white/80 max-w-2xl drop-shadow-lg">
+                        Explore our website with ease using the comprehensive sitemap, guiding you to all key sections
+                        and resources.
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-white/40 animate-bounce">
+            <span class="text-xs font-medium uppercase tracking-widest">Scroll</span>
+            <i class="fas fa-chevron-down text-sm"></i>
+        </div>
+
+    </section>
+
+    <!-- ================= SITEMAP SECTION ================= -->
+<section id="sitemap" class="py-20 md:py-28 bg-paper relative overflow-hidden">
+
+    <!-- Decorative Background -->
+    <div class="absolute -top-20 -right-20 w-72 h-72 bg-pine-100 rounded-full blur-3xl opacity-40"></div>
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-emerald-100 rounded-full blur-3xl opacity-40"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-14">
+
+            <div
+                class="inline-flex items-center gap-2 text-pine-700 font-semibold text-sm bg-pine-100 px-4 py-1.5 rounded-full mb-4">
+                <i class="fas fa-sitemap"></i>
+                Sitemap
+            </div>
+
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ink">
+                Explore Our
+                <span class="text-pine-700">Website</span>
+            </h2>
+
+            <p class="text-ink-soft mt-3 text-base md:text-lg">
+                Quickly find the information, products, services, and resources
+                you need.
+            </p>
+
+        </div>
+
+
+        <!-- Sitemap Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+            <!-- COMPANY -->
+            <div
+                class="group bg-white rounded-3xl border border-gray-100 p-7 shadow-lg shadow-gray-200/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-pine-500/10 transition-all duration-500">
+
+                <!-- Icon -->
+                <div
+                    class="w-14 h-14 rounded-2xl bg-pine-100 text-pine-700 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-building"></i>
+                </div>
+
+                <h3 class="text-lg font-bold text-ink mb-4">
+                    Company
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#home"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#why-us"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Why Choose Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#careers"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Careers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+            <div
+                class="group bg-white rounded-3xl border border-gray-100 p-7 shadow-lg shadow-gray-200/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-pine-500/10 transition-all duration-500">
+
+                <div
+                    class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-seedling"></i>
+                </div>
+
+                <h3 class="text-lg font-bold text-ink mb-4">
+                    Products
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#products"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Products Hub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#plastic-greenhouses"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Plastic Greenhouses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#shade-net"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Shade-Net Greenhouses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#polycarbonate"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Polycarbonate Greenhouses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#glass-greenhouses"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Glass Greenhouses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#hydroponic"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Hydroponic Greenhouses
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- MATERIALS & SYSTEMS -->
+            <div
+                class="group bg-white rounded-3xl border border-gray-100 p-7 shadow-lg shadow-gray-200/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-pine-500/10 transition-all duration-500">
+
+                <div
+                    class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-gears"></i>
+                </div>
+
+                <h3 class="text-lg font-bold text-ink mb-4">
+                    Materials & Systems
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#materials"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Materials & Systems Hub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#coverings"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Coverings & Materials
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#accessories"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Accessories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#climate"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Climate Systems
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#automation"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Automation Systems
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#irrigation"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Hydroponic Systems
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES & RESOURCES -->
+            <div
+                class="group bg-white rounded-3xl border border-gray-100 p-7 shadow-lg shadow-gray-200/40 hover:-translate-y-2 hover:shadow-xl hover:shadow-pine-500/10 transition-all duration-500">
+
+                <div
+                    class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-handshake"></i>
+                </div>
+
+                <h3 class="text-lg font-bold text-ink mb-4">
+                    Services
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#services"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Services Hub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#turnkey"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Turnkey Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Technology Partners
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./blog.html"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./blog.html"
+                            class="flex items-center gap-2 text-sm text-ink-soft hover:text-pine-700 transition-colors">
+                            <i class="fas fa-chevron-right text-[9px]"></i>
+                            Blog & Insights
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom CTA -->
+        <div
+            class="mt-10 bg-pine-700 rounded-3xl p-7 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-pine-900/10">
+
+            <div class="text-center md:text-left">
+
+                <h3 class="text-xl md:text-2xl font-bold text-white">
+                    Can't find what you're looking for?
+                </h3>
+
+                <p class="text-pine-100 mt-1 text-sm md:text-base">
+                    Our team is ready to help with your greenhouse requirements.
+                </p>
+
+            </div>
+
+            <a href="contact.html"
+                class="shrink-0 inline-flex items-center gap-2 bg-white text-pine-700 font-semibold px-6 py-3 rounded-xl hover:bg-pine-50 transition-all duration-300 hover:scale-105">
+
+                Contact Us
+                <i class="fas fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+    <div id="footer-container"></div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
