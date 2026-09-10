@@ -30,7 +30,7 @@
                 class="absolute inset-0 z-0 overflow-hidden transition-transform duration-[3000ms] group-hover:scale-105">
                 <img src="./assets/d3.png" alt="Hero" class="absolute inset-0 w-full h-full object-cover" />
                 <!-- Gradient overlay -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/60 to-transparent"></div>
                 <!-- Subtle pattern -->
                 <div
                     class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] bg-repeat">
@@ -38,7 +38,7 @@
             </div>
 
             <!-- Decorative blurred circle -->
-            <div class="absolute top-20 right-20 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none">
+            <div class="absolute top-20 right-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none">
             </div>
 
             <!-- Content -->
@@ -49,21 +49,24 @@
                     <div class="space-y-6 transition-all duration-700 group-hover:translate-y-[-4px]">
 
                         <!-- Badge with ping -->
-                        <div
-                            class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white text-xs font-semibold px-4 py-2 rounded-full border border-white/20">
-                            <span class="relative flex h-2 w-2">
-                                <span
-                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                            </span>
-                            Vision 2030 · Food Security
-                        </div>
+
+                          <nav class="text-sm text-white/70 hover:text-white/90 transition-colors">
+                        <a href="index.html" class="hover:text-white">Home</a>
+                        <span class="mx-2 text-white/40">/</span>
+                        <span class="text-white font-medium">Products</span>
+                    </nav>
 
                         <!-- Heading -->
                         <h1
                             class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
                             Products
                         </h1>
+
+                        <p
+                            class="text-lg text-white/80 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1">
+                            Explore our innovative products, designed to deliver quality, performance, and reliable
+                            solutions for modern growing environments.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -438,17 +441,22 @@
                         class="group relative overflow-hidden rounded-2xl border-2 border-gray-200 bg-white p-5 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-lg aria-selected:translate-y-0 aria-selected:border-emerald-600 aria-selected:bg-emerald-600 aria-selected:text-white aria-selected:shadow-lg aria-selected:shadow-emerald-900/10">
                         <div class="flex items-start justify-between">
                             <div>
-                                <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-aria-selected:text-emerald-100">Platform 01</span>
-                                <h3 class="mt-2 text-lg font-bold text-gray-900 group-aria-selected:text-white">Plastic &amp; Shade-Net</h3>
+                                <span
+                                    class="text-xs font-bold uppercase tracking-widest text-gray-400 group-aria-selected:text-emerald-100">Platform
+                                    01</span>
+                                <h3 class="mt-2 text-lg font-bold text-gray-900 group-aria-selected:text-white">Plastic
+                                    &amp; Shade-Net</h3>
                             </div>
-                            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 group-aria-selected:bg-white/15 group-aria-selected:text-white">
+                            <div
+                                class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 group-aria-selected:bg-white/15 group-aria-selected:text-white">
                                 <i class="fas fa-leaf"></i>
                             </div>
                         </div>
                         <p class="mt-3 text-sm leading-relaxed text-gray-500 group-aria-selected:text-emerald-50">
                             Efficient structures for cost-effective and naturally ventilated production.
                         </p>
-                        <div class="mt-4 flex items-center gap-2 text-xs font-semibold text-emerald-600 group-aria-selected:text-white">
+                        <div
+                            class="mt-4 flex items-center gap-2 text-xs font-semibold text-emerald-600 group-aria-selected:text-white">
                             View specifications <i class="fas fa-arrow-right text-[10px]"></i>
                         </div>
                     </button>
@@ -458,17 +466,22 @@
                         class="group relative overflow-hidden rounded-2xl border-2 border-gray-200 bg-white p-5 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-lg aria-selected:translate-y-0 aria-selected:border-emerald-600 aria-selected:bg-emerald-600 aria-selected:text-white aria-selected:shadow-lg aria-selected:shadow-emerald-900/10">
                         <div class="flex items-start justify-between">
                             <div>
-                                <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-aria-selected:text-emerald-100">Platform 02</span>
-                                <h3 class="mt-2 text-lg font-bold text-gray-900 group-aria-selected:text-white">Polycarbonate &amp; A/C</h3>
+                                <span
+                                    class="text-xs font-bold uppercase tracking-widest text-gray-400 group-aria-selected:text-emerald-100">Platform
+                                    02</span>
+                                <h3 class="mt-2 text-lg font-bold text-gray-900 group-aria-selected:text-white">
+                                    Polycarbonate &amp; A/C</h3>
                             </div>
-                            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 group-aria-selected:bg-white/15 group-aria-selected:text-white">
+                            <div
+                                class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 group-aria-selected:bg-white/15 group-aria-selected:text-white">
                                 <i class="fas fa-temperature-low"></i>
                             </div>
                         </div>
                         <p class="mt-3 text-sm leading-relaxed text-gray-500 group-aria-selected:text-emerald-50">
                             Controlled environments for premium crops and year-round production.
                         </p>
-                        <div class="mt-4 flex items-center gap-2 text-xs font-semibold text-emerald-600 group-aria-selected:text-white">
+                        <div
+                            class="mt-4 flex items-center gap-2 text-xs font-semibold text-emerald-600 group-aria-selected:text-white">
                             View specifications <i class="fas fa-arrow-right text-[10px]"></i>
                         </div>
                     </button>
@@ -478,17 +491,22 @@
                         class="group relative overflow-hidden rounded-2xl border-2 border-gray-200 bg-white p-5 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-lg aria-selected:translate-y-0 aria-selected:border-emerald-600 aria-selected:bg-emerald-600 aria-selected:text-white aria-selected:shadow-lg aria-selected:shadow-emerald-900/10">
                         <div class="flex items-start justify-between">
                             <div>
-                                <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-aria-selected:text-emerald-100">Platform 03</span>
-                                <h3 class="mt-2 text-lg font-bold text-gray-900 group-aria-selected:text-white">Halls &amp; Glass Hydroponic</h3>
+                                <span
+                                    class="text-xs font-bold uppercase tracking-widest text-gray-400 group-aria-selected:text-emerald-100">Platform
+                                    03</span>
+                                <h3 class="mt-2 text-lg font-bold text-gray-900 group-aria-selected:text-white">Halls
+                                    &amp; Glass Hydroponic</h3>
                             </div>
-                            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 group-aria-selected:bg-white/15 group-aria-selected:text-white">
+                            <div
+                                class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 group-aria-selected:bg-white/15 group-aria-selected:text-white">
                                 <i class="fas fa-industry"></i>
                             </div>
                         </div>
                         <p class="mt-3 text-sm leading-relaxed text-gray-500 group-aria-selected:text-emerald-50">
                             High-performance commercial structures for large-scale production.
                         </p>
-                        <div class="mt-4 flex items-center gap-2 text-xs font-semibold text-emerald-600 group-aria-selected:text-white">
+                        <div
+                            class="mt-4 flex items-center gap-2 text-xs font-semibold text-emerald-600 group-aria-selected:text-white">
                             View specifications <i class="fas fa-arrow-right text-[10px]"></i>
                         </div>
                     </button>
@@ -503,7 +521,8 @@
                     <!-- ================================================= -->
                     <!-- PANEL 01 -->
                     <!-- ================================================= -->
-                    <div data-spec-panel id="spec-panel-0" role="tabpanel" aria-labelledby="spec-tab-0" tabindex="0" class="transition-opacity duration-300 ease-in-out">
+                    <div data-spec-panel id="spec-panel-0" role="tabpanel" aria-labelledby="spec-tab-0" tabindex="0"
+                        class="transition-opacity duration-300 ease-in-out">
 
                         <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
 
@@ -681,7 +700,8 @@
                     <!-- ================================================= -->
                     <!-- PANEL 02 -->
                     <!-- ================================================= -->
-                    <div data-spec-panel hidden id="spec-panel-1" role="tabpanel" aria-labelledby="spec-tab-1" tabindex="0" class="transition-opacity duration-300 ease-in-out">
+                    <div data-spec-panel hidden id="spec-panel-1" role="tabpanel" aria-labelledby="spec-tab-1"
+                        tabindex="0" class="transition-opacity duration-300 ease-in-out">
 
                         <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
 
@@ -836,7 +856,8 @@
                     <!-- ================================================= -->
                     <!-- PANEL 03 -->
                     <!-- ================================================= -->
-                    <div data-spec-panel hidden id="spec-panel-2" role="tabpanel" aria-labelledby="spec-tab-2" tabindex="0" class="transition-opacity duration-300 ease-in-out">
+                    <div data-spec-panel hidden id="spec-panel-2" role="tabpanel" aria-labelledby="spec-tab-2"
+                        tabindex="0" class="transition-opacity duration-300 ease-in-out">
 
                         <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
 
@@ -1494,7 +1515,8 @@
                             style="max-height:0">
                             <p class="pb-5 text-sm leading-relaxed text-gray-500">Yes — cladding upgrades, cooling
                                 additions and full climate-control retrofits are common on all three platforms.
-                                <!-- TODO(content) --></p>
+                                <!-- TODO(content) -->
+                            </p>
                         </div>
                     </div>
                     <div data-faq>
