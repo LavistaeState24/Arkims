@@ -902,10 +902,6 @@ video {
   margin-right: auto;
 }
 
-.-mt-4 {
-  margin-top: -1rem;
-}
-
 .mb-1\.5 {
   margin-bottom: 0.375rem;
 }
@@ -1128,10 +1124,6 @@ video {
 
 .h-52 {
   height: 13rem;
-}
-
-.h-56 {
-  height: 14rem;
 }
 
 .h-64 {
@@ -2707,11 +2699,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
 }
 
 .pb-1 {
@@ -4741,14 +4728,6 @@ a:focus-visible,
 
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:h-72 {
-    height: 18rem;
-  }
-
-  .md\:h-56 {
-    height: 14rem;
   }
 
   .md\:max-h-\[calc\(100vh-5rem\)\] {

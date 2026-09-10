@@ -858,22 +858,39 @@
     <!-- ============================================================
     CTA
     ============================================================ -->
-    <section class="bg-white py-20 md:py-24">
-        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            <div data-reveal
-                class="scale-95 rounded-3xl bg-gradient-to-br from-emerald-600 to-green-500 px-8 py-14 text-center opacity-0 shadow-2xl shadow-emerald-600/25 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none md:px-14">
-                <h2 class="text-2xl font-extrabold text-white md:text-3xl">Want your site on this page?</h2>
-                <p class="mx-auto mt-3 max-w-xl text-emerald-50">
-                    Send us the location, the crop and the output you are aiming for. We'll come back with a
-                    feasibility view and an indicative budget.
+    <!-- Pinned closing section — the footer scrolls up over it -->
+    <section id="contact"
+        class="sticky top-0 z-0 flex min-h-screen items-center overflow-hidden bg-white py-20 md:py-20">
+        <div aria-hidden="true" data-parallax data-parallax-speed="-0.14"
+            class="pointer-events-none absolute -right-24 top-1/4 -z-10 h-96 w-96 rounded-full bg-emerald-200/40 blur-3xl">
+        </div>
+        <div aria-hidden="true" data-parallax data-parallax-speed="0.12"
+            class="pointer-events-none absolute -left-24 bottom-1/4 -z-10 h-96 w-96 rounded-full bg-green-200/40 blur-3xl">
+        </div>
+
+        <div class="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+            <div class="relative overflow-hidden rounded-3xl bg-[#01473f] px-6 py-14 text-center shadow-2xl shadow-emerald-600/25 sm:px-12"
+                data-reveal>
+                <h2 class="mx-auto max-w-2xl text-balance text-3xl font-extrabold text-white md:text-4xl">
+                    Tell us the site, the crop and the target output
+                </h2>
+                <p class="mx-auto mt-4 max-w-xl text-pretty text-emerald-50">
+                    We will come back with a feasibility view and an indicative budget.
                 </p>
-                <a href="contact.html"
-                    class="mt-8 inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-3.5 font-semibold text-emerald-700 shadow-lg transition-all hover:bg-emerald-50 hover:shadow-xl">
-                    <i class="fas fa-arrow-right"></i> Talk to our team
-                </a>
+                <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+                    <a href="mailto:projects@aiims.example"
+                        class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-50">
+                        Start a project
+                    </a>
+                    <a href="tel:+966123456789"
+                        class="inline-flex items-center justify-center gap-2 rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10">
+                        Contact us 
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+
 
     <div id="footer-container" class="relative z-10"></div>
 
