@@ -421,6 +421,245 @@ function initFloatingButtons() {
 }
 
 /* =========================================================
+   Products page — spec comparison tabs.
+   Styling is handled by aria-selected: / group-aria-selected:
+   variants in the markup; JS only flips aria-selected + focus,
+   and shows the matching [data-spec-panel] with a fade.
+   ========================================================= */
+function initSpecTabs() {
+    const root = document.querySelector('[data-spec-tabs]');
+    if (!root) return;
+    const tabs = Array.from(root.querySelectorAll('[data-spec-tab]'));
+    const panels = Array.from(document.querySelectorAll('[data-spec-panel]'));
+    if (!tabs.length || !panels.length) return;
+
+    const select = (i, focus) => {
+        tabs.forEach((t, k) => {
+            const on = k === i;
+            t.setAttribute('aria-selected', String(on));
+            t.tabIndex = on ? 0 : -1;
+        });
+        panels.forEach((p, k) => {
+            if (k === i) {
+                p.hidden = false;
+                p.classList.add('opacity-0');
+                requestAnimationFrame(() => p.classList.remove('opacity-0'));
+            } else {
+                p.hidden = true;
+            }
+        });
+        if (focus && tabs[i]) tabs[i].focus();
+    };
+
+    tabs.forEach((t, i) => {
+        t.addEventListener('click', () => select(i, false));
+        t.addEventListener('keydown', (e) => {
+            const last = tabs.length - 1;
+            let n = null;
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') n = i === last ? 0 : i + 1;
+            else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') n = i === 0 ? last : i - 1;
+            else if (e.key === 'Home') n = 0;
+            else if (e.key === 'End') n = last;
+            if (n !== null) { e.preventDefault(); select(n, true); }
+        });
+    });
+
+    const start = tabs.findIndex((t) => t.getAttribute('aria-selected') === 'true');
+    select(start < 0 ? 0 : start, false);
+}
+
+/* =========================================================
+   Products page — gallery filter + lightbox
+   ========================================================= */
+function initGallery() {
+    const grid = document.querySelector('[data-gallery]');
+    if (!grid) return;
+    const items = Array.from(grid.querySelectorAll('[data-gallery-item]'));
+    const filters = Array.from(document.querySelectorAll('[data-gallery-filter]'));
+
+    filters.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const f = btn.dataset.filter;
+            filters.forEach((b) => {
+                const on = b === btn;
+                b.setAttribute('aria-pressed', String(on));
+                b.classList.toggle('bg-emerald-600', on);
+                b.classList.toggle('text-white', on);
+                b.classList.toggle('border-emerald-600', on);
+                b.classList.toggle('border-gray-300', !on);
+                b.classList.toggle('text-gray-600', !on);
+            });
+            items.forEach((it) => {
+                const show = f === 'all' || it.dataset.type === f;
+                it.hidden = !show;
+                if (show) { it.style.opacity = '1'; it.style.transform = 'none'; }
+            });
+        });
+    });
+
+    const box = document.querySelector('[data-lightbox]');
+    if (!box) return;
+    const boxImg = box.querySelector('[data-lightbox-img]');
+    const visible = () => items.filter((it) => !it.hidden);
+    let idx = 0;
+
+    const render = () => {
+        const list = visible();
+        if (!list.length) return;
+        idx = (idx + list.length) % list.length;
+        const img = list[idx].querySelector('img');
+        boxImg.src = img.currentSrc || img.src;
+        boxImg.alt = img.alt || '';
+    };
+    const open = (el) => {
+        idx = visible().indexOf(el);
+        render();
+        box.hidden = false;
+        requestAnimationFrame(() => box.classList.remove('opacity-0'));
+        document.addEventListener('keydown', onKey);
+    };
+    const close = () => {
+        box.classList.add('opacity-0');
+        document.removeEventListener('keydown', onKey);
+        window.setTimeout(() => { box.hidden = true; }, 300);
+    };
+    const onKey = (e) => {
+        if (e.key === 'Escape') close();
+        else if (e.key === 'ArrowRight') { idx++; render(); }
+        else if (e.key === 'ArrowLeft') { idx--; render(); }
+    };
+
+    box.classList.add('opacity-0');
+    items.forEach((it) => it.addEventListener('click', () => open(it)));
+    box.querySelector('[data-lightbox-close]').addEventListener('click', close);
+    box.querySelector('[data-lightbox-next]').addEventListener('click', () => { idx++; render(); });
+    box.querySelector('[data-lightbox-prev]').addEventListener('click', () => { idx--; render(); });
+    box.addEventListener('click', (e) => { if (e.target === box) close(); });
+}
+
+/* =========================================================
+   Products page — "help me choose" guided selector
+   ========================================================= */
+function initChooser() {
+    const root = document.querySelector('[data-chooser]');
+    if (!root) return;
+    const groups = Array.from(root.querySelectorAll('[data-choose-group]'));
+    const result = root.querySelector('[data-chooser-result]');
+    if (!result) return;
+    const nameEl = result.querySelector('[data-result-name]');
+    const whyEl = result.querySelector('[data-result-why]');
+    const linkEl = result.querySelector('[data-result-link]');
+    const choice = {};
+
+    const W = {
+        climate: { mild: [2, 0, 1], hot: [0, 2, 1], humid: [0, 1, 2] },
+        priority: { cost: [3, 0, 0], control: [0, 3, 1], yield: [0, 1, 3] },
+        scale: { small: [2, 1, 0], mid: [1, 2, 1], large: [0, 1, 3] },
+    };
+    const TYPES = [
+        { name: 'Plastic, Shade-Net & Fiberglass', why: 'Fastest, most cost-efficient covered growing.', href: 'plastic-shade-net-fiberglass.html' },
+        { name: 'Polycarbonate & Air-Conditioned', why: 'Holds set-point through the worst of the heat.', href: 'polycarbonate-air-conditioned.html' },
+        { name: 'Multi-Unit Halls & Glass Hydroponic', why: 'Highest control and yield for commercial scale.', href: 'multi-unit-halls-nurseries-glass-hydroponic.html' },
+    ];
+
+    const evaluate = () => {
+        if (Object.keys(choice).length < groups.length) return;
+        const score = [0, 0, 0];
+        Object.keys(choice).forEach((g) => {
+            const row = W[g] && W[g][choice[g]];
+            if (row) row.forEach((v, i) => (score[i] += v));
+        });
+        let best = 0;
+        score.forEach((v, i) => { if (v > score[best]) best = i; });
+        const pick = TYPES[best];
+        if (nameEl) nameEl.textContent = pick.name;
+        if (whyEl) whyEl.textContent = pick.why;
+        if (linkEl) linkEl.setAttribute('href', pick.href);
+        result.classList.remove('opacity-60');
+        if (window.gsap) window.gsap.fromTo(result, { y: 8, opacity: 0.4 }, { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out' });
+    };
+
+    groups.forEach((group) => {
+        const g = group.dataset.chooseGroup;
+        group.querySelectorAll('[data-choose]').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                choice[g] = btn.dataset.value;
+                group.querySelectorAll('[data-choose]').forEach((b) => {
+                    b.setAttribute('aria-pressed', String(b === btn));
+                });
+                evaluate();
+            });
+        });
+    });
+}
+
+/* =========================================================
+   GSAP flourishes (only when GSAP is present on the page)
+   ========================================================= */
+function initGsap() {
+    if (!window.gsap) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const gsap = window.gsap;
+    if (window.ScrollTrigger) gsap.registerPlugin(window.ScrollTrigger);
+
+    const words = document.querySelectorAll('[data-hero-word]');
+    if (words.length) {
+        gsap.set(words, { yPercent: 115 });
+        gsap.to(words, { yPercent: 0, duration: 0.9, ease: 'power3.out', stagger: 0.06, delay: 0.12 });
+    }
+
+    const figures = document.querySelectorAll('[data-gallery-item]');
+    if (figures.length && window.ScrollTrigger && window.ScrollTrigger.batch) {
+        gsap.set(figures, { y: 28, opacity: 0 });
+        window.ScrollTrigger.batch(figures, {
+            start: 'top 88%',
+            onEnter: (els) => gsap.to(els, { y: 0, opacity: 1, duration: 0.6, ease: 'power3.out', stagger: 0.07 }),
+        });
+    }
+}
+
+/* =========================================================
+   Generic FAQ accordion (single open)
+   ========================================================= */
+function initFaq() {
+    const items = Array.from(document.querySelectorAll('[data-faq]'));
+    if (!items.length) return;
+
+    const closeItem = (item) => {
+        item.querySelector('[data-faq-btn]').setAttribute('aria-expanded', 'false');
+        item.querySelector('[data-faq-panel]').style.maxHeight = '0px';
+        const icon = item.querySelector('[data-faq-icon]');
+        if (icon) icon.classList.remove('rotate-45');
+    };
+
+    items.forEach((item) => {
+        const btn = item.querySelector('[data-faq-btn]');
+        const panel = item.querySelector('[data-faq-panel]');
+        const icon = item.querySelector('[data-faq-icon]');
+        btn.addEventListener('click', () => {
+            const open = btn.getAttribute('aria-expanded') === 'true';
+            items.forEach((o) => { if (o !== item) closeItem(o); });
+            if (open) {
+                closeItem(item);
+            } else {
+                btn.setAttribute('aria-expanded', 'true');
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+                if (icon) icon.classList.add('rotate-45');
+            }
+        });
+    });
+
+    window.addEventListener('resize', () => {
+        items.forEach((item) => {
+            if (item.querySelector('[data-faq-btn]').getAttribute('aria-expanded') === 'true') {
+                const p = item.querySelector('[data-faq-panel]');
+                p.style.maxHeight = p.scrollHeight + 'px';
+            }
+        });
+    }, { passive: true });
+}
+
+/* =========================================================
    Boot
    ========================================================= */
 document.addEventListener('DOMContentLoaded', async () => {
@@ -436,6 +675,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     initMarquee();
     initHorizontalScroll();
     initStats();
+    initSpecTabs();
+    initGallery();
+    initChooser();
+    initFaq();
+    initGsap();
     initFloatingButtons();
 });
 
