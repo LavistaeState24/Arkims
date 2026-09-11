@@ -912,3 +912,92 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 })();
+
+
+// farms js
+
+/* ---- Portfolio filter ---- */
+(function initProjectFilter() {
+    const chips = document.querySelectorAll('.fp-chip');
+    const cards = document.querySelectorAll('[data-project]');
+    const empty = document.getElementById('fp-empty');
+    if (!chips.length || !cards.length) return;
+
+    const ON = ['border-emerald-600', 'bg-emerald-600', 'text-white'];
+    const OFF = ['border-gray-200', 'bg-white', 'text-gray-600'];
+
+    chips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+            const type = chip.dataset.filter;
+
+            chips.forEach((c) => {
+                const active = c === chip;
+                c.setAttribute('aria-pressed', String(active));
+                c.classList.remove(...(active ? OFF : ON));
+                c.classList.add(...(active ? ON : OFF));
+            });
+
+            let shown = 0;
+            cards.forEach((card) => {
+                const match = type === 'all' || card.dataset.type === type;
+                card.classList.toggle('hidden', !match);
+                if (match) {
+                    shown += 1;
+                    // Restart the entrance animation on every pass.
+                    card.classList.remove('fp-pop');
+                    void card.offsetWidth;
+                    card.classList.add('fp-pop');
+                }
+            });
+
+            if (empty) empty.classList.toggle('hidden', shown > 0);
+        });
+    });
+})();
+
+/* ---- Photo lightbox ---- */
+(function initLightbox() {
+    const box = document.getElementById('fp-lightbox');
+    const img = document.getElementById('fp-lightbox-img');
+    const caption = document.getElementById('fp-lightbox-caption');
+    const closeBtn = document.getElementById('fp-lightbox-close');
+    const triggers = document.querySelectorAll('[data-lightbox]');
+    if (!box || !img || !triggers.length) return;
+
+    let lastFocused = null;
+
+    const open = (src, text) => {
+        lastFocused = document.activeElement;
+        img.src = src;
+        img.alt = text || 'Project photo';
+        if (caption) caption.textContent = text || '';
+        box.classList.remove('hidden');
+        box.classList.add('flex');
+        requestAnimationFrame(() => box.classList.remove('opacity-0'));
+        document.body.style.overflow = 'hidden';
+        if (closeBtn) closeBtn.focus();
+    };
+
+    const close = () => {
+        box.classList.add('opacity-0');
+        document.body.style.overflow = '';
+        window.setTimeout(() => {
+            box.classList.add('hidden');
+            box.classList.remove('flex');
+            img.src = '';
+        }, 300);
+        if (lastFocused) lastFocused.focus();
+    };
+
+    triggers.forEach((el) => {
+        el.addEventListener('click', () => open(el.dataset.lightbox, el.dataset.caption));
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', close);
+    box.addEventListener('click', (e) => {
+        if (e.target === box) close();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !box.classList.contains('hidden')) close();
+    });
+})();

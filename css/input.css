@@ -194,7 +194,7 @@
      left: 0;
      width: 0;
      height: 2.5px;
-     background: #22c55e;
+     background: #022f6a;
      transition: width 0.3s ease;
  }
 
@@ -274,11 +274,11 @@
  /* navbar css */
 
  .nav-link {
-     @apply text-gray-700 hover:text-emerald-700 transition-colors duration-200 whitespace-nowrap;
+     @apply text-gray-700 hover:text-pine-700 transition-colors duration-200 whitespace-nowrap;
  }
 
  .dropdown-link {
-     @apply block px-3 py-2.5 rounded-lg text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 transition-all duration-200;
+     @apply block px-3 py-2.5 rounded-lg text-gray-700 hover:bg-pine-100 hover:text-pine-700 transition-all duration-200;
  }
 
  /* Accordion rows in the tablet/mobile menu: drop the native
@@ -382,5 +382,87 @@
 
      * {
          scroll-behavior: auto !important;
+     }
+ }
+
+ /* farms css */
+
+ /* ---- Page-local motion, kept here so the shared bundle stays untouched ---- */
+ @keyframes fp-drift {
+
+     0%,
+     100% {
+         transform: translate3d(0, 0, 0);
+     }
+
+     50% {
+         transform: translate3d(0, -14px, 0);
+     }
+ }
+
+ .fp-drift {
+     animation: fp-drift 9s ease-in-out infinite;
+ }
+
+ @keyframes fp-marquee {
+     from {
+         transform: translate3d(0, 0, 0);
+     }
+
+     to {
+         transform: translate3d(-50%, 0, 0);
+     }
+ }
+
+ .fp-marquee {
+     animation: fp-marquee 34s linear infinite;
+ }
+
+ .fp-marquee-wrap:hover .fp-marquee {
+     animation-play-state: paused;
+ }
+
+ /* Card entrance used by the filter — replays every time a card comes back */
+ @keyframes fp-pop {
+     from {
+         opacity: 0;
+         transform: translateY(18px) scale(.97);
+     }
+
+     to {
+         opacity: 1;
+         transform: none;
+     }
+ }
+
+ .fp-pop {
+     animation: fp-pop .5s cubic-bezier(.22, 1, .36, 1) both;
+ }
+
+ /* Light sweep across the industry tiles on hover */
+ .fp-sweep::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, .5) 50%, transparent 65%);
+     transform: translateX(-120%);
+     transition: transform .8s ease;
+     pointer-events: none;
+ }
+
+ .fp-sweep:hover::after {
+     transform: translateX(120%);
+ }
+
+ @media (prefers-reduced-motion: reduce) {
+
+     .fp-drift,
+     .fp-marquee,
+     .fp-pop {
+         animation: none !important;
+     }
+
+     .fp-sweep::after {
+         transition: none;
      }
  }

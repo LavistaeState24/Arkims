@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farms &amp; Projects — AIIMS</title>
+    <title>Farms &amp; Projects — Arkims</title>
     <meta name="description"
-        content="Farms and greenhouse projects delivered by AIIMS across Saudi Arabia — locations, sizes, crops, project photos, case studies and the industries we serve." />
+        content="Farms and greenhouse projects delivered by Arkims across Middle East — locations, sizes, crops, project photos, case studies and the industries we serve." />
 
     <!-- Tailwind + Google Fonts + Font Awesome -->
     <link
@@ -15,88 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <link rel="stylesheet" href="./css/output.css" />
-
-    <style>
-        /* ---- Page-local motion, kept here so the shared bundle stays untouched ---- */
-        @keyframes fp-drift {
-
-            0%,
-            100% {
-                transform: translate3d(0, 0, 0);
-            }
-
-            50% {
-                transform: translate3d(0, -14px, 0);
-            }
-        }
-
-        .fp-drift {
-            animation: fp-drift 9s ease-in-out infinite;
-        }
-
-        @keyframes fp-marquee {
-            from {
-                transform: translate3d(0, 0, 0);
-            }
-
-            to {
-                transform: translate3d(-50%, 0, 0);
-            }
-        }
-
-        .fp-marquee {
-            animation: fp-marquee 34s linear infinite;
-        }
-
-        .fp-marquee-wrap:hover .fp-marquee {
-            animation-play-state: paused;
-        }
-
-        /* Card entrance used by the filter — replays every time a card comes back */
-        @keyframes fp-pop {
-            from {
-                opacity: 0;
-                transform: translateY(18px) scale(.97);
-            }
-
-            to {
-                opacity: 1;
-                transform: none;
-            }
-        }
-
-        .fp-pop {
-            animation: fp-pop .5s cubic-bezier(.22, 1, .36, 1) both;
-        }
-
-        /* Light sweep across the industry tiles on hover */
-        .fp-sweep::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, .5) 50%, transparent 65%);
-            transform: translateX(-120%);
-            transition: transform .8s ease;
-            pointer-events: none;
-        }
-
-        .fp-sweep:hover::after {
-            transform: translateX(120%);
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-
-            .fp-drift,
-            .fp-marquee,
-            .fp-pop {
-                animation: none !important;
-            }
-
-            .fp-sweep::after {
-                transition: none;
-            }
-        }
-    </style>
 </head>
 
 <body class="bg-white">
@@ -120,7 +38,7 @@
             class="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
 
             <!-- Left: copy -->
-            <div class="lg:col-span-6">
+            <div class="lg:col-span-6 mt-5">
                 <nav class="text-sm text-white/60">
                     <a href="index.html" class="transition-colors hover:text-white">Home</a>
                     <span class="mx-2 text-white/30">/</span>
@@ -166,51 +84,23 @@
             <div class="lg:col-span-6">
                 <div class="relative mx-auto grid max-w-lg grid-cols-2 gap-4 lg:max-w-none">
                     <div data-reveal data-reveal-delay="120"
-                        class="fp-drift overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
-                        <img src="./assets/A1.jpg" alt="Hydroponic greenhouse interior"
-                            class="h-56 w-full object-cover md:h-64" loading="lazy" />
+                        class="fp-drift overflow-hidden ">
+                        <!-- <img src="./assets/A1.jpg" alt="Hydroponic greenhouse interior"
+                            class="h-72 w-full object-cover md:h-64" loading="lazy" /> -->
                     </div>
-                    <div data-reveal data-reveal-delay="220"
-                        class="fp-drift mt-8 overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
-                        style="animation-delay:-3s">
-                        <img src="./assets/A3.jpg" alt="Glass greenhouse structure"
-                            class="h-56 w-full object-cover md:h-64" loading="lazy" />
-                    </div>
-                    <div data-reveal data-reveal-delay="320"
-                        class="fp-drift -mt-4 overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
-                        style="animation-delay:-6s">
-                        <img src="./assets/A4.jpg" alt="Shade-net farm" class="h-40 w-full object-cover md:h-48"
-                            loading="lazy" />
-                    </div>
+                
                     <div data-reveal data-reveal-delay="420"
                         class="fp-drift mt-4 overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
                         style="animation-delay:-1.5s">
-                        <img src="./assets/A2.jpg" alt="Crop rows under cover" class="h-40 w-full object-cover md:h-48"
+                        <img src="./assets/A6.jpg" alt="Crop rows under cover" class="h-64 w-full object-cover md:h-64"
                             loading="lazy" />
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Stat rail -->
-        <div class="relative z-10 mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div data-reveal
-                class="grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 md:grid-cols-4">
-                <div class="bg-[#01271f] px-6 py-7 text-center">
-                    <div class="text-3xl font-extrabold text-white md:text-4xl" data-count="48">48</div>
-                    <p class="mt-1 text-xs uppercase tracking-widest text-white/50">Projects delivered</p>
-                </div>
-                <div class="bg-[#01271f] px-6 py-7 text-center">
-                    <div class="text-3xl font-extrabold text-white md:text-4xl" data-count="430">430</div>
-                    <p class="mt-1 text-xs uppercase tracking-widest text-white/50">Hectares under cover</p>
-                </div>
-                <div class="bg-[#01271f] px-6 py-7 text-center">
-                    <div class="text-3xl font-extrabold text-white md:text-4xl" data-count="11">11</div>
-                    <p class="mt-1 text-xs uppercase tracking-widest text-white/50">Regions in KSA</p>
-                </div>
-                <div class="bg-[#01271f] px-6 py-7 text-center">
-                    <div class="text-3xl font-extrabold text-white md:text-4xl" data-count="35">35</div>
-                    <p class="mt-1 text-xs uppercase tracking-widest text-white/50">Years of build history</p>
+                     <div data-reveal data-reveal-delay="420"
+                        class="fp-drift mt-4 overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
+                        style="animation-delay:-1.5s">
+                        <img src="./assets/A4.jpg" alt="Crop rows under cover" class="h-64 w-full object-cover md:h-64"
+                            loading="lazy" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -561,7 +451,7 @@
                 <button type="button" data-lightbox="./assets/A1.jpg" data-caption="DAVA Agricultural Co. — Al-Kharj"
                     data-reveal
                     class="group relative col-span-2 row-span-2 overflow-hidden rounded-3xl border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/A1.jpg" alt="Greenhouse interior with crop rows"
+                    <img src="./assets/A4.jpg" alt="Greenhouse interior with crop rows"
                         class="h-64 w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110 md:h-full"
                         loading="lazy" />
                     <span
@@ -573,7 +463,7 @@
                 <button type="button" data-lightbox="./assets/A3.jpg" data-caption="Alrasheed Greenhouses — Riyadh"
                     data-reveal data-reveal-delay="80"
                     class="group relative overflow-hidden rounded-3xl border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/A3.jpg" alt="Glass greenhouse exterior"
+                    <img src="./assets/A1.jpg" alt="Glass greenhouse exterior"
                         class="h-40 w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110 md:h-48"
                         loading="lazy" />
                     <span
@@ -585,7 +475,7 @@
                 <button type="button" data-lightbox="./assets/A4.jpg" data-caption="Al Rawda Farm Cluster — Qassim"
                     data-reveal data-reveal-delay="160"
                     class="group relative overflow-hidden rounded-3xl border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/A4.jpg" alt="Plastic greenhouse rows"
+                    <img src="./assets/A6.jpg" alt="Plastic greenhouse rows"
                         class="h-40 w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110 md:h-48"
                         loading="lazy" />
                     <span
@@ -597,7 +487,7 @@
                 <button type="button" data-lightbox="./assets/A2.jpg" data-caption="Northern Valley Produce — Tabuk"
                     data-reveal data-reveal-delay="240"
                     class="group relative overflow-hidden rounded-3xl border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/A2.jpg" alt="Shade-net covered crops"
+                    <img src="./assets/A3.jpg" alt="Shade-net covered crops"
                         class="h-40 w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110 md:h-48"
                         loading="lazy" />
                     <span
@@ -615,18 +505,6 @@
                     <span
                         class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-4 text-left text-xs font-semibold text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                         Green Coast NFT Farm — Jazan
-                    </span>
-                </button>
-
-                <button type="button" data-lightbox="./assets/Hero.jpg" data-caption="Hail Propagation Centre — Hail"
-                    data-reveal data-reveal-delay="400"
-                    class="group relative col-span-2 overflow-hidden rounded-3xl border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/Hero.jpg" alt="Propagation glasshouse"
-                        class="h-40 w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110 md:h-48"
-                        loading="lazy" />
-                    <span
-                        class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent p-4 text-left text-xs font-semibold text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                        Hail Propagation Centre — Hail
                     </span>
                 </button>
             </div>
@@ -937,7 +815,7 @@
                         <i class="fas fa-landmark"></i>
                     </div>
                     <h3 class="mt-4 text-lg font-bold text-gray-900">Government &amp; food security programmes</h3>
-                    <p class="mt-2 text-sm text-gray-500">Vision 2030 projects delivered with MEWA and Agricultural
+                    <p class="mt-2 text-sm text-gray-500">Vision for projects delivered with MEWA and Agricultural
                         Development Fund requirements built into the design.</p>
                 </div>
 
@@ -980,14 +858,15 @@
     <!-- ============================================================
     CTA
     ============================================================ -->
-    <section class="bg-white py-20 md:py-24">
+       <!-- Pinned closing section — the footer scrolls up over it -->
+ <section class="bg-white py-20 md:py-24">
         <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <div data-reveal
-                class="scale-95 rounded-3xl bg-gradient-to-br from-emerald-600 to-green-500 px-8 py-14 text-center opacity-0 shadow-2xl shadow-emerald-600/25 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none md:px-14">
-                <h2 class="text-2xl font-extrabold text-white md:text-3xl">Want your site on this page?</h2>
+                class="scale-95 rounded-3xl bg-[#01473f]  py-14 text-center opacity-0 shadow-2xl shadow-emerald-600/25 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none md:px-14">
+                <h2 class="text-2xl font-extrabold text-white md:text-3xl">Planning a greenhouse project?</h2>
                 <p class="mx-auto mt-3 max-w-xl text-emerald-50">
-                    Send us the location, the crop and the output you are aiming for. We'll come back with a
-                    feasibility view and an indicative budget.
+                    Send us the site, the crop and the target output. We'll come back with a feasibility
+                    view and an indicative budget.
                 </p>
                 <a href="contact.html"
                     class="mt-8 inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-3.5 font-semibold text-emerald-700 shadow-lg transition-all hover:bg-emerald-50 hover:shadow-xl">
@@ -1000,96 +879,6 @@
     <div id="footer-container" class="relative z-10"></div>
 
     <script src="./js/script.js"></script>
-
-    <script>
-        'use strict';
-
-        /* ---- Portfolio filter ---- */
-        (function initProjectFilter() {
-            const chips = document.querySelectorAll('.fp-chip');
-            const cards = document.querySelectorAll('[data-project]');
-            const empty = document.getElementById('fp-empty');
-            if (!chips.length || !cards.length) return;
-
-            const ON = ['border-emerald-600', 'bg-emerald-600', 'text-white'];
-            const OFF = ['border-gray-200', 'bg-white', 'text-gray-600'];
-
-            chips.forEach((chip) => {
-                chip.addEventListener('click', () => {
-                    const type = chip.dataset.filter;
-
-                    chips.forEach((c) => {
-                        const active = c === chip;
-                        c.setAttribute('aria-pressed', String(active));
-                        c.classList.remove(...(active ? OFF : ON));
-                        c.classList.add(...(active ? ON : OFF));
-                    });
-
-                    let shown = 0;
-                    cards.forEach((card) => {
-                        const match = type === 'all' || card.dataset.type === type;
-                        card.classList.toggle('hidden', !match);
-                        if (match) {
-                            shown += 1;
-                            // Restart the entrance animation on every pass.
-                            card.classList.remove('fp-pop');
-                            void card.offsetWidth;
-                            card.classList.add('fp-pop');
-                        }
-                    });
-
-                    if (empty) empty.classList.toggle('hidden', shown > 0);
-                });
-            });
-        })();
-
-        /* ---- Photo lightbox ---- */
-        (function initLightbox() {
-            const box = document.getElementById('fp-lightbox');
-            const img = document.getElementById('fp-lightbox-img');
-            const caption = document.getElementById('fp-lightbox-caption');
-            const closeBtn = document.getElementById('fp-lightbox-close');
-            const triggers = document.querySelectorAll('[data-lightbox]');
-            if (!box || !img || !triggers.length) return;
-
-            let lastFocused = null;
-
-            const open = (src, text) => {
-                lastFocused = document.activeElement;
-                img.src = src;
-                img.alt = text || 'Project photo';
-                if (caption) caption.textContent = text || '';
-                box.classList.remove('hidden');
-                box.classList.add('flex');
-                requestAnimationFrame(() => box.classList.remove('opacity-0'));
-                document.body.style.overflow = 'hidden';
-                if (closeBtn) closeBtn.focus();
-            };
-
-            const close = () => {
-                box.classList.add('opacity-0');
-                document.body.style.overflow = '';
-                window.setTimeout(() => {
-                    box.classList.add('hidden');
-                    box.classList.remove('flex');
-                    img.src = '';
-                }, 300);
-                if (lastFocused) lastFocused.focus();
-            };
-
-            triggers.forEach((el) => {
-                el.addEventListener('click', () => open(el.dataset.lightbox, el.dataset.caption));
-            });
-
-            if (closeBtn) closeBtn.addEventListener('click', close);
-            box.addEventListener('click', (e) => {
-                if (e.target === box) close();
-            });
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && !box.classList.contains('hidden')) close();
-            });
-        })();
-    </script>
 
 </body>
 

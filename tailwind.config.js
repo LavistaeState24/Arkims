@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-     content: ["./*.html", "./components/**/*.html", "./js/**/*.js"],
+  content: ["./*.html", "./components/**/*.html", "./js/**/*.js"],
   theme: {
     extend: {
       colors: {
-        pine: { 950: '#01473f', 800: '#01473f', 700: '#01473f', 500: '#01473f', 100: '#E4EFE7' },
-        sand: { 600: '#B9853A', 500: '#CB9A4E', 100: '#F4E9D8' },
+        pine: { 950: '#011735', 800: '#022f6a', 700: '#022f6a', 500: '#022f6a', 100: '#E6EFF8' },
+        sand: { 600: '#cf9a55', 500: '#c89f53',400:'#e4be7a', 100: '#F9F4E8' },
         paper: '#F5F6F1',
-        ink: { DEFAULT: '#16201B', soft: '#4B564E' },
+        ink: { DEFAULT: '#022f6a', soft: '#4B564E' },
         line: '#DDE3DC'
       },
       fontFamily: {
