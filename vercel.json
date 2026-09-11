@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run css:build",
+  "outputDirectory": ".",
+  "framework": null
+}
