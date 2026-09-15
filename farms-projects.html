@@ -27,84 +27,82 @@
     <!-- ============================================================
     HERO — split editorial layout: copy on the left, photo collage right
     ============================================================ -->
-    <section class="relative overflow-hidden bg-[#01271f] pt-24 pb-16 md:pt-28 md:pb-24">
+  <section class="relative overflow-hidden bg-[#022f6a] pt-24 pb-16 md:pt-28 md:pb-24">
 
-        <div class="pointer-events-none absolute -top-32 -left-24 h-96 w-96 rounded-full bg-emerald-500/20 blur-3xl">
-        </div>
-        <div class="pointer-events-none absolute bottom-0 right-0 h-96 w-96 rounded-full bg-amber-400/10 blur-3xl">
-        </div>
+    <!-- Ambient Glow Accents -->
+    <div class="pointer-events-none absolute -top-32 -left-24 h-96 w-96 rounded-full bg-[#ddc59a]/15 blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 right-0 h-96 w-96 rounded-full bg-blue-400/10 blur-3xl"></div>
 
-        <div
-            class="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+    <div class="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
 
-            <!-- Left: copy -->
-            <div class="lg:col-span-6 mt-5">
-                <nav class="text-sm text-white/60">
-                    <a href="index.html" class="transition-colors hover:text-white">Home</a>
-                    <span class="mx-2 text-white/30">/</span>
-                    <span class="font-medium text-white">Farms &amp; Projects</span>
-                </nav>
+        <!-- Left Column: Content -->
+        <div class="mt-5 lg:col-span-6">
+            <!-- Breadcrumbs -->
+            <nav class="text-sm text-slate-300">
+                <a href="index.html" class="transition-colors hover:text-[#ddc59a]">Home</a>
+                <span class="mx-2 text-white/30">/</span>
+                <span class="font-medium text-white">Farms &amp; Projects</span>
+            </nav>
 
-                <div data-reveal
-                    class="mt-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold text-white backdrop-blur-sm">
-                    <span class="relative flex h-2 w-2">
-                        <span
-                            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-                        <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
-                    </span>
-                    Delivered across the Kingdom
-                </div>
-
-                <h1 data-reveal data-reveal-delay="80"
-                    class="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
-                    Farms &amp; Projects
-                    <span class="mt-2 block text-emerald-300">built to produce, season after season</span>
-                </h1>
-
-                <p data-reveal data-reveal-delay="160"
-                    class="mt-6 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
-                    Every project below is a working site — a location, a covered area, a crop plan and a
-                    yield target. Browse the portfolio, look through the photos, read how the numbers
-                    landed, and see the industries we build for.
-                </p>
-
-                <div data-reveal data-reveal-delay="240" class="mt-8 flex flex-wrap gap-3">
-                    <a href="#portfolio"
-                        class="inline-flex items-center gap-2 rounded-2xl bg-emerald-500 px-6 py-3.5 font-semibold text-white shadow-lg shadow-emerald-900/40 transition-all hover:-translate-y-0.5 hover:bg-emerald-400">
-                        <i class="fas fa-seedling"></i> Browse the portfolio
-                    </a>
-                    <a href="#case-studies"
-                        class="inline-flex items-center gap-2 rounded-2xl border border-white/20 px-6 py-3.5 font-semibold text-white transition-all hover:bg-white/10">
-                        <i class="fas fa-chart-line"></i> Read a case study
-                    </a>
-                </div>
+            <!-- Location Badge -->
+            <div data-reveal
+                class="mt-6 inline-flex items-center gap-2 rounded-full border border-[#ddc59a]/30 bg-[#ddc59a]/10 px-4 py-2 text-xs font-semibold text-[#ddc59a] backdrop-blur-sm">
+                <span class="relative flex h-2 w-2">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#ddc59a] opacity-75"></span>
+                    <span class="relative inline-flex h-2 w-2 rounded-full bg-[#ddc59a]"></span>
+                </span>
+                Delivered Across India &amp; International Markets
             </div>
 
-            <!-- Right: staggered photo collage -->
-            <div class="lg:col-span-6">
-                <div class="relative mx-auto grid max-w-lg grid-cols-2 gap-4 lg:max-w-none">
-                    <div data-reveal data-reveal-delay="120"
-                        class="fp-drift overflow-hidden ">
-                        <!-- <img src="./assets/A1.jpg" alt="Hydroponic greenhouse interior"
-                            class="h-72 w-full object-cover md:h-64" loading="lazy" /> -->
-                    </div>
+            <!-- Title -->
+            <h1 data-reveal data-reveal-delay="80"
+                class="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
+                Farms &amp; Projects
+                <span class="mt-2 block text-[#ddc59a]">Engineered to Produce, Season After Season</span>
+            </h1>
+
+            <!-- Narrative Paragraph -->
+            <p data-reveal data-reveal-delay="160"
+                class="mt-6 max-w-xl text-base leading-relaxed text-slate-200/80 md:text-lg">
+                Every project below represents an active operational site—defined by precise structural engineering, advanced climate control, optimized crop selection, and targeted yield returns. Explore our portfolio to see how we turn land into high-performing commercial assets.
+            </p>
+
+            <!-- Action Buttons -->
+            <div data-reveal data-reveal-delay="240" class="mt-8 flex flex-wrap gap-4">
+                <a href="#portfolio"
+                    class="inline-flex items-center gap-2 rounded-2xl bg-[#ddc59a] px-6 py-3.5 font-semibold text-[#022f6a] shadow-lg shadow-black/20 transition-all hover:-translate-y-0.5 hover:bg-[#e8d7b8]">
+                    <i class="fas fa-seedling"></i> Browse Portfolio
+                </a>
+                <a href="#case-studies"
+                    class="inline-flex items-center gap-2 rounded-2xl border border-white/20 px-6 py-3.5 font-semibold text-white transition-all hover:border-[#ddc59a] hover:bg-white/10 hover:text-[#ddc59a]">
+                    <i class="fas fa-chart-line"></i> Read Case Studies
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column: Staggered Photo Grid -->
+        <div class="lg:col-span-6">
+            <div class="relative mx-auto grid max-w-lg grid-cols-2 gap-4 lg:max-w-none">
                 
-                    <div data-reveal data-reveal-delay="420"
-                        class="fp-drift mt-4 overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
-                        style="animation-delay:-1.5s">
-                        <img src="./assets/A6.jpg" alt="Crop rows under cover" class="h-64 w-full object-cover md:h-64"
-                            loading="lazy" />
-                    </div>
-                     <div data-reveal data-reveal-delay="420"
-                        class="fp-drift mt-4 overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
-                        style="animation-delay:-1.5s">
-                        <img src="./assets/A4.jpg" alt="Crop rows under cover" class="h-64 w-full object-cover md:h-64"
-                            loading="lazy" />
-                    </div>
+                <!-- Image Card 1 -->
+                <div data-reveal data-reveal-delay="200"
+                    class="fp-drift overflow-hidden rounded-3xl border border-white/10 shadow-2xl transition duration-500 hover:scale-[1.02]">
+                    <img src="./assets/A6.jpg" alt="Commercial Greenhouse Infrastructure" 
+                        class="h-64 w-full object-cover md:h-72" loading="lazy" />
                 </div>
+
+                <!-- Image Card 2 (Offset down for staggered look) -->
+                <div data-reveal data-reveal-delay="400"
+                    class="fp-drift mt-6 overflow-hidden rounded-3xl border border-[#ddc59a]/30 shadow-2xl transition duration-500 hover:scale-[1.02]">
+                    <img src="./assets/A4.jpg" alt="Crop Rows Under Protected Cover" 
+                        class="h-64 w-full object-cover md:h-72" loading="lazy" />
+                </div>
+
             </div>
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- ============================================================
     LOCATION MARQUEE
