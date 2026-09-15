@@ -3285,6 +3285,11 @@ video {
   color: rgb(255 255 255 / 0.9);
 }
 
+.text-sand-600 {
+  --tw-text-opacity: 1;
+  color: rgb(207 154 85 / var(--tw-text-opacity, 1));
+}
+
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
