@@ -26,13 +26,23 @@
         <!-- Background (parallax) -->
         <div class="absolute inset-0 z-0 overflow-hidden">
 
-            <img src="./assets/hero2.jpg" alt="Hero Background" data-parallax data-parallax-speed="0.18"
-                class="absolute inset-x-0 -top-[12%] h-[124%] w-full object-cover" />
+    <!-- Video Background -->
+    <video 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        class="absolute inset-0 w-full h-full object-cover">
+        <source src="./assets/video.mp4" type="video/mp4" />
+        <source src="./assets/video.mp4" type="video/webm" />
+        <!-- Fallback message for unsupported browsers -->
+        Your browser does not support the video tag.
+    </video>
 
-            <!-- Branded dark overlay -->
-            <div class="absolute inset-0 bg-black/60"></div>
+    <!-- Branded dark overlay (keeps text legible) -->
+    <div class="absolute inset-0 bg-black/30"></div>
 
-        </div>
+</div>
 
 
         <!-- Main Content -->
@@ -334,8 +344,8 @@
                         seasons.
                     </p>
                     <div class="mt-5 flex flex-wrap gap-1.5">
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs text-gray-600">4–8m span</span>
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs text-gray-600">natural
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">4–8m span</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">natural
                             vent</span>
                     </div>
                 </article>
@@ -355,9 +365,9 @@
                         afternoon.
                     </p>
                     <div class="mt-5 flex flex-wrap gap-1.5">
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs text-gray-600">pad &amp;
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">pad &amp;
                             fan</span>
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs text-gray-600">twin-wall</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">twin-wall</span>
                     </div>
                 </article>
 
@@ -372,10 +382,10 @@
                         yield.
                     </p>
                     <div class="mt-5 flex flex-wrap gap-1.5">
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs text-gray-600">diffuse
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">diffuse
                             glass</span>
                         <span
-                            class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs text-gray-600">multi-span</span>
+                            class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">multi-span</span>
                     </div>
                 </article>
 
@@ -390,9 +400,9 @@
                         networks.
                     </p>
                     <div class="mt-5 flex flex-wrap gap-1.5">
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs text-gray-600">climate
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">climate
                             computer</span>
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs text-gray-600">remote</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">remote</span>
                     </div>
                 </article>
             </div>

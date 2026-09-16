@@ -23,118 +23,140 @@
 
     <main class="relative isolate overflow-hidden">
 
-        <section class="relative min-h-[70vh] flex items-center overflow-hidden pt-16 md:pt-20 group">
+        <section class="relative min-h-[70vh] flex items-center overflow-hidden pt-16 md:pt-20 group bg-darkBg">
 
-        <!-- Background image with zoom -->
-        <div class="absolute inset-0 z-0 overflow-hidden transition-transform duration-[3000ms] group-hover:scale-105">
-            <img src="./assets/A4.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover" />
-            <!-- Gradient overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-            <!-- Subtle pattern -->
-            <div class="absolute inset-0 bg-[url('./assets/leaf-pattern.png')] opacity-10"></div>
-        </div>
+    <!-- Video Background Container -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+        <video 
+            autoplay 
+            loop 
+            muted 
+            playsinline 
+            class="absolute inset-0 w-full h-full object-cover opacity-40 scale-105 transition-transform duration-[3000ms] group-hover:scale-110">
+            <source src="./assets/hero-video.mp4" type="video/mp4" />
+            <source src="./assets/hero-video.webm" type="video/webm" />
+        </video>
+        
+        <!-- Palette Gradient overlay for optimal text contrast -->
+        <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/75 to-darkBg/40"></div>
+        
+        <!-- Subtle Pattern Overlay -->
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] bg-repeat"></div>
+    </div>
 
-        <!-- Decorative blurred circle -->
-        <div class="absolute top-20 right-20 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none">
-        </div>
+    <!-- Decorative Sand Glow Background Orbs -->
+    <div class="absolute top-12 right-12 w-96 h-96 bg-sand-400/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-72 h-72 bg-sand-400/10 rounded-full blur-2xl pointer-events-none"></div>
 
-        <!-- Content -->
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Content Container -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                <!-- Left Text -->
-                <div class="space-y-6 transition-all duration-700 group-hover:translate-y-[-4px]">
-                    <!-- Badge with ping -->
-                    <div
-                        class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white text-xs font-semibold px-4 py-2 rounded-full border border-white/20">
-                        <span class="relative flex h-2 w-2">
-                            <span
-                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                        </span>
-                        Vision for Food Security
-                    </div>
-
-                    <!-- Heading -->
-                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
-                       Pioneering the Future of Agricultural <span>Transformation</span>
-                    </h1>
-
-                    <p
-                        class="text-lg text-white/80 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1">
-                        Arkims structures are engineered to cut water use, close resource loops and put Middle East (GCC) growers at the forefront of sustainable agriculture.
-                    </p>
-
-                    <!-- Button -->
-                    <a href="#contact"
-                        class="inline-flex items-center gap-3 bg-pine-700 hover:bg-pine-800 text-white font-semibold py-3.5  px-6 rounded-xl transition-all duration-300 shadow-lg shadow-pine-500/30 hover:shadow-pine-500/50 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2.5 text-base">
-                        <i class="fas fa-paper-plane"></i> Send a Message
-                    </a>
+            <!-- Left Text Content -->
+            <div class="space-y-6 transition-all duration-700 group-hover:translate-y-[-4px]">
+                
+                <!-- Badge with Sand Ping Animation -->
+                <div class="inline-flex items-center gap-2 bg-LightBg/10 backdrop-blur-md text-LightBg text-xs font-semibold px-4 py-2 rounded-full border border-sand-400/30 shadow-lg shadow-darkBg/50">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sand-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-sand-400"></span>
+                    </span>
+                    Vision for Food Security
                 </div>
 
+                <!-- Main Heading -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-LightBg leading-tight drop-shadow-xl">
+                    Pioneering the Future of Agricultural <span class="text-sand-400">Transformation</span>
+                </h1>
+
+                <!-- Paragraph Description -->
+                <p class="text-base sm:text-lg text-LightBg/85 max-w-xl leading-relaxed transition-all duration-500 group-hover:translate-x-1">
+                    Arkims structures are engineered to cut water use, close resource loops and put Middle East (GCC) growers at the forefront of sustainable agriculture.
+                </p>
+
+                <!-- Action Button with Sand Styling -->
+                <a href="#contact"
+                    class="inline-flex items-center justify-center gap-2.5 bg-sand-400 hover:bg-LightBg text-darkBg font-bold py-3.5 px-7 rounded-xl transition-all duration-300 shadow-xl shadow-darkBg/60 hover:shadow-sand-400/20 hover:scale-[1.02] active:scale-[0.98] text-base">
+                    <i class="fas fa-paper-plane text-darkBg"></i> Send a Message
+                </a>
             </div>
-        </div>
 
-        <!-- Scroll indicator -->
-        <div
-            class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-white/40 animate-bounce">
-            <span class="text-xs font-medium uppercase tracking-widest">Scroll</span>
-            <i class="fas fa-chevron-down text-sm"></i>
+            <!-- Right Visual Accent Card -->
         </div>
+    </div>
 
-    </section>
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-LightBg/50 animate-bounce">
+        <span class="text-xs font-medium uppercase tracking-widest text-sand-400">Scroll</span>
+        <i class="fas fa-chevron-down text-sm text-sand-400"></i>
+    </div>
+
+</section>
 
         <!-- ============ 3 · INTERACTIVE IMPACT DASHBOARD ============ -->
-        <section id="impact" class="bg-white py-24 md:py-32">
-            <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-                <div class="grid gap-12 lg:grid-cols-[minmax(0,24rem)_1fr] lg:gap-16">
-                    <div class="lg:sticky lg:top-28 lg:self-start">
-                        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#1FA971]">Verified metrics</p>
-                        <h2 class="mt-3 text-balance text-3xl font-extrabold tracking-tight sm:text-4xl">
-                            Agricultural efficiency quantified
-                        </h2>
-                        <p class="mt-4 max-w-md text-pretty leading-relaxed text-[#5F7A63]">
-                            Cumulative operational metrics across all commercial active installations compared directly against regional open-field benchmarks.
-                        </p>
-                    </div>
+        <section id="impact" class="bg-LightBg py-24 md:py-32 relative overflow-hidden">
 
-                    <div class="grid gap-5 sm:grid-cols-2">
-                        <article data-impact-card
-                            class="rounded-2xl border border-[#062419]/10 bg-[#EFE7D6]/40 p-7 transition duration-300 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_45px_90px_-35px_rgba(6,36,25,0.4)]">
-                            <p class="text-4xl font-extrabold tracking-tight sm:text-5xl">
-                                <span data-count="1.8" data-decimals="1" data-suffix="B">0.0</span>
-                            </p>
-                            <p class="mt-2 text-sm font-medium text-[#5F7A63]">Gallons of irrigation water recycled</p>
-                        </article>
-                        <article data-impact-card
-                            class="rounded-2xl border border-[#062419]/10 bg-[#EFE7D6]/40 p-7 transition duration-300 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_45px_90px_-35px_rgba(6,36,25,0.4)]">
-                            <p class="text-4xl font-extrabold tracking-tight sm:text-5xl">
-                                <span data-count="80" data-suffix="%">0</span>
-                            </p>
-                            <p class="mt-2 text-sm font-medium text-[#5F7A63]">Reduction in overall water consumption</p>
-                        </article>
-                       
-                        <article data-impact-card
-                            class="rounded-2xl border border-[#062419]/10 bg-[#EFE7D6]/40 p-7 transition duration-300 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_45px_90px_-35px_rgba(6,36,25,0.4)]">
-                            <p class="text-4xl font-extrabold tracking-tight sm:text-5xl">
-                                <span data-count="2.5" data-suffix="x">0</span>
-                            </p>
-                            <p class="mt-2 text-sm font-medium text-[#5F7A63]">Higher crop yield per square meter</p>
-                        </article>
-                    </div>
-                </div>
+    <!-- Ambient Sand Glow Overlay -->
+    <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-sand-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 relative z-10">
+        <div class="grid gap-12 lg:grid-cols-[minmax(0,24rem)_1fr] lg:gap-16">
+            
+            <!-- Sticky Header Left Section -->
+            <div class="lg:sticky lg:top-28 lg:self-start">
+                <p class="text-xs font-semibold uppercase tracking-[0.22em] text-darkBg">Verified metrics</p>
+                <h2 class="mt-3 text-balance text-3xl font-extrabold tracking-tight text-darkBg sm:text-4xl">
+                    Agricultural efficiency quantified
+                </h2>
+                <p class="mt-4 max-w-md text-pretty leading-relaxed text-darkBg/80">
+                    Cumulative operational metrics across all commercial active installations compared directly against regional open-field benchmarks.
+                </p>
             </div>
-        </section>
+
+            <!-- Stats Grid Section -->
+            <div class="grid gap-5 sm:grid-cols-3">
+                
+                <!-- Card 1 -->
+                <article data-impact-card
+                    class="group relative rounded-2xl border border-sand-400/20 bg-darkBg backdrop-blur-md p-7 transition-all duration-300 ease-in-out hover:-translate-y-1.5 hover:border-sand-400/60 hover:shadow-xl hover:shadow-sand-400/20">
+                    <p class="text-4xl font-extrabold tracking-tight text-sand-400 sm:text-5xl group-hover:scale-105 transition-transform duration-300">
+                        <span data-count="1.8" data-decimals="1" data-suffix="B">0.0</span>
+                    </p>
+                    <p class="mt-2 text-sm font-medium text-LightBg/85">Gallons of irrigation water recycled</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article data-impact-card
+                    class="group relative rounded-2xl border border-sand-400/20 bg-darkBg backdrop-blur-md p-7 transition-all duration-300 ease-in-out hover:-translate-y-1.5 hover:border-sand-400/60 hover:shadow-xl hover:shadow-sand-400/20">
+                    <p class="text-4xl font-extrabold tracking-tight text-sand-400 sm:text-5xl group-hover:scale-105 transition-transform duration-300">
+                        <span data-count="80" data-suffix="%">0</span>
+                    </p>
+                    <p class="mt-2 text-sm font-medium text-LightBg/85">Reduction in overall water consumption</p>
+                </article>
+               
+                <!-- Card 3 -->
+                <article data-impact-card
+                    class="group relative rounded-2xl border border-sand-400/20 bg-darkBg backdrop-blur-md p-7 transition-all duration-300 ease-in-out hover:-translate-y-1.5 hover:border-sand-400/60 hover:shadow-xl hover:shadow-sand-400/20">
+                    <p class="text-4xl font-extrabold tracking-tight text-sand-400 sm:text-5xl group-hover:scale-105 transition-transform duration-300">
+                        <span data-count="2.5" data-suffix="x">0</span>
+                    </p>
+                    <p class="mt-2 text-sm font-medium text-LightBg/85">Higher crop yield per square meter</p>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- ============ 4 · SCROLL-DRIVEN MILESTONE TIMELINE ============ -->
-        <section id="timeline" class="relative overflow-hidden bg-[#01473f] py-24 text-white md:py-32">
+        <section id="timeline" class="relative overflow-hidden bg-sand-400 py-24 text-white md:py-32">
             <div class="absolute inset-0 -z-10"
                 style="background:radial-gradient(50rem 35rem at 80% 0%, rgba(43,212,138,0.10), transparent 60%);"></div>
 
             <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
                 <div class="mx-auto max-w-2xl text-center">
-                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#2BD48A]">Strategic Roadmap</p>
-                    <h2 class="mt-3 text-balance text-3xl font-extrabold tracking-tight sm:text-4xl">
+                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-darkBg">Strategic Roadmap</p>
+                    <h2 class="mt-3 text-darkBg text-3xl font-extrabold tracking-tight sm:text-4xl">
                         Path to Next-Generation Agricultural Infrastructure
                     </h2>
                 </div>
@@ -143,61 +165,61 @@
                     <span aria-hidden="true"
                         class="absolute left-[19px] top-1 bottom-1 w-px bg-white/12 md:left-1/2 md:-translate-x-1/2"></span>
                     <span aria-hidden="true" data-timeline-line
-                        class="absolute left-[19px] top-1 w-px origin-top scale-y-0 bg-gradient-to-b from-[#2BD48A] to-[#1FA971] [filter:drop-shadow(0_0_9px_rgba(43,212,138,0.85))] md:left-1/2 md:-translate-x-1/2"
+                        class="absolute left-[19px] top-1 w-px origin-top scale-y-0 bg-gradient-to-b from-darkBg to-LightBg [filter:drop-shadow(0_0_9px_rgba(43,212,138,0.85))] md:left-1/2 md:-translate-x-1/2"
                         style="height:calc(100% - 0.5rem)"></span>
 
                     <ol class="space-y-14 md:space-y-20">
                         <li data-timeline-node class="relative pl-14 md:grid md:grid-cols-2 md:gap-12 md:pl-0">
                             <span data-node-dot
-                                class="absolute left-[19px] top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-[#0c3a29] ring-4 ring-[#01473f] md:left-1/2"></span>
+                                class="absolute left-[19px] top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-darkBg ring-4 ring-darkBg md:left-1/2"></span>
                             <div data-node-body class="md:pr-12 md:text-right">
-                                <p class="text-sm font-bold text-[#2BD48A]">Phase 01 — Active Deployment</p>
-                                <h3 class="mt-1 text-lg font-bold">IoT Sensor Integration & Diagnostics</h3>
-                                <p class="mt-1.5 text-sm leading-relaxed text-white/60">
+                                <p class="text-sm font-bold text-darkBg">Phase 01 — Active Deployment</p>
+                                <h3 class="mt-1 text-lg text-LightBg font-bold">IoT Sensor Integration & Diagnostics</h3>
+                                <p class="mt-1.5 text-md font-medium text-darkBg">
                                     Full telemetry deployment across operational facilities for real-time climate, root-zone, and nutrient tracking.
                                 </p>
                             </div>
                         </li>
                         <li data-timeline-node class="relative pl-14 md:grid md:grid-cols-2 md:gap-12 md:pl-0">
                             <span data-node-dot
-                                class="absolute left-[19px] top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-[#0c3a29] ring-4 ring-[#01473f] md:left-1/2"></span>
+                                class="absolute left-[19px] top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-darkBg ring-4 ring-darkBg md:left-1/2"></span>
                             <div data-node-body class="md:col-start-2 md:pl-12">
-                                <p class="text-sm font-bold text-[#2BD48A]">Phase 02 — Near Term</p>
-                                <h3 class="mt-1 text-lg font-bold">AI-Driven Automated Dosing Systems</h3>
-                                <p class="mt-1.5 text-sm leading-relaxed text-white/60">
+                                <p class="text-sm font-bold text-darkBg">Phase 02 — Near Term</p>
+                                <h3 class="mt-1 text-lg text-LightBg font-bold">AI-Driven Automated Dosing Systems</h3>
+                                <p class="mt-1.5 text-md font-medium text-darkBg">
                                     Algorithms continuously balance fertigation based on solar radiation and transpiration rates to eliminate waste.
                                 </p>
                             </div>
                         </li>
                         <li data-timeline-node class="relative pl-14 md:grid md:grid-cols-2 md:gap-12 md:pl-0">
                             <span data-node-dot
-                                class="absolute left-[19px] top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-[#0c3a29] ring-4 ring-[#01473f] md:left-1/2"></span>
+                                class="absolute left-[19px] top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-darkBg ring-4 ring-darkBg md:left-1/2"></span>
                             <div data-node-body class="md:pr-12 md:text-right">
-                                <p class="text-sm font-bold text-[#2BD48A]">Phase 03 — Expansion</p>
-                                <h3 class="mt-1 text-lg font-bold">Integrated Solar-Thermal Micro-Grids</h3>
-                                <p class="mt-1.5 text-sm leading-relaxed text-white/60">
+                                <p class="text-sm font-bold text-darkBg">Phase 03 — Expansion</p>
+                                <h3 class="mt-1 text-lg text-LightBg font-bold">Integrated Solar-Thermal Micro-Grids</h3>
+                                <p class="mt-1.5 text-md font-medium text-darkBg">
                                     Coupling photovoltaic roofing with thermal storage to drive cooling loops entirely on renewable power.
                                 </p>
                             </div>
                         </li>
                         <li data-timeline-node class="relative pl-14 md:grid md:grid-cols-2 md:gap-12 md:pl-0">
                             <span data-node-dot
-                                class="absolute left-[19px] top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-[#0c3a29] ring-4 ring-[#01473f] md:left-1/2"></span>
+                                class="absolute left-[19px] top-1.5 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-darkBg ring-4 ring-darkBg md:left-1/2"></span>
                             <div data-node-body class="md:col-start-2 md:pl-12">
-                                <p class="text-sm font-bold text-[#2BD48A]">Phase 04 — Scale</p>
-                                <h3 class="mt-1 text-lg font-bold">Autonomous Robotics Harvesting</h3>
-                                <p class="mt-1.5 text-sm leading-relaxed text-white/60">
+                                <p class="text-sm font-bold text-darkBg">Phase 04 — Scale</p>
+                                <h3 class="mt-1 text-lg text-LightBg font-bold">Autonomous Robotics Harvesting</h3>
+                                <p class="mt-1.5 text-md font-medium text-darkBg">
                                     Integrating machine-vision robotic pickers and automated transport systems to streamline packhouse operations.
                                 </p>
                             </div>
                         </li>
                         <li data-timeline-node class="relative pl-14 md:grid md:grid-cols-2 md:gap-12 md:pl-0">
                             <span data-node-dot
-                                class="absolute left-[19px] top-1.5 h-4 w-4 -translate-x-1/2 rounded-full bg-[#0c3a29] ring-4 ring-[#01473f] md:left-1/2"></span>
+                                class="absolute left-[19px] top-1.5 h-4 w-4 -translate-x-1/2 rounded-full bg-darkBg ring-4 ring-darkBg md:left-1/2"></span>
                             <div data-node-body class="md:pr-12 md:text-right">
-                                <p class="text-sm font-bold text-[#2BD48A]">Phase 05 — Long-Term Goal</p>
-                                <h3 class="mt-1 text-lg font-bold">Fully Autonomous Climate Structures</h3>
-                                <p class="mt-1.5 text-sm leading-relaxed text-white/60">
+                                <p class="text-sm font-bold text-darkBg">Phase 05 — Long-Term Goal</p>
+                                <h3 class="mt-1 text-lg text-LightBg font-bold">Fully Autonomous Climate Structures</h3>
+                                <p class="mt-1.5 text-md font-medium text-darkBg">
                                     Self-regulating, zero-waste agricultural facilities engineered for extreme hyper-arid environments.
                                 </p>
                             </div>
@@ -208,11 +230,11 @@
         </section>
 
         <!-- ============ 6 · FAQ ACCORDION ============ -->
-        <section id="faq" class="bg-white py-24 md:py-32">
+        <section id="faq" class="bg-LightBg py-24 md:py-32">
             <div class="mx-auto max-w-3xl px-5 sm:px-8">
                 <div class="max-w-2xl">
-                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#1FA971]">Support</p>
-                    <h2 class="mt-3 text-balance text-3xl font-extrabold tracking-tight sm:text-4xl">
+                    <p class="text-xs font-semibold uppercase tracking-[0.22em] text-darkBg">Support</p>
+                    <h2 class="mt-3 text-balance text-3xl font-extrabold tracking-tight sm:text-4xl text-darkBg">
                         Financing &amp; sustainability, answered
                     </h2>
                 </div>
