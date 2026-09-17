@@ -27,82 +27,88 @@
     <!-- ============================================================
     HERO — split editorial layout: copy on the left, photo collage right
     ============================================================ -->
-  <section class="relative overflow-hidden bg-[#022f6a] pt-24 pb-16 md:pt-28 md:pb-24">
+    <section class="relative overflow-hidden bg-darkBg pt-24 pb-16 md:pt-28 md:pb-24">
 
-    <!-- Ambient Glow Accents -->
-    <div class="pointer-events-none absolute -top-32 -left-24 h-96 w-96 rounded-full bg-[#ddc59a]/15 blur-3xl"></div>
-    <div class="pointer-events-none absolute bottom-0 right-0 h-96 w-96 rounded-full bg-blue-400/10 blur-3xl"></div>
-
-    <div class="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
-
-        <!-- Left Column: Content -->
-        <div class="mt-5 lg:col-span-6">
-            <!-- Breadcrumbs -->
-            <nav class="text-sm text-slate-300">
-                <a href="index.html" class="transition-colors hover:text-[#ddc59a]">Home</a>
-                <span class="mx-2 text-white/30">/</span>
-                <span class="font-medium text-white">Farms &amp; Projects</span>
-            </nav>
-
-            <!-- Location Badge -->
-            <div data-reveal
-                class="mt-6 inline-flex items-center gap-2 rounded-full border border-[#ddc59a]/30 bg-[#ddc59a]/10 px-4 py-2 text-xs font-semibold text-[#ddc59a] backdrop-blur-sm">
-                <span class="relative flex h-2 w-2">
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#ddc59a] opacity-75"></span>
-                    <span class="relative inline-flex h-2 w-2 rounded-full bg-[#ddc59a]"></span>
-                </span>
-                Delivered Across India &amp; International Markets
-            </div>
-
-            <!-- Title -->
-            <h1 data-reveal data-reveal-delay="80"
-                class="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
-                Farms &amp; Projects
-                <span class="mt-2 block text-[#ddc59a]">Engineered to Produce, Season After Season</span>
-            </h1>
-
-            <!-- Narrative Paragraph -->
-            <p data-reveal data-reveal-delay="160"
-                class="mt-6 max-w-xl text-base leading-relaxed text-slate-200/80 md:text-lg">
-                Every project below represents an active operational site—defined by precise structural engineering, advanced climate control, optimized crop selection, and targeted yield returns. Explore our portfolio to see how we turn land into high-performing commercial assets.
-            </p>
-
-            <!-- Action Buttons -->
-            <div data-reveal data-reveal-delay="240" class="mt-8 flex flex-wrap gap-4">
-                <a href="#portfolio"
-                    class="inline-flex items-center gap-2 rounded-2xl bg-[#ddc59a] px-6 py-3.5 font-semibold text-[#022f6a] shadow-lg shadow-black/20 transition-all hover:-translate-y-0.5 hover:bg-[#e8d7b8]">
-                    <i class="fas fa-seedling"></i> Browse Portfolio
-                </a>
-                <a href="#case-studies"
-                    class="inline-flex items-center gap-2 rounded-2xl border border-white/20 px-6 py-3.5 font-semibold text-white transition-all hover:border-[#ddc59a] hover:bg-white/10 hover:text-[#ddc59a]">
-                    <i class="fas fa-chart-line"></i> Read Case Studies
-                </a>
-            </div>
+        <!-- Ambient Glow Accents -->
+        <div class="pointer-events-none absolute -top-32 -left-24 h-96 w-96 rounded-full bg-[#e4be7a]/15 blur-3xl">
+        </div>
+        <div class="pointer-events-none absolute bottom-0 right-0 h-96 w-96 rounded-full bg-[#c89f53]/10 blur-3xl">
         </div>
 
-        <!-- Right Column: Staggered Photo Grid -->
-        <div class="lg:col-span-6">
-            <div class="relative mx-auto grid max-w-lg grid-cols-2 gap-4 lg:max-w-none">
-                
-                <!-- Image Card 1 -->
-                <div data-reveal data-reveal-delay="200"
-                    class="fp-drift overflow-hidden rounded-3xl border border-white/10 shadow-2xl transition duration-500 hover:scale-[1.02]">
-                    <img src="./assets/A6.jpg" alt="Commercial Greenhouse Infrastructure" 
-                        class="h-64 w-full object-cover md:h-72" loading="lazy" />
+        <div
+            class="relative z-10 mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+
+            <!-- Left Column: Content -->
+            <div class="mt-5 lg:col-span-6">
+                <!-- Breadcrumbs -->
+                <nav class="text-sm text-sand-100/70">
+                    <a href="index.html" class="transition-colors hover:text-[#e4be7a]">Home</a>
+                    <span class="mx-2 text-white/30">/</span>
+                    <span class="font-medium text-LightBg">Farms &amp; Projects</span>
+                </nav>
+
+                <!-- Location Badge -->
+                <div data-reveal
+                    class="mt-6 inline-flex items-center gap-2 rounded-full border border-[#e4be7a]/30 bg-[#e4be7a]/10 px-4 py-2 text-xs font-semibold text-[#e4be7a] backdrop-blur-sm">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#e4be7a] opacity-75"></span>
+                        <span class="relative inline-flex h-2 w-2 rounded-full bg-[#e4be7a]"></span>
+                    </span>
+                    Delivered Across India &amp; International Markets
                 </div>
 
-                <!-- Image Card 2 (Offset down for staggered look) -->
-                <div data-reveal data-reveal-delay="400"
-                    class="fp-drift mt-6 overflow-hidden rounded-3xl border border-[#ddc59a]/30 shadow-2xl transition duration-500 hover:scale-[1.02]">
-                    <img src="./assets/A4.jpg" alt="Crop Rows Under Protected Cover" 
-                        class="h-64 w-full object-cover md:h-72" loading="lazy" />
-                </div>
+                <!-- Title -->
+                <h1 data-reveal data-reveal-delay="80"
+                    class="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-LightBg sm:text-5xl md:text-6xl">
+                    Farms &amp; Projects
+                    <span class="mt-2 block text-[#e4be7a]">Engineered to Produce, Season After Season</span>
+                </h1>
 
+                <!-- Narrative Paragraph -->
+                <p data-reveal data-reveal-delay="160"
+                    class="mt-6 max-w-xl text-base leading-relaxed text-sand-100/90 md:text-lg">
+                    Every project below represents an active operational site—defined by precise structural engineering,
+                    advanced climate control, optimized crop selection, and targeted yield returns. Explore our
+                    portfolio to see how we turn land into high-performing commercial assets.
+                </p>
+
+                <!-- Action Buttons -->
+                <div data-reveal data-reveal-delay="240" class="mt-8 flex flex-wrap gap-4">
+                    <a href="#portfolio"
+                        class="inline-flex items-center gap-2 rounded-2xl bg-[#e4be7a] px-6 py-3.5 font-semibold text-darkBg shadow-lg shadow-black/20 transition-all hover:-translate-y-0.5 hover:bg-[#c89f53] hover:text-LightBg">
+                        <i class="fas fa-seedling"></i> Browse Portfolio
+                    </a>
+                    <a href="#case-studies"
+                        class="inline-flex items-center gap-2 rounded-2xl border border-sand-100/30 px-6 py-3.5 font-semibold text-LightBg transition-all hover:border-[#e4be7a] hover:bg-white/10 hover:text-[#e4be7a]">
+                        <i class="fas fa-chart-line"></i> Read Case Studies
+                    </a>
+                </div>
             </div>
-        </div>
 
-    </div>
-</section>
+            <!-- Right Column: Staggered Photo Grid -->
+            <div class="lg:col-span-6">
+                <div class="relative mx-auto grid max-w-lg grid-cols-2 gap-4 lg:max-w-none">
+
+                    <!-- Image Card 1 -->
+                    <div data-reveal data-reveal-delay="200"
+                        class="fp-drift overflow-hidden rounded-3xl border border-sand-100/20 shadow-2xl transition duration-500 hover:scale-[1.02]">
+                        <img src="./assets/A7.jpg" alt="Commercial Greenhouse Infrastructure"
+                            class="h-64 w-full object-cover md:h-full" loading="lazy" />
+                    </div>
+
+                    <!-- Image Card 2 (Offset down for staggered look) -->
+                    <div data-reveal data-reveal-delay="400"
+                        class="fp-drift mt-6 overflow-hidden rounded-3xl border border-[#e4be7a]/40 shadow-2xl transition duration-500 hover:scale-[1.02]">
+                        <img src="./assets/A4.jpg" alt="Crop Rows Under Protected Cover"
+                            class="h-64 w-full object-cover md:h-80" loading="lazy" />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- ============================================================
     LOCATION MARQUEE
@@ -129,442 +135,382 @@
         </div>
     </div> -->
 
-    <section id="portfolio" class="relative overflow-hidden bg-white py-20 md:py-24">
-    <div class="pointer-events-none absolute -right-32 top-24 h-80 w-80 rounded-full bg-emerald-50 blur-3xl"></div>
+    <section id="portfolio" class="relative overflow-hidden bg-LightBg py-20 md:py-24">
+        <!-- Background Decor -->
+        <div class="pointer-events-none absolute -right-32 top-24 h-80 w-80 rounded-full bg-sand-100/50 blur-3xl"></div>
 
-    <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <!-- Header -->
-        <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div class="max-w-2xl" data-reveal>
-                <div
-                    class="inline-flex items-center gap-2 rounded-full bg-emerald-100/70 px-4 py-1.5 text-sm font-semibold text-emerald-700">
-                    <i class="fas fa-list-ul"></i> 01 — Portfolio & Global Reach
+            <!-- Header & Filter Controls -->
+            <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between mb-14">
+                <div class="max-w-2xl" data-reveal>
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full bg-darkBg text-LightBg px-4 py-1.5 text-sm font-semibold mb-4">
+                        <i class="fas fa-building"></i> 01 — Our Work
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-darkBg">
+                        Farms & <span class="text-sand-500">Projects</span>
+                    </h2>
+                    <p class="mt-3 text-base text-gray-600 md:text-lg">
+                        Proven in India, expanding globally
+                    </p>
                 </div>
-                <h2 class="mt-4 text-3xl font-extrabold text-gray-900 md:text-4xl">
-                    Proven in India, <span class="gradient-text">expanding globally</span>
-                </h2>
-                <p class="mt-3 text-base text-gray-500 md:text-lg">
-                    From high-capacity builds across India to new international footprints. Filter by
-                    structure type to see our flagship deployments and global projects.
-                </p>
+
+                <!-- Filter Chips -->
+                <div class="flex flex-wrap gap-2" data-reveal data-reveal-delay="120" role="tablist"
+                    aria-label="Filter projects by type">
+                    <button type="button" data-filter="all" aria-pressed="true"
+                        class="fp-chip rounded-full border border-darkBg bg-darkBg px-4 py-2 text-sm font-semibold text-LightBg transition-all">
+                        All projects
+                    </button>
+                    <button type="button" data-filter="hydroponic" aria-pressed="false"
+                        class="fp-chip rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-600 transition-all hover:border-sand-400 hover:text-darkBg">
+                        Hydroponic
+                    </button>
+                    <button type="button" data-filter="glass" aria-pressed="false"
+                        class="fp-chip rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-600 transition-all hover:border-sand-400 hover:text-darkBg">
+                        Glass
+                    </button>
+                    <button type="button" data-filter="shade" aria-pressed="false"
+                        class="fp-chip rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-600 transition-all hover:border-sand-400 hover:text-darkBg">
+                        Shade-net
+                    </button>
+                </div>
             </div>
 
-            <!-- Filter chips -->
-            <div class="flex flex-wrap gap-2" data-reveal data-reveal-delay="120" role="tablist"
-                aria-label="Filter projects by type">
-                <button type="button" data-filter="all" aria-pressed="true"
-                    class="fp-chip rounded-full border border-emerald-600 bg-emerald-600 px-4 py-2 text-sm font-semibold text-white transition-all">All
-                    projects</button>
-                <button type="button" data-filter="hydroponic" aria-pressed="false"
-                    class="fp-chip rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-600 transition-all hover:border-emerald-300 hover:text-emerald-700">Hydroponic</button>
-                <button type="button" data-filter="glass" aria-pressed="false"
-                    class="fp-chip rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-600 transition-all hover:border-emerald-300 hover:text-emerald-700">Glass</button>
-                <button type="button" data-filter="shade" aria-pressed="false"
-                    class="fp-chip rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-semibold text-gray-600 transition-all hover:border-emerald-300 hover:text-emerald-700">Shade-net</button>
+            <!-- Project Grid -->
+            <div id="fp-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Project Card 1: Hydroponic -->
+                <article data-project data-type="hydroponic" data-reveal
+                    class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="./assets/p1.jpg" alt="Aiims Project"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-4 top-4 rounded-full bg-darkBg/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                            Hydroponic
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-darkBg text-lg">Aiims Project</h4>
+                        <p class="text-xs text-gray-600 mt-1">Tomatoes, Cucumbers, Green Chillies, Lettuce</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span
+                                class="inline-block bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">
+                                Aiims Developer
+                            </span>
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1">
+                                <i class="fas fa-location-dot text-sand-500"></i> Pune, MH
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2: Glass -->
+                <article data-project data-type="glass" data-reveal data-reveal-delay="80"
+                    class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="./assets/p2.jpg" alt="Project Red Harvest"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-4 top-4 rounded-full bg-darkBg/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                            Glass • High-Tech
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-darkBg text-lg">Project Red Harvest</h4>
+                        <p class="text-xs text-gray-600 mt-1">High-tech glasshouse for premium tomatoes &amp; peppers
+                        </p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span
+                                class="inline-block bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">
+                                Ark Developer
+                            </span>
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1">
+                                <i class="fas fa-location-dot text-sand-500"></i> Riyadh, KSA
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3: Plastic / Shade-net -->
+                <article data-project data-type="shade" data-reveal data-reveal-delay="160"
+                    class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="./assets/p3.jpg" alt="Project Green Harvest"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-4 top-4 rounded-full bg-darkBg/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                            Shade-net
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-darkBg text-lg">Project Green Harvest</h4>
+                        <p class="text-xs text-gray-600 mt-1">Plastic, fiberglass &amp; shade-net climate control</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span
+                                class="inline-block bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">
+                                Local Farmers India
+                            </span>
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1">
+                                <i class="fas fa-location-dot text-sand-500"></i> Gujarat, India
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 4: Plastic Polyhouse -->
+                <article data-project data-type="plastic" data-reveal
+                    class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="./assets/A4.jpg" alt="Punjab Polyhouse Cluster"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-4 top-4 rounded-full bg-darkBg/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                            Plastic
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-darkBg text-lg">Punjab Polyhouse Cluster</h4>
+                        <p class="text-xs text-gray-600 mt-1">Cucumbers, Squash &amp; Bell Capsicum</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span
+                                class="inline-block bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">
+                                Commercial Cluster
+                            </span>
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1">
+                                <i class="fas fa-location-dot text-sand-500"></i> Dolka, GJ
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 5: Hydroponic -->
+                <article data-project data-type="hydroponic" data-reveal data-reveal-delay="80"
+                    class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="./assets/Hero2.jpg" alt="Western Coast NFT Greens"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-4 top-4 rounded-full bg-darkBg/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                            Hydroponic
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-darkBg text-lg">Western Coast NFT Greens</h4>
+                        <p class="text-xs text-gray-600 mt-1">Exotic Lettuce, Basil &amp; Pak Choy</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span
+                                class="inline-block bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">
+                                NFT Hydroponics
+                            </span>
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1">
+                                <i class="fas fa-location-dot text-sand-500"></i> Anand, GJ
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 6: Glass -->
+                <article data-project data-type="glass" data-reveal data-reveal-delay="160"
+                    class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="./assets/Hero.jpg" alt="SE Asia Propagation Facility"
+                            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-4 top-4 rounded-full bg-darkBg/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                            Glass • International
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-darkBg text-lg">SE Asia Propagation Facility</h4>
+                        <p class="text-xs text-gray-600 mt-1">Grafted Seedlings &amp; Exotic Floriculture</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span
+                                class="inline-block bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">
+                                Overseas Expansion
+                            </span>
+                            <span class="text-xs text-gray-500 font-medium flex items-center gap-1">
+                                <i class="fas fa-location-dot text-sand-500"></i> South East Asia
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
             </div>
-        </div>
 
-        <!-- Grid -->
-        <div id="fp-grid" class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-            <!-- Project card 1 -->
-            <article data-project data-type="hydroponic" data-reveal
-                class="group relative overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg shadow-gray-200/60 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-900/10">
-                <div class="relative h-52 overflow-hidden">
-                    <img src="./assets/A1.jpg" alt="Maharashtrian Hydroponic Commercial Facility"
-                        class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                        loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-                    <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 backdrop-blur">Hydroponic</span>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <h3 class="text-lg font-bold text-white">Deccan Smart Agri Farms</h3>
-                        <p class="flex items-center gap-1.5 text-sm text-white/80">
-                            <i class="fas fa-location-dot text-emerald-300"></i> Pune, Maharashtra (India)
-                        </p>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <dl class="grid grid-cols-2 gap-3 text-sm">
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Size</dt>
-                            <dd class="font-bold text-gray-900">45+ ha</dd>
-                        </div>
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Output</dt>
-                            <dd class="font-bold text-gray-900">60 t/day</dd>
-                        </div>
-                    </dl>
-                    <p class="mt-4 text-xs uppercase tracking-wide text-gray-400">Crops</p>
-                    <div class="mt-2 flex flex-wrap gap-1.5">
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Tomatoes</span>
-                        <span
-                            class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Cucumbers</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Peppers</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Lettuce</span>
-                    </div>
-                    <p class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-500">
-                        Our flagship Indian production line supplying top domestic metro retail networks.
-                    </p>
-                </div>
-            </article>
-
-            <!-- Project card 2 -->
-            <article data-project data-type="glass" data-reveal data-reveal-delay="80"
-                class="group relative overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg shadow-gray-200/60 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-900/10">
-                <div class="relative h-52 overflow-hidden">
-                    <img src="./assets/A3.jpg" alt="International Middle East Glasshouse expansion"
-                        class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                        loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-                    <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 backdrop-blur">Glass • International</span>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <h3 class="text-lg font-bold text-white">Al-Kharj Global Expansion</h3>
-                        <p class="flex items-center gap-1.5 text-sm text-white/80">
-                            <i class="fas fa-location-dot text-emerald-300"></i> Riyadh Region, KSA
-                        </p>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <dl class="grid grid-cols-2 gap-3 text-sm">
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Size</dt>
-                            <dd class="font-bold text-gray-900">110+ ha</dd>
-                        </div>
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Scope</dt>
-                            <dd class="font-bold text-gray-900">Overseas Build</dd>
-                        </div>
-                    </dl>
-                    <p class="mt-4 text-xs uppercase tracking-wide text-gray-400">Crops</p>
-                    <div class="mt-2 flex flex-wrap gap-1.5">
-                        <span
-                            class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Beef&nbsp;tomato</span>
-                        <span
-                            class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Sweet pepper</span>
-                        <span
-                            class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Strawberry</span>
-                    </div>
-                    <p class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-500">
-                        Exporting engineering expertise from India to build climate-resilient Venlo glass structures abroad.
-                    </p>
-                </div>
-            </article>
-
-            <!-- Project card 3 -->
-            <article data-project data-type="plastic" data-reveal data-reveal-delay="160"
-                class="group relative overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg shadow-gray-200/60 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-900/10">
-                <div class="relative h-52 overflow-hidden">
-                    <img src="./assets/A4.jpg" alt="North India Polyhouse Cluster"
-                        class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                        loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-                    <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 backdrop-blur">Plastic</span>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <h3 class="text-lg font-bold text-white">Punjab Polyhouse Cluster</h3>
-                        <p class="flex items-center gap-1.5 text-sm text-white/80">
-                            <i class="fas fa-location-dot text-emerald-300"></i> Ludhiana, Punjab (India)
-                        </p>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <dl class="grid grid-cols-2 gap-3 text-sm">
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Size</dt>
-                            <dd class="font-bold text-gray-900">32 ha</dd>
-                        </div>
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Houses</dt>
-                            <dd class="font-bold text-gray-900">190 units</dd>
-                        </div>
-                    </dl>
-                    <p class="mt-4 text-xs uppercase tracking-wide text-gray-400">Crops</p>
-                    <div class="mt-2 flex flex-wrap gap-1.5">
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Cucumber</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Squash</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Capsicum</span>
-                    </div>
-                    <p class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-500">
-                        Indigenously engineered structures designed for severe Indian seasonal climate shifts.
-                    </p>
-                </div>
-            </article>
-
-            <!-- Project card 4 -->
-            <article data-project data-type="shade" data-reveal
-                class="group relative overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg shadow-gray-200/60 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-900/10">
-                <div class="relative h-52 overflow-hidden">
-                    <img src="./assets/A2.jpg" alt="South India shade-net venture"
-                        class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                        loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-                    <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 backdrop-blur">Shade-net</span>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <h3 class="text-lg font-bold text-white">Deccan Valley Produce</h3>
-                        <p class="flex items-center gap-1.5 text-sm text-white/80">
-                            <i class="fas fa-location-dot text-emerald-300"></i> Dholka
-                            Gujarat
-                        </p>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <dl class="grid grid-cols-2 gap-3 text-sm">
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Size</dt>
-                            <dd class="font-bold text-gray-900">28 ha</dd>
-                        </div>
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Shade</dt>
-                            <dd class="font-bold text-gray-900">35–50%</dd>
-                        </div>
-                    </dl>
-                    <p class="mt-4 text-xs uppercase tracking-wide text-gray-400">Crops</p>
-                    <div class="mt-2 flex flex-wrap gap-1.5">
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Leafy
-                            greens</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Herbs</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Exotics</span>
-                    </div>
-                    <p class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-500">
-                        Summer micro-climate control solution with automated misting and drip fertigation.
-                    </p>
-                </div>
-            </article>
-
-            <!-- Project card 5 -->
-            <article data-project data-type="hydroponic" data-reveal data-reveal-delay="80"
-                class="group relative overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg shadow-gray-200/60 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-900/10">
-                <div class="relative h-52 overflow-hidden">
-                    <img src="./assets/Hero2.jpg" alt="Coastal NFT Hydroponic Farm India"
-                        class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                        loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-                    <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 backdrop-blur">Hydroponic</span>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <h3 class="text-lg font-bold text-white">Western Coast NFT Greens</h3>
-                        <p class="flex items-center gap-1.5 text-sm text-white/80">
-                            <i class="fas fa-location-dot text-emerald-300"></i> Anand, Gujarat (India)
-                        </p>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <dl class="grid grid-cols-2 gap-3 text-sm">
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Size</dt>
-                            <dd class="font-bold text-gray-900">8.5 ha</dd>
-                        </div>
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Cycle</dt>
-                            <dd class="font-bold text-gray-900">25 days</dd>
-                        </div>
-                    </dl>
-                    <p class="mt-4 text-xs uppercase tracking-wide text-gray-400">Crops</p>
-                    <div class="mt-2 flex flex-wrap gap-1.5">
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Lettuce</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Basil</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Pak Choy</span>
-                    </div>
-                    <p class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-500">
-                        High-efficiency recirculating channels serving quick-turnaround domestic fresh food chains.
-                    </p>
-                </div>
-            </article>
-
-            <!-- Project card 6 -->
-            <article data-project data-type="glass" data-reveal data-reveal-delay="160"
-                class="group relative overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg shadow-gray-200/60 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-900/10">
-                <div class="relative h-52 overflow-hidden">
-                    <img src="./assets/Hero.jpg" alt="South East Asia Propagation Expansion"
-                        class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
-                        loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
-                    <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 backdrop-blur">Glass • International</span>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <h3 class="text-lg font-bold text-white">SE Asia Propagation Facility</h3>
-                        <p class="flex items-center gap-1.5 text-sm text-white/80">
-                            <i class="fas fa-location-dot text-emerald-300"></i> Overseas Expansion
-                        </p>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <dl class="grid grid-cols-2 gap-3 text-sm">
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Size</dt>
-                            <dd class="font-bold text-gray-900">3.5 ha</dd>
-                        </div>
-                        <div class="rounded-2xl bg-gray-50 px-3 py-2.5">
-                            <dt class="text-xs uppercase tracking-wide text-gray-400">Capacity</dt>
-                            <dd class="font-bold text-gray-900">12M seedlings/yr</dd>
-                        </div>
-                    </dl>
-                    <p class="mt-4 text-xs uppercase tracking-wide text-gray-400">Crops</p>
-                    <div class="mt-2 flex flex-wrap gap-1.5">
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Grafted
-                            seedlings</span>
-                        <span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">Exotic Floriculture</span>
-                    </div>
-                    <p class="mt-4 border-t border-gray-100 pt-3 text-sm text-gray-500">
-                        Bringing precision propagation technologies refined in India to global commercial growers.
-                    </p>
-                </div>
-            </article>
+            <!-- Empty State for Filters -->
+            <p id="fp-empty" class="mt-12 hidden text-center text-gray-500">
+                No projects in this category yet —
+                <a href="contact.html" class="font-semibold text-sand-500 hover:underline">
+                    ask us about our global pipeline
+                </a>.
+            </p>
 
         </div>
-
-        <!-- Empty state for the filter -->
-        <p id="fp-empty" class="mt-12 hidden text-center text-gray-500">
-            No projects in this category yet — <a href="contact.html"
-                class="font-semibold text-emerald-600 hover:text-emerald-800">ask us about our global pipeline</a>.
-        </p>
-    </div>
-</section>
+    </section>
 
     <!-- ============================================================
     2 · PROJECT PHOTOS — gallery with lightbox
     ============================================================ -->
-    <section id="photos" class="relative overflow-hidden bg-[#071612] py-20 md:py-28">
-    <!-- Ambient glow backgrounds -->
-    <div class="pointer-events-none absolute -left-20 top-1/4 h-96 w-96 rounded-full bg-emerald-500/10 blur-[120px]"></div>
-    <div class="pointer-events-none absolute -right-20 bottom-10 h-80 w-80 rounded-full bg-teal-500/10 blur-[100px]"></div>
-
-    <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
-        <!-- Section Header -->
-        <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <div class="max-w-2xl" data-reveal>
-                <div class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-300 backdrop-blur-md">
-                    <i class="fas fa-camera text-emerald-400"></i> 02 — Project Gallery
-                </div>
-                <h2 class="mt-4 text-3xl font-extrabold text-white md:text-5xl md:leading-tight">
-                    On-site reality, <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">built to scale</span>
-                </h2>
-                <p class="mt-3 text-base text-gray-300/80 md:text-lg">
-                    Real captures from our operational sites across India and recent international turnkeys. Click any frame to enlarge.
-                </p>
-            </div>
+    <section id="photos" class="relative overflow-hidden bg-sand-400 py-20 md:py-28">
+        <!-- Ambient glow backgrounds -->
+        <div
+            class="pointer-events-none absolute -left-20 top-1/4 h-96 w-96 rounded-full bg-emerald-500/10 blur-[120px]">
+        </div>
+        <div
+            class="pointer-events-none absolute -right-20 bottom-10 h-80 w-80 rounded-full bg-teal-500/10 blur-[100px]">
         </div>
 
-        <!-- Asymmetric Dynamic Grid / Mosaic -->
-        <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-2">
+        <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-            <!-- Hero/Featured Frame (Takes 2x2 space on large screens) -->
-            <div data-gallery-item="india" class="group relative col-span-1 sm:col-span-2 row-span-2 min-h-[320px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl transition-all duration-500 hover:border-emerald-500/50">
-                <button type="button" data-lightbox="./assets/A4.jpg" data-caption="Deccan Smart Agri Farms — Pune, Maharashtra (India)"
-                    class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/A4.jpg" alt="Commercial Greenhouse interior with high-density crop rows"
-                        class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-                        loading="lazy" />
-                    <!-- Permanent location badge -->
-                    <span class="absolute left-4 top-4 rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs font-medium text-white backdrop-blur-md">
-                        <i class="fas fa-location-dot text-emerald-400 mr-1"></i> Pune, India
-                    </span>
-                    <!-- Hover overlay with rich info -->
-                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/95 via-[#071612]/40 to-transparent p-6 text-left opacity-90 transition-opacity duration-300 group-hover:opacity-100">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Flagship Hydroponics</span>
-                        <h3 class="mt-1 text-xl font-bold text-white">Deccan Smart Agri Farms</h3>
-                        <p class="mt-1 text-xs text-gray-300">45+ Hectares hi-tech production setup catering to major Indian metro hubs.</p>
-                        <div class="mt-4 flex items-center gap-2 text-xs font-medium text-emerald-300">
-                            <span>Tap to enlarge photo</span>
-                            <i class="fas fa-expand text-xs transition-transform group-hover:translate-x-1"></i>
+            <!-- Section Header -->
+            <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+                <div class="max-w-2xl" data-reveal>
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-darkBg text-LightBg  px-4 py-1.5 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fas fa-camera text-LightBg "></i> 02 — Project Gallery
+                    </div>
+                    <h2 class="mt-4 text-3xl font-extrabold text-darkBg md:text-5xl md:leading-tight">
+                        On-site reality, <span
+                            class=" text-white">built to
+                            scale</span>
+                    </h2>
+                    <p class="mt-3 text-base text-pine-400 md:text-lg">
+                        Real captures from our operational sites across India and recent international turnkeys. Click
+                        any frame to enlarge.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Asymmetric Dynamic Grid / Mosaic -->
+            <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-2">
+
+                <!-- Hero/Featured Frame (Takes 2x2 space on large screens) -->
+                <div data-gallery-item="india"
+                    class="group relative col-span-1 sm:col-span-2 row-span-2 min-h-[320px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl transition-all duration-500 hover:border-emerald-500/50">
+                    <button type="button" data-lightbox="./assets/A4.jpg"
+                        data-caption="Deccan Smart Agri Farms — Pune, Maharashtra (India)"
+                        class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        <img src="./assets/A4.jpg" alt="Commercial Greenhouse interior with high-density crop rows"
+                            class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                            loading="lazy" />
+                        <!-- Permanent location badge -->
+                        <span
+                            class="absolute left-4 top-4 rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs font-medium text-white backdrop-blur-md">
+                            <i class="fas fa-location-dot text-LightBg mr-1"></i> Pune, India
+                        </span>
+                        <!-- Hover overlay with rich info -->
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-/95 via-[#071612]/40 to-transparent p-6 text-left opacity-90 transition-opacity duration-300 group-hover:opacity-100">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-LightBg">Flagship
+                                Hydroponics</span>
+                            <h3 class="mt-1 text-xl font-bold text-white">Deccan Smart Agri Farms</h3>
+                            <p class="mt-1 text-xs text-gray-300">45+ Hectares hi-tech production setup catering to
+                                major Indian metro hubs.</p>
+                            <div class="mt-4 flex items-center gap-2 text-xs font-medium text-emerald-300">
+                                <span>Tap to enlarge photo</span>
+                                <i class="fas fa-expand text-xs transition-transform group-hover:translate-x-1"></i>
+                            </div>
                         </div>
-                    </div>
-                </button>
-            </div>
+                    </button>
+                </div>
 
-            <!-- Frame 2 (International) -->
-            <div data-gallery-item="international" class="group relative min-h-[220px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl transition-all duration-500 hover:border-emerald-500/50">
-                <button type="button" data-lightbox="./assets/A1.jpg" data-caption="Al-Kharj Glasshouse Complex — Saudi Arabia"
-                    class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/A1.jpg" alt="Glass greenhouse structure exterior"
-                        class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-                        loading="lazy" />
-                    <span class="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
-                        <i class="fas fa-globe text-emerald-400 mr-1"></i> Middle East
-                    </span>
-                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/90 via-transparent to-transparent p-4 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <h4 class="text-sm font-bold text-white">Al-Kharj Global Expansion</h4>
-                        <p class="text-[11px] text-gray-300">Overseas turnkey Venlo glass system</p>
-                    </div>
-                </button>
-            </div>
+                <!-- Frame 2 (International) -->
+                <div data-gallery-item="international"
+                    class="group relative min-h-[220px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl transition-all duration-500 hover:border-emerald-500/50">
+                    <button type="button" data-lightbox="./assets/A1.jpg"
+                        data-caption="Al-Kharj Glasshouse Complex — Saudi Arabia"
+                        class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        <img src="./assets/A1.jpg" alt="Glass greenhouse structure exterior"
+                            class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
+                            <i class="fas fa-globe text-LightBg mr-1"></i> Middle East
+                        </span>
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/90 via-transparent to-transparent p-4 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <h4 class="text-sm font-bold text-white">Al-Kharj Global Expansion</h4>
+                            <p class="text-[11px] text-gray-300">Overseas turnkey Venlo glass system</p>
+                        </div>
+                    </button>
+                </div>
 
-            <!-- Frame 3 (India) -->
-            <div data-gallery-item="india" class="group relative min-h-[220px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl transition-all duration-500 hover:border-emerald-500/50">
-                <button type="button" data-lightbox="./assets/A6.jpg" data-caption="Punjab Polyhouse Cluster — Ludhiana, Punjab (India)"
-                    class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/A6.jpg" alt="Plastic greenhouse polyhouse rows"
-                        class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-                        loading="lazy" />
-                    <span class="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
-                        <i class="fas fa-location-dot text-emerald-400 mr-1"></i> Punjab, India
-                    </span>
-                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/90 via-transparent to-transparent p-4 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <h4 class="text-sm font-bold text-white">Punjab Polyhouse Cluster</h4>
-                        <p class="text-[11px] text-gray-300">Customized multi-span climate control</p>
-                    </div>
-                </button>
-            </div>
+                <!-- Frame 3 (India) -->
+                <div data-gallery-item="india"
+                    class="group relative min-h-[220px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl transition-all duration-500 hover:border-emerald-500/50">
+                    <button type="button" data-lightbox="./assets/A6.jpg"
+                        data-caption="Punjab Polyhouse Cluster — Ludhiana, Punjab (India)"
+                        class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        <img src="./assets/A6.jpg" alt="Plastic greenhouse polyhouse rows"
+                            class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
+                            <i class="fas fa-location-dot text-LightBg mr-1"></i> Punjab, India
+                        </span>
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/90 via-transparent to-transparent p-4 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <h4 class="text-sm font-bold text-white">Punjab Polyhouse Cluster</h4>
+                            <p class="text-[11px] text-gray-300">Customized multi-span climate control</p>
+                        </div>
+                    </button>
+                </div>
 
-            <!-- Frame 4 (India) -->
-            <div data-gallery-item="india" class="group relative min-h-[220px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl transition-all duration-500 hover:border-emerald-500/50">
-                <button type="button" data-lightbox="./assets/A3.jpg" data-caption="Deccan Valley Shade Nets — Bengaluru, Karnataka (India)"
-                    class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/A3.jpg" alt="Shade-net protected crops"
-                        class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-                        loading="lazy" />
-                    <span class="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
-                        <i class="fas fa-location-dot text-emerald-400 mr-1"></i> Dholka, Gujarat
-                    </span>
-                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/90 via-transparent to-transparent p-4 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <h4 class="text-sm font-bold text-white">Deccan Valley Produce</h4>
-                        <p class="text-[11px] text-gray-300">Precision shade-net micro-climate</p>
-                    </div>
-                </button>
-            </div>
+                <!-- Frame 4 (India) -->
+                <div data-gallery-item="india"
+                    class="group relative min-h-[220px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl transition-all duration-500 hover:border-emerald-500/50">
+                    <button type="button" data-lightbox="./assets/A3.jpg"
+                        data-caption="Deccan Valley Shade Nets — Bengaluru, Karnataka (India)"
+                        class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        <img src="./assets/A3.jpg" alt="Shade-net protected crops"
+                            class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
+                            <i class="fas fa-location-dot text-LightBg mr-1"></i> Dholka, Gujarat
+                        </span>
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/90 via-transparent to-transparent p-4 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <h4 class="text-sm font-bold text-white">Deccan Valley Produce</h4>
+                            <p class="text-[11px] text-gray-300">Precision shade-net micro-climate</p>
+                        </div>
+                    </button>
+                </div>
 
-            <!-- Frame 5 (India) -->
-            <div data-gallery-item="india" class="group relative min-h-[220px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl transition-all duration-500 hover:border-emerald-500/50">
-                <button type="button" data-lightbox="./assets/Hero2.jpg" data-caption="Western Coast NFT Greens — Anand, Gujarat (India)"
-                    class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                    <img src="./assets/Hero2.jpg" alt="Hydroponic NFT channels for leafy greens"
-                        class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-                        loading="lazy" />
-                    <span class="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
-                        <i class="fas fa-location-dot text-emerald-400 mr-1"></i> Gujarat, India
-                    </span>
-                    <div class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/90 via-transparent to-transparent p-4 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <h4 class="text-sm font-bold text-white">Western Coast NFT Greens</h4>
-                        <p class="text-[11px] text-gray-300">Automated water recirculating loops</p>
-                    </div>
-                </button>
+                <!-- Frame 5 (India) -->
+                <div data-gallery-item="india"
+                    class="group relative min-h-[220px] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl transition-all duration-500 hover:border-emerald-500/50">
+                    <button type="button" data-lightbox="./assets/Hero2.jpg"
+                        data-caption="Western Coast NFT Greens — Anand, Gujarat (India)"
+                        class="h-full w-full focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        <img src="./assets/Hero2.jpg" alt="Hydroponic NFT channels for leafy greens"
+                            class="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                            loading="lazy" />
+                        <span
+                            class="absolute left-3 top-3 rounded-full border border-white/20 bg-black/40 px-2.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-md">
+                            <i class="fas fa-location-dot text-LightBg mr-1"></i> Gujarat, India
+                        </span>
+                        <div
+                            class="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-[#071612]/90 via-transparent to-transparent p-4 text-left opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <h4 class="text-sm font-bold text-white">Western Coast NFT Greens</h4>
+                            <p class="text-[11px] text-gray-300">Automated water recirculating loops</p>
+                        </div>
+                    </button>
+                </div>
+
             </div>
 
         </div>
-
-        <!-- Footer / Callout Banner below gallery -->
-        <div class="mt-12 flex flex-col items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md md:flex-row">
-            <div class="flex items-center gap-4">
-                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400">
-                    <i class="fas fa-earth-asia text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="text-base font-semibold text-white">Planning an international or domestic facility?</h4>
-                    <p class="text-xs text-gray-400">Explore technical specs and site feasibility models custom to your region.</p>
-                </div>
-            </div>
-            <a href="contact.html" class="shrink-0 rounded-full bg-emerald-500 px-6 py-2.5 text-xs font-bold text-slate-950 transition-all hover:bg-emerald-400">
-                Request Site Engineering Brief
-            </a>
-        </div>
-
-    </div>
-</section>
+    </section>
 
     <!-- Lightbox -->
     <div id="fp-lightbox"
@@ -585,20 +531,22 @@
     <!-- ============================================================
     3 · CASE STUDIES — alternating story panels
     ============================================================ -->
-  <section id="case-studies" class="relative overflow-hidden bg-white py-20 md:py-24">
-    <div class="pointer-events-none absolute -left-32 top-40 h-80 w-80 rounded-full bg-emerald-50 blur-3xl"></div>
+    <section id="case-studies" class="relative overflow-hidden bg-LightBg py-20 md:py-24">
+    <!-- Background Decor -->
+    <div class="pointer-events-none absolute -left-32 top-40 h-80 w-80 rounded-full bg-sand-100/50 blur-3xl"></div>
 
     <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
         <div class="mx-auto max-w-2xl text-center" data-reveal>
-            <div
-                class="inline-flex items-center gap-2 rounded-full bg-emerald-100/70 px-4 py-1.5 text-sm font-semibold text-emerald-700">
+            <div class="inline-flex items-center gap-2 rounded-full bg-darkBg text-LightBg px-4 py-1.5 text-sm font-semibold mb-4">
                 <i class="fas fa-trophy"></i> 03 — Case studies
             </div>
-            <h2 class="mt-4 text-3xl font-extrabold text-gray-900 md:text-4xl">
-                Impact driven by <span class="gradient-text">proven engineering</span>
+            <h2 class="text-3xl font-extrabold text-darkBg md:text-4xl">
+                Impact driven by <span class="text-sand-500">proven engineering</span>
             </h2>
-            <p class="mt-3 text-base text-gray-500 md:text-lg">
-                How we helped commercial growers across India and international markets transition to high-yield precision agriculture.
+            <p class="mt-3 text-base text-gray-600 md:text-lg">
+                How we helped commercial growers across India and international markets transition to high-yield
+                precision agriculture.
             </p>
         </div>
 
@@ -606,49 +554,53 @@
 
             <!-- Case study 1: Domestic India High-Tech Commercial Farm -->
             <article class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
-                <div data-reveal class="relative overflow-hidden rounded-[2rem] shadow-2xl shadow-emerald-900/10">
+                <div data-reveal class="relative overflow-hidden rounded-[2rem] shadow-xl border border-gray-100">
                     <img src="./assets/A1.jpg" alt="Deccan Smart Agri Farms Hydroponic Greenhouse"
                         class="h-72 w-full object-cover md:h-96" loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-tr from-emerald-900/50 to-transparent"></div>
-                    <span
-                        class="absolute left-6 top-6 rounded-full bg-white/90 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-emerald-700">Case
-                        study 01 · India</span>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-darkBg/60 to-transparent"></div>
+                    <span class="absolute left-6 top-6 rounded-full bg-darkBg/90 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                        Case study 01 · India
+                    </span>
                 </div>
 
                 <div data-reveal data-reveal-delay="120" class="lg:pl-4">
-                    <h3 class="text-2xl font-extrabold text-gray-900 md:text-3xl">
+                    <h3 class="text-2xl font-extrabold text-darkBg md:text-3xl mt-16">
                         Scaling year-round production for metro retail
                     </h3>
-                    <p class="mt-1 text-sm font-semibold uppercase tracking-wide text-emerald-600">
+                    <!-- <p class="mt-1 text-sm font-semibold uppercase tracking-wide text-sand-500">
                         Deccan Smart Agri Farms · Pune, Maharashtra
-                    </p>
+                    </p> -->
 
                     <dl class="mt-6 space-y-4">
-                        <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-gray-400">The challenge</dt>
-                            <dd class="mt-1 text-sm text-gray-600">Monsoon humidity and summer heat spikes causing yield crashes and unpredictable supply contracts with Indian retail chains.</dd>
+                        <div class="rounded-2xl shadow-md bg-darkBg p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">The challenge</dt>
+                            <dd class="mt-1 text-sm text-LightBg">Monsoon humidity and summer heat spikes causing
+                                yield crashes and unpredictable supply contracts with Indian retail chains.</dd>
                         </div>
-                        <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-gray-400">What we built</dt>
-                            <dd class="mt-1 text-sm text-gray-600">45+ hectares of multi-span fan-and-pad climate-controlled hydroponic structures with automated dosing and UV sterilization.</dd>
+                        <div class="rounded-2xl shadow-md bg-darkBg p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">What we built</dt>
+                            <dd class="mt-1 text-sm text-LightBg">45+ hectares of multi-span fan-and-pad
+                                climate-controlled hydroponic structures with automated dosing and UV sterilization.
+                            </dd>
                         </div>
-                        <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-emerald-600">The result</dt>
-                            <dd class="mt-1 text-sm text-emerald-900">Consistent 60+ tons daily output supplying major supermarkets across Mumbai and Pune 365 days a year.</dd>
+                        <div class="rounded-2xl shadow-md bg-sand-500 p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">The result</dt>
+                            <dd class="mt-1 text-sm text-LightBg">Consistent 60+ tons daily output supplying
+                                major supermarkets across Mumbai and Pune 365 days a year.</dd>
                         </div>
                     </dl>
 
                     <div class="mt-6 grid grid-cols-3 gap-4">
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="60">60</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="60">60</div>
                             <p class="text-xs text-gray-500">tons daily yield</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="85">85</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="85">85</div>
                             <p class="text-xs text-gray-500">% water saved</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="365">365</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="365">365</div>
                             <p class="text-xs text-gray-500">days active supply</p>
                         </div>
                     </div>
@@ -658,107 +610,108 @@
             <!-- Case study 2: Global Expansion (reversed) -->
             <article class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
                 <div data-reveal data-reveal-delay="120" class="order-2 lg:order-1 lg:pr-4">
-                    <h3 class="text-2xl font-extrabold text-gray-900 md:text-3xl">
+                    <h3 class="text-2xl font-extrabold text-darkBg md:text-3xl mt-16">
                         Exporting engineering excellence to desert climates
                     </h3>
-                    <p class="mt-1 text-sm font-semibold uppercase tracking-wide text-emerald-600">
-                        Al-Kharj Global Expansion · Riyadh Region, KSA
-                    </p>
 
                     <dl class="mt-6 space-y-4">
-                        <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-gray-400">The challenge</dt>
-                            <dd class="mt-1 text-sm text-gray-600">Extreme desert ambient temperatures exceeding 45°C requiring heavy energy-efficient cooling solutions.</dd>
+                        <div class="rounded-2xl shadow-md bg-darkBg p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">The challenge</dt>
+                            <dd class="mt-1 text-sm text-LightBg">Extreme desert ambient temperatures exceeding
+                                45°C requiring heavy energy-efficient cooling solutions.</dd>
                         </div>
-                        <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-gray-400">What we built</dt>
-                            <dd class="mt-1 text-sm text-gray-600">110-hectare high-tech Venlo glasshouse facility integrated with double-mesh thermal screens and closed-loop irrigation.</dd>
+                        <div class="rounded-2xl shadow-md bg-darkBg p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">What we built</dt>
+                            <dd class="mt-1 text-sm text-LightBg">110-hectare high-tech Venlo glasshouse facility
+                                integrated with double-mesh thermal screens and closed-loop irrigation.</dd>
                         </div>
-                        <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-emerald-600">The result</dt>
-                            <dd class="mt-1 text-sm text-emerald-900">Successfully created an oasis-grade microclimate producing export-quality vine crops with 40% reduced energy overheads.</dd>
+                        <div class="rounded-2xl shadow-md bg-sand-500 p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">The result</dt>
+                            <dd class="mt-1 text-sm text-LightBg">Successfully created an oasis-grade
+                                microclimate producing export-quality vine crops with 40% reduced energy overheads.
+                            </dd>
                         </div>
                     </dl>
 
                     <div class="mt-6 grid grid-cols-3 gap-4">
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="110">110</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="110">110</div>
                             <p class="text-xs text-gray-500">hectares built</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="40">40</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="40">40</div>
                             <p class="text-xs text-gray-500">% lower energy usage</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="100">100</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="100">100</div>
                             <p class="text-xs text-gray-500">% water recycling</p>
                         </div>
                     </div>
                 </div>
 
-                <div data-reveal
-                    class="order-1 overflow-hidden rounded-[2rem] shadow-2xl shadow-emerald-900/10 lg:order-2">
+                <div data-reveal class="order-1 overflow-hidden rounded-[2rem] shadow-xl border border-gray-100 lg:order-2">
                     <div class="relative">
                         <img src="./assets/A3.jpg" alt="International Venlo Glasshouse Turnkey Project"
                             class="h-72 w-full object-cover md:h-96" loading="lazy" />
-                        <div class="absolute inset-0 bg-gradient-to-tl from-emerald-900/50 to-transparent"></div>
-                        <span
-                            class="absolute right-6 top-6 rounded-full bg-white/90 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-emerald-700">Case
-                            study 02 · Overseas</span>
+                        <div class="absolute inset-0 bg-gradient-to-tl from-darkBg/60 to-transparent"></div>
+                        <span class="absolute right-6 top-6 rounded-full bg-darkBg/90 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                            Case study 02 · Overseas
+                        </span>
                     </div>
                 </div>
             </article>
 
             <!-- Case study 3: Domestic India Fast-Cycle Hydroponics -->
             <article class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
-                <div data-reveal class="relative overflow-hidden rounded-[2rem] shadow-2xl shadow-emerald-900/10">
+                <div data-reveal class="relative overflow-hidden rounded-[2rem] shadow-xl border border-gray-100">
                     <img src="./assets/Hero2.jpg" alt="Western Coast NFT Hydroponic Farm"
                         class="h-72 w-full object-cover md:h-96" loading="lazy" />
-                    <div class="absolute inset-0 bg-gradient-to-tr from-emerald-900/50 to-transparent"></div>
-                    <span
-                        class="absolute left-6 top-6 rounded-full bg-white/90 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-emerald-700">Case
-                        study 03 · India</span>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-darkBg/60 to-transparent"></div>
+                    <span class="absolute left-6 top-6 rounded-full bg-darkBg/90 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-LightBg backdrop-blur">
+                        Case study 03 · India
+                    </span>
                 </div>
 
                 <div data-reveal data-reveal-delay="120" class="lg:pl-4">
-                    <h3 class="text-2xl font-extrabold text-gray-900 md:text-3xl">
+                    <h3 class="text-2xl font-extrabold text-darkBg md:text-3xl mt-16">
                         High-density NFT greens for rapid market delivery
                     </h3>
-                    <p class="mt-1 text-sm font-semibold uppercase tracking-wide text-emerald-600">
-                        Western Coast NFT Greens · Anand, Gujarat
-                    </p>
 
                     <dl class="mt-6 space-y-4">
-                        <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-gray-400">The challenge</dt>
-                            <dd class="mt-1 text-sm text-gray-600">Short shelf-life and soil contamination issues impacting premium salad leaf suppliers in West India.</dd>
+                        <div class="rounded-2xl shadow-md bg-darkBg p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">The challenge</dt>
+                            <dd class="mt-1 text-sm text-LightBg">Short shelf-life and soil contamination issues
+                                impacting premium salad leaf suppliers in West India.</dd>
                         </div>
-                        <div class="rounded-2xl border border-gray-100 bg-gray-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-gray-400">What we built</dt>
-                            <dd class="mt-1 text-sm text-gray-600">8.5-hectare food-grade NFT channel system with automated nutrient monitoring and cold-chain integrated packing bay.</dd>
+                        <div class="rounded-2xl shadow-md bg-darkBg p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">What we built</dt>
+                            <dd class="mt-1 text-sm text-LightBg">8.5-hectare food-grade NFT channel system with
+                                automated nutrient monitoring and cold-chain integrated packing bay.</dd>
                         </div>
-                        <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
-                            <dt class="text-xs font-bold uppercase tracking-wide text-emerald-600">The result</dt>
-                            <dd class="mt-1 text-sm text-emerald-900">Achieved an optimized 25-day growing cycle delivering residue-free exotic greens direct to Quick-Commerce hubs.</dd>
+                        <div class="rounded-2xl  bg-sand-500 p-4">
+                            <dt class="text-xs font-bold uppercase tracking-wide text-LightBg">The result</dt>
+                            <dd class="mt-1 text-sm text-LightBg">Achieved an optimized 25-day growing cycle
+                                delivering residue-free exotic greens direct to Quick-Commerce hubs.</dd>
                         </div>
                     </dl>
 
                     <div class="mt-6 grid grid-cols-3 gap-4">
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="25">25</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="25">25</div>
                             <p class="text-xs text-gray-500">day grow cycle</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="14">14</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="14">14</div>
                             <p class="text-xs text-gray-500">harvests / year</p>
                         </div>
                         <div>
-                            <div class="text-2xl font-extrabold text-emerald-600" data-count="90">90</div>
+                            <div class="text-2xl font-extrabold text-darkBg" data-count="90">90</div>
                             <p class="text-xs text-gray-500">% reduced water usage</p>
                         </div>
                     </div>
                 </div>
             </article>
+
         </div>
     </div>
 </section>
@@ -766,107 +719,115 @@
     <!-- ============================================================
     4 · INDUSTRIES WE SERVE
     ============================================================ -->
- <section id="industries" class="relative overflow-hidden bg-gray-50 py-20 md:py-24">
-    <div class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-emerald-100 opacity-60 blur-3xl">
-    </div>
-
-    <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center" data-reveal>
-            <div
-                class="inline-flex items-center gap-2 rounded-full bg-emerald-100/70 px-4 py-1.5 text-sm font-semibold text-emerald-700">
-                <i class="fas fa-industry"></i> 04 — Industries we serve
-            </div>
-            <h2 class="mt-4 text-3xl font-extrabold text-gray-900 md:text-4xl">
-                Who we <span class="gradient-text">build for</span>
-            </h2>
-            <p class="mt-3 text-base text-gray-500 md:text-lg">
-                Engineered solutions tailored for commercial growers, agri-exporters, and institutional projects across India and global markets.
-            </p>
+    <section id="industries" class="relative overflow-hidden bg-sand-400 py-20 md:py-24">
+        <div
+            class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-emerald-100 opacity-60 blur-3xl">
         </div>
 
-        <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-
-            <!-- Card 1 -->
-            <div data-reveal
-                class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-emerald-200 hover:shadow-xl">
+        <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center" data-reveal>
                 <div
-                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-xl text-emerald-600 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                    <i class="fas fa-carrot"></i>
+                    class="inline-flex items-center gap-2 rounded-full bg-darkBg text-LightBg px-4 py-1.5 text-sm font-semibold">
+                    <i class="fas fa-industry"></i> 04 — Industries we serve
                 </div>
-                <h3 class="mt-4 text-lg font-bold text-gray-900">Commercial vegetable production</h3>
-                <p class="mt-2 text-sm text-gray-500">High-yield polyhouse structures engineered for consistent weekly supply of vine crops (tomatoes, capsicums, cucumbers,Green Chillies,Tumeric & Ginger) to Indian retail chains &amp; Mandis.</p>
+                <h2 class="mt-4 text-3xl font-extrabold text-gray-900 md:text-4xl">
+                    Who we <span class="gradient-text">build for</span>
+                </h2>
+                <p class="mt-3 text-base text-LightBg md:text-lg">
+                    Engineered solutions tailored for commercial growers, agri-exporters, and institutional projects
+                    across India and global markets.
+                </p>
             </div>
 
-            <!-- Card 2 -->
-            <div data-reveal data-reveal-delay="80"
-                class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-emerald-200 hover:shadow-xl">
-                <div
-                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-xl text-emerald-600 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                    <i class="fas fa-leaf"></i>
+            <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Card 1 -->
+                <div data-reveal
+                    class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-LightBg p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-2xl bg-darkBg text-xl text-LightBg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-bold text-darkBg">Commercial vegetable production</h3>
+                    <p class="mt-2 text-sm text-gray-600">High-yield polyhouse structures engineered for consistent
+                        weekly supply of vine crops (tomatoes, capsicums, cucumbers,Green Chillies,Tumeric & Ginger) to
+                        Indian retail chains &amp; Mandis.</p>
                 </div>
-                <h3 class="mt-4 text-lg font-bold text-gray-900">Hydroponics &amp; urban farming</h3>
-                <p class="mt-2 text-sm text-gray-500">NFT, substrate, and vertical farming units designed for ultra-fast grow cycles supplying quick-commerce hubs and high-end culinary markets.</p>
-            </div>
 
-            <!-- Card 3 -->
-            
-
-            <!-- Card 4 -->
-            <div data-reveal
-                class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-emerald-200 hover:shadow-xl">
-                <div
-                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-xl text-emerald-600 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                    <i class="fas fa-spa"></i>
+                <!-- Card 2 -->
+                <div data-reveal data-reveal-delay="80"
+                    class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-LightBg p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-2xl bg-darkBg text-xl text-LightBg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-bold text-darkBg">Hydroponics &amp; urban farming</h3>
+                    <p class="mt-2 text-sm text-gray-600">NFT, substrate, and vertical farming units designed for
+                        ultra-fast grow cycles supplying quick-commerce hubs and high-end culinary markets.</p>
                 </div>
-                <h3 class="mt-4 text-lg font-bold text-gray-900">Floriculture &amp; ornamentals</h3>
-                <p class="mt-2 text-sm text-gray-500">Precision shaded greenhouse systems built for export-grade cut flowers (Dutch roses, gerberas, orchids) with climate-controlled humidity zones.</p>
-            </div>
+
+                <!-- Card 3 -->
 
 
-            <!-- Card 6 -->
-            <div data-reveal data-reveal-delay="160"
-                class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-emerald-200 hover:shadow-xl">
-                <div
-                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-xl text-emerald-600 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                    <i class="fas fa-landmark"></i>
+                <!-- Card 4 -->
+                <div data-reveal
+                    class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-LightBg p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-2xl bg-darkBg text-xl text-LightBg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-bold text-darkBg">Floriculture &amp; ornamentals</h3>
+                    <p class="mt-2 text-sm text-gray-600">Precision shaded greenhouse systems built for export-grade cut
+                        flowers (Dutch roses, gerberas, orchids) with climate-controlled humidity zones.</p>
                 </div>
-                <h3 class="mt-4 text-lg font-bold text-gray-900">Government &amp; subsidy projects</h3>
-                <p class="mt-2 text-sm text-gray-500">Turnkey infrastructure fully compliant with NHB/MIDH Indian state guidelines as well as international food security mandates (MEWA/ADF).</p>
-            </div>
 
-            <!-- Card 7 -->
 
-            <!-- Card 8 -->
-            <div data-reveal data-reveal-delay="80"
-                class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-white p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-emerald-200 hover:shadow-xl">
-                <div
-                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-xl text-emerald-600 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                    <i class="fas fa-truck-field"></i>
+                <!-- Card 6 -->
+                <div data-reveal data-reveal-delay="160"
+                    class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-LightBg p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-2xl bg-darkBg text-xl text-LightBg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-bold text-darkBg">Government &amp; subsidy projects</h3>
+                    <p class="mt-2 text-sm text-gray-600">Turnkey infrastructure fully compliant with NHB/MIDH Indian
+                        state guidelines as well as international food security mandates (MEWA/ADF).</p>
                 </div>
-                <h3 class="mt-4 text-lg font-bold text-gray-900">Agri-export &amp; pack-house hubs</h3>
-                <p class="mt-2 text-sm text-gray-500">Integrated growing, sorting, and cold-chain pack-house facilities engineered to meet rigorous APEDA and global export quality standards.</p>
-            </div>
 
-    
+                <!-- Card 7 -->
+
+                <!-- Card 8 -->
+                <div data-reveal data-reveal-delay="80"
+                    class="fp-sweep group relative overflow-hidden rounded-3xl border border-gray-100 bg-LightBg p-6 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+                    <div
+                        class="flex h-12 w-12 items-center justify-center rounded-2xl bg-darkBg text-xl text-LightBg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                        <i class="fas fa-truck-field"></i>
+                    </div>
+                    <h3 class="mt-4 text-lg font-bold text-darkBg">Agri-export &amp; pack-house hubs</h3>
+                    <p class="mt-2 text-sm text-gray-600">Integrated growing, sorting, and cold-chain pack-house
+                        facilities engineered to meet rigorous APEDA and global export quality standards.</p>
+                </div>
+
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- ============================================================
     CTA
     ============================================================ -->
-       <!-- Pinned closing section — the footer scrolls up over it -->
- <section class="bg-white py-20 md:py-24">
+    <!-- Pinned closing section — the footer scrolls up over it -->
+    <section class="bg-LightBg py-20 md:py-24">
         <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <div data-reveal
-                class="scale-95 rounded-3xl bg-[#01473f]  py-14 text-center opacity-0 shadow-2xl shadow-emerald-600/25 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none md:px-14">
-                <h2 class="text-2xl font-extrabold text-white md:text-3xl">Planning a greenhouse project?</h2>
-                <p class="mx-auto mt-3 max-w-xl text-emerald-50">
+                class="scale-95 rounded-3xl bg-darkBg  py-14 text-center opacity-0 shadow-2xl shadow-emerald-600/25 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none md:px-14">
+                <h2 class="text-2xl font-extrabold text-LightBg md:text-3xl">Planning a greenhouse project?</h2>
+                <p class="mx-auto mt-3 max-w-xl text-LightBg">
                     Send us the site, the crop and the target output. We'll come back with a feasibility
                     view and an indicative budget.
                 </p>
                 <a href="contact.html"
-                    class="mt-8 inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-3.5 font-semibold text-emerald-700 shadow-lg transition-all hover:bg-emerald-50 hover:shadow-xl">
+                    class="mt-8 inline-flex items-center gap-2.5 rounded-2xl bg-LightBg px-8 py-3.5 font-semibold shadow-lg transition-all hover:bg-sand-400 hover:text-LightBg hover:shadow-xl">
                     <i class="fas fa-arrow-right"></i> Talk to our team
                 </a>
             </div>
