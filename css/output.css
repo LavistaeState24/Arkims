@@ -1892,15 +1892,6 @@ video {
   gap: 1px;
 }
 
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
-}
-
-.gap-y-2 {
-  row-gap: 0.5rem;
-}
-
 .space-y-0\.5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.125rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2996,11 +2987,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -3364,6 +3350,10 @@ video {
   color: rgb(29 75 72 / var(--tw-text-opacity, 1));
 }
 
+.text-darkBg\/60 {
+  color: rgb(29 75 72 / 0.6);
+}
+
 .text-darkBg\/70 {
   color: rgb(29 75 72 / 0.7);
 }
@@ -3592,6 +3582,10 @@ video {
 
 .text-white\/85 {
   color: rgb(255 255 255 / 0.85);
+}
+
+.text-darkBg\/50 {
+  color: rgb(29 75 72 / 0.5);
 }
 
 .underline-offset-4 {
@@ -4686,6 +4680,10 @@ a:focus-visible,
   border-color: rgb(29 75 72 / var(--tw-border-opacity, 1));
 }
 
+.hover\:border-darkBg\/20:hover {
+  border-color: rgb(29 75 72 / 0.2);
+}
+
 .hover\:border-emerald-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(52 211 153 / var(--tw-border-opacity, 1));
@@ -4710,6 +4708,11 @@ a:focus-visible,
 
 .hover\:border-sand-400\/80:hover {
   border-color: rgb(228 190 122 / 0.8);
+}
+
+.hover\:border-emerald-500:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity, 1));
 }
 
 .hover\:bg-LightBg:hover {
@@ -4739,6 +4742,10 @@ a:focus-visible,
 .hover\:bg-darkBg:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 75 72 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-darkBg\/10:hover {
+  background-color: rgb(29 75 72 / 0.1);
 }
 
 .hover\:bg-emerald-50:hover {
