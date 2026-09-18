@@ -479,8 +479,7 @@
                         <p class="mt-3 text-sm leading-relaxed text-gray-500 group-aria-selected:text-emerald-50">
                             Controlled environments for premium crops and year-round production.
                         </p>
-                        <div
-                            class="mt-4 flex items-center gap-2 text-xs font-semibold text-darkBg">
+                        <div class="mt-4 flex items-center gap-2 text-xs font-semibold text-darkBg">
                             View specifications <i class="fas fa-arrow-right text-[10px]"></i>
                         </div>
                     </button>
@@ -1028,456 +1027,468 @@
 
 
                 <!-- Main Selector -->
-              <div data-chooser
-    class="mt-14 overflow-hidden rounded-[2rem] border border-gray-200 bg-LightBg/20 shadow-md lg:grid lg:grid-cols-[0.85fr_1.15fr]">
-
-    <!-- LEFT VISUAL PANEL -->
-    <div class="relative min-h-[420px] overflow-hidden bg-emerald-950 p-8 md:p-10 lg:p-12">
-
-        <!-- Background Image -->
-        <div class="absolute inset-0">
-            <img src="assets/images/greenhouse.jpg" alt="Modern greenhouse"
-                class="h-full w-full object-cover opacity-35">
-        </div>
-
-        <!-- Overlay -->
-        <div
-            class="absolute inset-0 bg-darkBg">
-        </div>
-
-        <!-- Content -->
-        <div class="relative flex h-full flex-col justify-between">
-
-            <div>
-
-                <div
-                    class="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-darkBg text-xl text-emerald-300 backdrop-blur-sm">
-                    <i class="fas fa-seedling"></i>
-                </div>
-
-                <p class="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-emerald-300">
-                    Your Growing Environment
-                </p>
-
-                <h3 class="mt-3 max-w-sm text-3xl font-bold leading-tight text-white md:text-4xl">
-                    The right structure
-                    starts with the right questions.
-                </h3>
-
-                <p class="mt-5 max-w-md text-sm leading-7 text-emerald-50/70 md:text-base">
-                    Every project is different. Climate, production goals
-                    and project scale all influence the ideal greenhouse system.
-                </p>
-
-            </div>
-
-            <!-- Bottom Stats -->
-            <div class="mt-12 grid grid-cols-3 gap-3">
-
-                <div class="rounded-2xl  bg-LightBg/10 p-4 backdrop-blur-sm">
-                    <p class="text-xl font-bold text-LightBg">01</p>
-                    <p class="mt-1 text-[10px] uppercase tracking-wider text-LightBg">
-                        Climate
-                    </p>
-                </div>
-
-                <div class="rounded-2xl  bg-LightBg/10 p-4 backdrop-blur-sm">
-                    <p class="text-xl font-bold text-LightBg">02</p>
-                    <p class="mt-1 text-[10px] uppercase tracking-wider text-LightBg">
-                        Priority
-                    </p>
-                </div>
-
-                <div class="rounded-2xl  bg-LightBg/10 p-4 backdrop-blur-sm">
-                    <p class="text-xl font-bold text-LightBg">03</p>
-                    <p class="mt-1 text-[10px] uppercase tracking-wider text-LightBg">
-                        Scale
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- RIGHT SELECTION PANEL -->
-    <div class="p-7 md:p-10 lg:p-12">
-
-        <div class="flex items-center justify-between">
-
-            <div>
-                <p class="text-xs font-bold uppercase tracking-[0.18em] text-emerald-600">
-                    Quick Selection
-                </p>
-
-                <h3 class="mt-2 text-2xl font-bold text-sand-400">
-                    Tell us about your project
-                </h3>
-            </div>
-
-            <div
-                class="hidden h-11 w-11 items-center justify-center rounded-full bg-darkBg text-LightBg sm:flex">
-                <i class="fas fa-sliders-h"></i>
-            </div>
-
-        </div>
-
-
-        <div class="mt-8 space-y-8">
-
-           <fieldset data-choose-group="climate">
-
-    <div class="flex items-center gap-3">
-        <span
-            class="flex h-8 w-8 items-center justify-center rounded-xl bg-darkBg text-xs font-bold text-LightBg">
-            01
-        </span>
-
-        <legend class="text-sm font-bold text-darkBg">
-            What's your site climate?
-        </legend>
-    </div>
-
-    <div class="mt-4 grid gap-3 sm:grid-cols-3">
-
-        <button data-choose data-value="mild" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg aria-pressed:bg-emerald-100">
-                <i class="fas fa-cloud-sun"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                Mild
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                Moderate climate
-            </span>
-        </button>
-
-
-        <button data-choose data-value="hot" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
-                <i class="fas fa-sun"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                Hot &amp; Arid
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                High heat &amp; dry
-            </span>
-        </button>
-
-
-        <button data-choose data-value="humid" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
-                <i class="fas fa-water"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                Coastal / Humid
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                Moisture-rich climate
-            </span>
-        </button>
-
-    </div>
-
-</fieldset>
-
-
-<!-- PRIORITY -->
-<fieldset data-choose-group="priority">
-
-    <div class="flex items-center gap-3">
-        <span
-            class="flex h-8 w-8 items-center justify-center rounded-xl bg-darkBg text-xs font-bold text-LightBg">
-            02
-        </span>
-
-        <legend class="text-sm font-bold text-darkBg">
-            What's your top priority?
-        </legend>
-    </div>
-
-    <div class="mt-4 grid gap-3 sm:grid-cols-3">
-
-        <button data-choose data-value="cost" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
-                <i class="fas fa-wallet"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                Lowest Cost
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                Value focused
-            </span>
-        </button>
-
-
-        <button data-choose data-value="control" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
-                <i class="fas fa-sliders-h"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                Maximum Control
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                Climate precision
-            </span>
-        </button>
-
-
-        <button data-choose data-value="yield" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
-                <i class="fas fa-chart-line"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                Maximum Yield
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                Production focused
-            </span>
-        </button>
-
-    </div>
-
-</fieldset>
-
-
-<!-- SCALE -->
-<fieldset data-choose-group="scale">
-
-    <div class="flex items-center gap-3">
-        <span
-            class="flex h-8 w-8 items-center justify-center rounded-xl bg-darkBg text-xs font-bold text-LightBg">
-            03
-        </span>
-
-        <legend class="text-sm font-bold text-darkBg">
-            What is your project scale?
-        </legend>
-    </div>
-
-    <div class="mt-4 grid gap-3 sm:grid-cols-3">
-
-        <button data-choose data-value="small" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
-                <i class="fas fa-home"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                Under 5 ha
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                Small scale
-            </span>
-        </button>
-
-
-        <button data-choose data-value="mid" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
-                <i class="fas fa-th-large"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                1 – 10 ha
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                Commercial
-            </span>
-        </button>
-
-
-        <button data-choose data-value="large" aria-pressed="false"
-            class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
-            <span
-                class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
-                <i class="fas fa-industry"></i>
-            </span>
-
-            <span class="mt-3 block text-sm font-semibold text-darkBg">
-                10 ha+
-            </span>
-
-            <span class="mt-1 block text-xs text-darkBg">
-                Large scale
-            </span>
-        </button>
-
-    </div>
-
-</fieldset>
-
-        </div>
-
-
-        <!-- RESULT -->
-        <div data-chooser-result
-            class="mt-9 rounded-3xl border border-gray-200 bg-LightBg p-5 transition-all duration-500">
-
-            <div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-
-                <div class="flex items-start gap-4">
-
-                    <div
-                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-darkBg text-LightBg">
-                        <i class="fas fa-lightbulb"></i>
+                <div data-chooser
+                    class="mt-14 overflow-hidden rounded-[2rem] border border-gray-200 bg-LightBg/20 shadow-md lg:grid lg:grid-cols-[0.85fr_1.15fr]">
+
+                    <!-- LEFT VISUAL PANEL -->
+                    <div class="relative min-h-[420px] overflow-hidden bg-emerald-950 p-8 md:p-10 lg:p-12">
+
+                        <!-- Background Image -->
+                        <div class="absolute inset-0">
+                            <img src="assets/images/greenhouse.jpg" alt="Modern greenhouse"
+                                class="h-full w-full object-cover opacity-35">
+                        </div>
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-darkBg">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="relative flex h-full flex-col justify-between">
+
+                            <div>
+
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-darkBg text-xl text-emerald-300 backdrop-blur-sm">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+
+                                <p class="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-emerald-300">
+                                    Your Growing Environment
+                                </p>
+
+                                <h3 class="mt-3 max-w-sm text-3xl font-bold leading-tight text-white md:text-4xl">
+                                    The right structure
+                                    starts with the right questions.
+                                </h3>
+
+                                <p class="mt-5 max-w-md text-sm leading-7 text-emerald-50/70 md:text-base">
+                                    Every project is different. Climate, production goals
+                                    and project scale all influence the ideal greenhouse system.
+                                </p>
+
+                            </div>
+
+                            <!-- Bottom Stats -->
+                            <div class="mt-12 grid grid-cols-3 gap-3">
+
+                                <div class="rounded-2xl  bg-LightBg/10 p-4 backdrop-blur-sm">
+                                    <p class="text-xl font-bold text-LightBg">01</p>
+                                    <p class="mt-1 text-[10px] uppercase tracking-wider text-LightBg">
+                                        Climate
+                                    </p>
+                                </div>
+
+                                <div class="rounded-2xl  bg-LightBg/10 p-4 backdrop-blur-sm">
+                                    <p class="text-xl font-bold text-LightBg">02</p>
+                                    <p class="mt-1 text-[10px] uppercase tracking-wider text-LightBg">
+                                        Priority
+                                    </p>
+                                </div>
+
+                                <div class="rounded-2xl  bg-LightBg/10 p-4 backdrop-blur-sm">
+                                    <p class="text-xl font-bold text-LightBg">03</p>
+                                    <p class="mt-1 text-[10px] uppercase tracking-wider text-LightBg">
+                                        Scale
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div>
-                        <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-darkBg">
-                            Recommended Platform
-                        </p>
 
-                        <p data-result-name class="mt-1 text-lg font-bold text-gray-950">
-                            Make a selection
-                        </p>
+                    <!-- RIGHT SELECTION PANEL -->
+                    <div class="p-7 md:p-10 lg:p-12">
 
-                        <p data-result-why class="mt-1 max-w-lg text-sm leading-relaxed text-gray-500">
-                            Pick one option from each section to receive a starting recommendation.
-                        </p>
+                        <div class="flex items-center justify-between">
+
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-[0.18em] text-emerald-600">
+                                    Quick Selection
+                                </p>
+
+                                <h3 class="mt-2 text-2xl font-bold text-sand-400">
+                                    Tell us about your project
+                                </h3>
+                            </div>
+
+                            <div
+                                class="hidden h-11 w-11 items-center justify-center rounded-full bg-darkBg text-LightBg sm:flex">
+                                <i class="fas fa-sliders-h"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-8 space-y-8">
+
+                            <fieldset data-choose-group="climate">
+
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="flex h-8 w-8 items-center justify-center rounded-xl bg-darkBg text-xs font-bold text-LightBg">
+                                        01
+                                    </span>
+
+                                    <legend class="text-sm font-bold text-darkBg">
+                                        What's your site climate?
+                                    </legend>
+                                </div>
+
+                                <div class="mt-4 grid gap-3 sm:grid-cols-3">
+
+                                    <button data-choose data-value="mild" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg aria-pressed:bg-emerald-100">
+                                            <i class="fas fa-cloud-sun"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            Mild
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            Moderate climate
+                                        </span>
+                                    </button>
+
+
+                                    <button data-choose data-value="hot" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
+                                            <i class="fas fa-sun"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            Hot &amp; Arid
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            High heat &amp; dry
+                                        </span>
+                                    </button>
+
+
+                                    <button data-choose data-value="humid" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
+                                            <i class="fas fa-water"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            Coastal / Humid
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            Moisture-rich climate
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- PRIORITY -->
+                            <fieldset data-choose-group="priority">
+
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="flex h-8 w-8 items-center justify-center rounded-xl bg-darkBg text-xs font-bold text-LightBg">
+                                        02
+                                    </span>
+
+                                    <legend class="text-sm font-bold text-darkBg">
+                                        What's your top priority?
+                                    </legend>
+                                </div>
+
+                                <div class="mt-4 grid gap-3 sm:grid-cols-3">
+
+                                    <button data-choose data-value="cost" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
+                                            <i class="fas fa-wallet"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            Lowest Cost
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            Value focused
+                                        </span>
+                                    </button>
+
+
+                                    <button data-choose data-value="control" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
+                                            <i class="fas fa-sliders-h"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            Maximum Control
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            Climate precision
+                                        </span>
+                                    </button>
+
+
+                                    <button data-choose data-value="yield" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
+                                            <i class="fas fa-chart-line"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            Maximum Yield
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            Production focused
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- SCALE -->
+                            <fieldset data-choose-group="scale">
+
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="flex h-8 w-8 items-center justify-center rounded-xl bg-darkBg text-xs font-bold text-LightBg">
+                                        03
+                                    </span>
+
+                                    <legend class="text-sm font-bold text-darkBg">
+                                        What is your project scale?
+                                    </legend>
+                                </div>
+
+                                <div class="mt-4 grid gap-3 sm:grid-cols-3">
+
+                                    <button data-choose data-value="small" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
+                                            <i class="fas fa-home"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            Under 5 ha
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            Small scale
+                                        </span>
+                                    </button>
+
+
+                                    <button data-choose data-value="mid" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
+                                            <i class="fas fa-th-large"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            1 – 10 ha
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            Commercial
+                                        </span>
+                                    </button>
+
+
+                                    <button data-choose data-value="large" aria-pressed="false"
+                                        class="group rounded-2xl border border-gray-200 bg-LightBg p-4 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md aria-pressed:border-emerald-600 aria-pressed:bg-emerald-50">
+                                        <span
+                                            class="flex h-9 w-9 items-center justify-center rounded-xl bg-darkBg text-LightBg transition group-hover:bg-darkBg group-hover:text-LightBg">
+                                            <i class="fas fa-industry"></i>
+                                        </span>
+
+                                        <span class="mt-3 block text-sm font-semibold text-darkBg">
+                                            10 ha+
+                                        </span>
+
+                                        <span class="mt-1 block text-xs text-darkBg">
+                                            Large scale
+                                        </span>
+                                    </button>
+
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <!-- RESULT -->
+                        <div data-chooser-result
+                            class="mt-9 rounded-3xl border border-gray-200 bg-LightBg p-5 transition-all duration-500">
+
+                            <div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+
+                                <div class="flex items-start gap-4">
+
+                                    <div
+                                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-darkBg text-LightBg">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="text-[10px] font-bold uppercase tracking-[0.18em] text-darkBg">
+                                            Recommended Platform
+                                        </p>
+
+                                        <p data-result-name class="mt-1 text-lg font-bold text-gray-950">
+                                            Make a selection
+                                        </p>
+
+                                        <p data-result-why class="mt-1 max-w-lg text-sm leading-relaxed text-gray-500">
+                                            Pick one option from each section to receive a starting recommendation.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+                                <a data-result-link href="#range"
+                                    class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-darkBg px-6 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-900/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-darkBg">
+                                    Explore Solution
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
-
-
-                <a data-result-link href="#range"
-                    class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-darkBg px-6 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-900/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-darkBg">
-                    Explore Solution
-                    <i class="fas fa-arrow-right text-xs"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
 
             </div>
         </section>
 
         <!-- ============ 7 · WHAT'S INCLUDED ============ -->
-    <section id="included" class="border-t border-gray-100 bg-sand-400 py-20 md:py-28">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
-        <!-- Section Header -->
-        <div data-reveal class="mx-auto max-w-2xl text-center md:mx-0 md:text-left">
-            <span class="inline-flex items-center gap-2 rounded-full border border-darkBg/10 bg-LightBg px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-darkBg shadow-sm">
-                <i class="fas fa-layer-group text-xs text-emerald-600"></i> Turnkey Execution
-            </span>
-            <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-darkBg sm:text-4xl lg:text-5xl">
-                One partner. Zero handoff gaps.
-            </h2>
-            <p class="mt-3 text-base font-medium text-darkBg/80">
-                Every structure is designed, fabricated, integrated, and commissioned entirely in-house.
-            </p>
-        </div>
+        <section id="included" class="border-t border-gray-100 bg-sand-400 py-20 md:py-28">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <!-- Cards Grid -->
-        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            
-            <!-- Card 1 -->
-            <div class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-LightBg p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg">
-                <div>
-                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-darkBg text-LightBg shadow-md transition-transform duration-300 group-hover:scale-105">
-                        <i class="fas fa-industry text-lg"></i>
-                    </div>
-                    <h3 class="mt-6 text-lg font-bold text-darkBg">In-House Manufacturing</h3>
-                    <p class="mt-2 text-xs leading-relaxed text-darkBg/80">
-                        Precision steel cutting, welding, and hot-dip galvanising handled direct at Al Rawda Factory.
+                <!-- Section Header -->
+                <div data-reveal class="mx-auto max-w-2xl text-center md:mx-0 md:text-left">
+                    <span
+                        class="inline-flex items-center gap-2 rounded-full border border-darkBg/10 bg-LightBg px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-darkBg shadow-sm">
+                        <i class="fas fa-layer-group text-xs text-emerald-600"></i> Turnkey Execution
+                    </span>
+                    <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-darkBg sm:text-4xl lg:text-5xl">
+                        One partner. Zero handoff gaps.
+                    </h2>
+                    <p class="mt-3 text-base font-medium text-darkBg/80">
+                        Every structure is designed, fabricated, integrated, and commissioned entirely in-house.
                     </p>
                 </div>
-                <div class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
-                    <span class="text-[11px] font-bold uppercase tracking-wider text-darkBg/50">Phase 01</span>
-                    <span class="text-xs font-semibold text-emerald-600">Structure</span>
-                </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-LightBg p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg">
-                <div>
-                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-darkBg text-LightBg shadow-md transition-transform duration-300 group-hover:scale-105">
-                        <i class="fas fa-shield-halved text-lg"></i>
+                <!-- Cards Grid -->
+                <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-LightBg p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg">
+                        <div>
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-xl bg-darkBg text-LightBg shadow-md transition-transform duration-300 group-hover:scale-105">
+                                <i class="fas fa-industry text-lg"></i>
+                            </div>
+                            <h3 class="mt-6 text-lg font-bold text-darkBg">In-House Manufacturing</h3>
+                            <p class="mt-2 text-xs leading-relaxed text-darkBg/80">
+                                Precision steel cutting, welding, and hot-dip galvanising handled direct at Al Rawda
+                                Factory.
+                            </p>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-darkBg/50">Phase 01</span>
+                            <span class="text-xs font-semibold text-emerald-600">Structure</span>
+                        </div>
                     </div>
-                    <h3 class="mt-6 text-lg font-bold text-darkBg">GCC Climate Engineering</h3>
-                    <p class="mt-2 text-xs leading-relaxed text-darkBg/80">
-                        Custom-engineered structural tolerances built specifically for extreme regional winds, solar radiation, and sandstorms.
-                    </p>
-                </div>
-                <div class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
-                    <span class="text-[11px] font-bold uppercase tracking-wider text-darkBg/50">Phase 02</span>
-                    <span class="text-xs font-semibold text-emerald-600">Durability</span>
-                </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-LightBg p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg">
-                <div>
-                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-darkBg text-LightBg shadow-md transition-transform duration-300 group-hover:scale-105">
-                        <i class="fas fa-sliders text-lg"></i>
+                    <!-- Card 2 -->
+                    <div
+                        class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-LightBg p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg">
+                        <div>
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-xl bg-darkBg text-LightBg shadow-md transition-transform duration-300 group-hover:scale-105">
+                                <i class="fas fa-shield-halved text-lg"></i>
+                            </div>
+                            <h3 class="mt-6 text-lg font-bold text-darkBg">GCC Climate Engineering</h3>
+                            <p class="mt-2 text-xs leading-relaxed text-darkBg/80">
+                                Custom-engineered structural tolerances built specifically for extreme regional winds,
+                                solar radiation, and sandstorms.
+                            </p>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-darkBg/50">Phase 02</span>
+                            <span class="text-xs font-semibold text-emerald-600">Durability</span>
+                        </div>
                     </div>
-                    <h3 class="mt-6 text-lg font-bold text-darkBg">Dutch Automation</h3>
-                    <p class="mt-2 text-xs leading-relaxed text-darkBg/80">
-                        Seamless integration with world-class Priva &amp; Hoogendoorn environmental control algorithms.
-                    </p>
-                </div>
-                <div class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
-                    <span class="text-[11px] font-bold uppercase tracking-wider text-darkBg/50">Phase 03</span>
-                    <span class="text-xs font-semibold text-emerald-600">Controls</span>
-                </div>
-            </div>
 
-            <!-- Card 4 -->
-            <div class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-LightBg p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg">
-                <div>
-                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-darkBg text-LightBg shadow-md transition-transform duration-300 group-hover:scale-105">
-                        <i class="fas fa-screwdriver-wrench text-lg"></i>
+                    <!-- Card 3 -->
+                    <div
+                        class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-LightBg p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg">
+                        <div>
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-xl bg-darkBg text-LightBg shadow-md transition-transform duration-300 group-hover:scale-105">
+                                <i class="fas fa-sliders text-lg"></i>
+                            </div>
+                            <h3 class="mt-6 text-lg font-bold text-darkBg">Dutch Automation</h3>
+                            <p class="mt-2 text-xs leading-relaxed text-darkBg/80">
+                                Seamless integration with world-class Priva &amp; Hoogendoorn environmental control
+                                algorithms.
+                            </p>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-darkBg/50">Phase 03</span>
+                            <span class="text-xs font-semibold text-emerald-600">Controls</span>
+                        </div>
                     </div>
-                    <h3 class="mt-6 text-lg font-bold text-darkBg">Site Deployment</h3>
-                    <p class="mt-2 text-xs leading-relaxed text-darkBg/80">
-                        Full structural assembly, sensor calibration, and comprehensive dry-run commissioning before handoff.
-                    </p>
-                </div>
-                <div class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
-                    <span class="text-[11px] font-bold uppercase tracking-wider text-darkBg/50">Phase 04</span>
-                    <span class="text-xs font-semibold text-emerald-600">Turnkey</span>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-LightBg p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg">
+                        <div>
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-xl bg-darkBg text-LightBg shadow-md transition-transform duration-300 group-hover:scale-105">
+                                <i class="fas fa-screwdriver-wrench text-lg"></i>
+                            </div>
+                            <h3 class="mt-6 text-lg font-bold text-darkBg">Site Deployment</h3>
+                            <p class="mt-2 text-xs leading-relaxed text-darkBg/80">
+                                Full structural assembly, sensor calibration, and comprehensive dry-run commissioning
+                                before handoff.
+                            </p>
+                        </div>
+                        <div class="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-darkBg/50">Phase 04</span>
+                            <span class="text-xs font-semibold text-emerald-600">Turnkey</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- ============ 8 · FAQ ============ -->
         <section id="faq" class="bg-LightBg py-20 md:py-28">

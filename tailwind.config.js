@@ -13,7 +13,7 @@ module.exports = {
         paper: '#F5F6F1',
         darkBg: '#1d4b48',
         LightBg: '#fefce8',
-        ink: { DEFAULT: '#022f6a', soft: '#4B564E' },
+        // ink: { DEFAULT: '#022f6a', soft: '#4B564E' },
         line: '#DDE3DC'
       },
       fontFamily: {
