@@ -1016,3 +1016,29 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (e.key === 'Escape' && !box.classList.contains('hidden')) close();
     });
 })();
+
+// hydroponic animation of cards
+
+
+(function () {
+        const cards = document.querySelectorAll('.fall-card');
+        if (!cards.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const index = Array.from(cards).indexOf(el);
+                    // stagger delay so they don't all land at once
+                    const delay = (index % 4) * 120;
+                    setTimeout(() => el.classList.add('is-visible'), delay);
+                    observer.unobserve(el);
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -60px 0px'
+        });
+
+        cards.forEach((card) => observer.observe(card));
+    })();
