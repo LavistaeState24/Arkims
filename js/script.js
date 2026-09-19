@@ -1021,24 +1021,45 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 (function () {
-        const cards = document.querySelectorAll('.fall-card');
-        if (!cards.length) return;
+    const cards = document.querySelectorAll('.fall-card');
+    if (!cards.length) return;
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const el = entry.target;
-                    const index = Array.from(cards).indexOf(el);
-                    // stagger delay so they don't all land at once
-                    const delay = (index % 4) * 120;
-                    setTimeout(() => el.classList.add('is-visible'), delay);
-                    observer.unobserve(el);
-                }
-            });
-        }, {
-            threshold: 0.15,
-            rootMargin: '0px 0px -60px 0px'
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const index = Array.from(cards).indexOf(el);
+                // stagger delay so they don't all land at once
+                const delay = (index % 4) * 120;
+                setTimeout(() => el.classList.add('is-visible'), delay);
+                observer.unobserve(el);
+            }
         });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -60px 0px'
+    });
 
-        cards.forEach((card) => observer.observe(card));
-    })();
+    cards.forEach((card) => observer.observe(card));
+})();
+
+// <!-- Tiny script: just toggles data-visible when the element enters view -->
+(function () {
+    const elements = document.querySelectorAll('[data-visible], .data-reveal-target');
+    const targets = document.querySelectorAll('[class*="data-[visible]"]');
+    if (!targets.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.setAttribute('data-visible', '');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -80px 0px'
+    });
+
+    targets.forEach((el) => observer.observe(el));
+})();
