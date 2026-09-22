@@ -580,7 +580,7 @@
  }
 
  html[dir="rtl"] .right-0 {
-     right: auto;
+     right: 0;
      left: 0;
  }
 

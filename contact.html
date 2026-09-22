@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkims - Design To Harvest</title>
-      <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <!-- Tailwind + Google Fonts + Font Awesome -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -17,76 +17,81 @@
 
 <body>
 
-  
+
     <div id="navbar"></div>
 
-   <section class="relative min-h-[70vh] flex items-center overflow-hidden pt-16 md:pt-20 group bg-darkBg">
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden pt-16 md:pt-20 group bg-darkBg">
 
-    <!-- Background image with zoom & color overlay -->
-    <div class="absolute inset-0 z-0 overflow-hidden transition-transform duration-[3000ms] group-hover:scale-105">
-        <img src="./assets/A4.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-35" />
-        
-        <!-- Palette Gradient overlay -->
-        <div class="absolute inset-0 bg-darkBg/10"></div>
-        
-        <!-- Subtle SVG pattern -->
-        <div class="absolute inset-0 ">
+        <!-- Background image with zoom & color overlay -->
+        <div class="absolute inset-0 z-0 overflow-hidden transition-transform duration-[3000ms] group-hover:scale-105">
+            <img src="./assets/A4.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-35" />
+
+            <!-- Palette Gradient overlay -->
+            <div class="absolute inset-0 bg-darkBg/10"></div>
+
+            <!-- Subtle SVG pattern -->
+            <div class="absolute inset-0 "></div>
         </div>
-    </div>
 
-    <!-- Decorative glow circle using Sand -->
-    <!-- <div class="absolute top-20 right-20 w-96 h-96 bg-sand-400/20 rounded-full blur-3xl pointer-events-none">
-    </div> -->
+        <!-- Content Container -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-    <!-- Content Container -->
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Text -->
+                <div class="space-y-6 transition-all duration-700 group-hover:translate-y-[-4px]">
 
-            <!-- Left Text -->
-            <div class="space-y-6 transition-all duration-700 group-hover:translate-y-[-4px]">
-                
-                <!-- Breadcrumb -->
-                <nav class="text-sm text-LightBg/70 hover:text-LightBg transition-colors">
-                    <a href="index.html" class="hover:text-sand-400 transition-colors">Home</a>
-                    <span class="mx-2 text-sand-400/40">/</span>
-                    <span class="text-LightBg font-medium">Contact Us</span>
-                </nav>
+                    <!-- Breadcrumb -->
+                    <nav class="text-sm text-LightBg/70 hover:text-LightBg transition-colors">
+                        <a href="index.html" class="hover:text-sand-400 transition-colors" data-en="Home"
+                            data-ar="الرئيسية">Home</a>
+                        <span class="mx-2 text-sand-400/40">/</span>
+                        <span class="text-LightBg font-medium" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</span>
+                    </nav>
 
-                <!-- Badge with Sand ping animation -->
-                <div class="inline-flex items-center gap-2 bg-LightBg/10 backdrop-blur-md text-LightBg text-xs font-semibold px-4 py-2 rounded-full border border-sand-400/30 shadow-lg shadow-darkBg/40">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sand-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-sand-500"></span>
-                    </span>
-                    Vision for Food Security
+                    <!-- Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-LightBg/10 backdrop-blur-md text-LightBg text-xs font-semibold px-4 py-2 rounded-full border border-sand-400/30 shadow-lg shadow-darkBg/40">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sand-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-sand-500"></span>
+                        </span>
+                        <span data-en="Vision for Food Security" data-ar="رؤية للأمن الغذائي">Vision for Food
+                            Security</span>
+                    </div>
+
+                    <!-- Heading -->
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-LightBg drop-shadow-2xl">
+                        <span data-en="Get in" data-ar="تواصل">Get in</span> <span class="text-sand-400" data-en="Touch"
+                            data-ar="معنا">Touch</span>
+                    </h1>
+
+                    <p class="text-lg text-LightBg/85 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1"
+                        data-en="Have a project in mind? Reach out to our team for a free consultation."
+                        data-ar="هل لديك مشروع في ذهنك؟ تواصل مع فريقنا للحصول على استشارة مجانية.">
+                        Have a project in mind? Reach out to our team for a free consultation.
+                    </p>
+
+                    <!-- Button -->
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center gap-2.5 bg-sand-400 hover:bg-darkBg text-darkBg font-semibold py-3.5 px-7 rounded-xl transition-all duration-300 shadow-xl hover:scale-[1.02] active:scale-[0.98] text-base">
+                        <i class="fas fa-paper-plane text-darkBg"></i>
+                        <span data-en="Send a Message" data-ar="أرسل رسالة">Send a Message</span>
+                    </a>
                 </div>
 
-                <!-- Heading -->
-                <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-LightBg drop-shadow-2xl">
-                    Get in <span class="text-sand-400">Touch</span>
-                </h1>
-
-                <p class="text-lg text-LightBg/85 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1">
-                    Have a project in mind? Reach out to our team for a free consultation.
-                </p>
-
-                <!-- Button -->
-                <a href="contact.html"
-                    class="inline-flex items-center justify-center gap-2.5 bg-sand-400 hover:bg-darkBg text-darkBg font-semibold py-3.5 px-7 rounded-xl transition-all duration-300 shadow-xl  hover:scale-[1.02] active:scale-[0.98] text-base">
-                    <i class="fas fa-paper-plane text-darkBg"></i> Send a Message
-                </a>
             </div>
-
         </div>
-    </div>
 
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-LightBg/50 animate-bounce">
-        <span class="text-xs font-medium uppercase tracking-widest text-sand-400">Scroll</span>
-        <i class="fas fa-chevron-down text-sm text-sand-400"></i>
-    </div>
+        <!-- Scroll Indicator -->
+        <div
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-LightBg/50 animate-bounce">
+            <span class="text-xs font-medium uppercase tracking-widest text-sand-400" data-en="Scroll"
+                data-ar="مرر">Scroll</span>
+            <i class="fas fa-chevron-down text-sm text-sand-400"></i>
+        </div>
 
-</section>
+    </section>
 
     <section id="contact-info" class="py-20 md:py-28 bg-sand-400 relative overflow-hidden">
         <!-- Decorative leaf -->
@@ -99,52 +104,84 @@
             <div class="text-center max-w-3xl mx-auto mb-14 animate-[fade-up_0.8s_ease-out]">
                 <div
                     class="inline-flex items-center gap-2 text-LightBg font-semibold text-sm bg-darkBg px-4 py-1.5 rounded-full mb-4">
-                    <i class="fas fa-envelope"></i> Get in Touch
+                    <i class="fas fa-envelope"></i>
+                    <span data-en="Get in Touch" data-ar="ابقَ على تواصل">Get in Touch</span>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-darkBg">
-                    Let's Build <span class="text-LightBg">Together</span>
+                    <span data-en="Let's Build" data-ar="لنبنِ">Let's Build</span> <span class="text-LightBg"
+                        data-en="Together" data-ar="معاً">Together</span>
                 </h2>
-                <p class="text-LightBg mt-3 text-base md:text-lg">
+                <p class="text-LightBg mt-3 text-base md:text-lg"
+                    data-en="Have a project in mind? Reach out to our team for a free consultation."
+                    data-ar="هل لديك مشروع في ذهنك؟ تواصل مع فريقنا للحصول على استشارة مجانية.">
                     Have a project in mind? Reach out to our team for a free consultation.
                 </p>
             </div>
 
-            <!-- Three Contact Cards (Email, Phone, Location) -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <!-- Three Contact Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 items-stretch">
+
                 <!-- Email Card -->
                 <div
-                    class="bg-darkBg rounded-2xl shadow-md p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl  hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.2s]">
+                    class="bg-darkBg rounded-2xl shadow-md p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.2s] h-full flex flex-col justify-center">
                     <div
                         class="w-16 h-16 rounded-full bg-LightBg mx-auto flex items-center justify-center text-darkBg text-2xl mb-4 transition-transform duration-300 hover:scale-110 hover:rotate-12">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h3 class="text-sm font-semibold text-LightBg  uppercase tracking-wider mb-2">Email</h3>
-                    <p class="text-LightBg font-semibold transition-colors duration-300 hover:text-LightBg"><a
-                            href="mailto:info@arkims.in"
-                            class="text-LightBg hover:text-white">info@arkims.in</a></p>
+                    <h3 class="text-sm font-semibold text-LightBg uppercase tracking-wider mb-2" data-en="Email"
+                        data-ar="البريد الإلكتروني">Email</h3>
+                    <p class="text-LightBg font-semibold transition-colors duration-300 hover:text-LightBg">
+                        <a href="mailto:info@arkims.in" class="text-LightBg hover:text-white">info@arkims.in</a>
+                    </p>
                 </div>
 
                 <!-- Phone Card -->
                 <div
-                    class="bg-darkBg rounded-2xl shadow-md p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl  hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.4s]">
+                    class="bg-darkBg rounded-2xl shadow-md p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.4s] h-full flex flex-col justify-center">
                     <div
                         class="w-16 h-16 rounded-full bg-LightBg mx-auto flex items-center justify-center text-darkBg text-2xl mb-4 transition-transform duration-300 hover:scale-110 hover:rotate-12">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <h3 class="text-sm font-semibold text-LightBg uppercase tracking-wider mb-2">Phone</h3>
-                    <p class="text-LightBg font-semibold transition-colors duration-300 hover:text-pine-700"><a
-                            href="tel:++918000101044" class="text-LightBg hover:text-white">+91 8000101044</a></p>
+                    <h3 class="text-sm font-semibold text-LightBg uppercase tracking-wider mb-4" data-en="Phone"
+                        data-ar="الهاتف">Phone</h3>
+
+                    <div class="flex flex-col gap-4">
+                        <!-- Uraaz Zamindar -->
+                        <div>
+                            <p class="text-LightBg text-sm mb-1 opacity-90" data-en="Uraaz Zamindar"
+                                data-ar="أوراز زامندار">Uraaz Zamindar</p>
+                            <a href="tel:+919979901901"
+                                class="text-LightBg font-semibold transition-colors duration-300 hover:text-white hover:underline underline-offset-4">
+                                +91 9979 901-901
+                            </a>
+                        </div>
+
+                        <!-- Ibrahim R Khan -->
+                        <div>
+                            <p class="text-LightBg text-sm mb-1 opacity-90" data-en="Ibrahim R Khan"
+                                data-ar="إبراهيم ر خان">Ibrahim R Khan</p>
+                            <a href="tel:+918000101044"
+                                class="text-LightBg font-semibold transition-colors duration-300 hover:text-white hover:underline underline-offset-4">
+                                +91 8000-10-10-44
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Location Card -->
                 <div
-                    class="bg-darkBg rounded-2xl shadow-md p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl  hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.6s]">
+                    class="bg-darkBg rounded-2xl shadow-md p-8 text-center border border-gray-100/80 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:-translate-y-2 animate-[fade-up_0.8s_ease-out] [animation-delay:0.6s] h-full flex flex-col justify-center">
                     <div
                         class="w-16 h-16 rounded-full bg-LightBg mx-auto flex items-center justify-center text-darkBg text-2xl mb-4 transition-transform duration-300 hover:scale-110 hover:rotate-12">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3 class="text-sm font-semibold text-LightBg uppercase tracking-wider mb-2">Location</h3>
-                    <p class="text-LightBg font-semibold transition-colors duration-300 hover:text-pine-700">ARK Developers, Khanpur, Ahmedabad, Gujarat 380001</p>
+                    <h3 class="text-sm font-semibold text-LightBg uppercase tracking-wider mb-2" data-en="Location"
+                        data-ar="الموقع">Location</h3>
+                    <p class="text-LightBg font-semibold transition-colors duration-300 hover:text-LightBg"
+                        data-en="ARK Developers, Khanpur, Ahmedabad, Gujarat 380001"
+                        data-ar="ARK المطورين، خانبور، أحمد آباد، غوجارات 380001">
+                        ARK Developers, Khanpur, Ahmedabad, Gujarat 380001
+                    </p>
                 </div>
             </div>
 
@@ -153,32 +190,42 @@
                 <!-- Form -->
                 <div
                     class="bg-LightBg rounded-3xl p-8 md:p-10 shadow-xl shadow-gray-200/30 border border-gray-100/80 transition-all duration-500 hover:shadow-2xl hover:shadow-pine-500/10">
-                    <h3 class="text-2xl font-bold text-darkBg mb-6">Send a Message</h3>
+                    <h3 class="text-2xl font-bold text-darkBg mb-6" data-en="Send a Message" data-ar="أرسل رسالة">Send a
+                        Message</h3>
                     <form class="space-y-5"
                         onsubmit="event.preventDefault(); alert('Thank you for reaching out! We\'ll get back to you within 24 hours.');">
                         <div>
-                            <label class="block text-md font-semibold text-darkBg mb-1.5">Full Name</label>
-                            <input type="text" required placeholder="Your Name"
+                            <label class="block text-md font-semibold text-darkBg mb-1.5" data-en="Full Name"
+                                data-ar="الاسم الكامل">Full Name</label>
+                            <input type="text" required data-en-placeholder="Your Name" data-ar-placeholder="اسمك"
+                                placeholder="Your Name"
                                 class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-paper/60 focus:ring-2 focus:ring-pine-500 focus:border-pine-500 outline-none transition-all duration-300 text-ink hover:border-pine-300 text-sm" />
                         </div>
                         <div>
-                            <label class="block text-md font-semibold text-darkBg mb-1.5">Email Address</label>
-                            <input type="email" required placeholder="Your Email"
+                            <label class="block text-md font-semibold text-darkBg mb-1.5" data-en="Email Address"
+                                data-ar="البريد الإلكتروني">Email Address</label>
+                            <input type="email" required data-en-placeholder="Your Email"
+                                data-ar-placeholder="بريدك الإلكتروني" placeholder="Your Email"
                                 class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-paper/60 focus:ring-2 focus:ring-pine-500 focus:border-pine-500 outline-none transition-all duration-300 text-ink hover:border-pine-300 text-sm" />
                         </div>
                         <div>
-                            <label class="block text-md font-semibold text-darkBg mb-1.5">Phone Number</label>
-                            <input type="tel" required placeholder="Your Phone Number"
+                            <label class="block text-md font-semibold text-darkBg mb-1.5" data-en="Phone Number"
+                                data-ar="رقم الهاتف">Phone Number</label>
+                            <input type="tel" required data-en-placeholder="Your Phone Number"
+                                data-ar-placeholder="رقم هاتفك" placeholder="Your Phone Number"
                                 class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-paper/60 focus:ring-2 focus:ring-pine-500 focus:border-pine-500 outline-none transition-all duration-300 text-ink hover:border-pine-300 text-sm" />
                         </div>
                         <div>
-                            <label class="block text-md font-semibold text-darkBg mb-1.5">Your Message</label>
-                            <textarea rows="3" required
+                            <label class="block text-md font-semibold text-darkBg mb-1.5" data-en="Your Message"
+                                data-ar="رسالتك">Your Message</label>
+                            <textarea rows="3" required data-en-placeholder="Your Message" data-ar-placeholder="رسالتك"
+                                placeholder="Your Message"
                                 class="w-full px-4 py-3 rounded-xl border border-gray-200/60 bg-paper/60 focus:ring-2 focus:ring-pine-500 focus:border-pine-500 outline-none transition-all duration-300 text-ink resize-none hover:border-pine-300"></textarea>
                         </div>
                         <button type="submit"
                             class="w-56 bg-pine-700 hover:bg-pine-800 text-white font-semibold py-3.5 rounded-xl transition-all duration-300 shadow-lg shadow-pine-500/30 hover:shadow-pine-500/50 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2.5 text-base">
-                            <i class="fas fa-paper-plane"></i> Send Message
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span>
                         </button>
                     </form>
                 </div>
@@ -186,7 +233,10 @@
                 <!-- Map iframe -->
                 <div
                     class="bg-LightBg rounded-3xl overflow-hidden shadow-xl shadow-gray-200/30 border border-gray-100/80 h-[400px] lg:h-auto min-h-[350px] transition-all duration-500 hover:shadow-2xl hover:shadow-pine-500/10">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.513270858892!2d72.5792908!3d23.029693700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e852ca77c2773%3A0xea7c5bdf9fd35be6!2sARK-DOT%20DEVELOPERS!5e1!3m2!1sen!2sin!4v1789477509593!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.513270858892!2d72.5792908!3d23.029693700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e852ca77c2773%3A0xea7c5bdf9fd35be6!2sARK-DOT%20DEVELOPERS!5e1!3m2!1sen!2sin!4v1789477509593!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
             </div>
 

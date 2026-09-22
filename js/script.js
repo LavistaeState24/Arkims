@@ -680,9 +680,10 @@ if (document.readyState === 'loading') {
 document.addEventListener('DOMContentLoaded', async () => {
     const navLoaded = await loadPartial('#navbar', 'components/navbar.html');
     if (navLoaded) initNavbar();
+     initLanguageToggle();
 
     await loadPartial('#footer-container', 'components/footer.html');
-
+   
     initReveal();
     initScrollReveal();
     initTimelineProgress();
@@ -1066,12 +1067,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // english to arabic
 
-(function () {
+function initLanguageToggle() {
     const STORAGE_KEY = 'arkims-lang';
     const html = document.documentElement;
     const toggle = document.getElementById('langToggle');
     const label = document.getElementById('langLabel');
     const alt = document.getElementById('langAlt');
+
+    // Safety check: Agar navbar load nahi hua toh yahin ruk jao
+    if (!toggle) {
+        console.warn('Language toggle button not found in DOM yet.');
+        return;
+    }
 
     function applyLang(lang) {
         // 1. Set direction + lang attribute
@@ -1111,19 +1118,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // 6. Persist
-        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { }
     }
 
     // Restore saved preference on load
     let saved = 'en';
-    try { saved = localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) {}
+    try { saved = localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) { }
     applyLang(saved);
 
     // Toggle on click
-    if (toggle) {
-        toggle.addEventListener('click', function () {
-            const current = html.getAttribute('lang') === 'ar' ? 'ar' : 'en';
-            applyLang(current === 'ar' ? 'en' : 'ar');
-        });
-    }
-})();
+    toggle.addEventListener('click', function () {
+        const current = html.getAttribute('lang') === 'ar' ? 'ar' : 'en';
+        applyLang(current === 'ar' ? 'en' : 'ar');
+    });
+}
