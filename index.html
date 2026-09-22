@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkims - Design To Harvest</title>
-     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" />
@@ -25,24 +25,16 @@
 
         <!-- Background (parallax) -->
         <div class="absolute inset-0 z-0 overflow-hidden">
-
-            <!-- Video Background -->
             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
                 <source src="./assets/video.mp4" type="video/mp4" />
                 <source src="./assets/video.mp4" type="video/webm" />
-                <!-- Fallback message for unsupported browsers -->
                 Your browser does not support the video tag.
             </video>
-
-            <!-- Branded dark overlay (keeps text legible) -->
             <div class="absolute inset-0 bg-black/30"></div>
-
         </div>
-
 
         <!-- Main Content -->
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-20 w-full">
-
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                 <!-- Left -->
@@ -51,166 +43,76 @@
                     <!-- Heading -->
                     <h1
                         class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-white">
-
-                        Arkims
+                        <span data-en="Arkims" data-ar="أركيمس">Arkims</span>
                         <br />
-
-                        <span class="text-LightBg">
-                            Design to
-                        </span>
-
+                        <span class="text-LightBg" data-en="Design to" data-ar="التصميم من أجل">Design to</span>
                         <br />
-                        <span class="font-bold">
-                            Harvest
-                        </span>
-
+                        <span class="font-bold" data-en="Harvest" data-ar="الحصاد">Harvest</span>
                     </h1>
 
                     <!-- Description -->
-                    <p class="text-base md:text-lg text-white/85 max-w-lg leading-relaxed">
-
+                    <p class="text-base md:text-lg text-white/85 max-w-lg leading-relaxed"
+                        data-en="High-tech greenhouses, hydroponic systems &amp; turnkey agricultural solutions — empowering the Middle East with sustainable, year-round food production."
+                        data-ar="بيوت محمية عالية التقنية، وأنظمة زراعة مائية، وحلول زراعية بنظام تسليم المفتاح — تمكّن الشرق الأوسط من إنتاج غذائي مستدام على مدار العام.">
                         High-tech greenhouses, hydroponic systems & turnkey agricultural solutions —
                         empowering the Middle East with sustainable, year-round food production.
-
                     </p>
 
                     <!-- Buttons -->
                     <div class="flex flex-wrap items-center gap-4">
-
-                        <!-- Primary button: light sand → dark pine on hover -->
                         <a href="./contact.html"
                             class="inline-flex items-center gap-2.5 bg-sand-400 hover:bg-pine-800 text-pine-950 hover:text-white font-semibold px-7 py-3.5 rounded-2xl transition-all shadow-2xl text-base pulse-glow">
-
                             <i class="fas fa-rocket"></i>
-
-                            Start Your Project
-
+                            <span data-en="Start Your Project" data-ar="ابدأ مشروعك">Start Your Project</span>
                         </a>
 
-                        <!-- Secondary button: dark pine → light sand on hover -->
                         <a href="./products.html"
                             class="inline-flex items-center gap-2.5 bg-pine-800 backdrop-blur-md hover:bg-sand-400 text-white hover:text-pine-950 font-medium px-6 py-3.5 rounded-2xl transition-all border border-white/25 text-base">
-
                             <i class="fas fa-play-circle"></i>
-
-                            Explore Solutions
-
+                            <span data-en="Explore Solutions" data-ar="استكشف الحلول">Explore Solutions</span>
                         </a>
-
                     </div>
 
                     <!-- Stats -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-white/15">
-
                         <div>
                             <div class="stat-number text-white">10+</div>
-                            <div class="text-xs text-white/75">
-                                Years Experience
-                            </div>
+                            <div class="text-xs text-white/75" data-en="Years Experience" data-ar="سنوات من الخبرة">
+                                Years Experience</div>
                         </div>
-
                         <div>
                             <div class="stat-number text-white">50+</div>
-                            <div class="text-xs text-white/75">
-                                Hectares Managed
-                            </div>
+                            <div class="text-xs text-white/75" data-en="Hectares Managed" data-ar="هكتارات مُدارة">
+                                Hectares Managed</div>
                         </div>
-
-
                         <div>
                             <div class="stat-number text-white">75%</div>
-                            <div class="text-xs text-white/75">
-                                Water Saved
+                            <div class="text-xs text-white/75" data-en="Water Saved" data-ar="توفير المياه">Water Saved
                             </div>
                         </div>
-
                     </div>
 
                 </div>
 
                 <!-- Right: Floating Image Card -->
                 <div class="hidden lg:flex justify-center">
-
-                    <div class="relative w-full max-w-md">
-
-                    </div>
-
+                    <div class="relative w-full max-w-md"></div>
                 </div>
 
             </div>
-
         </div>
 
         <!-- Scroll Indicator -->
         <div
             class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-white/50 animate-bounce">
-
-            <span class="text-xs font-medium uppercase tracking-widest">
-                Scroll
-            </span>
-
+            <span class="text-xs font-medium uppercase tracking-widest" data-en="Scroll" data-ar="مرر">Scroll</span>
             <i class="fas fa-chevron-down text-sm"></i>
-
         </div>
 
     </section>
 
-    <!-- brand marquee -->
-    <!-- <section aria-label="Technology partners" class="py-12 md:py-12 bg-sand-400 relative overflow-hidden">
-    <p data-reveal
-        class="mx-auto mb-8 max-w-7xl px-4 text-center text-sm font-medium text-sand-200 sm:px-6 lg:px-8">
-        The horticultural technology we design, supply and commission
-    </p>
-    <div
-        class="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,#000_10%,#000_90%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,#000_10%,#000_90%,transparent)]">
-        <ul data-marquee data-marquee-speed="30"
-            class="flex w-max items-center gap-16 pr-16 will-change-transform">
-        
-            <li class="font-display text-lg font-semibold tracking-tight text-white">Prins Group</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li class="font-display text-lg font-semibold tracking-tight text-white">Stolze</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li class="font-display text-lg font-semibold tracking-tight text-white">Hoogendoorn</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li class="font-display text-lg font-semibold tracking-tight text-white">KUBO</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li class="font-display text-lg font-semibold tracking-tight text-white">Priva</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li class="font-display text-lg font-semibold tracking-tight text-white">Ridder</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li class="font-display text-lg font-semibold tracking-tight text-white">Certhon</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li class="font-display text-lg font-semibold tracking-tight text-white">Van der Hoeven</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-         
-            <li aria-hidden="true" class="font-display text-lg font-semibold tracking-tight text-white">Prins
-                Group</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li aria-hidden="true" class="font-display text-lg font-semibold tracking-tight text-white">Stolze
-            </li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li aria-hidden="true"
-                class="font-display text-lg font-semibold tracking-tight text-white">Hoogendoorn</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li aria-hidden="true" class="font-display text-lg font-semibold tracking-tight text-white">KUBO</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li aria-hidden="true" class="font-display text-lg font-semibold tracking-tight text-white">Priva</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li aria-hidden="true" class="font-display text-lg font-semibold tracking-tight text-white">Ridder
-            </li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li aria-hidden="true" class="font-display text-lg font-semibold tracking-tight text-white">Certhon
-            </li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-            <li aria-hidden="true" class="font-display text-lg font-semibold tracking-tight text-white">Van der
-                Hoeven</li>
-            <li aria-hidden="true" class="h-1 w-1 rounded-full bg-LightBg/30 text-style-none"></li>
-        </ul>
-    </div>
-     </section>  -->
+    <!-- ABOUT -->
     <section id="about" class="py-20 md:py-20 bg-LightBg relative overflow-hidden">
-        <!-- <div class="leaf-bg top-22 left-50 rotate-12" style="font-size:5rem; opacity:10;">🌿</div> -->
-
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
@@ -221,17 +123,16 @@
                             alt="Shade-net field structures at Tabuk Fresh"
                             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                         <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-                            <!-- <p class="text-white font-semibold text-lg">Al Rawda Factory · Qassim</p> -->
-                            <p class="text-white text-lg font-semibold">10+ Years of Excellence</p>
+                            <p class="text-white text-lg font-semibold" data-en="10+ Years of Excellence"
+                                data-ar="أكثر من 10 سنوات من التميز">10+ Years of Excellence</p>
                         </div>
                     </div>
-                    <!-- floating badge -->
                     <div
                         class="absolute -bottom-5 -left-5 bg-pine-700 text-white px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
                         <i class="fas fa-award text-2xl"></i>
                         <div>
-                            <p class="font-bold text-sm">ISO 9001</p>
-                            <p class="text-xs text-pine-100">Certified</p>
+                            <p class="font-bold text-sm" data-en="ISO 9001" data-ar="ISO 9001">ISO 9001</p>
+                            <p class="text-xs text-pine-100" data-en="Certified" data-ar="معتمد">Certified</p>
                         </div>
                     </div>
                 </div>
@@ -239,13 +140,19 @@
                 <!-- Right: content -->
                 <div class="space-y-6 reveal">
                     <div
-                        class="inline-flex items-center gap-2 text-LightBg font-semibold text-sm bg-pine-800 px-4 py-1.5  rounded-full">
-                        <i class="fas fa-leaf"></i> About Us
+                        class="inline-flex items-center gap-2 text-LightBg font-semibold text-sm bg-pine-800 px-4 py-1.5 rounded-full">
+                        <i class="fas fa-leaf"></i>
+                        <span data-en="About Us" data-ar="من نحن">About Us</span>
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#1d4b48]leading-tight">
-                        Pioneering <span class="text-[#1d4b48]">Greenhouse</span> Agriculture in Middle East
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#1d4b48] leading-tight">
+                        <span data-en="Pioneering" data-ar="رواد في">Pioneering</span>
+                        <span class="text-[#1d4b48]" data-en="Greenhouse" data-ar="البيوت المحمية">Greenhouse</span>
+                        <span data-en="Agriculture in Middle East" data-ar="في الشرق الأوسط">Agriculture in Middle
+                            East</span>
                     </h2>
-                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed"
+                        data-en="Arkims specialization in Building &amp; Operating Hight Tech Polyhouses across Gulf States first specialized greenhouse manufacturer, combining 10+ years of local expertise with cutting-edge Dutch technology. From plastic tunnels to fully automated glass hydroponic farms, we deliver turnkey solutions that align with Vision."
+                        data-ar="تتخصص أركيمس في بناء وتشغيل البيوت البلاستيكية عالية التقنية في دول الخليج، وهي أول مُصنّع متخصص للبيوت المحمية، وتجمع بين أكثر من 10 سنوات من الخبرة المحلية وأحدث التقنيات الهولندية. من الأنفاق البلاستيكية إلى المزارع الزجاجية المائية المؤتمتة بالكامل، نقدم حلولًا بنظام تسليم المفتاح تتماشى مع الرؤية.">
                         Arkims specialization in Building & Operating Hight Tech Polyhouses across Gulf States first
                         specialized greenhouse manufacturer, combining
                         <strong>10+ years of local expertise</strong> with cutting-edge Dutch technology.
@@ -259,8 +166,10 @@
                                 <i class="fas fa-microchip"></i>
                             </div>
                             <div>
-                                <p class="font-semibold text-gray-900 text-sm">High-Tech</p>
-                                <p class="text-xs text-gray-500">Automation & Climate Control</p>
+                                <p class="font-semibold text-gray-900 text-sm" data-en="High-Tech"
+                                    data-ar="عالية التقنية">High-Tech</p>
+                                <p class="text-xs text-gray-500" data-en="Automation &amp; Climate Control"
+                                    data-ar="الأتمتة والتحكم في المناخ">Automation &amp; Climate Control</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
@@ -269,8 +178,10 @@
                                 <i class="fas fa-water"></i>
                             </div>
                             <div>
-                                <p class="font-semibold text-gray-900 text-sm">Water Saving</p>
-                                <p class="text-xs text-gray-500">70–90% less than open-field</p>
+                                <p class="font-semibold text-gray-900 text-sm" data-en="Water Saving"
+                                    data-ar="توفير المياه">Water Saving</p>
+                                <p class="text-xs text-gray-500" data-en="70–90% less than open-field"
+                                    data-ar="70–90% أقل من الحقول المفتوحة">70–90% less than open-field</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
@@ -279,8 +190,10 @@
                                 <i class="fas fa-handshake"></i>
                             </div>
                             <div>
-                                <p class="font-semibold text-gray-900 text-sm">Turnkey</p>
-                                <p class="text-xs text-gray-500">Design · Build · Install</p>
+                                <p class="font-semibold text-gray-900 text-sm" data-en="Turnkey"
+                                    data-ar="تسليم المفتاح">Turnkey</p>
+                                <p class="text-xs text-gray-500" data-en="Design · Build · Install"
+                                    data-ar="تصميم · بناء · تركيب">Design · Build · Install</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
@@ -289,14 +202,17 @@
                                 <i class="fas fa-globe-asia"></i>
                             </div>
                             <div>
-                                <p class="font-semibold text-gray-900 text-sm">Vision </p>
-                                <p class="text-xs text-gray-500">Food Security & Sustainability</p>
+                                <p class="font-semibold text-gray-900 text-sm" data-en="Vision" data-ar="الرؤية">Vision
+                                </p>
+                                <p class="text-xs text-gray-500" data-en="Food Security &amp; Sustainability"
+                                    data-ar="الأمن الغذائي والاستدامة">Food Security &amp; Sustainability</p>
                             </div>
                         </div>
                     </div>
                     <a href="./about.html"
                         class="inline-flex items-center gap-2 text-pine-700 font-semibold hover:text-pine-950 transition-all">
-                        Read More <i class="fas fa-arrow-right"></i>
+                        <span data-en="Read More" data-ar="اقرأ المزيد">Read More</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
@@ -304,10 +220,8 @@
         </div>
     </section>
 
-    <!-- Full-bleed band with a parallax backdrop (light theme, matches the rest of the page) -->
+    <!-- PRODUCTS -->
     <section id="products" class="relative isolate w-full overflow-hidden bg-[#d6bea2] py-20 md:py-20">
-
-        <!-- Parallax layers -->
         <img src="./assets/A2.jpg" alt="" aria-hidden="true" data-parallax data-parallax-speed="0.22"
             class="pointer-events-none absolute inset-x-0 -top-[15%] -z-10 h-[130%] w-full object-cover opacity-[0.07]" />
         <div class="absolute inset-0 -z-10 bg-sand-400"></div>
@@ -317,10 +231,13 @@
             <div class="text-center max-w-3xl mx-auto mb-14" data-reveal>
                 <div
                     class="inline-flex items-center gap-2 text-LightBg font-semibold text-sm bg-pine-800 px-4 py-1.5 rounded-full mb-5">
-                    <i class="fas fa-seedling"></i> Our Solutions
+                    <i class="fas fa-seedling"></i>
+                    <span data-en="Our Solutions" data-ar="حلولنا">Our Solutions</span>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-darkBg Font-bold">
-                    Greenhouse <span class="text-LightBg"> Products &amp; Systems</span>
+                    <span data-en="Greenhouse" data-ar="البيوت المحمية">Greenhouse</span>
+                    <span class="text-LightBg" data-en="Products &amp; Systems" data-ar="المنتجات والأنظمة">Products
+                        &amp; Systems</span>
                 </h2>
             </div>
 
@@ -333,15 +250,18 @@
                             <path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-6h6v6" />
                         </svg>
                     </span>
-                    <h3 class="mt-5 text-lg font-bold text-gray-900">Plastic &amp; shade-net</h3>
-                    <p class="mt-2 flex-1 text-sm leading-relaxed text-gray-500">
-                        Arched and gable houses for ventilated, cost-efficient production in milder
-                        seasons.
+                    <h3 class="mt-5 text-lg font-bold text-gray-900" data-en="Plastic &amp; shade-net"
+                        data-ar="البلاستيك وشبكات الظل">Plastic &amp; shade-net</h3>
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-gray-500"
+                        data-en="Arched and gable houses for ventilated, cost-efficient production in milder seasons."
+                        data-ar="بيوت مقوسة وذات سقف جملوني لإنتاج جيد التهوية وفعال من حيث التكلفة في المواسم المعتدلة.">
+                        Arched and gable houses for ventilated, cost-efficient production in milder seasons.
                     </p>
                     <div class="mt-5 flex flex-wrap gap-1.5">
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">4–8m span</span>
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">natural
-                            vent</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs" data-en="4–8m span"
+                            data-ar="امتداد 4-8 م">4–8m span</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs" data-en="natural vent"
+                            data-ar="تهوية طبيعية">natural vent</span>
                     </div>
                 </article>
 
@@ -354,15 +274,18 @@
                             <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" />
                         </svg>
                     </span>
-                    <h3 class="mt-5 text-lg font-bold text-gray-900">Polycarbonate &amp; A/C</h3>
-                    <p class="mt-2 flex-1 text-sm leading-relaxed text-gray-500">
-                        Sealed, actively cooled houses that hold set-point through a 48&nbsp;°C
-                        afternoon.
+                    <h3 class="mt-5 text-lg font-bold text-gray-900" data-en="Polycarbonate &amp; A/C"
+                        data-ar="البولي كربونات والتكييف">Polycarbonate &amp; A/C</h3>
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-gray-500"
+                        data-en="Sealed, actively cooled houses that hold set-point through a 48 °C afternoon."
+                        data-ar="بيوت محكمة التبريد بنشاط تحافظ على نقطة الضبط خلال فترة بعد الظهر عند 48 درجة مئوية.">
+                        Sealed, actively cooled houses that hold set-point through a 48&nbsp;°C afternoon.
                     </p>
                     <div class="mt-5 flex flex-wrap gap-1.5">
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">pad &amp;
-                            fan</span>
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">twin-wall</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs" data-en="pad &amp; fan"
+                            data-ar="وسادة ومروحة">pad &amp; fan</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs" data-en="twin-wall"
+                            data-ar="جدار مزدوج">twin-wall</span>
                     </div>
                 </article>
 
@@ -371,15 +294,18 @@
                     <span class="grid h-12 w-12 place-items-center rounded-xl bg-darkBg text-LightBg">
                         <i class="fa-solid fa-flask-vial"></i>
                     </span>
-                    <h3 class="mt-5 text-lg font-bold text-gray-900">Glass hydroponic</h3>
-                    <p class="mt-2 flex-1 text-sm leading-relaxed text-gray-500">
-                        Venlo glasshouses with NFT and Dutch-bucket systems built for commercial
-                        yield.
+                    <h3 class="mt-5 text-lg font-bold text-gray-900" data-en="Glass hydroponic"
+                        data-ar="الزراعة المائية الزجاجية">Glass hydroponic</h3>
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-gray-500"
+                        data-en="Venlo glasshouses with NFT and Dutch-bucket systems built for commercial yield."
+                        data-ar="بيوت زجاجية فينلو مع أنظمة NFT والدلاء الهولندية مصممة للإنتاج التجاري.">
+                        Venlo glasshouses with NFT and Dutch-bucket systems built for commercial yield.
                     </p>
                     <div class="mt-5 flex flex-wrap gap-1.5">
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">diffuse
-                            glass</span>
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">multi-span</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs" data-en="diffuse glass"
+                            data-ar="زجاج منتشر">diffuse glass</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs" data-en="multi-span"
+                            data-ar="متعدد الامتدادات">multi-span</span>
                     </div>
                 </article>
 
@@ -388,25 +314,25 @@
                     <span class="grid h-12 w-12 place-items-center rounded-xl bg-darkBg text-LightBg">
                         <i class="fa-solid fa-microchip"></i>
                     </span>
-                    <h3 class="mt-5 text-lg font-bold text-gray-900">Climate &amp; automation</h3>
-                    <p class="mt-2 flex-1 text-sm leading-relaxed text-gray-500">
-                        Priva and Hoogendoorn control, screening, fertigation and full sensor
-                        networks.
+                    <h3 class="mt-5 text-lg font-bold text-gray-900" data-en="Climate &amp; automation"
+                        data-ar="المناخ والأتمتة">Climate &amp; automation</h3>
+                    <p class="mt-2 flex-1 text-sm leading-relaxed text-gray-500"
+                        data-en="Priva and Hoogendoorn control, screening, fertigation and full sensor networks."
+                        data-ar="تحكم Priva و Hoogendoorn والفحص والتسميد وشبكات الاستشعار الكاملة.">
+                        Priva and Hoogendoorn control, screening, fertigation and full sensor networks.
                     </p>
                     <div class="mt-5 flex flex-wrap gap-1.5">
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">climate
-                            computer</span>
-                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs">remote</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs" data-en="climate computer"
+                            data-ar="حاسوب المناخ">climate computer</span>
+                        <span class="rounded-md bg-darkBg text-LightBg px-2 py-1 text-xs" data-en="remote"
+                            data-ar="عن بُعد">remote</span>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- ============================================================
-    services  
-     ============================================================ -->
-
+    <!-- SERVICES -->
     <section id="services" class="py-20 md:py-20 bg-LightBg relative overflow-hidden">
         <div class="leaf-bg top-20 right-20 rotate-45" style="font-size:6rem; opacity:0.03;">🌾</div>
 
@@ -414,71 +340,66 @@
             <div class="text-center max-w-3xl mx-auto mb-14 reveal">
                 <div
                     class="inline-flex items-center gap-2 font-semibold text-sm bg-darkBg text-LightBg px-4 py-1.5 rounded-full mb-4">
-                    <i class="fas fa-cogs"></i> What We Do
+                    <i class="fas fa-cogs"></i>
+                    <span data-en="What We Do" data-ar="ما نقوم به">What We Do</span>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-darkBg">
-                    Comprehensive <span class="text-sand-500">Services</span>
+                    <span data-en="Comprehensive" data-ar="خدمات">Comprehensive</span>
+                    <span class="text-sand-500" data-en="Services" data-ar="شاملة">Services</span>
                 </h2>
-                <p class="text-gray-500 mt-3 text-base md:text-lg">
-                    End-to-end solutions — from feasibility and design to installation,
-                    training, and ongoing support.
+                <p class="text-gray-500 mt-3 text-base md:text-lg"
+                    data-en="End-to-end solutions — from feasibility and design to installation, training, and ongoing support."
+                    data-ar="حلول شاملة — من دراسات الجدوى والتصميم إلى التركيب والتدريب والدعم المستمر.">
+                    End-to-end solutions — from feasibility and design to installation, training, and ongoing support.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
 
-                <!-- Service 1 -->
                 <div
                     class="group relative bg-LightBg rounded-3xl p-7 md:p-9 border border-sand-400/30 shadow-md reveal text-center md:text-left transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-sand-400/80 hover:shadow-[0_0_30px_rgba(207,154,85,0.35)]">
-
-                    <!-- Glowing Icon Badge -->
                     <div
                         class="w-12 h-12 rounded-2xl bg-darkBg text-LightBg flex items-center justify-center text-2xl shadow-md mb-5 mx-auto md:mx-0 border border-sand-400/20 group-hover:scale-110 group-hover:border-sand-400/80 group-hover:shadow-[0_0_15px_rgba(207,154,85,0.4)] transition-all duration-300">
                         <i class="fas fa-hard-hat text-sand-400"></i>
                     </div>
-
-                    <h3
-                        class="text-xl font-bold text-darkBg mb-2 group-hover:text-sand-500 transition-colors duration-300">
-                        Turnkey Projects</h3>
-                    <p class="text-darkBg/70 text-sm leading-relaxed">
+                    <h3 class="text-xl font-bold text-darkBg mb-2 group-hover:text-sand-500 transition-colors duration-300"
+                        data-en="Turnkey Projects" data-ar="مشاريع تسليم المفتاح">Turnkey Projects</h3>
+                    <p class="text-darkBg/70 text-sm leading-relaxed"
+                        data-en="Full-cycle greenhouse development — site assessment, custom design, procurement, construction, and handover."
+                        data-ar="تطوير شامل للبيوت المحمية — تقييم الموقع، التصميم المخصص، التوريد، البناء، والتسليم.">
                         Full-cycle greenhouse development — site assessment, custom design,
                         procurement, construction, and handover.
                     </p>
                 </div>
 
-                <!-- Service 2 -->
                 <div
                     class="group relative bg-LightBg rounded-3xl p-7 md:p-9 border border-sand-400/30 shadow-md reveal text-center md:text-left transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-sand-400/80 hover:shadow-[0_0_30px_rgba(207,154,85,0.35)]">
-
-                    <!-- Glowing Icon Badge -->
                     <div
                         class="w-12 h-12 rounded-2xl bg-darkBg text-LightBg flex items-center justify-center text-2xl shadow-md mb-5 mx-auto md:mx-0 border border-sand-400/20 group-hover:scale-110 group-hover:border-sand-400/80 group-hover:shadow-[0_0_15px_rgba(207,154,85,0.4)] transition-all duration-300">
                         <i class="fas fa-handshake text-sand-400"></i>
                     </div>
-
-                    <h3
-                        class="text-xl font-bold text-darkBg mb-2 group-hover:text-sand-500 transition-colors duration-300">
-                        Technology Partners</h3>
-                    <p class="text-darkBg/70 text-sm leading-relaxed">
+                    <h3 class="text-xl font-bold text-darkBg mb-2 group-hover:text-sand-500 transition-colors duration-300"
+                        data-en="Technology Partners" data-ar="شركاء التقنية">Technology Partners</h3>
+                    <p class="text-darkBg/70 text-sm leading-relaxed"
+                        data-en="Exclusive partnerships with world-class Dutch technology providers — Prins Group, Stolze, Hoogendoorn, and more."
+                        data-ar="شراكات حصرية مع مزودي التقنية الهولنديين من الطراز العالمي — Prins Group و Stolze و Hoogendoorn وغيرهم.">
                         Exclusive partnerships with world-class Dutch technology providers —
                         Prins Group, Stolze, Hoogendoorn, and more.
                     </p>
                 </div>
 
-                <!-- Service 3 -->
                 <div
                     class="group relative bg-LightBg rounded-3xl p-7 md:p-9 border border-sand-400/30 shadow-md reveal text-center md:text-left transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-sand-400/80 hover:shadow-[0_0_30px_rgba(207,154,85,0.35)]">
-
-                    <!-- Glowing Icon Badge -->
                     <div
                         class="w-12 h-12 rounded-2xl bg-darkBg text-LightBg flex items-center justify-center text-2xl shadow-md mb-5 mx-auto md:mx-0 border border-sand-400/20 group-hover:scale-110 group-hover:border-sand-400/80 group-hover:shadow-[0_0_15px_rgba(207,154,85,0.4)] transition-all duration-300">
                         <i class="fas fa-chalkboard-teacher text-sand-400"></i>
                     </div>
-
-                    <h3
-                        class="text-xl font-bold text-darkBg mb-2 group-hover:text-sand-500 transition-colors duration-300">
-                        Consultancy & Training</h3>
-                    <p class="text-darkBg/70 text-sm leading-relaxed">
+                    <h3 class="text-xl font-bold text-darkBg mb-2 group-hover:text-sand-500 transition-colors duration-300"
+                        data-en="Consultancy &amp; Training" data-ar="الاستشارات والتدريب">Consultancy &amp; Training
+                    </h3>
+                    <p class="text-darkBg/70 text-sm leading-relaxed"
+                        data-en="Expert advisory services, crop management training, and operational support to ensure your greenhouse runs at peak performance."
+                        data-ar="خدمات استشارية متخصصة، وتدريب على إدارة المحاصيل، ودعم تشغيلي لضمان تشغيل بيتك المحمي بأعلى أداء.">
                         Expert advisory services, crop management training, and operational
                         support to ensure your greenhouse runs at peak performance.
                     </p>
@@ -488,9 +409,7 @@
         </div>
     </section>
 
-    <!-- ============================================================
-    PROJECTS / FARMS
-    ============================================================ -->
+    <!-- PROJECTS / FARMS -->
     <section id="projects" class="py-20 md:py-20 bg-sand-400 relative overflow-hidden">
         <div class="leaf-bg bottom-20 left-10 -rotate-6" style="font-size:7rem; opacity:0.04;">🌻</div>
 
@@ -498,12 +417,16 @@
             <div class="text-center max-w-3xl mx-auto mb-14 reveal">
                 <div
                     class="inline-flex items-center gap-2 font-semibold text-sm bg-darkBg text-LightBg px-4 py-1.5 rounded-full mb-4">
-                    <i class="fas fa-building"></i> Our Work
+                    <i class="fas fa-building"></i>
+                    <span data-en="Our Work" data-ar="أعمالنا">Our Work</span>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-darkBg">
-                    Farms & <span class="text-LightBg">Projects</span>
+                    <span data-en="Farms &amp;" data-ar="المزارع و">Farms &amp;</span>
+                    <span class="text-LightBg" data-en="Projects" data-ar="المشاريع">Projects</span>
                 </h2>
-                <p class="text-white mt-3 text-base md:text-lg">
+                <p class="text-white mt-3 text-base md:text-lg"
+                    data-en="Across the Middle East — from small-scale polyhouses to massive high-tech hydroponic farms."
+                    data-ar="في جميع أنحاء الشرق الأوسط — من البيوت البلاستيكية الصغيرة إلى مزارع الزراعة المائية الضخمة عالية التقنية.">
                     Across the Middle East — from small-scale polyhouses to massive
                     high-tech hydroponic farms.
                 </p>
@@ -511,49 +434,49 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Project 1 -->
                 <div class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 reveal">
                     <div class="relative h-48 overflow-hidden">
                         <img src="./assets/p1.jpg" alt="DAVA Farm" class="w-full h-full object-cover img-zoom" />
                     </div>
                     <div class="p-5">
-                        <h4 class="font-bold text-darkBg">Aiims Project</h4>
-                        <!-- <p class="text-sm text-gray-500">Al-Kharj · 110+ ha · 135+ tons/day</p> -->
-                        <p class="text-xs text-gray-600 mt-1">Tomatoes, Cucumbers, Green Chillies, Lettuce</p>
+                        <h4 class="font-bold text-darkBg" data-en="Aiims Project" data-ar="مشروع Aiims">Aiims Project
+                        </h4>
+                        <p class="text-xs text-gray-600 mt-1" data-en="Tomatoes, Cucumbers, Green Chillies, Lettuce"
+                            data-ar="طماطم، خيار، فلفل أخضر، خس">Tomatoes, Cucumbers, Green Chillies, Lettuce</p>
                         <span
-                            class="inline-block mt-2 bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">Aiims
-                            Developer</span>
+                            class="inline-block mt-2 bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full"
+                            data-en="Aiims Developer" data-ar="مطور Aiims">Aiims Developer</span>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 reveal">
                     <div class="relative h-48 overflow-hidden">
                         <img src="./assets/p2.jpg" alt="Alrasheed Greenhouses"
                             class="w-full h-full object-cover img-zoom" />
                     </div>
                     <div class="p-5">
-                        <h4 class="font-bold text-darkBg">Project Red Harvest</h4>
-                        <!-- <p class="text-sm text-gray-500">Riyadh · 120+ ha · 12 farms</p> -->
-                        <p class="text-xs text-gray-600 mt-1">High-tech glass</p>
+                        <h4 class="font-bold text-darkBg" data-en="Project Red Harvest" data-ar="مشروع الحصاد الأحمر">
+                            Project Red Harvest</h4>
+                        <p class="text-xs text-gray-600 mt-1" data-en="High-tech glass" data-ar="زجاج عالي التقنية">
+                            High-tech glass</p>
                         <span
-                            class="inline-block mt-2 bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">Ark
-                            Developer</span>
+                            class="inline-block mt-2 bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full"
+                            data-en="Ark Developer" data-ar="مطور Ark">Ark Developer</span>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="bg-LightBg rounded-3xl overflow-hidden shadow-md border border-gray-100/80 reveal">
                     <div class="relative h-48 overflow-hidden">
                         <img src="./assets/p3.jpg" alt="Al Rawda Factory" class="w-full h-full object-cover img-zoom" />
                     </div>
                     <div class="p-5">
-                        <h4 class="font-bold text-darkBg"> Project Green Harvest</h4>
-                        <!-- <p class="text-sm text-gray-500">Qassim · 35+ years</p> -->
-                        <p class="text-xs text-gray-600 mt-1">Plastic, fiberglass & shade-net</p>
+                        <h4 class="font-bold text-darkBg" data-en="Project Green Harvest" data-ar="مشروع الحصاد الأخضر">
+                            Project Green Harvest</h4>
+                        <p class="text-xs text-gray-600 mt-1" data-en="Plastic, fiberglass &amp; shade-net"
+                            data-ar="بلاستيك، ألياف زجاجية وشبكات ظل">Plastic, fiberglass &amp; shade-net</p>
                         <span
-                            class="inline-block mt-2 bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full">Local
-                            Farmers India</span>
+                            class="inline-block mt-2 bg-darkBg text-LightBg text-xs font-semibold px-3 py-1 rounded-full"
+                            data-en="Local Farmers India" data-ar="مزارعون محليون في الهند">Local Farmers India</span>
                     </div>
                 </div>
 
@@ -561,81 +484,82 @@
         </div>
     </section>
 
-    <!-- ============================================================
-SUSTAINABILITY
-============================================================ -->
+    <!-- SUSTAINABILITY -->
     <section id="sustainability" class="py-20 md:py-20 bg-LightBg relative overflow-hidden">
         <div class="leaf-bg top-10 left-10 rotate-12" style="font-size:8rem; opacity:0.03;">🌍</div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
-                <!-- Left -->
                 <div class="space-y-6 reveal">
                     <div
                         class="inline-flex items-center gap-2 font-semibold text-sm bg-darkBg text-LightBg px-4 py-1.5 rounded-full shadow-md shadow-darkBg/20 border border-sand-400/30">
-                        <i class="fas fa-globe-asia animate-pulse"></i> Vision
+                        <i class="fas fa-globe-asia animate-pulse"></i>
+                        <span data-en="Vision" data-ar="الرؤية">Vision</span>
                     </div>
                     <h2 class="text-3xl md:text-4xl font-extrabold text-darkBg leading-tight">
-                        Sustainability & <span class="text-black">Government Support</span>
+                        <span data-en="Sustainability &amp;" data-ar="الاستدامة و">Sustainability &amp;</span>
+                        <span class="text-black" data-en="Government Support" data-ar="الدعم الحكومي">Government
+                            Support</span>
                     </h2>
-                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed"
+                        data-en="Aligned with Middle East (GCC)'s vision champion water conservation, food security, and sustainable agriculture. Access government financing programs and incentives through the Agricultural Development Fund and Ministry of Environment, Water &amp; Agriculture."
+                        data-ar="متوافقون مع رؤية الشرق الأوسط (دول الخليج) التي تدعم الحفاظ على المياه والأمن الغذائي والزراعة المستدامة. احصل على برامج التمويل الحكومية والحوافز من خلال صندوق التنمية الزراعية ووزارة البيئة والمياه والزراعة.">
                         Aligned with Middle East (GCC)'s vision champion water conservation, food security,
                         and sustainable agriculture. Access government financing programs
                         and incentives through the <strong>Agricultural Development Fund</strong>
                         and <strong>Ministry of Environment, Water & Agriculture</strong>.
                     </p>
 
-                    <!-- 2x2 Stats Grid with Glow & Hover Animation -->
                     <div class="grid grid-cols-2 gap-4">
                         <div
                             class="group bg-darkBg rounded-2xl p-4 border border-pine-100/50 shadow-md shadow-darkBg/30 hover:shadow-2xl hover:shadow-pine-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:border-sand-400/50">
-                            <div class="text-2xl font-extrabold text-LightBg transition-transform duration-300">70–90%
-                            </div>
-                            <p class="text-xs text-LightBg/80 mt-1">Water savings vs. open-field</p>
+                            <div class="text-2xl font-extrabold text-LightBg transition-transform duration-300"
+                                data-en="70–90%" data-ar="70–90%">70–90%</div>
+                            <p class="text-xs text-LightBg/80 mt-1" data-en="Water savings vs. open-field"
+                                data-ar="توفير المياه مقابل الحقول المفتوحة">Water savings vs. open-field</p>
                         </div>
                         <div
                             class="group bg-darkBg rounded-2xl p-4 border border-pine-100/50 shadow-md shadow-darkBg/30 hover:shadow-2xl hover:shadow-pine-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:border-sand-400/50">
-                            <div class="text-2xl font-extrabold text-LightBg transition-transform duration-300">
-                                Year-Round</div>
-                            <p class="text-xs text-LightBg/80 mt-1">Production regardless of climate</p>
+                            <div class="text-2xl font-extrabold text-LightBg transition-transform duration-300"
+                                data-en="Year-Round" data-ar="على مدار العام">Year-Round</div>
+                            <p class="text-xs text-LightBg/80 mt-1" data-en="Production regardless of climate"
+                                data-ar="إنتاج بغض النظر عن المناخ">Production regardless of climate</p>
                         </div>
                         <div
                             class="group bg-darkBg rounded-2xl p-4 border border-pine-100/50 shadow-md shadow-darkBg/30 hover:shadow-2xl hover:shadow-pine-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:border-sand-400/50">
-                            <div class="text-2xl font-extrabold text-LightBg transition-transform duration-300">90%
-                            </div>
-                            <p class="text-xs text-LightBg/80 mt-1">Controlled environment</p>
+                            <div class="text-2xl font-extrabold text-LightBg transition-transform duration-300"
+                                data-en="90%" data-ar="90%">90%</div>
+                            <p class="text-xs text-LightBg/80 mt-1" data-en="Controlled environment"
+                                data-ar="بيئة مُتحكَّم فيها">Controlled environment</p>
                         </div>
                         <div
                             class="group bg-darkBg rounded-2xl p-4 border border-pine-100/50 shadow-md shadow-darkBg/30 hover:shadow-2xl hover:shadow-pine-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:border-sand-400/50">
-                            <div class="text-2xl font-extrabold text-LightBg transition-transform duration-300">Middle
-                                East</div>
-                            <p class="text-xs text-LightBg/80 mt-1">Vision</p>
+                            <div class="text-2xl font-extrabold text-LightBg transition-transform duration-300"
+                                data-en="Middle East" data-ar="الشرق الأوسط">Middle East</div>
+                            <p class="text-xs text-LightBg/80 mt-1" data-en="Vision" data-ar="الرؤية">Vision</p>
                         </div>
                     </div>
 
-                    <!-- Pill Tags with Glow -->
                     <div class="flex flex-wrap gap-3">
                         <span
                             class="bg-darkBg text-LightBg text-xs px-3.5 py-1.5 rounded-full flex items-center gap-1.5 shadow-md shadow-darkBg/20 border border-sand-400/20 hover:border-sand-400/60 hover:shadow-md hover:shadow-pine-500/20 transition-all duration-300 cursor-default">
-                            <i class="fas fa-check-circle text-LightBg"></i> Agricultural Development Fund
+                            <i class="fas fa-check-circle text-LightBg"></i>
+                            <span data-en="Agricultural Development Fund" data-ar="صندوق التنمية الزراعية">Agricultural
+                                Development Fund</span>
                         </span>
-
                         <span
                             class="bg-darkBg text-LightBg text-xs px-3.5 py-1.5 rounded-full flex items-center gap-1.5 shadow-md shadow-darkBg/20 border border-sand-400/20 hover:border-sand-400/60 hover:shadow-md hover:shadow-pine-500/20 transition-all duration-300 cursor-default">
-                            <i class="fas fa-check-circle text-LightBg"></i> Financing Programs
+                            <i class="fas fa-check-circle text-LightBg"></i>
+                            <span data-en="Financing Programs" data-ar="برامج التمويل">Financing Programs</span>
                         </span>
                     </div>
                 </div>
 
-                <!-- Right: Image Container with Glow Ring & Floating Badge -->
                 <div class="relative reveal group">
-                    <!-- Background Glow Blur Layer -->
                     <div
                         class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-pine-500/40 via-sand-400/30 to-darkBg/50 blur-xl opacity-70 group-hover:opacity-100 transition duration-500">
                     </div>
-
-                    <!-- Main Image Wrapper -->
                     <div
                         class="relative rounded-3xl overflow-hidden shadow-2xl shadow-darkBg/40 border border-white/20 hover:scale-[1.01] transition-transform duration-500">
                         <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80"
@@ -643,13 +567,15 @@ SUSTAINABILITY
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
                             <div>
-                                <p class="text-white font-semibold text-lg drop-shadow">Sustainable Farming</p>
-                                <p class="text-white/80 text-sm drop-shadow">Powered by AI & renewable energy</p>
+                                <p class="text-white font-semibold text-lg drop-shadow" data-en="Sustainable Farming"
+                                    data-ar="الزراعة المستدامة">Sustainable Farming</p>
+                                <p class="text-white/80 text-sm drop-shadow"
+                                    data-en="Powered by AI &amp; renewable energy"
+                                    data-ar="مدعومة بالذكاء الاصطناعي والطاقة المتجددة">Powered by AI &amp; renewable
+                                    energy</p>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Animated Floating AI Video Badge -->
                     <div
                         class="absolute -bottom-4 -right-4 glass-dark rounded-2xl px-5 py-3 border border-white/20 flex items-center gap-3 shadow-2xl shadow-pine-950/50 backdrop-blur-md animate-bounce [animation-duration:4s]">
                         <div
@@ -659,8 +585,10 @@ SUSTAINABILITY
                             <i class="fas fa-video relative z-10 text-sm"></i>
                         </div>
                         <div>
-                            <p class="text-white text-sm font-semibold">AI-Generated Video</p>
-                            <p class="text-white/70 text-xs">Smart Farming Overview</p>
+                            <p class="text-white text-sm font-semibold" data-en="AI-Generated Video"
+                                data-ar="فيديو مُنشأ بالذكاء الاصطناعي">AI-Generated Video</p>
+                            <p class="text-white/70 text-xs" data-en="Smart Farming Overview"
+                                data-ar="نظرة عامة على الزراعة الذكية">Smart Farming Overview</p>
                         </div>
                     </div>
                 </div>
@@ -669,9 +597,7 @@ SUSTAINABILITY
         </div>
     </section>
 
-    <!-- ============================================================
-    BLOG / RESOURCES
-    ============================================================ -->
+    <!-- BLOG -->
     <section id="blog" class="py-20 md:py-20 bg-sand-400 relative overflow-hidden">
         <div class="leaf-bg bottom-20 right-10 -rotate-12" style="font-size:6rem; opacity:0.04;">📄</div>
 
@@ -679,14 +605,16 @@ SUSTAINABILITY
             <div class="text-center max-w-3xl mx-auto mb-14 reveal">
                 <div
                     class="inline-flex items-center gap-2 font-semibold text-sm bg-darkBg text-LightBg px-4 py-1.5 rounded-full mb-4">
-                    <i class="fas fa-blog"></i> Resources
+                    <i class="fas fa-blog"></i>
+                    <span data-en="Resources" data-ar="الموارد">Resources</span>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-darkBg">
-                    Blog &
-
-                    <span class="text-LightBg">industry insights</span>
+                    <span data-en="Blog &amp;" data-ar="المدونة و">Blog &amp;</span>
+                    <span class="text-LightBg" data-en="industry insights" data-ar="رؤى القطاع">industry insights</span>
                 </h2>
-                <p class=" mt-3 text-LightBg  md:text-lg">
+                <p class="mt-3 text-LightBg md:text-lg"
+                    data-en="Notes from the field — trends, tips, and stories from our greenhouse projects across Middle East."
+                    data-ar="ملاحظات من الميدان — اتجاهات ونصائح وقصص من مشاريع البيوت المحمية لدينا في جميع أنحاء الشرق الأوسط.">
                     Notes from the field — trends, tips, and stories from our greenhouse projects across Middle East.
                 </p>
             </div>
@@ -699,17 +627,23 @@ SUSTAINABILITY
                             class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-5">
-                        <span
-                            class="text-xs text-pine-700 font-semibold bg-pine-100 px-3 py-1 rounded-full">Hydroponics</span>
-                        <h4 class="font-bold text-gray-900 mt-2 text-lg">Designing pad-wall cooling for 48 °C afternoons
+                        <span class="text-xs text-pine-700 font-semibold bg-pine-100 px-3 py-1 rounded-full"
+                            data-en="Hydroponics" data-ar="الزراعة المائية">Hydroponics</span>
+                        <h4 class="font-bold text-gray-900 mt-2 text-lg"
+                            data-en="Designing pad-wall cooling for 48 °C afternoons"
+                            data-ar="تصميم تبريد الجدار الوسادي لأجواء 48 درجة مئوية">
+                            Designing pad-wall cooling for 48 °C afternoons
                         </h4>
-                        <p class="text-sm text-gray-500 mt-1">How airflow, pad depth and water temperature interact when
-                            the outside air offers no relief.
-
+                        <p class="text-sm text-gray-500 mt-1"
+                            data-en="How airflow, pad depth and water temperature interact when the outside air offers no relief."
+                            data-ar="كيف يتفاعل تدفق الهواء وعمق الوسادة ودرجة حرارة الماء عندما لا يوفر الهواء الخارجي أي راحة.">
+                            How airflow, pad depth and water temperature interact when the outside air offers no relief.
                         </p>
                         <a href="/blog.html"
-                            class="inline-flex items-center gap-1.5 text-pine-700 text-sm font-medium mt-3 hover:text-pine-950">Read
-                            More <i class="fas fa-arrow-right text-xs"></i></a>
+                            class="inline-flex items-center gap-1.5 text-pine-700 text-sm font-medium mt-3 hover:text-pine-950">
+                            <span data-en="Read More" data-ar="اقرأ المزيد">Read More</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -719,14 +653,22 @@ SUSTAINABILITY
                             class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-5">
-                        <span
-                            class="text-xs text-blue-600 font-semibold bg-blue-50 px-3 py-1 rounded-full">Sustainability</span>
-                        <h4 class="font-bold text-gray-900 mt-2 text-lg">What Dutch-bucket systems really cost to run
+                        <span class="text-xs text-blue-600 font-semibold bg-blue-50 px-3 py-1 rounded-full"
+                            data-en="Sustainability" data-ar="الاستدامة">Sustainability</span>
+                        <h4 class="font-bold text-gray-900 mt-2 text-lg"
+                            data-en="What Dutch-bucket systems really cost to run"
+                            data-ar="ما هي التكلفة الحقيقية لتشغيل أنظمة الدلاء الهولندية">
+                            What Dutch-bucket systems really cost to run
                         </h4>
-                        <p class="text-sm text-gray-500 mt-1">What Dutch-bucket systems really cost to run</p>
+                        <p class="text-sm text-gray-500 mt-1" data-en="What Dutch-bucket systems really cost to run"
+                            data-ar="ما هي التكلفة الحقيقية لتشغيل أنظمة الدلاء الهولندية">
+                            What Dutch-bucket systems really cost to run
+                        </p>
                         <a href="blog.html"
-                            class="inline-flex items-center gap-1.5 text-pine-700 text-sm font-medium mt-3 hover:text-pine-950">Read
-                            More <i class="fas fa-arrow-right text-xs"></i></a>
+                            class="inline-flex items-center gap-1.5 text-pine-700 text-sm font-medium mt-3 hover:text-pine-950">
+                            <span data-en="Read More" data-ar="اقرأ المزيد">Read More</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -736,15 +678,23 @@ SUSTAINABILITY
                             class="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-5">
-                        <span class="text-xs text-purple-600 font-semibold bg-purple-50 px-3 py-1 rounded-full">Vision
-                            2030</span>
-                        <h4 class="font-bold text-gray-900 mt-2 text-lg">Training Middle East (GCC) growers to run
-                            automated glass</h4>
-                        <p class="text-sm text-gray-500 mt-1">The handover programme that takes a new team through their
-                            first commercial crop.</p>
+                        <span class="text-xs text-purple-600 font-semibold bg-purple-50 px-3 py-1 rounded-full"
+                            data-en="Vision 2030" data-ar="رؤية 2030">Vision 2030</span>
+                        <h4 class="font-bold text-gray-900 mt-2 text-lg"
+                            data-en="Training Middle East (GCC) growers to run automated glass"
+                            data-ar="تدريب مزارعي الشرق الأوسط (دول الخليج) على تشغيل البيوت الزجاجية الآلية">
+                            Training Middle East (GCC) growers to run automated glass
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-1"
+                            data-en="The handover programme that takes a new team through their first commercial crop."
+                            data-ar="برنامج التسليم الذي يأخذ فريقًا جديدًا خلال أول محصول تجاري له.">
+                            The handover programme that takes a new team through their first commercial crop.
+                        </p>
                         <a href="./blog.html"
-                            class="inline-flex items-center gap-1.5 text-pine-700 text-sm font-medium mt-3 hover:text-pine-950">Read
-                            More <i class="fas fa-arrow-right text-xs"></i></a>
+                            class="inline-flex items-center gap-1.5 text-pine-700 text-sm font-medium mt-3 hover:text-pine-950">
+                            <span data-en="Read More" data-ar="اقرأ المزيد">Read More</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -753,47 +703,47 @@ SUSTAINABILITY
             <div class="text-center mt-10 reveal">
                 <a href="/blog.html"
                     class="inline-flex items-center gap-2 text-pine-700 font-semibold hover:text-pine-950 transition-all">
-                    View all articles <i class="fas fa-arrow-right"></i>
+                    <span data-en="View all articles" data-ar="عرض جميع المقالات">View all articles</span>
+                    <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Pinned closing section — the footer scrolls up over it -->
+    <!-- CONTACT / CTA -->
     <section id="contact"
         class="sticky top-0 z-0 flex min-h-screen items-center overflow-hidden bg-LightBg py-20 md:py-20">
         <div aria-hidden="true" data-parallax data-parallax-speed="-0.14"
-            class="pointer-events-none absolute -right-24 top-1/4 -z-10 h-96 w-96 rounded-full blur-3xl">
-        </div>
+            class="pointer-events-none absolute -right-24 top-1/4 -z-10 h-96 w-96 rounded-full blur-3xl"></div>
         <div aria-hidden="true" data-parallax data-parallax-speed="0.12"
-            class="pointer-events-none absolute -left-24 bottom-1/4 -z-10 h-96 w-96 rounded-full blur-3xl">
-        </div>
+            class="pointer-events-none absolute -left-24 bottom-1/4 -z-10 h-96 w-96 rounded-full blur-3xl"></div>
 
         <div class="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div class="relative overflow-hidden rounded-3xl bg-darkBg px-6 py-14 text-center shadow-2xl shadow-pine-950/25 sm:px-12"
                 data-reveal>
-                <h2 class="mx-auto max-w-2xl text-LightBg text-3xl font-bold text-white md:text-4xl">
+                <h2 class="mx-auto max-w-2xl text-LightBg text-3xl font-bold text-white md:text-4xl"
+                    data-en="Tell us the site, the crop and the target output"
+                    data-ar="أخبرنا عن الموقع والمحصول والمخرجات المستهدفة">
                     Tell us the site, the crop <br> and the target output
                 </h2>
-                <p class="mx-auto mt-4 max-w-xl text-pretty text-sand-100/90">
+                <p class="mx-auto mt-4 max-w-xl text-pretty text-sand-100/90"
+                    data-en="We will come back with a feasibility view and an indicative budget."
+                    data-ar="سنعاود الاتصال بك بدراسة جدوى وميزانية تقديرية.">
                     We will come back with a feasibility view and an indicative budget.
                 </p>
                 <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-
                     <a href="mailto:info@arkims.in"
                         class="inline-flex items-center justify-center gap-2.5 rounded-full bg-sand-400 px-7 py-3.5 text-base font-semibold text-pine-950 transition-all hover:bg-LightBg hover:text-pine-800">
-                        Start Your Project
+                        <span data-en="Start Your Project" data-ar="ابدأ مشروعك">Start Your Project</span>
                     </a>
-
                     <a href="tel:+966123456789"
                         class="inline-flex items-center justify-center gap-2 rounded-full border border-sand-400 px-6 py-3 text-sm font-semibold text-LightBg transition-colors hover:bg-LightBg/10">
-                        Contact us
+                        <span data-en="Contact us" data-ar="اتصل بنا">Contact us</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
     <div id="footer-container" class="relative z-10"></div>
 
     <script src="./js/script.js"></script>

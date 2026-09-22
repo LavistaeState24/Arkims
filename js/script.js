@@ -411,14 +411,135 @@ function initStats() {
 function initFloatingButtons() {
     const wrap = document.createElement('div');
     wrap.className = 'fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end md:bottom-8 md:right-8';
+
     wrap.innerHTML = `
-        <a href="https://wa.me/9979901901" target="_blank" rel="noopener"
-           class="flex items-center gap-2.5 bg-green-500 hover:bg-emerald-600 text-white font-semibold p-2.5 px-4 rounded-full shadow-2xl shadow-emerald-500/40 transition-all text-sm border border-white/20 backdrop-blur">
-            <i class="fab fa-whatsapp text-2xl"></i>
-        </a>
+        <!-- Back to Top Button -->
+        <button type="button" id="backToTop"
+            aria-label="Back to top"
+            class="group relative flex items-center justify-center
+                   h-12 w-12 rounded-full
+                   bg-darkBg hover:bg-sand-400
+                   text-LightBg hover:text-darkBg
+                   shadow-lg shadow-black/20
+                   border border-white/10 backdrop-blur
+                   opacity-0 translate-y-4 pointer-events-none
+                   transition-all duration-500
+                   hover:scale-110 hover:shadow-[0_0_30px_rgba(210,180,140,0.7)]">
+            <!-- Glow ring on hover -->
+            <span class="absolute inset-0 rounded-full bg-sand-400/40 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            <i class="fas fa-arrow-up text-base relative z-10 transition-transform duration-300 group-hover:-translate-y-0.5"></i>
+        </button>
+
+        <!-- WhatsApp Button -->
+        <div class="relative group">
+           
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/9979901901" target="_blank" rel="noopener"
+               aria-label="Chat on WhatsApp"
+               class="relative flex items-center justify-center gap-2.5
+                      bg-green-500 hover:bg-green-600
+                      text-white font-semibold
+                      py-3 px-4 rounded-full
+                      shadow-md
+                      hover:shadow-md
+                      border border-white/20 backdrop-blur
+                      transition-all duration-300
+                      group">
+                <i class="fab fa-whatsapp text-2xl relative z-10 transition-transform duration-300 group-hover:rotate-12"></i>
+            </a>
+        </div>
     `;
     document.body.appendChild(wrap);
+
+    // ---- Back to top behavior ----
+    const topBtn = document.getElementById('backToTop');
+    if (!topBtn) return;
+
+    const SHOW_AFTER = 400; // px scrolled before the button appears
+
+    function toggleTopBtn() {
+        if (window.scrollY > SHOW_AFTER) {
+            topBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+            topBtn.classList.add('opacity-100', 'translate-y-0');
+        } else {
+            topBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+            topBtn.classList.remove('opacity-100', 'translate-y-0');
+        }
+    }
+
+    // Throttle scroll for performance
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                toggleTopBtn();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // Smooth scroll to top on click
+    topBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Initial check (in case page loads already scrolled)
+    toggleTopBtn();
 }
+
+// what's app mai message direct jayeg form fill krmne pia
+
+function initWhatsAppForm() {
+    const form = document.getElementById('whatsappForm');
+    if (!form) return;
+
+    // 👉 Change this to the number that should receive the WhatsApp messages
+    // Format: country code + number, no spaces, no plus, no dashes
+    const WHATSAPP_NUMBER = '919979901901'; // Uraaz Zamindar
+
+    // Optional: country label shown at the top of the message
+    const BRAND_NAME = 'Arkims Website';
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Grab values
+        const name    = form.querySelector('#wa-name').value.trim();
+        const email   = form.querySelector('#wa-email').value.trim();
+        const phone   = form.querySelector('#wa-phone').value.trim();
+        const message = form.querySelector('#wa-message').value.trim();
+
+        // Basic validation (in case browser's built-in validation is bypassed)
+        if (!name || !email || !phone || !message) {
+            alert('Please fill in all fields before sending.');
+            return;
+        }
+
+        // Build the WhatsApp message
+        const waMessage =
+`*New Contact Inquiry — ${BRAND_NAME}*
+
+👤 *Name:* ${name}
+📧 *Email:* ${email}
+📞 *Phone:* ${phone}
+
+💬 *Message:*
+${message}`;
+
+        // Encode + build URL
+        const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+
+        // Open WhatsApp (new tab / app)
+        window.open(waUrl, '_blank', 'noopener');
+
+        // Reset form and give feedback
+        form.reset();
+    });
+}
+
+// Initialize when the page loads
+document.addEventListener('DOMContentLoaded', initWhatsAppForm);
 
 /* =========================================================
    Products page — spec comparison tabs.
@@ -680,10 +801,10 @@ if (document.readyState === 'loading') {
 document.addEventListener('DOMContentLoaded', async () => {
     const navLoaded = await loadPartial('#navbar', 'components/navbar.html');
     if (navLoaded) initNavbar();
-     initLanguageToggle();
+    initLanguageToggle();
 
     await loadPartial('#footer-container', 'components/footer.html');
-   
+
     initReveal();
     initScrollReveal();
     initTimelineProgress();

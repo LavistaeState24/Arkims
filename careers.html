@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkims - Design To Harvest</title>
-      <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <!-- Tailwind + Google Fonts + Font Awesome -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -28,9 +28,7 @@
         <!-- Background image with zoom -->
         <div class="absolute inset-0 z-0 overflow-hidden transition-transform duration-[3000ms] group-hover:scale-105">
             <img src="./assets/A3.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover" />
-            <!-- Gradient overlay -->
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-            <!-- Subtle pattern -->
             <div
                 class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] bg-repeat">
             </div>
@@ -48,23 +46,22 @@
                 <div class="space-y-6 transition-all duration-700 group-hover:translate-y-[-4px]">
                     <!-- Breadcrumb -->
                     <nav class="text-sm text-white/70 hover:text-white/90 transition-colors">
-                        <a href="index.html" class="hover:text-white">Home</a>
+                        <a href="index.html" class="hover:text-white" data-en="Home" data-ar="الرئيسية">Home</a>
                         <span class="mx-2 text-white/40">/</span>
-                        <span class="text-white font-medium">Careers</span>
+                        <span class="text-white font-medium" data-en="Careers" data-ar="الوظائف">Careers</span>
                     </nav>
-
-                    <!-- Badge with ping -->
 
                     <!-- Heading -->
                     <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
-                        Careers & Opportunities</span>
+                        <span data-en="Careers &amp; Opportunities" data-ar="الوظائف والفرص">Careers &amp;
+                            Opportunities</span>
                     </h1>
 
-                    <p
-                        class="text-lg text-white/80 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1">
+                    <p class="text-lg text-white/80 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1"
+                        data-en="Explore career opportunities and join our team of experts."
+                        data-ar="استكشف الفرص الوظيفية وانضم إلى فريق خبرائنا.">
                         Explore career opportunities and join our team of experts.
                     </p>
-
                 </div>
 
             </div>
@@ -73,19 +70,18 @@
         <!-- Scroll indicator -->
         <div
             class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1.5 text-white/40 animate-bounce">
-            <span class="text-xs font-medium uppercase tracking-widest">Scroll</span>
+            <span class="text-xs font-medium uppercase tracking-widest" data-en="Scroll" data-ar="مرر">Scroll</span>
             <i class="fas fa-chevron-down text-sm"></i>
         </div>
 
     </section>
 
     <!-- ============================================================
-    CAREERS / 
-    ============================================================ -->
+CAREERS
+============================================================ -->
     <section id="careers" class="py-20 md:py-24 bg-sand-400 relative overflow-hidden">
 
         <!-- Background Decoration -->
-        <!-- <div class="absolute -top-24 -right-24 w-72 h-72 bg-LightBg/20 rounded-full blur-3xl opacity-50"></div> -->
         <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-green-100 rounded-full blur-3xl opacity-50"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -96,21 +92,22 @@
                 <div
                     class="inline-flex items-center gap-2 text-LightBg font-semibold text-sm bg-darkBg px-4 py-1.5 rounded-full mb-4">
                     <i class="fas fa-briefcase"></i>
-                    Careers
+                    <span data-en="Careers" data-ar="الوظائف">Careers</span>
                 </div>
 
                 <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
-                    Grow your career with
-                    <span class="text-darkBg">our team</span>
+                    <span data-en="Grow your career with" data-ar="طوّر مسيرتك المهنية مع">Grow your career with</span>
+                    <span class="text-darkBg" data-en="our team" data-ar="فريقنا">our team</span>
                 </h2>
 
-                <p class="text-LightBg mt-4 text-base md:text-lg">
+                <p class="text-LightBg mt-4 text-base md:text-lg"
+                    data-en="Join a team working on innovative greenhouse projects and sustainable agriculture solutions across Middle East."
+                    data-ar="انضم إلى فريق يعمل على مشاريع بيوت محمية مبتكرة وحلول زراعة مستدامة في جميع أنحاء الشرق الأوسط.">
                     Join a team working on innovative greenhouse projects and
                     sustainable agriculture solutions across Middle East.
                 </p>
 
             </div>
-
 
             <!-- Job Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -121,246 +118,209 @@
 
                     <!-- Top -->
                     <div class="flex items-start justify-between mb-6">
-
                         <div
                             class="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-emerald-600">
                             <i class="fas fa-drafting-compass text-xl"></i>
                         </div>
-
-                        <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full">
-                            Full Time
-                        </span>
-
+                        <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full"
+                            data-en="Full Time" data-ar="دوام كامل">Full Time</span>
                     </div>
 
                     <!-- Job Info -->
-                    <h3 class="text-xl font-bold text-darkBg group600 transition-colors">
+                    <h3 class="text-xl font-bold text-darkBg group-hover:text-emerald-600 transition-colors"
+                        data-en="Greenhouse Design Engineer" data-ar="مهندس تصميم بيوت محمية">
                         Greenhouse Design Engineer
                     </h3>
 
-                    <p class="text-sm text-gray-500 mt-2 leading-relaxed">
+                    <p class="text-sm text-gray-500 mt-2 leading-relaxed"
+                        data-en="Design and develop advanced greenhouse structures, climate-control systems and sustainable growing solutions."
+                        data-ar="تصميم وتطوير هياكل البيوت المحمية المتقدمة وأنظمة التحكم في المناخ وحلول الزراعة المستدامة.">
                         Design and develop advanced greenhouse structures,
                         climate-control systems and sustainable growing solutions.
                     </p>
 
                     <!-- Details -->
                     <div class="space-y-3 mt-5">
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-location-dot w-4 text-emerald-600"></i>
-                            Middle East
+                            <span data-en="Middle East" data-ar="الشرق الأوسط">Middle East</span>
                         </div>
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-briefcase w-4 text-emerald-600"></i>
-                            2–5 Years Experience
+                            <span data-en="2–5 Years Experience" data-ar="خبرة 2-5 سنوات">2–5 Years Experience</span>
                         </div>
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-building w-4 text-emerald-600"></i>
-                            Engineering
+                            <span data-en="Engineering" data-ar="الهندسة">Engineering</span>
                         </div>
-
                     </div>
 
                     <!-- Skills -->
                     <div class="flex flex-wrap gap-2 mt-5">
-
-                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full">
-                            Greenhouse Design
-                        </span>
-
-                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full">
-                            AutoCAD
-                        </span>
-
-                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full">
-                            HVAC
-                        </span>
-
+                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full"
+                            data-en="Greenhouse Design" data-ar="تصميم البيوت المحمية">Greenhouse Design</span>
+                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full" data-en="AutoCAD"
+                            data-ar="أوتوكاد">AutoCAD</span>
+                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full" data-en="HVAC"
+                            data-ar="التدفئة والتهوية وتكييف الهواء">HVAC</span>
                     </div>
 
                     <!-- CTA -->
                     <a href="/contact.html"
                         class="mt-6 w-full inline-flex items-center justify-center gap-2 bg-darkBg text-LightBg font-semibold py-3 rounded-xl hover:bg-sand-400 transition-all">
-
-                        Apply Now
+                        <span data-en="Apply Now" data-ar="قدم الآن">Apply Now</span>
                         <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
-
                     </a>
 
                 </div>
-
 
                 <!-- JOB CARD 2 -->
                 <div
                     class="group bg-LightBg rounded-3xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 reveal">
 
                     <div class="flex items-start justify-between mb-6">
-
                         <div class="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600">
                             <i class="fas fa-seedling text-xl"></i>
                         </div>
-
-                        <span class="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-full">
-                            Full Time
-                        </span>
-
+                        <span class="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-full"
+                            data-en="Full Time" data-ar="دوام كامل">Full Time</span>
                     </div>
 
-                    <h3 class="text-xl font-bold text-darkBg group transition-colors">
+                    <h3 class="text-xl font-bold text-darkBg group-hover:text-blue-600 transition-colors"
+                        data-en="Hydroponics Specialist" data-ar="أخصائي زراعة مائية">
                         Hydroponics Specialist
                     </h3>
 
-                    <p class="text-sm text-gray-500 mt-2 leading-relaxed">
+                    <p class="text-sm text-gray-500 mt-2 leading-relaxed"
+                        data-en="Manage hydroponic production systems and optimize crop performance through modern growing techniques."
+                        data-ar="إدارة أنظمة الإنتاج المائي وتحسين أداء المحاصيل من خلال تقنيات الزراعة الحديثة.">
                         Manage hydroponic production systems and optimize crop
                         performance through modern growing techniques.
                     </p>
 
                     <div class="space-y-3 mt-5">
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-location-dot w-4 text-blue-600"></i>
-                            Riyadh, Middle East
+                            <span data-en="Riyadh, Middle East" data-ar="الرياض، الشرق الأوسط">Riyadh, Middle
+                                East</span>
                         </div>
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-briefcase w-4 text-blue-600"></i>
-                            3–6 Years Experience
+                            <span data-en="3–6 Years Experience" data-ar="خبرة 3-6 سنوات">3–6 Years Experience</span>
                         </div>
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-building w-4 text-blue-600"></i>
-                            Agriculture
+                            <span data-en="Agriculture" data-ar="الزراعة">Agriculture</span>
                         </div>
-
                     </div>
 
                     <div class="flex flex-wrap gap-2 mt-5">
-
-                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full">
-                            Hydroponics
-                        </span>
-
-                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full">
-                            Crop Science
-                        </span>
-
-                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full">
-                            Irrigation
-                        </span>
-
+                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full" data-en="Hydroponics"
+                            data-ar="الزراعة المائية">Hydroponics</span>
+                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full" data-en="Crop Science"
+                            data-ar="علم المحاصيل">Crop Science</span>
+                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full" data-en="Irrigation"
+                            data-ar="الري">Irrigation</span>
                     </div>
 
                     <a href="/contact.html"
                         class="mt-6 w-full inline-flex items-center justify-center gap-2 bg-darkBg text-LightBg font-semibold py-3 rounded-xl hover:bg-sand-400 transition-all">
-
-                        Apply Now
+                        <span data-en="Apply Now" data-ar="قدم الآن">Apply Now</span>
                         <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
-
                     </a>
 
                 </div>
-
 
                 <!-- JOB CARD 3 -->
                 <div
                     class="group bg-LightBg rounded-3xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 reveal">
 
                     <div class="flex items-start justify-between mb-6">
-
                         <div
                             class="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center text-purple-600">
                             <i class="fas fa-chart-line text-xl"></i>
                         </div>
-
-                        <span class="text-xs font-semibold text-purple-700 bg-purple-50 px-3 py-1.5 rounded-full">
-                            Full Time
-                        </span>
-
+                        <span class="text-xs font-semibold text-purple-700 bg-purple-50 px-3 py-1.5 rounded-full"
+                            data-en="Full Time" data-ar="دوام كامل">Full Time</span>
                     </div>
 
-                    <h3 class="text-xl font-bold text-darkBg group00 transition-colors">
+                    <h3 class="text-xl font-bold text-darkBg group-hover:text-purple-600 transition-colors"
+                        data-en="Project Manager" data-ar="مدير مشروع">
                         Project Manager
                     </h3>
 
-                    <p class="text-sm text-gray-500 mt-2 leading-relaxed">
+                    <p class="text-sm text-gray-500 mt-2 leading-relaxed"
+                        data-en="Lead greenhouse projects from planning and installation through commissioning and client handover."
+                        data-ar="قيادة مشاريع البيوت المحمية من التخطيط والتركيب حتى التشغيل وتسليم العميل.">
                         Lead greenhouse projects from planning and installation
                         through commissioning and client handover.
                     </p>
 
                     <div class="space-y-3 mt-5">
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-location-dot w-4 text-purple-600"></i>
-                            Jeddah, Middle East
+                            <span data-en="Jeddah, Middle East" data-ar="جدة، الشرق الأوسط">Jeddah, Middle East</span>
                         </div>
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-briefcase w-4 text-purple-600"></i>
-                            5+ Years Experience
+                            <span data-en="5+ Years Experience" data-ar="خبرة أكثر من 5 سنوات">5+ Years
+                                Experience</span>
                         </div>
-
                         <div class="flex items-center gap-3 text-sm text-gray-600">
                             <i class="fas fa-building w-4 text-purple-600"></i>
-                            Project Management
+                            <span data-en="Project Management" data-ar="إدارة المشاريع">Project Management</span>
                         </div>
-
                     </div>
 
                     <div class="flex flex-wrap gap-2 mt-5">
-
-                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full">
-                            Project Planning
-                        </span>
-
-                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full">
-                            Team Leadership
-                        </span>
-
+                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full" data-en="Project Planning"
+                            data-ar="تخطيط المشاريع">Project Planning</span>
+                        <span class="text-xs bg-darkBg text-LightBg px-3 py-1.5 rounded-full" data-en="Team Leadership"
+                            data-ar="قيادة الفريق">Team Leadership</span>
                     </div>
 
                     <a href="/contact.html"
                         class="mt-6 w-full inline-flex items-center justify-center gap-2 bg-darkBg text-LightBg font-semibold py-3 rounded-xl hover:bg-sand-400 transition-all">
-
-                        Apply Now
+                        <span data-en="Apply Now" data-ar="قدم الآن">Apply Now</span>
                         <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
-
                     </a>
 
                 </div>
 
             </div>
 
-
             <!-- View All Jobs -->
             <div class="text-center mt-10 reveal">
-
                 <a href="contact.html"
                     class="inline-flex items-center gap-2 text-emerald-600 font-semibold hover:text-emerald-800 transition-all">
-
-                    View all open positions
+                    <span data-en="View all open positions" data-ar="عرض جميع الوظائف المتاحة">View all open
+                        positions</span>
                     <i class="fas fa-arrow-right"></i>
-
                 </a>
-
             </div>
 
         </div>
     </section>
 
-     <section class="bg-LightBg py-20 md:py-24">
+    <!-- CTA Section -->
+    <section class="bg-LightBg py-20 md:py-24">
         <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <div data-reveal
-                class="scale-95 rounded-3xl bg-darkBg  py-14 text-center opacity-0 shadow-2xl shadow-emerald-600/25 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none md:px-14">
-                <h2 class="text-2xl font-extrabold text-LightBg md:text-3xl">Planning a greenhouse project?</h2>
-                <p class="mx-auto mt-3 max-w-xl text-LightBg">
+                class="scale-95 rounded-3xl bg-darkBg py-14 text-center opacity-0 shadow-2xl shadow-emerald-600/25 transition-all duration-[800ms] ease-out will-change-transform motion-reduce:transition-none md:px-14">
+                <h2 class="text-2xl font-extrabold text-LightBg md:text-3xl" data-en="Planning a greenhouse project?"
+                    data-ar="هل تخطط لمشروع بيت محمي؟">
+                    Planning a greenhouse project?
+                </h2>
+                <p class="mx-auto mt-3 max-w-xl text-LightBg"
+                    data-en="Send us the site, the crop and the target output. We'll come back with a feasibility view and an indicative budget."
+                    data-ar="أرسل لنا الموقع والمحصول والمخرجات المستهدفة. سنعاود الاتصال بك بدراسة جدوى وميزانية تقديرية.">
                     Send us the site, the crop and the target output. We'll come back with a feasibility
                     view and an indicative budget.
                 </p>
                 <a href="contact.html"
                     class="mt-8 inline-flex items-center gap-2.5 rounded-2xl bg-LightBg px-8 py-3.5 font-semibold shadow-lg transition-all hover:bg-sand-400 hover:text-LightBg hover:shadow-xl">
-                    <i class="fas fa-arrow-right"></i> Talk to our team
+                    <i class="fas fa-arrow-right"></i>
+                    <span data-en="Talk to our team" data-ar="تحدث إلى فريقنا">Talk to our team</span>
                 </a>
             </div>
         </div>

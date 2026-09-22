@@ -22,752 +22,643 @@
     <!-- Rendered by the parent layout framework -->
     <div id="navbar"></div>
 
-    <main class="relative isolate overflow-hidden">
-        <section class="relative min-h-[80vh] flex items-center overflow-hidden pt-16 md:pt-20 group">
+   <main class="relative isolate overflow-hidden">
+    <section class="relative min-h-[80vh] flex items-center overflow-hidden pt-16 md:pt-20 group">
 
-            <!-- Background image (full bleed, sits behind everything) -->
-            <div class="absolute inset-0 z-0 overflow-hidden">
-                <img src="./assets/A4.jpg" alt="Vegetable Export and Greenhouse Technology Services"
-                    class="absolute inset-0 w-full h-full object-cover object-right transition-transform duration-[3000ms] group-hover:scale-105" />
-                <!-- Soft dark vignette on the image side -->
-                <div class="absolute inset-0 bg-gradient-to-l from-darkBg/70 via-darkBg/20 to-transparent"></div>
-                <!-- Subtle pattern over the whole hero -->
-                <div
-                    class="absolute inset-0 opacity-15 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] bg-repeat">
-                </div>
-            </div>
+        <!-- Background image -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="./assets/A4.jpg" alt="Vegetable Export and Greenhouse Technology Services"
+                class="absolute inset-0 w-full h-full object-cover object-right transition-transform duration-[3000ms] group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-l from-darkBg/70 via-darkBg/20 to-transparent"></div>
+            <div class="absolute inset-0 opacity-15 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyek0zNiAyNHYySDI0di0yaDEyeiIvPjwvZz48L2c+PC9zdmc+')] bg-repeat"></div>
+        </div>
 
-            <!-- Diagonal dark ground (left side) -->
-            <div class="absolute inset-y-0 left-0 z-[1] w-full lg:w-[62%] bg-darkBg pointer-events-none
-               [clip-path:polygon(0_0,100%_0,82%_10%,0_100%)]
-               lg:[clip-path:polygon(0_0,100%_0,78%_100%,0_100%)]">
-            </div>
+        <div class="absolute inset-y-0 left-0 z-[1] w-full lg:w-[62%] bg-darkBg pointer-events-none [clip-path:polygon(0_0,100%_0,82%_10%,0_100%)] lg:[clip-path:polygon(0_0,100%_0,78%_100%,0_100%)]"></div>
+        <div class="absolute inset-y-0 left-0 z-[2] w-full lg:w-[62%] pointer-events-none bg-sand-400/50 [clip-path:polygon(100%_0,100.6%_0,78.6%_100%,78%_100%)] lg:[clip-path:polygon(100%_0,100.5%_0,78.5%_100%,78%_100%)]"></div>
+        <div class="absolute top-20 right-20 z-[3] w-96 h-96 bg-sand-400/15 rounded-full blur-3xl pointer-events-none"></div>
 
-            <!-- Accent diagonal edge line (sand colored sliver along the diagonal) -->
-            <div class="absolute inset-y-0 left-0 z-[2] w-full lg:w-[62%] pointer-events-none
-               bg-sand-400/50
-               [clip-path:polygon(100%_0,100.6%_0,78.6%_100%,78%_100%)]
-               lg:[clip-path:polygon(100%_0,100.5%_0,78.5%_100%,78%_100%)]">
-            </div>
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-            <!-- Decorative blurred accent -->
-            <div
-                class="absolute top-20 right-20 z-[3] w-96 h-96 bg-sand-400/15 rounded-full blur-3xl pointer-events-none">
-            </div>
+                <div class="space-y-6 max-w-xl transition-all duration-700 group-hover:translate-y-[-4px]">
 
-            <!-- Content -->
-            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Breadcrumb -->
+                    <nav class="text-sm text-LightBg/70 transition-colors">
+                        <a href="index.html" class="hover:text-sand-400 transition-colors" data-en="Home" data-ar="الرئيسية">Home</a>
+                        <span class="mx-2 text-LightBg/40">/</span>
+                        <span class="text-LightBg font-medium" data-en="Services" data-ar="الخدمات">Services</span>
+                    </nav>
 
-                    <!-- Left Content -->
-                    <div class="space-y-6 max-w-xl transition-all duration-700 group-hover:translate-y-[-4px]">
+                    <span class="inline-flex items-center gap-2 rounded-lg bg-sand-400/10 border border-sand-400/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-sand-400">
+                        <i class="fas fa-seedling text-xs"></i>
+                        <span data-en="Export &amp; Grow Tech" data-ar="تقنية التصدير والزراعة">Export &amp; Grow Tech</span>
+                    </span>
 
-                        <!-- Breadcrumb -->
-                        <nav class="text-sm text-LightBg/70 transition-colors">
-                            <a href="index.html" class="hover:text-sand-400 transition-colors">Home</a>
-                            <span class="mx-2 text-LightBg/40">/</span>
-                            <span class="text-LightBg font-medium">Services</span>
-                        </nav>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-LightBg leading-[1.05]">
+                        <span data-en="Export &amp;" data-ar="التصدير و">Export &amp;</span>
+                        <br class="hidden sm:inline" />
+                        <span class="text-sand-400" data-en="Greenhouse Solutions" data-ar="حلول البيوت المحمية">Greenhouse Solutions</span>
+                    </h1>
 
-                        <!-- Category badge -->
-                        <span
-                            class="inline-flex items-center gap-2 rounded-lg bg-sand-400/10 border border-sand-400/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-sand-400">
-                            <i class="fas fa-seedling text-xs"></i> Export &amp; Grow Tech
-                        </span>
+                    <p class="text-base sm:text-lg text-LightBg/90 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1"
+                       data-en="Delivering fresh Indian vegetables to Middle East markets and empowering the region to grow its own — through advanced greenhouse and hydroponic technology."
+                       data-ar="نورّد الخضروات الهندية الطازجة إلى أسواق الشرق الأوسط ونمكّن المنطقة من زراعة احتياجاتها بنفسها — من خلال تقنيات البيوت المحمية والزراعة المائية المتقدمة.">
+                        Delivering fresh Indian vegetables to Middle East markets and empowering the region to grow
+                        its own — through advanced greenhouse and hydroponic technology.
+                    </p>
 
-                        <!-- Heading -->
-                        <h1
-                            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-LightBg leading-[1.05]">
-                            Export &amp; <br class="hidden sm:inline" />
-                            <span class="text-sand-400">Greenhouse Solutions</span>
-                        </h1>
-
-                        <!-- Description -->
-                        <p
-                            class="text-base sm:text-lg text-LightBg/90 max-w-lg leading-relaxed transition-all duration-500 group-hover:translate-x-1">
-                            Delivering fresh Indian vegetables to Middle East markets and empowering the region to grow
-                            its own — through advanced greenhouse and hydroponic technology.
-                        </p>
-
-                        <!-- CTA -->
-                        <div class="flex flex-wrap items-center gap-4 pt-2">
-                            <a href="contact.html"
-                                class="inline-flex items-center gap-2 rounded-xl bg-sand-400 px-5 py-3 text-sm font-semibold text-darkBg shadow-lg shadow-sand-400/20 transition-all duration-300 hover:bg-sand-500">
-                                <i class="fas fa-paper-plane"></i> Request a Consultation
-                            </a>
-                            <a href="#services"
-                                class="inline-flex items-center gap-2 text-sm font-semibold text-LightBg underline underline-offset-4 transition-colors hover:text-sand-400">
-                                Explore Services &rarr;
-                            </a>
-                        </div>
-
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="contact.html" class="inline-flex items-center gap-2 rounded-xl bg-sand-400 px-5 py-3 text-sm font-semibold text-darkBg shadow-lg shadow-sand-400/20 transition-all duration-300 hover:bg-sand-500">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-en="Request a Consultation" data-ar="اطلب استشارة">Request a Consultation</span>
+                        </a>
+                        <a href="#services" class="inline-flex items-center gap-2 text-sm font-semibold text-LightBg underline underline-offset-4 transition-colors hover:text-sand-400">
+                            <span data-en="Explore Services &rarr;" data-ar="استكشف الخدمات &rarr;">Explore Services &rarr;</span>
+                        </a>
                     </div>
 
-                    <!-- Right side intentionally left open so the image shows through the diagonal -->
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="range" class="relative bg-LightBg py-20 md:py-28 overflow-hidden">
+    <section id="range" class="relative bg-LightBg py-20 md:py-28 overflow-hidden">
 
-            <!-- Background Decoration -->
-            <div
-                class="absolute top-0 right-0 w-96 h-96 bg-sand-400/10 rounded-full blur-3xl opacity-60 pointer-events-none">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-sand-400/10 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-darkBg/5 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="max-w-3xl mb-16 opacity-0 translate-y-10 transition-all duration-1000 ease-out data-[visible]:opacity-100 data-[visible]:translate-y-0 motion-reduce:opacity-100 motion-reduce:translate-y-0 motion-reduce:transition-none">
+                <div class="flex items-center gap-3 mb-5">
+                    <span class="h-px w-10 bg-sand-400"></span>
+                    <p class="text-sm font-bold uppercase tracking-[0.18em] text-sand-500"
+                       data-en="Turnkey Projects &amp; Technology Partners"
+                       data-ar="مشاريع تسليم المفتاح وشركاء التقنية">
+                        Turnkey Projects &amp; Technology Partners
+                    </p>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-darkBg leading-tight">
+                    <span data-en="From Indian farms" data-ar="من المزارع الهندية">From Indian farms</span>
+                    <span class="text-sand-500" data-en="to Middle East tables." data-ar="إلى موائد الشرق الأوسط.">to Middle East tables.</span>
+                </h2>
+
+                <p class="mt-5 max-w-2xl text-base md:text-lg leading-relaxed text-darkBg/80"
+                   data-en="We bridge two markets — exporting fresh Indian vegetables to the Gulf, and equipping the Middle East with the greenhouse technology to grow its own."
+                   data-ar="نربط بين سوقين — تصدير الخضروات الهندية الطازجة إلى الخليج، وتزويد الشرق الأوسط بتقنية البيوت المحمية لزراعة احتياجاته بنفسه.">
+                    We bridge two markets — exporting fresh Indian vegetables to the Gulf, and equipping the
+                    Middle East with the greenhouse technology to grow its own.
+                </p>
             </div>
-            <div
-                class="absolute bottom-0 left-0 w-80 h-80 bg-darkBg/5 rounded-full blur-3xl opacity-50 pointer-events-none">
-            </div>
 
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-16 lg:space-y-24">
 
-                <!-- Section Header — reveal up -->
-                <div
-                    class="max-w-3xl mb-16 opacity-0 translate-y-10 transition-all duration-1000 ease-out data-[visible]:opacity-100 data-[visible]:translate-y-0 motion-reduce:opacity-100 motion-reduce:translate-y-0 motion-reduce:transition-none">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="h-px w-10 bg-sand-400"></span>
-                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-sand-500">
+                <!-- ROW 01 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+
+                    <div class="lg:col-span-6 relative opacity-0 -translate-x-24 transition-all duration-1000 ease-out delay-100 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
+                        <div class="relative overflow-hidden rounded-[2rem]">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&q=85"
+                                alt="Fresh Indian vegetables packed for Middle East export"
+                                class="h-[320px] sm:h-[400px] lg:h-[460px] w-full object-cover transition-transform duration-700 ease-out hover:scale-105" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-darkBg/50 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute -top-4 -left-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-sand-400 text-xl font-extrabold text-darkBg shadow-xl rotate-[-6deg]">01</div>
+                    </div>
+
+                    <div class="lg:col-span-6 lg:pl-6 opacity-0 translate-x-24 transition-all duration-1000 ease-out delay-200 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
+                        <span class="inline-flex rounded-full bg-sand-400/20 border border-sand-400/30 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-darkBg"
+                              data-en="Export Services" data-ar="خدمات التصدير">Export Services</span>
+
+                        <h3 class="mt-5 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-darkBg leading-tight"
+                            data-en="Fresh Vegetable Export from India" data-ar="تصدير الخضروات الطازجة من الهند">
+                            Fresh Vegetable Export from India
+                        </h3>
+
+                        <p class="mt-4 text-sm md:text-base leading-relaxed text-darkBg/80"
+                           data-en="End-to-end sourcing, grading, cold-chain packaging, and GCC-compliant logistics — bringing farm-fresh Indian produce to Middle East retailers, wholesalers, and food-service operators."
+                           data-ar="توريد شامل، فرز، تعبئة بسلسلة تبريد، وخدمات لوجستية متوافقة مع متطلبات دول الخليج — لتوصيل المنتجات الهندية الطازجة من المزرعة إلى تجار التجزئة والجملة ومشغلي خدمات الطعام في الشرق الأوسط.">
+                            End-to-end sourcing, grading, cold-chain packaging, and GCC-compliant logistics —
+                            bringing farm-fresh Indian produce to Middle East retailers, wholesalers, and food-service operators.
+                        </p>
+
+                        <ul class="mt-6 space-y-3 text-sm text-darkBg/85">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Weekly scheduled shipments to major GCC ports" data-ar="شحنات أسبوعية مجدولة إلى الموانئ الرئيسية في دول الخليج">Weekly scheduled shipments to major GCC ports</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Temperature-controlled cold chain from farm to shelf" data-ar="سلسلة تبريد مُتحكَّم فيها من المزرعة إلى الرف">Temperature-controlled cold chain from farm to shelf</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Compliance with GCC food safety and import regulations" data-ar="الامتثال لمعايير سلامة الغذاء واللوائح الاستيرادية في دول الخليج">Compliance with GCC food safety and import regulations</span>
+                            </li>
+                        </ul>
+
+                        <a href="export-services.html" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-sand-500 transition-all duration-300 hover:gap-3">
+                            <span data-en="Explore Export Services" data-ar="استكشف خدمات التصدير">Explore Export Services</span>
+                            <span class="flex h-7 w-7 items-center justify-center rounded-full bg-sand-400/20 text-darkBg transition-colors duration-300 hover:bg-sand-400">
+                                <i class="fas fa-arrow-right text-[10px]"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROW 02 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+
+                    <div class="lg:col-span-6 lg:order-2 relative opacity-0 translate-x-24 transition-all duration-1000 ease-out delay-100 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
+                        <div class="relative overflow-hidden rounded-[2rem]">
+                            <img src="./assets/d3.png"
+                                alt="Climate-controlled greenhouse and hydroponic system in Middle East"
+                                class="h-[320px] sm:h-[400px] lg:h-[460px] w-full object-cover transition-transform duration-700 ease-out hover:scale-105" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-darkBg/50 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-sand-400 text-xl font-extrabold text-darkBg shadow-xl rotate-[6deg]">02</div>
+                    </div>
+
+                    <div class="lg:col-span-6 lg:order-1 lg:pr-6 opacity-0 -translate-x-24 transition-all duration-1000 ease-out delay-200 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
+                        <span class="inline-flex rounded-full bg-sand-400/20 border border-sand-400/30 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-darkBg"
+                              data-en="Grow Technology" data-ar="تقنية الزراعة">Grow Technology</span>
+
+                        <h3 class="mt-5 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-darkBg leading-tight"
+                            data-en="Greenhouse &amp; Hydroponic Systems" data-ar="أنظمة البيوت المحمية والزراعة المائية">
+                            Greenhouse &amp; Hydroponic Systems
+                        </h3>
+
+                        <p class="mt-4 text-sm md:text-base leading-relaxed text-darkBg/80"
+                           data-en="Climate-controlled structures engineered specifically for the Gulf — enabling the Middle East to grow its own vegetables year-round, without depending on imports."
+                           data-ar="هياكل بمناخ مُتحكَّم فيه مُصممة خصيصًا للخليج — لتمكين الشرق الأوسط من زراعة خضرواته على مدار العام دون الاعتماد على الواردات.">
+                            Climate-controlled structures engineered specifically for the Gulf — enabling the Middle
+                            East to grow its own vegetables year-round, without depending on imports.
+                        </p>
+
+                        <ul class="mt-6 space-y-3 text-sm text-darkBg/85">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Desert-grade designs for extreme heat, humidity &amp; sandstorms" data-ar="تصاميم بدرجة صحراوية للحرارة الشديدة والرطوبة والعواصف الرملية">Desert-grade designs for extreme heat, humidity &amp; sandstorms</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Soil-less hydroponic systems using up to 90% less water" data-ar="أنظمة زراعة مائية بدون تربة تستخدم مياهًا أقل بنسبة تصل إلى 90%">Soil-less hydroponic systems using up to 90% less water</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Dutch automation for nutrient dosing and climate control" data-ar="أتمتة هولندية لجرعات المغذيات والتحكم في المناخ">Dutch automation for nutrient dosing and climate control</span>
+                            </li>
+                        </ul>
+
+                        <a href="greenhouse-technology.html" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-sand-500 transition-all duration-300 hover:gap-3">
+                            <span data-en="Explore Greenhouse Tech" data-ar="استكشف تقنية البيوت المحمية">Explore Greenhouse Tech</span>
+                            <span class="flex h-7 w-7 items-center justify-center rounded-full bg-sand-400/20 text-darkBg transition-colors duration-300 hover:bg-sand-400">
+                                <i class="fas fa-arrow-right text-[10px]"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROW 03 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+
+                    <div class="lg:col-span-6 relative opacity-0 -translate-x-24 transition-all duration-1000 ease-out delay-100 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
+                        <div class="relative overflow-hidden rounded-[2rem]">
+                            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1200&q=85"
+                                alt="Turnkey greenhouse project delivery and technology partners"
+                                class="h-[320px] sm:h-[400px] lg:h-[460px] w-full object-cover transition-transform duration-700 ease-out hover:scale-105" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-darkBg/50 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="absolute -top-4 -left-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-sand-400 text-xl font-extrabold text-darkBg shadow-xl rotate-[-6deg]">03</div>
+                    </div>
+
+                    <div class="lg:col-span-6 lg:pl-6 opacity-0 translate-x-24 transition-all duration-1000 ease-out delay-200 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
+                        <span class="inline-flex rounded-full bg-sand-400/20 border border-sand-400/30 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-darkBg"
+                              data-en="Turnkey Delivery" data-ar="تسليم المفتاح">Turnkey Delivery</span>
+
+                        <h3 class="mt-5 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-darkBg leading-tight"
+                            data-en="Turnkey Projects &amp; Technology Partners" data-ar="مشاريع تسليم المفتاح وشركاء التقنية">
                             Turnkey Projects &amp; Technology Partners
+                        </h3>
+
+                        <p class="mt-4 text-sm md:text-base leading-relaxed text-darkBg/80"
+                           data-en="From initial site survey to final commissioning — delivered under one contract with our Dutch and global agri-tech partners, so you deal with one team, not ten."
+                           data-ar="من مسح الموقع الأولي إلى التشغيل النهائي — يتم التسليم بموجب عقد واحد مع شركائنا الهولنديين والعالميين في التقنية الزراعية، لتتعامل مع فريق واحد وليس عشرة.">
+                            From initial site survey to final commissioning — delivered under one contract with our
+                            Dutch and global agri-tech partners, so you deal with one team, not ten.
                         </p>
+
+                        <ul class="mt-6 space-y-3 text-sm text-darkBg/85">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Design, fabrication, installation and handover in-house" data-ar="التصميم والتصنيع والتركيب والتسليم داخليًا">Design, fabrication, installation and handover in-house</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Partnered with leading Dutch and European agri-tech brands" data-ar="شراكة مع العلامات التجارية الهولندية والأوروبية الرائدة في التقنية الزراعية">Partnered with leading Dutch and European agri-tech brands</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
+                                <span data-en="Ongoing maintenance, training and 24/7 operational support" data-ar="صيانة مستمرة وتدريب ودعم تشغيلي على مدار الساعة">Ongoing maintenance, training and 24/7 operational support</span>
+                            </li>
+                        </ul>
+
+                        <a href="turnkey-projects.html" class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-sand-500 transition-all duration-300 hover:gap-3">
+                            <span data-en="Explore Turnkey Delivery" data-ar="استكشف تسليم المفتاح">Explore Turnkey Delivery</span>
+                            <span class="flex h-7 w-7 items-center justify-center rounded-full bg-sand-400/20 text-darkBg transition-colors duration-300 hover:bg-sand-400">
+                                <i class="fas fa-arrow-right text-[10px]"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIFICATION COMPARISON -->
+    <section id="compare" class="relative overflow-hidden bg-sand-400 py-20 md:py-28">
+
+        <div class="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-green-100/40 blur-3xl"></div>
+        <div class="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-LightBg/30 blur-3xl"></div>
+
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div data-reveal class="mx-auto max-w-3xl text-center">
+                <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-darkBg px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-LightBg">
+                    <i class="fas fa-sliders-h text-sand-400"></i>
+                    <span data-en="Side-by-Side Comparison" data-ar="مقارنة جنبًا إلى جنب">Side-by-Side Comparison</span>
+                </div>
+
+                <h2 class="text-3xl font-extrabold tracking-tight text-LightBg md:text-5xl">
+                    <span data-en="Compare all three" data-ar="قارن الثلاثة جميعًا">Compare all three</span>
+                    <span class="text-darkBg" data-en="at a glance." data-ar="بنظرة واحدة.">at a glance.</span>
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-LightBg/90 md:text-lg"
+                   data-en="Structure, climate control, and growing capacity side by side — so you can pick the right platform without opening a single tab."
+                   data-ar="الهيكل، التحكم في المناخ، وقدرة الزراعة جنبًا إلى جنب — حتى تتمكن من اختيار المنصة المناسبة دون فتح أي تبويب إضافي.">
+                    Structure, climate control, and growing capacity side by side — so you can pick the right
+                    platform without opening a single tab.
+                </p>
+            </div>
+
+            <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
+
+                <!-- COLUMN 01 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-3xl bg-LightBg shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-sand-400/30">
+
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1000&q=85"
+                            alt="Plastic and shade-net greenhouse"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-darkBg/85 via-darkBg/30 to-transparent"></div>
+
+                        <span class="absolute top-4 left-4 flex h-11 w-11 items-center justify-center rounded-xl bg-sand-400 text-sm font-extrabold text-darkBg shadow-lg">01</span>
+
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-lg font-extrabold text-LightBg leading-tight"
+                                data-en="Plastic &amp; Shade-Net" data-ar="البلاستيك وشبكات الظل">Plastic &amp; Shade-Net</h3>
+                            <span class="mt-1.5 inline-flex items-center gap-1.5 rounded-full bg-LightBg/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-darkBg backdrop-blur">
+                                <span class="h-1.5 w-1.5 rounded-full bg-sand-400"></span>
+                                <span data-en="Naturally Ventilated" data-ar="تهوية طبيعية">Naturally Ventilated</span>
+                            </span>
+                        </div>
                     </div>
 
-                    <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-darkBg leading-tight">
-                        From Indian farms
-                        <span class="text-sand-500">to Middle East tables.</span>
-                    </h2>
+                    <div class="flex-1 p-5 space-y-3">
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Bay Span" data-ar="امتداد الخليج">Bay Span</span>
+                            <span class="text-sm font-bold text-darkBg">6 – 10 m</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Gutter Height" data-ar="ارتفاع القناة">Gutter Height</span>
+                            <span class="text-sm font-bold text-darkBg">3 – 4.5 m</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Covering" data-ar="التغطية">Covering</span>
+                            <span class="text-sm font-bold text-darkBg" data-en="UV Film / Shade-Net" data-ar="فيلم UV / شبكة ظل">UV Film / Shade-Net</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Cooling" data-ar="التبريد">Cooling</span>
+                            <span class="text-sm font-bold text-darkBg" data-en="Natural Vent" data-ar="تهوية طبيعية">Natural Vent</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="CAPEX" data-ar="رأس المال">CAPEX</span>
+                            <span class="text-sm font-bold text-emerald-600" data-en="Low" data-ar="منخفض">Low</span>
+                        </div>
 
-                    <p class="mt-5 max-w-2xl text-base md:text-lg leading-relaxed text-darkBg/80">
-                        We bridge two markets — exporting fresh Indian vegetables to the Gulf, and equipping the
-                        Middle East with the greenhouse technology to grow its own.
+                        <div class="mt-5 rounded-xl bg-sand-400/15 p-3.5">
+                            <p class="text-[10px] font-bold uppercase tracking-wider text-darkBg/60" data-en="Best for" data-ar="الأفضل لـ">Best for</p>
+                            <p class="mt-1 text-xs leading-relaxed text-darkBg/85"
+                               data-en="Seasonal vegetables, leafy greens, and rapid expansion at lower CAPEX."
+                               data-ar="الخضروات الموسمية، والخضروات الورقية، والتوسع السريع برأس مال أقل.">
+                                Seasonal vegetables, leafy greens, and rapid expansion at lower CAPEX.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 pt-0">
+                        <a href="contact.html" class="flex w-full items-center justify-center gap-2 rounded-xl bg-darkBg px-4 py-3 text-xs font-bold text-LightBg transition-all duration-300 hover:bg-sand-500 hover:text-darkBg">
+                            <span data-en="Request Quote" data-ar="اطلب عرض سعر">Request Quote</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- COLUMN 02 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-3xl bg-LightBg shadow-2xl ring-2 ring-sand-400 transition-all duration-500 hover:-translate-y-2 md:-mt-4 md:mb-4">
+
+                    <div class="absolute top-0 right-0 z-10 rounded-bl-xl bg-sand-400 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider text-darkBg"
+                         data-en="Most Popular" data-ar="الأكثر شعبية">Most Popular</div>
+
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="./assets/d3.png" alt="Polycarbonate air-conditioned greenhouse"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-darkBg/85 via-darkBg/30 to-transparent"></div>
+
+                        <span class="absolute top-4 left-4 flex h-11 w-11 items-center justify-center rounded-xl bg-sand-400 text-sm font-extrabold text-darkBg shadow-lg">02</span>
+
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-lg font-extrabold text-LightBg leading-tight"
+                                data-en="Polycarbonate &amp; A/C" data-ar="البولي كربونات والتكييف">Polycarbonate &amp; A/C</h3>
+                            <span class="mt-1.5 inline-flex items-center gap-1.5 rounded-full bg-LightBg/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-darkBg backdrop-blur">
+                                <span class="h-1.5 w-1.5 rounded-full bg-blue-500"></span>
+                                <span data-en="Climate Controlled" data-ar="مناخ مُتحكَّم فيه">Climate Controlled</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 p-5 space-y-3">
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Bay Span" data-ar="امتداد الخليج">Bay Span</span>
+                            <span class="text-sm font-bold text-darkBg">7 – 10 m</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Gutter Height" data-ar="ارتفاع القناة">Gutter Height</span>
+                            <span class="text-sm font-bold text-darkBg">4 – 6 m</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Covering" data-ar="التغطية">Covering</span>
+                            <span class="text-sm font-bold text-darkBg" data-en="Twin / Triple PC" data-ar="مزدوج / ثلاثي PC">Twin / Triple PC</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Cooling" data-ar="التبريد">Cooling</span>
+                            <span class="text-sm font-bold text-darkBg" data-en="Pad &amp; Fan + Coil" data-ar="وسادة ومروحة + ملف">Pad &amp; Fan + Coil</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="CAPEX" data-ar="رأس المال">CAPEX</span>
+                            <span class="text-sm font-bold text-amber-600" data-en="Medium" data-ar="متوسط">Medium</span>
+                        </div>
+
+                        <div class="mt-5 rounded-xl bg-blue-50 p-3.5">
+                            <p class="text-[10px] font-bold uppercase tracking-wider text-darkBg/60" data-en="Best for" data-ar="الأفضل لـ">Best for</p>
+                            <p class="mt-1 text-xs leading-relaxed text-darkBg/85"
+                               data-en="Premium crops, sensitive varieties, and year-round controlled production."
+                               data-ar="المحاصيل الفاخرة، والأصناف الحساسة، والإنتاج المُتحكَّم فيه على مدار العام.">
+                                Premium crops, sensitive varieties, and year-round controlled production.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 pt-0">
+                        <a href="contact.html" class="flex w-full items-center justify-center gap-2 rounded-xl bg-sand-400 px-4 py-3 text-xs font-bold text-darkBg transition-all duration-300 hover:bg-sand-500">
+                            <span data-en="Request Quote" data-ar="اطلب عرض سعر">Request Quote</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- COLUMN 03 -->
+                <article class="group relative flex flex-col overflow-hidden rounded-3xl bg-LightBg shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-sand-400/30">
+
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=1000&q=85"
+                            alt="Multi-span glass hydroponic greenhouse"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-darkBg/85 via-darkBg/30 to-transparent"></div>
+
+                        <span class="absolute top-4 left-4 flex h-11 w-11 items-center justify-center rounded-xl bg-sand-400 text-sm font-extrabold text-darkBg shadow-lg">03</span>
+
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <h3 class="text-lg font-extrabold text-LightBg leading-tight"
+                                data-en="Halls &amp; Glass Hydroponic" data-ar="القاعات والزراعة المائية الزجاجية">Halls &amp; Glass Hydroponic</h3>
+                            <span class="mt-1.5 inline-flex items-center gap-1.5 rounded-full bg-LightBg/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-darkBg backdrop-blur">
+                                <span class="h-1.5 w-1.5 rounded-full bg-purple-500"></span>
+                                <span data-en="Commercial Scale" data-ar="نطاق تجاري">Commercial Scale</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 p-5 space-y-3">
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Bay Span" data-ar="امتداد الخليج">Bay Span</span>
+                            <span class="text-sm font-bold text-darkBg">8 – 12.8 m</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Gutter Height" data-ar="ارتفاع القناة">Gutter Height</span>
+                            <span class="text-sm font-bold text-darkBg">6 – 8 m</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Covering" data-ar="التغطية">Covering</span>
+                            <span class="text-sm font-bold text-darkBg" data-en="Diffuse Glass" data-ar="زجاج منتشر">Diffuse Glass</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="Growing" data-ar="الزراعة">Growing</span>
+                            <span class="text-sm font-bold text-darkBg" data-en="NFT / Dutch Bucket" data-ar="NFT / دلو هولندي">NFT / Dutch Bucket</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50" data-en="CAPEX" data-ar="رأس المال">CAPEX</span>
+                            <span class="text-sm font-bold text-rose-600" data-en="High" data-ar="مرتفع">High</span>
+                        </div>
+
+                        <div class="mt-5 rounded-xl bg-purple-50 p-3.5">
+                            <p class="text-[10px] font-bold uppercase tracking-wider text-darkBg/60" data-en="Best for" data-ar="الأفضل لـ">Best for</p>
+                            <p class="mt-1 text-xs leading-relaxed text-darkBg/85"
+                               data-en="Large-scale production, propagation nurseries, and advanced hydroponics."
+                               data-ar="الإنتاج على نطاق واسع، ومشاتل الإكثار، والزراعة المائية المتقدمة.">
+                                Large-scale production, propagation nurseries, and advanced hydroponics.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 pt-0">
+                        <a href="contact.html" class="flex w-full items-center justify-center gap-2 rounded-xl bg-darkBg px-4 py-3 text-xs font-bold text-LightBg transition-all duration-300 hover:bg-sand-500 hover:text-darkBg">
+                            <span data-en="Request Quote" data-ar="اطلب عرض سعر">Request Quote</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- BOTTOM CTA BAND -->
+            <div class="mt-12 flex flex-col items-center justify-between gap-4 rounded-2xl bg-darkBg px-6 py-6 sm:flex-row sm:px-8">
+                <div class="text-center sm:text-left">
+                    <h4 class="text-lg font-extrabold text-LightBg" data-en="Still not sure which fits?" data-ar="لا تزال غير متأكد من الأنسب؟">Still not sure which fits?</h4>
+                    <p class="mt-1 text-sm text-LightBg/75"
+                       data-en="Send us your site details and crop plan — we'll recommend the right platform."
+                       data-ar="أرسل لنا تفاصيل موقعك وخطة المحاصيل — وسنوصي بالمنصة المناسبة.">
+                        Send us your site details and crop plan — we'll recommend the right platform.
                     </p>
                 </div>
-
-                <!-- Stacked Editorial Rows -->
-                <div class="space-y-16 lg:space-y-24">
-
-                    <!-- ================= ROW 01 — Export from India ================= -->
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-
-                        <!-- Image — slides from LEFT -->
-                        <div
-                            class="lg:col-span-6 relative opacity-0 -translate-x-24 transition-all duration-1000 ease-out delay-100 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
-                            <div class="relative overflow-hidden rounded-[2rem]">
-                                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&q=85"
-                                    alt="Fresh Indian vegetables packed for Middle East export"
-                                    class="h-[320px] sm:h-[400px] lg:h-[460px] w-full object-cover transition-transform duration-700 ease-out hover:scale-105" />
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-darkBg/50 via-transparent to-transparent">
-                                </div>
-                            </div>
-
-                            <div
-                                class="absolute -top-4 -left-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-sand-400 text-xl font-extrabold text-darkBg shadow-xl rotate-[-6deg]">
-                                01
-                            </div>
-                        </div>
-
-                        <!-- Content — slides from RIGHT -->
-                        <div
-                            class="lg:col-span-6 lg:pl-6 opacity-0 translate-x-24 transition-all duration-1000 ease-out delay-200 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
-                            <span
-                                class="inline-flex rounded-full bg-sand-400/20 border border-sand-400/30 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-darkBg">
-                                Export Services
-                            </span>
-
-                            <h3
-                                class="mt-5 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-darkBg leading-tight">
-                                Fresh Vegetable Export from India
-                            </h3>
-
-                            <p class="mt-4 text-sm md:text-base leading-relaxed text-darkBg/80">
-                                End-to-end sourcing, grading, cold-chain packaging, and GCC-compliant logistics —
-                                bringing
-                                farm-fresh Indian produce to Middle East retailers, wholesalers, and food-service
-                                operators.
-                            </p>
-
-                            <ul class="mt-6 space-y-3 text-sm text-darkBg/85">
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Weekly scheduled shipments to major GCC ports
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Temperature-controlled cold chain from farm to shelf
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Compliance with GCC food safety and import regulations
-                                </li>
-                            </ul>
-
-                            <a href="export-services.html"
-                                class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-sand-500 transition-all duration-300 hover:gap-3">
-                                Explore Export Services
-                                <span
-                                    class="flex h-7 w-7 items-center justify-center rounded-full bg-sand-400/20 text-darkBg transition-colors duration-300 hover:bg-sand-400">
-                                    <i class="fas fa-arrow-right text-[10px]"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- ================= ROW 02 — Greenhouse Tech (reversed) ================= -->
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-
-                        <!-- Image — slides from RIGHT -->
-                        <div
-                            class="lg:col-span-6 lg:order-2 relative opacity-0 translate-x-24 transition-all duration-1000 ease-out delay-100 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
-                            <div class="relative overflow-hidden rounded-[2rem]">
-                                <img src="./assets/d3.png"
-                                    alt="Climate-controlled greenhouse and hydroponic system in Middle East"
-                                    class="h-[320px] sm:h-[400px] lg:h-[460px] w-full object-cover transition-transform duration-700 ease-out hover:scale-105" />
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-darkBg/50 via-transparent to-transparent">
-                                </div>
-                            </div>
-
-                            <div
-                                class="absolute -top-4 -right-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-sand-400 text-xl font-extrabold text-darkBg shadow-xl rotate-[6deg]">
-                                02
-                            </div>
-                        </div>
-
-                        <!-- Content — slides from LEFT -->
-                        <div
-                            class="lg:col-span-6 lg:order-1 lg:pr-6 opacity-0 -translate-x-24 transition-all duration-1000 ease-out delay-200 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
-                            <span
-                                class="inline-flex rounded-full bg-sand-400/20 border border-sand-400/30 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-darkBg">
-                                Grow Technology
-                            </span>
-
-                            <h3
-                                class="mt-5 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-darkBg leading-tight">
-                                Greenhouse &amp; Hydroponic Systems
-                            </h3>
-
-                            <p class="mt-4 text-sm md:text-base leading-relaxed text-darkBg/80">
-                                Climate-controlled structures engineered specifically for the Gulf — enabling the Middle
-                                East to grow its own vegetables year-round, without depending on imports.
-                            </p>
-
-                            <ul class="mt-6 space-y-3 text-sm text-darkBg/85">
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Desert-grade designs for extreme heat, humidity &amp; sandstorms
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Soil-less hydroponic systems using up to 90% less water
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Dutch automation for nutrient dosing and climate control
-                                </li>
-                            </ul>
-
-                            <a href="greenhouse-technology.html"
-                                class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-sand-500 transition-all duration-300 hover:gap-3">
-                                Explore Greenhouse Tech
-                                <span
-                                    class="flex h-7 w-7 items-center justify-center rounded-full bg-sand-400/20 text-darkBg transition-colors duration-300 hover:bg-sand-400">
-                                    <i class="fas fa-arrow-right text-[10px]"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- ================= ROW 03 — Turnkey Delivery ================= -->
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-
-                        <!-- Image — slides from LEFT -->
-                        <div
-                            class="lg:col-span-6 relative opacity-0 -translate-x-24 transition-all duration-1000 ease-out delay-100 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
-                            <div class="relative overflow-hidden rounded-[2rem]">
-                                <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1200&q=85"
-                                    alt="Turnkey greenhouse project delivery and technology partners"
-                                    class="h-[320px] sm:h-[400px] lg:h-[460px] w-full object-cover transition-transform duration-700 ease-out hover:scale-105" />
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-darkBg/50 via-transparent to-transparent">
-                                </div>
-                            </div>
-
-                            <div
-                                class="absolute -top-4 -left-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-sand-400 text-xl font-extrabold text-darkBg shadow-xl rotate-[-6deg]">
-                                03
-                            </div>
-                        </div>
-
-                        <!-- Content — slides from RIGHT -->
-                        <div
-                            class="lg:col-span-6 lg:pl-6 opacity-0 translate-x-24 transition-all duration-1000 ease-out delay-200 data-[visible]:opacity-100 data-[visible]:translate-x-0 motion-reduce:opacity-100 motion-reduce:translate-x-0 motion-reduce:transition-none">
-                            <span
-                                class="inline-flex rounded-full bg-sand-400/20 border border-sand-400/30 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-darkBg">
-                                Turnkey Delivery
-                            </span>
-
-                            <h3
-                                class="mt-5 text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-darkBg leading-tight">
-                                Turnkey Projects &amp; Technology Partners
-                            </h3>
-
-                            <p class="mt-4 text-sm md:text-base leading-relaxed text-darkBg/80">
-                                From initial site survey to final commissioning — delivered under one contract with our
-                                Dutch and global agri-tech partners, so you deal with one team, not ten.
-                            </p>
-
-                            <ul class="mt-6 space-y-3 text-sm text-darkBg/85">
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Design, fabrication, installation and handover in-house
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Partnered with leading Dutch and European agri-tech brands
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-circle-check text-sand-500 text-xs mt-1"></i>
-                                    Ongoing maintenance, training and 24/7 operational support
-                                </li>
-                            </ul>
-
-                            <a href="turnkey-projects.html"
-                                class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-sand-500 transition-all duration-300 hover:gap-3">
-                                Explore Turnkey Delivery
-                                <span
-                                    class="flex h-7 w-7 items-center justify-center rounded-full bg-sand-400/20 text-darkBg transition-colors duration-300 hover:bg-sand-400">
-                                    <i class="fas fa-arrow-right text-[10px]"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
+                <a href="contact.html" class="inline-flex flex-none items-center gap-2 rounded-xl bg-sand-400 px-5 py-3 text-sm font-bold text-darkBg transition-all duration-300 hover:bg-sand-500">
+                    <i class="fas fa-headset text-xs"></i>
+                    <span data-en="Talk to an Engineer" data-ar="تحدث إلى مهندس">Talk to an Engineer</span>
+                </a>
             </div>
-        </section>
 
+        </div>
+    </section>
 
-        <!-- ============ SPECIFICATION COMPARISON ============ -->
-        <section id="compare" class="relative overflow-hidden bg-sand-400 py-20 md:py-28">
+    <!-- FAQ -->
+    <section id="faq" class="bg-LightBg py-20 md:py-28">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
 
-            <!-- Background Decoration -->
-            <div class="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-green-100/40 blur-3xl"></div>
-            <div class="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-LightBg/30 blur-3xl"></div>
+            <div data-reveal class="max-w-2xl">
+                <p class="text-sm font-semibold text-darkBg" data-en="Questions" data-ar="أسئلة">Questions</p>
+                <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-darkBg md:text-4xl"
+                    data-en="Everything you need to know" data-ar="كل ما تحتاج معرفته">
+                    Everything you need to know
+                </h2>
+            </div>
 
-            <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mt-10 divide-y divide-gray-200 border-y border-gray-200">
 
-                <!-- ================= HEADER ================= -->
-                <div data-reveal class="mx-auto max-w-3xl text-center">
-                    <div
-                        class="mb-4 inline-flex items-center gap-2 rounded-full bg-darkBg px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-LightBg">
-                        <i class="fas fa-sliders-h text-sand-400"></i>
-                        Side-by-Side Comparison
-                    </div>
-
-                    <h2 class="text-3xl font-extrabold tracking-tight text-LightBg md:text-5xl">
-                        Compare all three
-                        <span class="text-darkBg">at a glance.</span>
-                    </h2>
-
-                    <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-LightBg/90 md:text-lg">
-                        Structure, climate control, and growing capacity side by side — so you can pick the right
-                        platform without opening a single tab.
-                    </p>
-                </div>
-
-                <!-- ================= PARALLEL COLUMNS ================= -->
-                <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
-
-                    <!-- ============ COLUMN 01 ============ -->
-                    <article
-                        class="group relative flex flex-col overflow-hidden rounded-3xl bg-LightBg shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-sand-400/30">
-
-                        <!-- Image header -->
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1000&q=85"
-                                alt="Plastic and shade-net greenhouse"
-                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-darkBg/85 via-darkBg/30 to-transparent">
-                            </div>
-
-                            <span
-                                class="absolute top-4 left-4 flex h-11 w-11 items-center justify-center rounded-xl bg-sand-400 text-sm font-extrabold text-darkBg shadow-lg">
-                                01
-                            </span>
-
-                            <div class="absolute bottom-4 left-4 right-4">
-                                <h3 class="text-lg font-extrabold text-LightBg leading-tight">
-                                    Plastic &amp; Shade-Net
-                                </h3>
-                                <span
-                                    class="mt-1.5 inline-flex items-center gap-1.5 rounded-full bg-LightBg/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-darkBg backdrop-blur">
-                                    <span class="h-1.5 w-1.5 rounded-full bg-sand-400"></span>
-                                    Naturally Ventilated
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Specs -->
-                        <div class="flex-1 p-5 space-y-3">
-
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Bay
-                                    Span</span>
-                                <span class="text-sm font-bold text-darkBg">6 – 10 m</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Gutter
-                                    Height</span>
-                                <span class="text-sm font-bold text-darkBg">3 – 4.5 m</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Covering</span>
-                                <span class="text-sm font-bold text-darkBg">UV Film / Shade-Net</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Cooling</span>
-                                <span class="text-sm font-bold text-darkBg">Natural Vent</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">CAPEX</span>
-                                <span class="text-sm font-bold text-emerald-600">Low</span>
-                            </div>
-
-                            <!-- Best for -->
-                            <div class="mt-5 rounded-xl bg-sand-400/15 p-3.5">
-                                <p class="text-[10px] font-bold uppercase tracking-wider text-darkBg/60">Best for</p>
-                                <p class="mt-1 text-xs leading-relaxed text-darkBg/85">
-                                    Seasonal vegetables, leafy greens, and rapid expansion at lower CAPEX.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <!-- CTA -->
-                        <div class="p-5 pt-0">
-                            <a href="contact.html"
-                                class="flex w-full items-center justify-center gap-2 rounded-xl bg-darkBg px-4 py-3 text-xs font-bold text-LightBg transition-all duration-300 hover:bg-sand-500 hover:text-darkBg">
-                                Request Quote <i class="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <!-- ============ COLUMN 02 (featured) ============ -->
-                    <article
-                        class="group relative flex flex-col overflow-hidden rounded-3xl bg-LightBg shadow-2xl ring-2 ring-sand-400 transition-all duration-500 hover:-translate-y-2 md:-mt-4 md:mb-4">
-
-                        <!-- Featured ribbon -->
-                        <div
-                            class="absolute top-0 right-0 z-10 rounded-bl-xl bg-sand-400 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider text-darkBg">
-                            Most Popular
-                        </div>
-
-                        <!-- Image header -->
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="./assets/d3.png" alt="Polycarbonate air-conditioned greenhouse"
-                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-darkBg/85 via-darkBg/30 to-transparent">
-                            </div>
-
-                            <span
-                                class="absolute top-4 left-4 flex h-11 w-11 items-center justify-center rounded-xl bg-sand-400 text-sm font-extrabold text-darkBg shadow-lg">
-                                02
-                            </span>
-
-                            <div class="absolute bottom-4 left-4 right-4">
-                                <h3 class="text-lg font-extrabold text-LightBg leading-tight">
-                                    Polycarbonate &amp; A/C
-                                </h3>
-                                <span
-                                    class="mt-1.5 inline-flex items-center gap-1.5 rounded-full bg-LightBg/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-darkBg backdrop-blur">
-                                    <span class="h-1.5 w-1.5 rounded-full bg-blue-500"></span>
-                                    Climate Controlled
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Specs -->
-                        <div class="flex-1 p-5 space-y-3">
-
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Bay
-                                    Span</span>
-                                <span class="text-sm font-bold text-darkBg">7 – 10 m</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Gutter
-                                    Height</span>
-                                <span class="text-sm font-bold text-darkBg">4 – 6 m</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Covering</span>
-                                <span class="text-sm font-bold text-darkBg">Twin / Triple PC</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Cooling</span>
-                                <span class="text-sm font-bold text-darkBg">Pad &amp; Fan + Coil</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">CAPEX</span>
-                                <span class="text-sm font-bold text-amber-600">Medium</span>
-                            </div>
-
-                            <div class="mt-5 rounded-xl bg-blue-50 p-3.5">
-                                <p class="text-[10px] font-bold uppercase tracking-wider text-darkBg/60">Best for</p>
-                                <p class="mt-1 text-xs leading-relaxed text-darkBg/85">
-                                    Premium crops, sensitive varieties, and year-round controlled production.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <!-- CTA -->
-                        <div class="p-5 pt-0">
-                            <a href="contact.html"
-                                class="flex w-full items-center justify-center gap-2 rounded-xl bg-sand-400 px-4 py-3 text-xs font-bold text-darkBg transition-all duration-300 hover:bg-sand-500">
-                                Request Quote <i class="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <!-- ============ COLUMN 03 ============ -->
-                    <article
-                        class="group relative flex flex-col overflow-hidden rounded-3xl bg-LightBg shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-sand-400/30">
-
-                        <!-- Image header -->
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=1000&q=85"
-                                alt="Multi-span glass hydroponic greenhouse"
-                                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-darkBg/85 via-darkBg/30 to-transparent">
-                            </div>
-
-                            <span
-                                class="absolute top-4 left-4 flex h-11 w-11 items-center justify-center rounded-xl bg-sand-400 text-sm font-extrabold text-darkBg shadow-lg">
-                                03
-                            </span>
-
-                            <div class="absolute bottom-4 left-4 right-4">
-                                <h3 class="text-lg font-extrabold text-LightBg leading-tight">
-                                    Halls &amp; Glass Hydroponic
-                                </h3>
-                                <span
-                                    class="mt-1.5 inline-flex items-center gap-1.5 rounded-full bg-LightBg/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-darkBg backdrop-blur">
-                                    <span class="h-1.5 w-1.5 rounded-full bg-purple-500"></span>
-                                    Commercial Scale
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Specs -->
-                        <div class="flex-1 p-5 space-y-3">
-
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Bay
-                                    Span</span>
-                                <span class="text-sm font-bold text-darkBg">8 – 12.8 m</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Gutter
-                                    Height</span>
-                                <span class="text-sm font-bold text-darkBg">6 – 8 m</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Covering</span>
-                                <span class="text-sm font-bold text-darkBg">Diffuse Glass</span>
-                            </div>
-                            <div class="flex items-center justify-between border-b border-darkBg/8 pb-2.5">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">Growing</span>
-                                <span class="text-sm font-bold text-darkBg">NFT / Dutch Bucket</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-darkBg/50">CAPEX</span>
-                                <span class="text-sm font-bold text-rose-600">High</span>
-                            </div>
-
-                            <div class="mt-5 rounded-xl bg-purple-50 p-3.5">
-                                <p class="text-[10px] font-bold uppercase tracking-wider text-darkBg/60">Best for</p>
-                                <p class="mt-1 text-xs leading-relaxed text-darkBg/85">
-                                    Large-scale production, propagation nurseries, and advanced hydroponics.
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <!-- CTA -->
-                        <div class="p-5 pt-0">
-                            <a href="contact.html"
-                                class="flex w-full items-center justify-center gap-2 rounded-xl bg-darkBg px-4 py-3 text-xs font-bold text-LightBg transition-all duration-300 hover:bg-sand-500 hover:text-darkBg">
-                                Request Quote <i class="fas fa-arrow-right text-[10px]"></i>
-                            </a>
-                        </div>
-
-                    </article>
-
-                </div>
-
-                <!-- ================= BOTTOM CTA BAND ================= -->
-                <div
-                    class="mt-12 flex flex-col items-center justify-between gap-4 rounded-2xl bg-darkBg px-6 py-6 sm:flex-row sm:px-8">
-                    <div class="text-center sm:text-left">
-                        <h4 class="text-lg font-extrabold text-LightBg">Still not sure which fits?</h4>
-                        <p class="mt-1 text-sm text-LightBg/75">
-                            Send us your site details and crop plan — we'll recommend the right platform.
+                <!-- FAQ 1 -->
+                <div data-faq>
+                    <button data-faq-btn aria-expanded="false" class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
+                        <span class="text-base font-semibold"
+                              data-en="Which Middle East countries do you export vegetables to?"
+                              data-ar="إلى أي دول في الشرق الأوسط تصدّرون الخضروات؟">
+                            Which Middle East countries do you export vegetables to?
+                        </span>
+                        <i data-faq-icon class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height:0">
+                        <p class="pb-5 text-sm leading-relaxed text-gray-600"
+                           data-en="We currently serve the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and Bahrain. Shipments route through major GCC ports with full customs clearance and cold-chain handling on arrival. Other markets can be added based on volume and compliance requirements."
+                           data-ar="نخدم حاليًا الإمارات العربية المتحدة والمملكة العربية السعودية وقطر وعُمان والكويت والبحرين. تُوجَّه الشحنات عبر الموانئ الرئيسية في دول الخليج مع تخليص جمركي كامل ومعالجة بسلسلة التبريد عند الوصول. يمكن إضافة أسواق أخرى بناءً على الحجم ومتطلبات الامتثال.">
+                            We currently serve the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and Bahrain. Shipments
+                            route through major GCC ports with full customs clearance and cold-chain handling on
+                            arrival. Other markets can be added based on volume and compliance requirements.
                         </p>
                     </div>
-                    <a href="contact.html"
-                        class="inline-flex flex-none items-center gap-2 rounded-xl bg-sand-400 px-5 py-3 text-sm font-bold text-darkBg transition-all duration-300 hover:bg-sand-500">
-                        <i class="fas fa-headset text-xs"></i>
-                        Talk to an Engineer
-                    </a>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div data-faq>
+                    <button data-faq-btn aria-expanded="false" class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
+                        <span class="text-base font-semibold"
+                              data-en="What vegetables can you supply from India?"
+                              data-ar="ما الخضروات التي يمكنكم توريدها من الهند؟">
+                            What vegetables can you supply from India?
+                        </span>
+                        <i data-faq-icon class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height:0">
+                        <p class="pb-5 text-sm leading-relaxed text-gray-600"
+                           data-en="Our core range includes tomatoes, onions, potatoes, green chillies, okra, gourds, leafy greens, and seasonal produce. We source from vetted farms across India and grade to GCC retail and food-service standards before packing."
+                           data-ar="تشمل مجموعتنا الأساسية الطماطم والبصل والبطاطس والفلفل الأخضر والبامية والقرع والخضروات الورقية والمنتجات الموسمية. نستورد من مزارع معتمدة في جميع أنحاء الهند ونصنّف وفقًا لمعايير التجزئة وخدمات الطعام في دول الخليج قبل التعبئة.">
+                            Our core range includes tomatoes, onions, potatoes, green chillies, okra, gourds, leafy
+                            greens, and seasonal produce. We source from vetted farms across India and grade to
+                            GCC retail and food-service standards before packing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div data-faq>
+                    <button data-faq-btn aria-expanded="false" class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
+                        <span class="text-base font-semibold"
+                              data-en="Why would I grow vegetables locally instead of importing?"
+                              data-ar="لماذا أزرع الخضروات محليًا بدلاً من استيرادها؟">
+                            Why would I grow vegetables locally instead of importing?
+                        </span>
+                        <i data-faq-icon class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height:0">
+                        <p class="pb-5 text-sm leading-relaxed text-gray-600"
+                           data-en="Local greenhouse production gives you full control over quality, freshness, and supply timing — with no shipping delays or customs risk. Once built, a well-run greenhouse delivers year-round harvests at a lower per-kg cost than continuous imports."
+                           data-ar="يمنحك الإنتاج المحلي في البيوت المحمية سيطرة كاملة على الجودة والطزاجة وتوقيت التوريد — دون تأخير في الشحن أو مخاطر جمركية. وبعد بنائه، يوفر بيت محمي يعمل جيدًا حصادًا على مدار العام بتكلفة أقل للكيلوغرام من الاستيراد المستمر.">
+                            Local greenhouse production gives you full control over quality, freshness, and supply
+                            timing — with no shipping delays or customs risk. Once built, a well-run greenhouse
+                            delivers year-round harvests at a lower per-kg cost than continuous imports.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div data-faq>
+                    <button data-faq-btn aria-expanded="false" class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
+                        <span class="text-base font-semibold"
+                              data-en="Can vegetables really be grown in GCC desert climates?"
+                              data-ar="هل يمكن فعلًا زراعة الخضروات في مناخات الصحراء الخليجية؟">
+                            Can vegetables really be grown in GCC desert climates?
+                        </span>
+                        <i data-faq-icon class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height:0">
+                        <p class="pb-5 text-sm leading-relaxed text-gray-600"
+                           data-en="Yes — with the right greenhouse design. Our climate-controlled structures combine pad-and-fan cooling, hydroponic growing systems, and Dutch automation to maintain stable temperatures and humidity through peak Gulf summers. Water use drops by up to 90% compared to open-field farming."
+                           data-ar="نعم — مع التصميم المناسب للبيت المحمي. تجمع هياكلنا المُتحكَّم في مناخها بين تبريد الوسادة والمروحة، وأنظمة الزراعة المائية، والأتمتة الهولندية للحفاظ على درجات حرارة ورطوبة مستقرة خلال ذروة صيف الخليج. ينخفض استخدام المياه بنسبة تصل إلى 90% مقارنة بالزراعة المكشوفة.">
+                            Yes — with the right greenhouse design. Our climate-controlled structures combine
+                            pad-and-fan cooling, hydroponic growing systems, and Dutch automation to maintain stable
+                            temperatures and humidity through peak Gulf summers. Water use drops by up to 90% compared to
+                            open-field farming.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div data-faq>
+                    <button data-faq-btn aria-expanded="false" class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
+                        <span class="text-base font-semibold"
+                              data-en="What does a turnkey greenhouse project include?"
+                              data-ar="ماذا يشمل مشروع البيت المحمي بنظام تسليم المفتاح؟">
+                            What does a turnkey greenhouse project include?
+                        </span>
+                        <i data-faq-icon class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height:0">
+                        <p class="pb-5 text-sm leading-relaxed text-gray-600"
+                           data-en="Everything from site survey and structural design to fabrication, hydroponic fit-out, climate-control installation, and final commissioning. We work with Dutch and global agri-tech partners so you deal with one team from start to first harvest."
+                           data-ar="كل شيء من مسح الموقع والتصميم الإنشائي إلى التصنيع والتجهيز المائي وتركيب التحكم في المناخ والتشغيل النهائي. نعمل مع شركاء هولنديين وعالميين في التقنية الزراعية، لتتعامل مع فريق واحد من البداية حتى أول حصاد.">
+                            Everything from site survey and structural design to fabrication, hydroponic fit-out,
+                            climate-control installation, and final commissioning. We work with Dutch and global
+                            agri-tech partners so you deal with one team from start to first harvest.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div data-faq>
+                    <button data-faq-btn aria-expanded="false" class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
+                        <span class="text-base font-semibold"
+                              data-en="Can I start with imports and add greenhouse growing later?"
+                              data-ar="هل يمكنني البدء بالاستيراد وإضافة الزراعة في البيوت المحمية لاحقًا؟">
+                            Can I start with imports and add greenhouse growing later?
+                        </span>
+                        <i data-faq-icon class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out" style="max-height:0">
+                        <p class="pb-5 text-sm leading-relaxed text-gray-600"
+                           data-en="Absolutely — many of our clients do exactly that. We begin with a reliable export supply while planning your greenhouse build in parallel. Once the structure is producing, you gradually shift volume from imports to local harvest."
+                           data-ar="بالتأكيد — كثير من عملائنا يفعلون ذلك تمامًا. نبدأ بتوريد تصدير موثوق مع التخطيط لبناء البيت المحمي بالتوازي. وبمجرد أن يبدأ الهيكل في الإنتاج، تنقل الحجم تدريجيًا من الواردات إلى الحصاد المحلي.">
+                            Absolutely — many of our clients do exactly that. We begin with a reliable export supply
+                            while planning your greenhouse build in parallel. Once the structure is producing, you
+                            gradually shift volume from imports to local harvest.
+                        </p>
+                    </div>
                 </div>
 
             </div>
-        </section>
-
-
-        <!-- ============ 8 · FAQ ============ -->
-        <section id="faq" class="bg-LightBg py-20 md:py-28">
-            <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-
-                <!-- Header -->
-                <div data-reveal class="max-w-2xl">
-                    <p class="text-sm font-semibold text-darkBg">Questions</p>
-                    <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-darkBg md:text-4xl">
-                        Everything you need to know
-                    </h2>
-                </div>
-
-                <div class="mt-10 divide-y divide-gray-200 border-y border-gray-200">
-
-                    <!-- FAQ 1 — Export regions -->
-                    <div data-faq>
-                        <button data-faq-btn aria-expanded="false"
-                            class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
-                            <span class="text-base font-semibold">Which Middle East countries do you export vegetables
-                                to?</span>
-                            <i data-faq-icon
-                                class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
-                        </button>
-                        <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-                            style="max-height:0">
-                            <p class="pb-5 text-sm leading-relaxed text-gray-600">
-                                We currently serve the UAE, Saudi Arabia, Qatar, Oman, Kuwait, and Bahrain. Shipments
-                                route through major GCC ports with full customs clearance and cold-chain handling on
-                                arrival. Other markets can be added based on volume and compliance requirements.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 2 — What vegetables -->
-                    <div data-faq>
-                        <button data-faq-btn aria-expanded="false"
-                            class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
-                            <span class="text-base font-semibold">What vegetables can you supply from India?</span>
-                            <i data-faq-icon
-                                class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
-                        </button>
-                        <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-                            style="max-height:0">
-                            <p class="pb-5 text-sm leading-relaxed text-gray-600">
-                                Our core range includes tomatoes, onions, potatoes, green chillies, okra, gourds, leafy
-                                greens, and seasonal produce. We source from vetted farms across India and grade to
-                                GCC retail and food-service standards before packing.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 3 — Why grow locally -->
-                    <div data-faq>
-                        <button data-faq-btn aria-expanded="false"
-                            class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
-                            <span class="text-base font-semibold">Why would I grow vegetables locally instead of
-                                importing?</span>
-                            <i data-faq-icon
-                                class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
-                        </button>
-                        <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-                            style="max-height:0">
-                            <p class="pb-5 text-sm leading-relaxed text-gray-600">
-                                Local greenhouse production gives you full control over quality, freshness, and supply
-                                timing — with no shipping delays or customs risk. Once built, a well-run greenhouse
-                                delivers year-round harvests at a lower per-kg cost than continuous imports.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 4 — Climate suitability -->
-                    <div data-faq>
-                        <button data-faq-btn aria-expanded="false"
-                            class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
-                            <span class="text-base font-semibold">Can vegetables really be grown in GCC desert
-                                climates?</span>
-                            <i data-faq-icon
-                                class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
-                        </button>
-                        <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-                            style="max-height:0">
-                            <p class="pb-5 text-sm leading-relaxed text-gray-600">
-                                Yes — with the right greenhouse design. Our climate-controlled structures combine
-                                pad-and-fan
-                                cooling, hydroponic growing systems, and Dutch automation to maintain stable
-                                temperatures
-                                and humidity through peak Gulf summers. Water use drops by up to 90% compared to
-                                open-field
-                                farming.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 5 — Turnkey scope -->
-                    <div data-faq>
-                        <button data-faq-btn aria-expanded="false"
-                            class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
-                            <span class="text-base font-semibold">What does a turnkey greenhouse project include?</span>
-                            <i data-faq-icon
-                                class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
-                        </button>
-                        <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-                            style="max-height:0">
-                            <p class="pb-5 text-sm leading-relaxed text-gray-600">
-                                Everything from site survey and structural design to fabrication, hydroponic fit-out,
-                                climate-control installation, and final commissioning. We work with Dutch and global
-                                agri-tech partners so you deal with one team from start to first harvest.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 6 — Hybrid option -->
-                    <div data-faq>
-                        <button data-faq-btn aria-expanded="false"
-                            class="flex w-full items-center justify-between gap-6 py-5 text-left transition duration-300 ease-in-out hover:text-sand-400 text-darkBg">
-                            <span class="text-base font-semibold">Can I start with imports and add greenhouse growing
-                                later?</span>
-                            <i data-faq-icon
-                                class="fas fa-plus shrink-0 text-sm text-darkBg transition-transform duration-300 ease-in-out"></i>
-                        </button>
-                        <div data-faq-panel class="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-                            style="max-height:0">
-                            <p class="pb-5 text-sm leading-relaxed text-gray-600">
-                                Absolutely — many of our clients do exactly that. We begin with a reliable export supply
-                                while planning your greenhouse build in parallel. Once the structure is producing, you
-                                gradually shift volume from imports to local harvest.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    </main>
+        </div>
+    </section>
+</main>
 
     <!-- GSAP + ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
