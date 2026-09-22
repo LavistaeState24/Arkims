@@ -1011,6 +1011,10 @@ video {
   margin-right: auto;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-1\.5 {
   margin-bottom: 0.375rem;
 }
@@ -5277,7 +5281,7 @@ html[dir="rtl"] .left-0 {
 }
 
 html[dir="rtl"] .right-0 {
-  right: auto;
+  right: 0;
   left: 0;
 }
 
