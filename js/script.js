@@ -69,7 +69,7 @@ function initNavbar() {
     if (nav) {
         const onScroll = () => {
             if (window.scrollY > 30) {
-                nav.classList.add('shadow-lg', 'shadow-gray-900/5');
+                nav.classList.add('shadow-none', 'shadow-gray-900/5');
                 nav.style.borderBottomColor = 'rgba(255,255,255,0.4)';
             } else {
                 nav.classList.remove('shadow-lg', 'shadow-gray-900/5');
@@ -439,7 +439,7 @@ function initFloatingButtons() {
                class="relative flex items-center justify-center gap-2.5
                       bg-green-500 hover:bg-green-600
                       text-white font-semibold
-                      py-3 px-4 rounded-full
+                      py-2.5 px-4 rounded-full
                       shadow-md
                       hover:shadow-md
                       border border-white/20 backdrop-blur
@@ -505,9 +505,9 @@ function initWhatsAppForm() {
         e.preventDefault();
 
         // Grab values
-        const name    = form.querySelector('#wa-name').value.trim();
-        const email   = form.querySelector('#wa-email').value.trim();
-        const phone   = form.querySelector('#wa-phone').value.trim();
+        const name = form.querySelector('#wa-name').value.trim();
+        const email = form.querySelector('#wa-email').value.trim();
+        const phone = form.querySelector('#wa-phone').value.trim();
         const message = form.querySelector('#wa-message').value.trim();
 
         // Basic validation (in case browser's built-in validation is bypassed)
@@ -518,7 +518,7 @@ function initWhatsAppForm() {
 
         // Build the WhatsApp message
         const waMessage =
-`*New Contact Inquiry — ${BRAND_NAME}*
+            `*New Contact Inquiry — ${BRAND_NAME}*
 
 👤 *Name:* ${name}
 📧 *Email:* ${email}
