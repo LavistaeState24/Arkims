@@ -1063,3 +1063,67 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     targets.forEach((el) => observer.observe(el));
 })();
+
+// english to arabic
+
+(function () {
+    const STORAGE_KEY = 'arkims-lang';
+    const html = document.documentElement;
+    const toggle = document.getElementById('langToggle');
+    const label = document.getElementById('langLabel');
+    const alt = document.getElementById('langAlt');
+
+    function applyLang(lang) {
+        // 1. Set direction + lang attribute
+        if (lang === 'ar') {
+            html.setAttribute('dir', 'rtl');
+            html.setAttribute('lang', 'ar');
+            html.classList.add('lang-ar');
+        } else {
+            html.setAttribute('dir', 'ltr');
+            html.setAttribute('lang', 'en');
+            html.classList.remove('lang-ar');
+        }
+
+        // 2. Swap visible text for elements with data-en / data-ar
+        document.querySelectorAll('[data-en][data-ar]').forEach(function (el) {
+            el.textContent = el.getAttribute(lang === 'ar' ? 'data-ar' : 'data-en');
+        });
+
+        // 3. Swap placeholders
+        document.querySelectorAll('[data-en-placeholder][data-ar-placeholder]').forEach(function (el) {
+            el.setAttribute('placeholder',
+                el.getAttribute(lang === 'ar' ? 'data-ar-placeholder' : 'data-en-placeholder'));
+        });
+
+        // 4. Swap aria-labels
+        document.querySelectorAll('[data-en-aria][data-ar-aria]').forEach(function (el) {
+            el.setAttribute('aria-label',
+                el.getAttribute(lang === 'ar' ? 'data-ar-aria' : 'data-en-aria'));
+        });
+
+        // 5. Update the toggle button display
+        if (label && alt) {
+            label.textContent = lang === 'ar' ? 'ع' : 'EN';
+            alt.textContent = lang === 'ar' ? 'EN' : 'ع';
+            label.className = lang === 'ar' ? 'text-pine-400' : 'text-pine-950';
+            alt.className = lang === 'ar' ? 'text-pine-950' : 'text-pine-400';
+        }
+
+        // 6. Persist
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    }
+
+    // Restore saved preference on load
+    let saved = 'en';
+    try { saved = localStorage.getItem(STORAGE_KEY) || 'en'; } catch (e) {}
+    applyLang(saved);
+
+    // Toggle on click
+    if (toggle) {
+        toggle.addEventListener('click', function () {
+            const current = html.getAttribute('lang') === 'ar' ? 'ar' : 'en';
+            applyLang(current === 'ar' ? 'en' : 'ar');
+        });
+    }
+})();

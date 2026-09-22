@@ -524,3 +524,74 @@
          transition: none;
      }
  }
+
+
+ /* right to left for arabic */
+
+ /* ============================================
+   RTL Support — auto-applies when html[dir="rtl"]
+   ============================================ */
+
+ /* Arabic font stack for nicer Arabic typography */
+ html.lang-ar body,
+ html[lang="ar"] body {
+     font-family: 'Cairo', 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+ }
+
+ /* Flip margins/paddings where Tailwind uses ml/mr */
+ html[dir="rtl"] .ml-8 {
+     margin-left: 0;
+     margin-right: 2rem;
+ }
+
+ html[dir="rtl"] .ml-10 {
+     margin-left: 0;
+     margin-right: 2.5rem;
+ }
+
+ html[dir="rtl"] .ml-14 {
+     margin-left: 0;
+     margin-right: 3.5rem;
+ }
+
+ /* Flip dropdown position for RTL */
+ html[dir="rtl"] .dropdown-link {
+     text-align: right;
+ }
+
+ /* Flip chevrons on details in RTL */
+ html[dir="rtl"] details summary i.fa-chevron-down {
+     transform: scaleX(-1);
+ }
+
+ /* Flip directional arrows */
+ html[dir="rtl"] .fa-arrow-right {
+     transform: scaleX(-1);
+ }
+
+ html[dir="rtl"] .fa-arrow-left {
+     transform: scaleX(-1);
+ }
+
+ /* Fix left/right absolute positioning */
+ html[dir="rtl"] .left-0 {
+     left: auto;
+     right: 0;
+ }
+
+ html[dir="rtl"] .right-0 {
+     right: auto;
+     left: 0;
+ }
+
+ /* Border-l becomes border-r in RTL for mobile menu indent */
+ html[dir="rtl"] .border-l {
+     border-left: 0;
+     border-right: 1px solid;
+     border-right-color: inherit;
+ }
+
+ html[dir="rtl"] .pl-3 {
+     padding-left: 0;
+     padding-right: 0.75rem;
+ }
