@@ -96,6 +96,7 @@ function initNavbar() {
     });
 }
 
+
 /* =========================================================
    Scroll-reveal animations
    ========================================================= */
@@ -1253,3 +1254,13 @@ function initLanguageToggle() {
         applyLang(current === 'ar' ? 'en' : 'ar');
     });
 }
+
+// on hover animation for navbar
+
+document.querySelectorAll('.nav-link').forEach((link) => {
+    link.addEventListener('mouseenter', (e) => {
+        const rect = link.getBoundingClientRect();
+        const fromLeft = (e.clientX - rect.left) < rect.width / 2;
+        link.dataset.uo = fromLeft ? 'left' : 'right';
+    });
+});

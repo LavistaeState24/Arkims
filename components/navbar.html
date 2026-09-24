@@ -1,25 +1,31 @@
 <nav id="mainNav"
     class="fixed top-4 left-0 right-0 z-50 mx-auto max-w-7xl px-4 transition-all duration-300 sm:px-6 lg:px-8">
 
-    <div class="rounded-3xl border border-sand-400/60 bg-LightBg px-4 backdrop-blur-xl md:rounded-3xl sm:px-6 lg:px-8">
+    <div class="rounded-3xl border border-sand-400/60 bg-white/10 px-4 backdrop-blur-xl md:rounded-3xl sm:px-6 lg:px-8">
         <div class="flex h-20 items-center justify-between md:h-24">
 
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-2.5 text-xl font-bold tracking-tight md:text-2xl">
-                <img src="assets/logo4.png" alt="Arkims Logo"
-                    class="h-20 sm:h-24 md:h-28 lg:h-28 w-auto object-contain transition-all duration-300">
+                <img src="assets/Footer.png" alt="Arkims Logo"
+                    class="h-20 sm:h-24 md:h-28 lg:h-24 w-auto object-contain transition-all duration-300">
             </a>
 
             <!-- Desktop Nav -->
-            <div class="hidden items-center gap-6 text-sm font-medium text-pine-950 xl:flex">
+            <div class="hidden items-center gap-6 text-sm font-medium text-white xl:flex">
 
                 <!-- Company -->
                 <div class="group relative">
-                    <a href="#" class="nav-link flex items-center gap-1 hover:text-pine-700">
+                    <a href="#" class="nav-link relative flex items-center gap-1 transition-colors
+                        after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
+                        after:scale-x-0 after:bg-current after:content-['']
+                        after:transition-transform after:duration-300
+                        hover:after:scale-x-100
+                        after:origin-left
+                        data-[uo=right]:after:origin-right">
                         <span data-en="Company" data-ar="الشركة">Company</span>
                         <i class="fas fa-chevron-down text-[10px]"></i>
                     </a>
-                    <div class="invisible absolute left-0 top-full mt-3 w-52 rounded-2xl border border-sand-400/30 bg-LightBg p-2 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                    <div class="invisible absolute left-0 top-full mt-3 w-52 rounded-2xl border border-sand-400/30 bg-LightBg p-2 text-pine-950 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
                         <a href="index.html" class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-white block transition-colors">
                             <span data-en="Home" data-ar="الرئيسية">Home</span>
                         </a>
@@ -34,11 +40,17 @@
 
                 <!-- Greenhouse Products -->
                 <div class="group relative">
-                    <a href="#" class="nav-link flex items-center gap-1 hover:text-pine-700">
+                    <a href="#" class="nav-link relative flex items-center gap-1 transition-colors
+                        after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
+                        after:scale-x-0 after:bg-current after:content-['']
+                        after:transition-transform after:duration-300
+                        hover:after:scale-x-100
+                        after:origin-left
+                        data-[uo=right]:after:origin-right">
                         <span data-en="Greenhouse Products" data-ar="منتجات البيوت المحمية">Greenhouse Products</span>
                         <i class="fas fa-chevron-down text-[10px]"></i>
                     </a>
-                    <div class="invisible absolute left-0 top-full mt-3 w-64 rounded-2xl border border-sand-400/30 bg-LightBg p-2 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                    <div class="invisible absolute left-0 top-full mt-3 w-64 rounded-2xl border border-sand-400/30 bg-LightBg p-2 text-pine-950 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
                         <a href="products.html" class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-white block transition-colors">
                             <span data-en="All Products" data-ar="جميع المنتجات">All Products</span>
                         </a>
@@ -56,11 +68,17 @@
 
                 <!-- Services -->
                 <div class="group relative">
-                    <a href="overview.html" class="nav-link flex items-center gap-1 hover:text-pine-700">
+                    <a href="overview.html" class="nav-link relative flex items-center gap-1 transition-colors
+                        after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
+                        after:scale-x-0 after:bg-current after:content-['']
+                        after:transition-transform after:duration-300
+                        hover:after:scale-x-100
+                        after:origin-left
+                        data-[uo=right]:after:origin-right">
                         <span data-en="Services" data-ar="الخدمات">Services</span>
                         <i class="fas fa-chevron-down text-[10px]"></i>
                     </a>
-                    <div class="invisible absolute left-0 top-full mt-3 w-60 rounded-2xl border border-sand-400/30 bg-LightBg p-2 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                    <div class="invisible absolute left-0 top-full mt-3 w-60 rounded-2xl border border-sand-400/30 bg-LightBg p-2 text-pine-950 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
                         <a href="overview.html" class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-white block transition-colors">
                             <span data-en="Overview" data-ar="نظرة عامة">Overview</span>
                         </a>
@@ -70,35 +88,56 @@
                     </div>
                 </div>
 
-                <a href="farms-projects.html" class="nav-link hover:text-pine-700">
+                <a href="farms-projects.html" class="nav-link relative transition-colors
+                    after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
+                    after:scale-x-0 after:bg-current after:content-['']
+                    after:transition-transform after:duration-300
+                    hover:after:scale-x-100
+                    after:origin-left
+                    data-[uo=right]:after:origin-right">
                     <span data-en="Farms & Projects" data-ar="المزارع والمشاريع">Farms &amp; Projects</span>
                 </a>
-                <a href="sustainability.html" class="nav-link hover:text-pine-700">
+                <a href="sustainability.html" class="nav-link relative transition-colors
+                    after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
+                    after:scale-x-0 after:bg-current after:content-['']
+                    after:transition-transform after:duration-300
+                    hover:after:scale-x-100
+                    after:origin-left
+                    data-[uo=right]:after:origin-right">
                     <span data-en="Sustainability & Support" data-ar="الاستدامة والدعم">Sustainability &amp; Support</span>
                 </a>
-                <a href="blog.html" class="nav-link hover:text-pine-700">
+                <a href="blog.html" class="nav-link relative transition-colors
+                    after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
+                    after:scale-x-0 after:bg-current after:content-['']
+                    after:transition-transform after:duration-300
+                    hover:after:scale-x-100
+                    after:origin-left
+                    data-[uo=right]:after:origin-right">
                     <span data-en="Blog" data-ar="المدونة">Blog</span>
                 </a>
-                <a href="contact.html" class="nav-link hover:text-pine-700">
+                <a href="contact.html" class="nav-link relative transition-colors
+                    after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
+                    after:scale-x-0 after:bg-current after:content-['']
+                    after:transition-transform after:duration-300
+                    hover:after:scale-x-100
+                    after:origin-left
+                    data-[uo=right]:after:origin-right">
                     <span data-en="Contact Us" data-ar="اتصل بنا">Contact Us</span>
                 </a>
             </div>
 
             <!-- Language Toggle + Mobile Toggle -->
             <div class="flex items-center gap-2 sm:gap-3">
-
-                <!-- Language Switcher -->
                 <button id="langToggle" type="button" aria-label="Switch language"
-                    class="flex h-11 items-center gap-2 rounded-2xl border border-sand-400/50 bg-LightBg px-3 text-sm font-bold text-pine-950 transition-all hover:bg-sand-100">
-                    <i class="fas fa-globe text-base text-pine-700"></i>
-                    <span id="langLabel" class="text-pine-950">EN</span>
-                    <span class="text-pine-300">|</span>
-                    <span id="langAlt" class="text-pine-400">ع</span>
+                    class="flex h-11 items-center gap-2 rounded-2xl border border-sand-400/50 bg-LightBg px-3 text-sm font-bold transition-all hover:bg-sand-100">
+                    <i class="fas fa-globe text-base text-white"></i>
+                    <span id="langLabel" class="text-white">EN</span>
+                    <span class="text-white/40">|</span>
+                    <span id="langAlt" class="text-white/60">ع</span>
                 </button>
 
-                <!-- Mobile Toggle -->
                 <button id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"
-                    class="flex h-11 w-11 items-center justify-center rounded-2xl border border-sand-400/50 bg-LightBg text-xl text-pine-950 transition-all hover:bg-sand-100 xl:hidden">
+                    class="flex h-11 w-11 items-center justify-center rounded-2xl border border-sand-400/50 bg-LightBg text-xl text-white transition-all hover:bg-sand-100 xl:hidden">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -107,65 +146,61 @@
 
         <!-- Mobile Menu -->
         <div id="mobileMenu"
-            class="hidden max-h-[calc(100vh-8rem)] flex-col gap-1.5 overflow-y-auto border-t border-sand-400/40 py-4 text-sm font-medium text-pine-950 xl:hidden">
+            class="hidden max-h-[calc(100vh-8rem)] flex-col gap-1.5 overflow-y-auto border-t border-sand-400/40 py-4 text-sm font-medium text-white xl:hidden">
 
-            <!-- Company -->
             <details class="group">
-                <summary class="mobile-nav-parent flex cursor-pointer list-none items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100">
-                    <i class="fas fa-building w-5 text-pine-700"></i>
+                <summary class="mobile-nav-parent flex cursor-pointer list-none items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100/20">
+                    <i class="fas fa-building w-5 text-white"></i>
                     <span class="flex-1" data-en="Company" data-ar="الشركة">Company</span>
-                    <i class="fas fa-chevron-down text-[10px] text-pine-500 transition-transform duration-200 group-open:rotate-180"></i>
+                    <i class="fas fa-chevron-down text-[10px] text-white transition-transform duration-200 group-open:rotate-180"></i>
                 </summary>
                 <div class="ml-8 mt-1 flex flex-col border-l border-sand-400 pl-3">
-                    <a href="index.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="Home" data-ar="الرئيسية">Home</span></a>
-                    <a href="about.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="About Us" data-ar="من نحن">About Us</span></a>
-                    <a href="careers.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="Careers" data-ar="الوظائف">Careers</span></a>
+                    <a href="index.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="Home" data-ar="الرئيسية">Home</span></a>
+                    <a href="about.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="About Us" data-ar="من نحن">About Us</span></a>
+                    <a href="careers.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="Careers" data-ar="الوظائف">Careers</span></a>
                 </div>
             </details>
 
-            <!-- Greenhouse Products -->
             <details class="group">
-                <summary class="mobile-nav-parent flex cursor-pointer list-none items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100">
-                    <i class="fas fa-seedling w-5 text-pine-700"></i>
+                <summary class="mobile-nav-parent flex cursor-pointer list-none items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100/20">
+                    <i class="fas fa-seedling w-5 text-white"></i>
                     <span class="flex-1" data-en="Greenhouse Products" data-ar="منتجات البيوت المحمية">Greenhouse Products</span>
-                    <i class="fas fa-chevron-down text-[10px] text-pine-500 transition-transform duration-200 group-open:rotate-180"></i>
+                    <i class="fas fa-chevron-down text-[10px] text-white transition-transform duration-200 group-open:rotate-180"></i>
                 </summary>
                 <div class="ml-8 mt-1 flex flex-col border-l border-sand-400 pl-3">
-                    <a href="products.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="Products Hub" data-ar="مركز المنتجات">Products Hub</span></a>
-                    <a href="shade.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="Plastic, Shade-Net & Fiberglass Greenhouses" data-ar="بيوت البلاستيك وشبكات الظل والألياف الزجاجية">Plastic, Shade-Net &amp; Fiberglass Greenhouses</span></a>
-                    <a href="polycarbonate.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="Polycarbonate & Air-Conditioned Greenhouses" data-ar="بيوت البولي كربونات والمكيفة">Polycarbonate &amp; Air-Conditioned Greenhouses</span></a>
-                    <a href="hydroponic.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="Multi-Unit Halls, & Glass Hydroponic Greenhouses" data-ar="قاعات متعددة الوحدات وبيوت الزراعة المائية الزجاجية">Multi-Unit Halls, &amp; Glass Hydroponic Greenhouses</span></a>
+                    <a href="products.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="Products Hub" data-ar="مركز المنتجات">Products Hub</span></a>
+                    <a href="shade.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="Plastic, Shade-Net & Fiberglass Greenhouses" data-ar="بيوت البلاستيك وشبكات الظل والألياف الزجاجية">Plastic, Shade-Net &amp; Fiberglass Greenhouses</span></a>
+                    <a href="polycarbonate.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="Polycarbonate & Air-Conditioned Greenhouses" data-ar="بيوت البولي كربونات والمكيفة">Polycarbonate &amp; Air-Conditioned Greenhouses</span></a>
+                    <a href="hydroponic.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="Multi-Unit Halls, & Glass Hydroponic Greenhouses" data-ar="قاعات متعددة الوحدات وبيوت الزراعة المائية الزجاجية">Multi-Unit Halls, &amp; Glass Hydroponic Greenhouses</span></a>
                 </div>
             </details>
 
-            <!-- Services -->
             <details class="group">
-                <summary class="mobile-nav-parent flex cursor-pointer list-none items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100">
-                    <i class="fas fa-cogs w-5 text-pine-700"></i>
+                <summary class="mobile-nav-parent flex cursor-pointer list-none items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100/20">
+                    <i class="fas fa-cogs w-5 text-white"></i>
                     <span class="flex-1" data-en="Services" data-ar="الخدمات">Services</span>
-                    <i class="fas fa-chevron-down text-[10px] text-pine-500 transition-transform duration-200 group-open:rotate-180"></i>
+                    <i class="fas fa-chevron-down text-[10px] text-white transition-transform duration-200 group-open:rotate-180"></i>
                 </summary>
                 <div class="ml-8 mt-1 flex flex-col border-l border-sand-400 pl-3">
-                    <a href="overview.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="Services Hub" data-ar="مركز الخدمات">Services Hub</span></a>
-                    <a href="turnkey-tech.html" class="dropdown-link py-1.5 hover:text-pine-700"><span data-en="Turnkey Projects & Technology Partners" data-ar="المشاريع الجاهزة والشركاء التقنيون">Turnkey Projects &amp; Technology Partners</span></a>
+                    <a href="overview.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="Services Hub" data-ar="مركز الخدمات">Services Hub</span></a>
+                    <a href="turnkey-tech.html" class="dropdown-link py-1.5 transition-colors hover:text-sand-400"><span data-en="Turnkey Projects & Technology Partners" data-ar="المشاريع الجاهزة والشركاء التقنيون">Turnkey Projects &amp; Technology Partners</span></a>
                 </div>
             </details>
 
-            <!-- Single-page links -->
-            <a href="farms-projects.html" class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100">
-                <i class="fas fa-tractor w-5 text-pine-700"></i>
+            <a href="farms-projects.html" class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100/20 hover:text-sand-400">
+                <i class="fas fa-tractor w-5 text-white"></i>
                 <span data-en="Farms & Projects" data-ar="المزارع والمشاريع">Farms &amp; Projects</span>
             </a>
-            <a href="sustainability.html" class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100">
-                <i class="fas fa-globe-asia w-5 text-pine-700"></i>
+            <a href="sustainability.html" class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100/20 hover:text-sand-400">
+                <i class="fas fa-globe-asia w-5 text-white"></i>
                 <span data-en="Sustainability & Support" data-ar="الاستدامة والدعم">Sustainability &amp; Support</span>
             </a>
-            <a href="blog.html" class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100">
-                <i class="fas fa-newspaper w-5 text-pine-700"></i>
+            <a href="blog.html" class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100/20 hover:text-sand-400">
+                <i class="fas fa-newspaper w-5 text-white"></i>
                 <span data-en="Blog" data-ar="المدونة">Blog</span>
             </a>
-            <a href="contact.html" class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100">
-                <i class="fas fa-envelope w-5 text-pine-700"></i>
+            <a href="contact.html" class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-100/20 hover:text-sand-400">
+                <i class="fas fa-envelope w-5 text-white"></i>
                 <span data-en="Contact Us" data-ar="اتصل بنا">Contact Us</span>
             </a>
         </div>

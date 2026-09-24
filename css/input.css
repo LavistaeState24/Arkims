@@ -185,6 +185,7 @@
  .nav-link {
      position: relative;
      transition: color 0.3s;
+     color: #fafbfc !important;
  }
 
  .nav-link::after {
@@ -274,11 +275,11 @@
  /* navbar css */
 
  .nav-link {
-     @apply text-gray-700 hover:text-pine-700 transition-colors duration-200 whitespace-nowrap;
+     @apply text-LightBg hover:text-sand-400 transition-colors duration-200 whitespace-nowrap;
  }
 
  .dropdown-link {
-     @apply block px-3 py-2.5 rounded-lg text-gray-700 hover:bg-pine-100 hover:text-pine-700 transition-all duration-200;
+     @apply block px-3 py-2.5 rounded-lg text-darkBg hover:bg-pine-800 hover:text-sand-400 transition-all duration-200;
  }
 
  /* Accordion rows in the tablet/mobile menu: drop the native
@@ -286,6 +287,7 @@
     Tailwind's list-none covers Chrome/Firefox; Safari needs this. */
  .mobile-nav-parent::-webkit-details-marker {
      display: none;
+      @apply block px-3 py-2.5 rounded-lg text-sand-400 hover:bg-pine-800 hover:text-sand-400 transition-all duration-200;
  }
 
  /* privacy policy styles */
