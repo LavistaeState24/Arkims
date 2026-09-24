@@ -908,6 +908,22 @@ video {
   top: 100%;
 }
 
+.-bottom-1 {
+  bottom: -0.25rem;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.-bottom-3 {
+  bottom: -0.75rem;
+}
+
+.-bottom-8 {
+  bottom: -2rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -3683,10 +3699,6 @@ video {
   color: rgb(255 255 255 / 0.5);
 }
 
-.text-white\/60 {
-  color: rgb(255 255 255 / 0.6);
-}
-
 .text-white\/70 {
   color: rgb(255 255 255 / 0.7);
 }
@@ -3914,6 +3926,11 @@ video {
 
 .shadow-sand-400\/20 {
   --tw-shadow-color: rgb(228 190 122 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-darkBg\/10 {
+  --tw-shadow-color: rgb(29 75 72 / 0.1);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
