@@ -1235,7 +1235,7 @@ function initLanguageToggle() {
         if (label && alt) {
             label.textContent = lang === 'ar' ? 'ع' : 'EN';
             alt.textContent = lang === 'ar' ? 'EN' : 'ع';
-            label.className = lang === 'ar' ? 'text-pine-400' : 'text-pine-950';
+            label.className = lang === 'ar' ? 'text-pine-400' : 'text-LightBg';
             alt.className = lang === 'ar' ? 'text-pine-950' : 'text-pine-400';
         }
 
