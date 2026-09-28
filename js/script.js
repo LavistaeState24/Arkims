@@ -1264,3 +1264,55 @@ document.querySelectorAll('.nav-link').forEach((link) => {
         link.dataset.uo = fromLeft ? 'left' : 'right';
     });
 });
+
+
+/* ============================================================
+   ACTIVE PAGE — sets aria-current="page" on matching nav links
+   ============================================================ */
+function setActiveNav() {
+    const path = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = path.replace('.html', '') || 'index';
+
+    // Child pages → parent dropdown key
+    const groupMap = {
+        index: 'company',
+        about: 'company',
+        careers: 'company',
+        products: 'products',
+        shade: 'products',
+        polycarbonate: 'products',
+        hydroponic: 'products',
+        overview: 'services',
+        'turnkey-tech': 'services',
+    };
+
+    // 1. Highlight the exact page link
+    document.querySelectorAll('[data-nav]').forEach(link => {
+        if (link.dataset.nav === currentPage) {
+            link.setAttribute('aria-current', 'page');
+        }
+    });
+
+    // 2. Highlight the parent dropdown if a child page is open
+    const parentKey = groupMap[currentPage];
+    if (parentKey) {
+        const parentLink = document.querySelector(`[data-nav="${parentKey}"]`);
+        if (parentLink) parentLink.setAttribute('aria-current', 'page');
+    }
+}
+
+// Run after navbar injection
+document.addEventListener('DOMContentLoaded', () => {
+    setActiveNav();
+
+    // If navbar is injected async, watch for it
+    if (!document.getElementById('mainNav')) {
+        const observer = new MutationObserver(() => {
+            if (document.getElementById('mainNav')) {
+                setActiveNav();
+                observer.disconnect();
+            }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    }
+});

@@ -16,28 +16,32 @@
 
                 <!-- Company -->
                 <div class="group relative">
-                    <a href="#" class="nav-link relative flex items-center gap-1 transition-colors
+                    <a href="#" data-nav="company"
+                        class="nav-link relative flex items-center gap-1 transition-colors
                         after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
                         after:scale-x-0 after:bg-sand-400 after:content-['']
                         after:transition-transform after:duration-300
                         hover:text-sand-400 hover:after:scale-x-100
-                        after:origin-left
-                        data-[uo=right]:after:origin-right">
+                        aria-[current=page]:text-sand-400 aria-[current=page]:after:scale-x-100
+                        after:origin-left">
                         <span data-en="Company" data-ar="الشركة">Company</span>
                         <i class="fas fa-chevron-down text-[10px]"></i>
                     </a>
                     <div
                         class="invisible absolute left-0 top-full mt-3 w-52 rounded-2xl border border-sand-400/30 bg-LightBg p-2 text-pine-950 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
-                        <a href="index.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="index.html" data-nav="index"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="Home" data-ar="الرئيسية">Home</span>
                         </a>
-                        <a href="about.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="about.html" data-nav="about"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="About Us" data-ar="من نحن">About Us</span>
                         </a>
-                        <a href="careers.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="careers.html" data-nav="careers"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="Careers" data-ar="الوظائف">Careers</span>
                         </a>
                     </div>
@@ -45,34 +49,39 @@
 
                 <!-- Greenhouse Products -->
                 <div class="group relative">
-                    <a href="#" class="nav-link relative flex items-center gap-1 transition-colors
+                    <a href="#" data-nav="products"
+                        class="nav-link relative flex items-center gap-1 transition-colors
                         after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
                         after:scale-x-0 after:bg-sand-400 after:content-['']
                         after:transition-transform after:duration-300
                         hover:text-sand-400 hover:after:scale-x-100
-                        after:origin-left
-                        data-[uo=right]:after:origin-right">
+                        aria-[current=page]:text-sand-400 aria-[current=page]:after:scale-x-100
+                        after:origin-left">
                         <span data-en="Greenhouse Products" data-ar="منتجات البيوت المحمية">Greenhouse Products</span>
                         <i class="fas fa-chevron-down text-[10px]"></i>
                     </a>
                     <div
                         class="invisible absolute left-0 top-full mt-3 w-64 rounded-2xl border border-sand-400/30 bg-LightBg p-2 text-pine-950 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
-                        <a href="products.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="products.html" data-nav="products"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="All Products" data-ar="جميع المنتجات">All Products</span>
                         </a>
-                        <a href="shade.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="shade.html" data-nav="shade"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="Shade-Net & Fiberglass" data-ar="شبكات الظل والألياف الزجاجية">Shade-Net
                                 &amp; Fiberglass</span>
                         </a>
-                        <a href="polycarbonate.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="polycarbonate.html" data-nav="polycarbonate"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="Polycarbonate & A/C Greenhouses"
                                 data-ar="بيوت البولي كربونات والمكيفة">Polycarbonate &amp; A/C Greenhouses</span>
                         </a>
-                        <a href="hydroponic.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="hydroponic.html" data-nav="hydroponic"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="Multi-Unit & Hydroponic Systems"
                                 data-ar="أنظمة الوحدات المتعددة والزراعة المائية">Multi-Unit &amp; Hydroponic
                                 Systems</span>
@@ -82,65 +91,68 @@
 
                 <!-- Services -->
                 <div class="group relative">
-                    <a href="overview.html" class="nav-link relative flex items-center gap-1 transition-colors
+                    <a href="overview.html" data-nav="services"
+                        class="nav-link relative flex items-center gap-1 transition-colors
                         after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
                         after:scale-x-0 after:bg-sand-400 after:content-['']
                         after:transition-transform after:duration-300
                         hover:text-sand-400 hover:after:scale-x-100
-                        after:origin-left
-                        data-[uo=right]:after:origin-right">
+                        aria-[current=page]:text-sand-400 aria-[current=page]:after:scale-x-100
+                        after:origin-left">
                         <span data-en="Services" data-ar="الخدمات">Services</span>
                         <i class="fas fa-chevron-down text-[10px]"></i>
                     </a>
                     <div
                         class="invisible absolute left-0 top-full mt-3 w-60 rounded-2xl border border-sand-400/30 bg-LightBg p-2 text-pine-950 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
-                        <a href="overview.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="overview.html" data-nav="overview"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="Overview" data-ar="نظرة عامة">Overview</span>
                         </a>
-                        <a href="turnkey-tech.html"
-                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors">
+                        <a href="turnkey-tech.html" data-nav="turnkey-tech"
+                            class="dropdown-link rounded-xl px-3 py-2 hover:bg-darkBg hover:text-LightBg block transition-colors
+                            aria-[current=page]:bg-darkBg aria-[current=page]:text-LightBg">
                             <span data-en="Turnkey & Tech Partners" data-ar="المشاريع الجاهزة والشركاء التقنيون">Turnkey
                                 &amp; Tech Partners</span>
                         </a>
                     </div>
                 </div>
 
-                <a href="farms-projects.html" class="nav-link relative transition-colors
+                <a href="farms-projects.html" data-nav="farms-projects" class="nav-link relative transition-colors
                     after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
                     after:scale-x-0 after:bg-sand-400 after:content-['']
                     after:transition-transform after:duration-300
                     hover:text-sand-400 hover:after:scale-x-100
-                    after:origin-left
-                    data-[uo=right]:after:origin-right">
+                    aria-[current=page]:text-sand-400 aria-[current=page]:after:scale-x-100
+                    after:origin-left">
                     <span data-en="Farms & Projects" data-ar="المزارع والمشاريع">Farms &amp; Projects</span>
                 </a>
-                <a href="sustainability.html" class="nav-link relative transition-colors
+                <a href="sustainability.html" data-nav="sustainability" class="nav-link relative transition-colors
                     after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
                     after:scale-x-0 after:bg-sand-400 after:content-['']
                     after:transition-transform after:duration-300
                     hover:text-sand-400 hover:after:scale-x-100
-                    after:origin-left
-                    data-[uo=right]:after:origin-right">
+                    aria-[current=page]:text-sand-400 aria-[current=page]:after:scale-x-100
+                    after:origin-left">
                     <span data-en="Sustainability & Support" data-ar="الاستدامة والدعم">Sustainability &amp;
                         Support</span>
                 </a>
-                <a href="blog.html" class="nav-link relative transition-colors
+                <a href="blog.html" data-nav="blog" class="nav-link relative transition-colors
                     after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
                     after:scale-x-0 after:bg-sand-400 after:content-['']
                     after:transition-transform after:duration-300
                     hover:text-sand-400 hover:after:scale-x-100
-                    after:origin-left
-                    data-[uo=right]:after:origin-right">
+                    aria-[current=page]:text-sand-400 aria-[current=page]:after:scale-x-100
+                    after:origin-left">
                     <span data-en="Blog" data-ar="المدونة">Blog</span>
                 </a>
-                <a href="contact.html" class="nav-link relative transition-colors
+                <a href="contact.html" data-nav="contact" class="nav-link relative transition-colors
                     after:absolute after:-bottom-0.5 after:left-0 after:h-[1.5px] after:w-full
                     after:scale-x-0 after:bg-sand-400 after:content-['']
                     after:transition-transform after:duration-300
                     hover:text-sand-400 hover:after:scale-x-100
-                    after:origin-left
-                    data-[uo=right]:after:origin-right">
+                    aria-[current=page]:text-sand-400 aria-[current=page]:after:scale-x-100
+                    after:origin-left">
                     <span data-en="Contact Us" data-ar="اتصل بنا">Contact Us</span>
                 </a>
             </div>
@@ -176,15 +188,15 @@
                         class="fas fa-chevron-down text-[10px] text-sand-400 transition-transform duration-200 group-open:rotate-180"></i>
                 </summary>
                 <div class="ml-8 mt-1 flex flex-col border-l border-sand-400/60 pl-3">
-                    <a href="index.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
-                            data-en="Home" data-ar="الرئيسية">Home</span></a>
-                    <a href="about.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
-                            data-en="About Us" data-ar="من نحن">About Us</span></a>
-                    <a href="careers.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
-                            data-en="Careers" data-ar="الوظائف">Careers</span></a>
+                    <a href="index.html" data-nav="index"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span data-en="Home" data-ar="الرئيسية">Home</span></a>
+                    <a href="about.html" data-nav="about"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span data-en="About Us" data-ar="من نحن">About Us</span></a>
+                    <a href="careers.html" data-nav="careers"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span data-en="Careers" data-ar="الوظائف">Careers</span></a>
                 </div>
             </details>
 
@@ -198,21 +210,25 @@
                         class="fas fa-chevron-down text-[10px] text-sand-400 transition-transform duration-200 group-open:rotate-180"></i>
                 </summary>
                 <div class="ml-8 mt-1 flex flex-col border-l border-sand-400/60 pl-3">
-                    <a href="products.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
+                    <a href="products.html" data-nav="products"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span
                             data-en="Products Hub" data-ar="مركز المنتجات">Products Hub</span></a>
-                    <a href="shade.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
+                    <a href="shade.html" data-nav="shade"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span
                             data-en="Plastic, Shade-Net & Fiberglass Greenhouses"
                             data-ar="بيوت البلاستيك وشبكات الظل والألياف الزجاجية">Plastic, Shade-Net &amp; Fiberglass
                             Greenhouses</span></a>
-                    <a href="polycarbonate.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
+                    <a href="polycarbonate.html" data-nav="polycarbonate"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span
                             data-en="Polycarbonate & Air-Conditioned Greenhouses"
                             data-ar="بيوت البولي كربونات والمكيفة">Polycarbonate &amp; Air-Conditioned
                             Greenhouses</span></a>
-                    <a href="hydroponic.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
+                    <a href="hydroponic.html" data-nav="hydroponic"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span
                             data-en="Multi-Unit Halls, & Glass Hydroponic Greenhouses"
                             data-ar="قاعات متعددة الوحدات وبيوت الزراعة المائية الزجاجية">Multi-Unit Halls, &amp; Glass
                             Hydroponic Greenhouses</span></a>
@@ -228,34 +244,40 @@
                         class="fas fa-chevron-down text-[10px] text-sand-400 transition-transform duration-200 group-open:rotate-180"></i>
                 </summary>
                 <div class="ml-8 mt-1 flex flex-col border-l border-sand-400/60 pl-3">
-                    <a href="overview.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
+                    <a href="overview.html" data-nav="overview"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span
                             data-en="Services Hub" data-ar="مركز الخدمات">Services Hub</span></a>
-                    <a href="turnkey-tech.html"
-                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg"><span
+                    <a href="turnkey-tech.html" data-nav="turnkey-tech"
+                        class="dropdown-link py-1.5 transition-colors hover:text-sand-400 text-LightBg
+                        aria-[current=page]:text-sand-400"><span
                             data-en="Turnkey Projects & Technology Partners"
                             data-ar="المشاريع الجاهزة والشركاء التقنيون">Turnkey Projects &amp; Technology
                             Partners</span></a>
                 </div>
             </details>
 
-            <a href="farms-projects.html"
-                class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-400/20 hover:text-sand-400 text-LightBg">
+            <a href="farms-projects.html" data-nav="farms-projects"
+                class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-400/20 hover:text-sand-400 text-LightBg
+                aria-[current=page]:text-sand-400 aria-[current=page]:bg-sand-400/15">
                 <i class="fas fa-tractor w-5 text-sand-400"></i>
                 <span data-en="Farms & Projects" data-ar="المزارع والمشاريع">Farms &amp; Projects</span>
             </a>
-            <a href="sustainability.html"
-                class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-400/20 hover:text-sand-400 text-LightBg">
+            <a href="sustainability.html" data-nav="sustainability"
+                class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-400/20 hover:text-sand-400 text-LightBg
+                aria-[current=page]:text-sand-400 aria-[current=page]:bg-sand-400/15">
                 <i class="fas fa-globe-asia w-5 text-sand-400"></i>
                 <span data-en="Sustainability & Support" data-ar="الاستدامة والدعم">Sustainability &amp; Support</span>
             </a>
-            <a href="blog.html"
-                class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-400/20 hover:text-sand-400 text-LightBg">
+            <a href="blog.html" data-nav="blog"
+                class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-400/20 hover:text-sand-400 text-LightBg
+                aria-[current=page]:text-sand-400 aria-[current=page]:bg-sand-400/15">
                 <i class="fas fa-newspaper w-5 text-sand-400"></i>
                 <span data-en="Blog" data-ar="المدونة">Blog</span>
             </a>
-            <a href="contact.html"
-                class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-400/20 hover:text-sand-400 text-LightBg">
+            <a href="contact.html" data-nav="contact"
+                class="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-all hover:bg-sand-400/20 hover:text-sand-400 text-LightBg
+                aria-[current=page]:text-sand-400 aria-[current=page]:bg-sand-400/15">
                 <i class="fas fa-envelope w-5 text-sand-400"></i>
                 <span data-en="Contact Us" data-ar="اتصل بنا">Contact Us</span>
             </a>
